@@ -4,6 +4,6 @@
 <h3>As the part of learning i hold engneering degree in computer sciences but a bitter truth that i was hevely depnd on open source software and free online courses and blogs and fourms and many more. My mentor sir Shivek Khurana(i belive) have a very strong opinion about giving back to the community in any foam possible, am just initating that whis this small effort.   </h3>
 
 
-<h2>I will add the contribution rules later as considering that no one is going to push any commit for the time being.</h2>
+<h4>I will add the contribution rules later as considering that no one is going to push any commit for the time being.</h4>
 
 
