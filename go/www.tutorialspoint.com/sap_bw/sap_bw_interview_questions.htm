@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SAP BW Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SAP BW Interview Questions - Dear readers, these SAP BW Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your int"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sap_bw/sap_bw_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#0054a6;
+}
+a.demo {
+    background:#0054a6;
+}
+li.heading {
+    background:#0054a6;
+}
+.course-box{background:#0054a6}
+.home-intro-sub p{color:#0054a6}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sap_bw/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sap_bw/images/sap-bw-mini-logo.jpg" alt="SAP BW Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">SAP BW Tutorial</li>
+<li><a href="/sap_bw/index.htm">SAP BW - Home</a></li>
+<li><a href="/sap_bw/sap_bw_overview_of_sap_bi.htm">SAP BW - Overview of SAP BI</a></li>
+<li><a href="/sap_bw/sap_bw_data_warehousing.htm">SAP BW - Data Warehousing</a></li>
+<li><a href="/sap_bw/sap_bw_data_flow.htm">SAP BW - Data Flow</a></li>
+<li><a href="/sap_bw/sap_bw_transformation.htm">SAP BW - Transformation</a></li>
+<li><a href="/sap_bw/sap_bw_infoarea_object_catalog.htm">SAP BW - InfoArea, Object &amp; Catalog</a></li>
+<li><a href="/sap_bw/sap_bw_datastore_objects_types.htm">SAP BW - DataStore Objects &amp; Types</a></li>
+<li><a href="/sap_bw/sap_bw_write_optimized_dso.htm">SAP BW - Write Optimized DSO</a></li>
+<li><a href="/sap_bw/sap_bw_infoset.htm">SAP BW - Infoset</a></li>
+<li><a href="/sap_bw/sap_bw_infocube.htm">SAP BW - InfoCube</a></li>
+<li><a href="/sap_bw/sap_bw_virtual_infoprovider.htm">SAP BW - Virtual InfoProvider</a></li>
+<li><a href="/sap_bw/sap_bw_multiprovider.htm">SAP BW - MultiProvider</a></li>
+<li><a href="/sap_bw/sap_bw_flat_file_data_transfer.htm">SAP BW - Flat File Data Transfer</a></li>
+<li><a href="/sap_bw/sap_bw_db_connect.htm">SAP BW - DB Connect</a></li>
+<li><a href="/sap_bw/sap_bw_universal_data_connect.htm">SAP BW - Universal Data Connect</a></li>
+<li><a href="/sap_bw/sap_bw_process_chain.htm">SAP BW - Process Chain</a></li>
+<li><a href="/sap_bw/sap_bw_reporting.htm">SAP BW - Reporting</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP BW Useful Resources</li>
+<li><a href="/sap_bw/sap_bw_questions_answers.htm">SAP BW - Questions Answers</a></li>
+<li><a href="/sap_bw/sap_bw_quick_guide.htm">SAP BW - Quick Guide</a></li>
+<li><a href="/sap_bw/sap_bw_useful_resources.htm">SAP BW - Useful Resources</a></li>
+<li><a href="/sap_bw/sap_bw_discussion.htm">SAP BW - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SAP BW Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="sap_bw_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_bw_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>SAP BW Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>SAP BW</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label> Explain the architecture of SAP BW system and its components?</label>
+<div class="toggle-content"> 
+<p>OLAP Processor</p>
+<p>Metadata Repository,</p>
+<p>Process designer and other functions.</p>
+<p>Business Explorer BEx is reporting and analysis tool that support query, analysis and reporting functions in BI. Using BEx, you can analyze historical and current data to different degree of analysis.</p>
+<img src="/sap_bw/images/olap_processor.jpg" alt="OLAP Processor" />
+</div>
+</section>
+<section class="toggle">
+<label> What all data sources you have used to acquire data in SAP BW system?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>SAP systems (SAP Applications/SAP ECC)</li>
+<li>Relational Database (Oracle, SQL Server, etc.)</li>
+<li>Flat File (Excel, Notepad)</li>
+<li>Multidimensional Source systems (Universe using UDI connector)</li>
+<li>Web Services that transfer data to BI by means of push</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> When you are using SAP BI7.x, you can load the data to which component?</label>
+<div class="toggle-content"> 
+<p>In BW 3.5, you can load data in Persistence Staging Area and also in targets from source system but If you are using SAP BI 7.0 data load should be restricted to PSA only for latest versions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is an InfoPackage?</label>
+<div class="toggle-content"> 
+<p>An InfoPackage is used to specify how and when to load data to BI system from different data sources. An InfoPackage contains all the information how data is loaded from source system to a data source or PSA. InfoPackage consists of condition for requesting data from a source system.</p>
+<p>Note that using an InfoPackage in BW 3.5, you can load data in Persistence Staging Area and also in targets from source system but If you are using SAP BI 7.0 data load should be restricted to PSA only for latest versions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is extended Star schema? Which of the tables are inside and outside cube in an extended star schema?</label>
+<div class="toggle-content"> 
+<p>In Extended Star schema, Fact tables are connected to Dimension tables and dimension table is connected to SID table and SID table is connected to master data tables. In Extended star schema you have Fact and Dimension tables are inside the cube however SID tables are outside cube. When you load the transactional data into Info cube, Dim Id’s are generated based on SID’s and these Dim id’s are used in fact tables.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How extended Star schema is different from Star schema?</label>
+<div class="toggle-content"> 
+<p>In Extended Star schema one fact table can connect to 16 dimensions tables and each dimension table is assigned with 248 maximum SID tables. SID tables are also called Characteristics and each characteristic can have master data tables like ATTR, Text, etc.</p>
+<p>In Star Schema, Each Dimension is joined to one single Fact table. Each Dimension is represented by only one dimension and is not further normalized.</p>
+<p>Dimension Table contains set of attribute that are used to analyze the data.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is an InfoObject and why it is used in SAP BI?</label>
+<div class="toggle-content"> 
+<p>Info Objects are known as smallest unit in SAP BI and are used in Info Providers, DSO’s, Multi providers, etc. Each Info Provider contains multiple Info Objects.</p>
+<p>InfoObjects are used in reports to analyze the data stored and to provide information to decision makers.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different categories of InfoObjects in BW system?</label>
+<div class="toggle-content"> 
+<p>Info Objects can be categorized into below categories &minus;</p>
+<ul class="">
+<li>Characteristics like Customer, Product, etc.</li>
+<li>Units like Quantity sold, currency, etc.</li>
+<li>Key Figures like Total Revenue, Profit, etc.</li>
+<li>Time characteristics like Year, quarter, etc.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Infoarea in SAP BW system?</label>
+<div class="toggle-content"> 
+<p>Info Area in SAP BI are used to group similar types of object together. Info Area are used to manage Info Cubes and Info Objects. Each Info Objects resides in an Info Area and you can define it a folder which is used to hold similar files together.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you access to source system data in BI without extraction?</label>
+<div class="toggle-content"> 
+<p>To access data in BI source system directly. You can directly access to source system data in BI without extraction using Virtual Providers. Virtual providers can be defined as InfoProviders where transactional data is not stored in the object. Virtual providers allow only read access on BI data.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different types on Virtual providers?</label>
+<div class="toggle-content"> 
+<p>VirtualProviders based on DTP</p>
+<p>VirtualProviders with function modules</p>
+<p>VirtualProviders based on BAPI’s</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which Virtual Providers are used in which scenario of data extraction?</label>
+<div class="toggle-content"> 
+<p><b>VirtualProviders based on DTP</b> &minus;</p>
+<p>This type of Virtual Providers are based on the data source or an Info Provider and they take characteristics and key figures of source. Same extractors are used to select data in source system as you use to replicate data into BI system.</p>
+<p>When to Virtual Providers based on DTP?</p>
+<p>When only some amount of data is used.</p>
+<p>You need to access up to date data from a SAP source system.</p>
+<p>Only few users executes queries simultaneously on the database.</p>
+<p><b>Virtual Provider with Function Module</b> &minus;</p>
+<p>This Virtual Provider is used to display data from non BI data source to BI without copying the data to BI structure. The data can be local or remote. This is used primarily for SEM application.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Transformation and how the mapping is done in BW?</label>
+<div class="toggle-content"> 
+<p>Transformation process is used to perform data consolidation, cleansing and data integration. When data is loaded from one BI object to other BI object, transformation is applied on the data. Transformation is used to convert a field of source into the target object format.</p>
+<p>Transformation rules &minus;</p>
+<p>Transformation rules are used to map source fields and target fields. Different rule types can be used for transformation.</p>
+</div>
+</section>
+<section class="toggle">
+<label>  How do perform real time data acquisition in BW system?</label>
+<div class="toggle-content"> 
+<p>Real time data acquisition is based on moving data to Business Warehouse in real time. Data is sent to delta queue or PSA table in real time.</p>
+<p>Real time data acquisition can be achieved in two scenarios &minus;</p>
+<p>By using InfoPackage for real time data acquisition using Service API.</p>
+<p>Using Web Service to load data to Persistent Storage Area PSA and then by using real time DTP to move the data to DSO.</p>
+<p>Real time Data Acquisition Background Process &minus;</p>
+<p>To process data to InfoPackage and data transfer process DTP at regular intervals, you can use a background process known as Daemon.</p>
+<p>Daemon process gets all the information from InfoPackage and DTP that which data is to be transferred and which PSA and Data sore objects to be loaded with data.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is InfoObject catalog?</label>
+<div class="toggle-content"> 
+<p>InfoObjects are created in Info Object catalog. It is possible that an Info Object can be assigned to different Info Catalog.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use DSO in BW system? What kind of data is stored in DSO’s</label>
+<div class="toggle-content"> 
+<p>A DSO is known as storage place to keep cleansed and consolidated transaction or master data at lowest granularity level and this data can be analyzed using BEx query.</p>
+<p>A DataStore object contains key figures and charactertics fields and data from DSO can be updated using Delta update or other DataStore objects or master data. DataStore objects are commonly stored in two dimensional transparent database tables.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different components in DSO architecture?</label>
+<div class="toggle-content"> 
+<p><b>DSO component consists of three tables</b> &minus;</p>
+<p>Activation Queue &minus;</p>
+<p>This is used to store the data before it is activated. The key contains request id, package id and record number. Once activation is done, request is deleted from the activation queue.</p>
+<p>Active Data Table &minus;</p>
+<p>This table is used to store current active data and this table contains the semantic key defined for data modeling.</p>
+<p>Change Log &minus;</p>
+<p>When you activate the object, changes to active data re stored in change log. Change log is a PSA table and is maintained in Administration Workbench under PSA tree.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To access data for reporting and analysis immediately after it is loaded, which Data store object is used?</label>
+<div class="toggle-content"> 
+<p>DataStore object for direct update allows you to access data for reporting and analysis immediately after it is loaded. It is different from standard DSO’s in the way how it processed the data. Data is stored in same format in which it was loaded to DataStore object for direct update by the application.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the structure of direct update DSO’s?</label>
+<div class="toggle-content"> 
+<p>one table for active data and no change log area exists. Data is retrieved from external systems using API’s.</p>
+<p><b>Below API’s exists</b> &minus;</p>
+<ul class="list">
+<li><p>RSDRI_ODSO_INSERT: These are used to insert new data.</p></li>
+<li><p>RSDRI_ODSO_INSERT_RFC:  Similar to RSDRI_ODSO_INSERT and can be called up remotely.</p></li>
+<li><p>RSDRI_ODSO_MODIFY: This is used to insert data having new keys.For data with keys already in the system, the data is changed.</p></li>
+<li><p>RSDRI_ODSO_MODIFY_RFC: Similar to RSDRI_ODSO_MODIFY and can be called up remotely.</p></li>
+<li><p>RSDRI_ODSO_UPDATE: This API is used to update existing data.</p></li>
+<li><p>RSDRI_ODSO_UPDATE_RFC: This is similar to RSDRI_ODSO_UPDATE and can be called up remotely.</p></li>
+<li><p>RSDRI_ODSO_DELETE_RFC: This API is used to delete the data.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Can we perform Delta uploads in direct update DSO’s?</label>
+<div class="toggle-content"> 
+<p>As structure of this DSO contains one table for active data and no change log so this doesn’t allow delta update to InfoProviders.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is write optimized DSO’s?</label>
+<div class="toggle-content"> 
+<p>In Write optimized DSO, data that is loaded is available immediately for the further processing.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Where do we use Write optimized DSO’s?</label>
+<div class="toggle-content"> 
+<p>Write optimized DSO provides a temporary storage area for large sets of data if you are executing complex transformations for this data before it is written to the DataStore object. The data can then be updated to further InfoProviders. You only have to create the complex transformations once for all data.</p>
+<p>Write-optimized DataStore objects are used as the EDW layer for saving data. Business rules are only applied when the data is updated to additional InfoProviders.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the structure of Write optimized DSO’s? How it is different from Standard DSO’s?</label>
+<div class="toggle-content"> 
+<p>It only contains table of active data and there is no need to activate the data as required with standard DSO. This allows you to process the data more quickly.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To perform a Join on dataset, what type of InfoProviders should be used?</label>
+<div class="toggle-content"> 
+<p>Infosets are defined as special type of InfoProviders where data sources contains Join rule on DataStore objects, standard InfoCubes or InfoObject with master data characteristics. InfoSets are used to join data and that data is used in BI system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a temporal join?</label>
+<div class="toggle-content"> 
+<p>Temporal Joins: are used to map a period of time. At the time of reporting, other InfoProviders handle time-dependent master data in such a way that the record that is valid for a pre-defined unique key date is used each time. You can define Temporal join that contains atleast one time-dependent characteristic or a pseudo time-dependent InfoProvider.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Where do we use InfoSet in BI system?</label>
+<div class="toggle-content"> 
+<p>Infosets are used to analyze the data in multiple InfoProviders by combining master data charactertics, DataStore Objects, and InfoCubes.</p>
+<p>You can use temporal join with InfoSet to specify a particular point of time when you want to evaluate the data.</p>
+<p>You can use reporting using Business Explorer BEx on DSO’s without enabling BEx indicator.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different type of InfoSet joins?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>Inner Join</li>
+<li>Left Outer Join</li>
+<li>Temporal Join</li>
+<li>Self Join</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of InfoCube in BW system?</label>
+<div class="toggle-content"> 
+<p>InfoCube is defined as multidimensional dataset which is used for analysis in a BEx query. An InfoCube consists of set of relational tables which are logically joined to implement star schema. A Fact table in star schema is joined with multiple dimension tables.</p>
+<p>You can add data from one or more InfoSource or InfoProviders to an InfoCube. They are available as InfoProviders for analysis and reporting purposes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the structure of InfoCube?</label>
+<div class="toggle-content"> 
+<p>An InfoCube is used to store the data physically. It consists of a number of InfoObjects that are filled with data from staging. It has the structure of a star schema.</p>
+<p>In SAP BI, an Infocube contains Extended Star Schema as shown above.</p>
+<p>An InfoCube consists of a fact table which is surrounded by 16 dimension tables and master data that is lying outside the cube.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of real time InfoCube? How do you enter data in real time InfoCubes?</label>
+<div class="toggle-content"> 
+<p>Real time InfoCubes are used to support parallel write access. Real time InfoCubes are used in connection with the entry of planning data.</p>
+<p>You can enter the data in Real time InfoCubes in two different ways &minus;</p>
+<p>Transaction for entering planning data</p>
+<p>BI Staging</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you create a real time InfoCube in administrator workbench?</label>
+<div class="toggle-content"> 
+<p>A real time InfoCube can be created using Real Time Indicator check box.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can you make an InfoObject as info provider and why?</label>
+<div class="toggle-content"> 
+<p>Yes, when you want to report on charactertics or master data, you can make them as InfoProvider.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Is it possible to convert a standard InfoCube to real time InfoCube?</label>
+<div class="toggle-content"> 
+<p>To convert a standard InfoCube to real time InfoCube, you have two options &minus;</p>
+<p>Convert with loss of Transactional data</p>
+<p>Conversion with Retention of Transaction Data</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can you convert an InfoPackage group into a Process chain?</label>
+<div class="toggle-content"> 
+<p>Yes, Double Click on the info package grp &rarr; Process Chain Maintenance button and type in the name and description.</p>
+</div>
+</section>
+<section class="toggle">
+<label> When you define aggregates, what are the available options?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>H Hierarchy</li>
+<li>F fixed value</li>
+<li>Blank</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Can you setup InfoObjects as Virtual Providers?</label>
+<div class="toggle-content"> 
+<p>Yes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To perform a Union operation on InfoProviders, which InfoProvider is uses?</label>
+<div class="toggle-content"> 
+<p>MultiProvider</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the different between Operation Data store, InfoCube and MultiProvider?</label>
+<div class="toggle-content"> 
+<p><b>ODS</b> &minus;</p> 
+<p>They provide granular data, allows overwrite and data is in transparent tables, ideal for drilldown and RRI.</p>
+<p><b>InfoCube</b> &minus;</p>
+<p>This is used for star schema, we can only append data, ideal for primary reporting.</p>
+<p><b>MultiProvider</b> &minus;</p>
+<p>It contains a physical data and allow to access data from different InfoProviders.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by Start and update routine?</label>
+<div class="toggle-content"> 
+<p><b>Start Routines</b> &minus;</p>
+<p>The start routine is run for each Data Package after the data has been written to the PSA and before the transfer rules have been executed. It allows complex computations for a key figure or a characteristic. It has no return value. Its purpose is to execute preliminary calculations and to store them in global Data Structures. This structure or table can be accessed in the other routines. The entire Data Package in the transfer structure format is used as a parameter for the routine.</p>
+<p><b>Update Routines</b> &minus;</p>
+<p>They are defined at the InfoObject level. It is like the Start Routine. It is independent of the DataSource. We can use this to define Global Data and Global Checks.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Rollup?</label>
+<div class="toggle-content"> 
+<p>This is used to load new Data Package into the InfoCube aggregates. If we have not performed a rollup then the new InfoCube data will not be available while reporting on the aggregate.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can you achieve performance optimization in SAP Data Warehouse?</label>
+<div class="toggle-content"> 
+<p>During loading, perform steps in below order &minus;</p>
+<p>First load the master data in the following order: First attributes, then texts, then hierarchies.</p>
+<p>Load the master data first and then the transaction data. By doing this, you ensure that the SIDs are created before the transaction data is loaded and not while the transaction data is being loaded.</p>
+<p>To optimize performance when loading and deleting data from the InfoCube &minus;</p>
+<ul class="list">
+<li>Indexes</li>
+<li>Aggregates</li>
+<li>Line item and high Cardinality</li>
+<li>Compression</li>
+</ul>
+<p>To achieve good activation performance for DataStore objects, you should note the following points &minus;</p>
+<p>Creating SID Values</p>
+<p>Generating SID values takes a long time and can be avoided in the following cases &minus;</p>
+<p>Do not set the 'Generate SID values' flag, if you only use the DataStore object as a data store. If you do set this flag, SIDs are created for all new characteristic values.</p>
+<p>If you are using line items (document number or time stamp, for example) as characteristics in the DataStore object, set the flag in characteristic maintenance to show that they are "attribute only".</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Partition of an InfoCube?</label>
+<div class="toggle-content"> 
+<p>It is the method of dividing a table for report optimization. SAP uses fact file partitioning to improve performance. We can partition only at 0CALMONTH or 0FISCPER. Table partitioning helps to run the report faster as data is stored in the relevant partitions. Also table maintenance becomes easier.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the difference between InfoCube and ODS?</label>
+<div class="toggle-content"> 
+<p>Infocube is structured as star schema where a fact table is surrounded by different dim table that are linked with DIM'ids.</p> 
+<p>ODS is a flat structure with no star schema concept and which will have granular data (detailed level). Overwrite functionality.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Navigational attributes?</label>
+<div class="toggle-content"> 
+<p>Navigational attribute is used for drilling down in the report.</p>
+</div>
+</section>
+<section class="toggle">
+<label> While loading data from flat files, when separators are used inconstantly. How this will read in BI load?</label>
+<div class="toggle-content"> 
+<p>If separators are used inconsistently in a CSV file, the incorrect separator is read as a character and both fields are merged into one field and may be shortened. Subsequent fields are then no longer in the correct order.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To load the data from a file source system, what is requirement in BI system?</label>
+<div class="toggle-content"> 
+<p>Before you can transfer data from a file source system, the metadata must be available in BI in the form of a DataSource.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In SAP BW, is it possible to have multiple data sources have one InfoSource?</label>
+<div class="toggle-content"> 
+<p>Yes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How data is stored in PSA?</label>
+<div class="toggle-content"> 
+<p>In form of PSA tables</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of DB connection in SAP BW data acquisition?</label>
+<div class="toggle-content"> 
+<p>DB connect is used to define other database connection in addition to default connection and these connections are used to transfer data into BI system from tables or views.</p>
+<p>To connect an external database, you should have below information &minus;</p>
+<ul class="list">
+<li>Tools</li>
+<li>Source Application knowledge</li>
+<li>SQL syntax in Database</li>
+<li>Database functions</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>  What is UD connect in SAP BW system? How does it allow reporting in BI system?</label>
+<div class="toggle-content"> 
+<p>Universal data UD connect allows you to access Relational and multidimensional data sources and transfer the data in form of flat data. Multidimensional data is converted to flat format when Universal Data Connect is used for data transfer.</p>
+<p>UD uses J2EE connector to allow reporting on SAP and non-SAP data. Different BI Java connectors are available for various drivers, protocols as resource adapters &minus;</p>
+<ul class="list">
+<li>BI ODBO Connector</li>
+<li>BI JDBC Connector</li>
+<li>BI SAP Query Connector</li>
+<li>XMLA Connector</li>
+</ul>
+</div>
+</section> 
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">sap_bw_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sap_bw_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_bw_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

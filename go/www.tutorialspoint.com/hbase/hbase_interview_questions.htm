@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>HBase Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="HBase Interview Questions - Dear readers, these HBase Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your inte"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/hbase/hbase_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#ba160d;
+}
+a.demo {
+    background:#ba160d;
+}
+li.heading {
+    background:#ba160d;
+}
+.course-box{background:#ba160d}
+.home-intro-sub p{color:#ba160d}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/hbase/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/hbase/images/hbase-mini-logo.jpg" alt="HBase Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">HBase Tutorial</li>
+<li><a target="_top" href="/hbase/index.htm">HBase - Home</a></li>
+<li><a target="_top" href="/hbase/hbase_overview.htm">HBase - Overview</a></li>
+<li><a target="_top" href="/hbase/hbase_architecture.htm">HBase - Architecture</a></li>
+<li><a target="_top" href="/hbase/hbase_installation.htm">HBase - Installation</a></li>
+<li><a target="_top" href="/hbase/hbase_shell.htm">HBase - Shell</a></li>
+<li><a target="_top" href="/hbase/hbase_general_commands.htm">HBase - General Commands</a></li>
+<li><a target="_top" href="/hbase/hbase_admin_api.htm">HBase - Admin API</a></li>
+<li><a target="_top" href="/hbase/hbase_create_table.htm">HBase - Create Table</a></li>
+<li><a target="_top" href="/hbase/hbase_listing_table.htm">HBase - Listing Table</a></li>
+<li><a target="_top" href="/hbase/hbase_disabling_table.htm">HBase - Disabling a Table</a></li>
+<li><a target="_top" href="/hbase/hbase_enabling_table.htm">HBase - Enabling a Table</a></li>
+<li><a target="_top" href="/hbase/hbase_describe_and_alter.htm">HBase - Describe &amp; Alter</a></li>
+<li><a target="_top" href="/hbase/hbase_exists.htm">HBase - Exists</a></li>
+<li><a target="_top" href="/hbase/hbase_drop_table.htm">HBase - Drop a Table</a></li>
+<li><a target="_top" href="/hbase/hbase_shutting_down.htm">HBase - Shutting Down</a></li>
+<li><a target="_top" href="/hbase/hbase_client_api.htm">HBase - Client API</a></li>
+<li><a target="_top" href="/hbase/hbase_create_data.htm">HBase - Create Data</a></li>
+<li><a target="_top" href="/hbase/hbase_update_data.htm">HBase - Update Data</a></li>
+<li><a target="_top" href="/hbase/hbase_read_data.htm">HBase - Read Data</a></li>
+<li><a target="_top" href="/hbase/hbase_delete_data.htm">HBase - Delete Data</a></li>
+<li><a target="_top" href="/hbase/hbase_scan.htm">HBase - Scan</a></li>
+<li><a target="_top" href="/hbase/hbase_count_truncate.htm">HBase - Count &amp; Truncate</a></li>
+<li><a target="_top" href="/hbase/hbase_security.htm">HBase - Security</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">HBase Resources</li>
+<li><a target="_top" href="/hbase/hbase_questions_answers.htm">HBase - Questions and Answers</a></li>
+<li><a target="_top" href="/hbase/hbase_quick_guide.htm">HBase - Quick Guide</a></li>
+<li><a target="_top" href="/hbase/hbase_useful_resources.htm">HBase - Useful Resources</a></li>
+<li><a target="_top" href="/hbase/hbase_discussion.htm">HBase - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>HBase Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="hbase_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="hbase_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>HBase Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>HBase</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label> What are the different commands used in Hbase operations?</label>
+<div class="toggle-content">
+<p>There are 5 atomic commands which carry out different operations by Hbase.</p>
+<p>Get, Put, Delete, Scan and Increment.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How to connect to Hbase?</label>
+<div class="toggle-content">
+<p>A connection to Hbase is established through Hbase Shell which is a Java API.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the role of Master server in Hbase?</label>
+<div class="toggle-content">
+<p>The Master server assigns regions to region servers and handles load balancing in the cluster.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the role of Zookeeper in Hbase?</label>
+<div class="toggle-content">
+<p>The zookeeper maintains configuration information, provides distributed synchronization, and also maintains the communication between clients and region servers.</p>
+</div>
+</section>
+<section class="toggle">
+<label> When do we need to disable a table in Hbase?</label>
+<div class="toggle-content">
+<p>In Hbase a table is disabled to allow it to be modified or change its settings. .When a table is disabled it cannot be accessed through the scan command.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Give a command to check if a table is disabled.</label>
+<div class="toggle-content">
+<p>Hbase &gt; is_disabled “table name”</p>
+</div>
+</section>
+<section class="toggle">
+<label> What does the following table do?<p></p>
+<p>hbase &gt; disable_all 'p.*'</p></label>
+<div class="toggle-content">
+<p>The command will disable all the table starting with the letter p</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different types of filters used in Hbase?</label>
+<div class="toggle-content">
+<p>Filters are used to get specific data form a Hbase table rather than all the records.</p>
+<p>They are of the following types.</p>
+<ul class="list">
+<li>Column Value Filter</li>
+<li>Column Value comparators</li>
+<li>KeyValue Metadata filters.</li>
+<li>RowKey filters.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Name three disadvantages Hbase has as compared to RDBMS?</label>
+<div class="toggle-content">
+<ul class="list">
+<li><p>Hbase does not have in-built authentication/permission mechanism</p></li>
+<li><p>The indexes can be created only on a key column, but in RDBMS it can be done in any column.</p></li>
+<li><p>With one HMaster node there is a  single point of failure.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are catalog tables in Hbase?</label>
+<div class="toggle-content">
+<p>The catalog tables in Hbase maintain the metadata information. They are named as &minus;ROOT&minus; and .META. The &minus;ROOT&minus; table stores information about location of .META&gt; table and the .META&gt; table holds information about all regions and their locations.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Is Hbase a scale out or scale up process?</label>
+<div class="toggle-content">
+<p>Hbase runs on top of Hadoop which is a distributed system. Haddop can only scale uo as and when required by adding more machines on the fly. So Hbase is a scale out process.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the step in writing something into  Hbase by a client?</label>
+<div class="toggle-content">
+<p>In Hbase the client does not write directly into the HFile. The client first writes to WAL(Write Access Log), which then is accessed by Memstore. The Memstore Flushes the data into permanent  memory from time to time.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is compaction in Hbase?</label>
+<div class="toggle-content">
+<p>As more and more data is written to Hbase, many HFiles get created. Compaction is the process of merging these HFiles to one file and after the merged file is created successfully, discard the old file.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different compaction types in Hbase?</label>
+<div class="toggle-content">
+<p>There are two types of compaction. Major and Minor compaction. In minor compaction, the adjacent small HFiles are merged to create a single HFile without removing the  deleted HFiles. Files to be merged are chosen randomly.</p>
+<p>In Major compaction, all the HFiles of a column are emerged and a single HFiles is created. The delted HFiles are discarded and it is generally triggered manually.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between the commands delete column and delete family?</label>
+<div class="toggle-content">
+<p>The Delete column command deletes all versions of a column but the delete family deletes all columns of a particular family.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a cell in Hbase?</label>
+<div class="toggle-content">
+<p>A cell in Hbase is the smallest unit of a Hbase table which holds a piece of data in the form of a tuple{row,column,version}</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the role of the class HColumnDescriptor in Hbase?</label>
+<div class="toggle-content">
+<p>This class is used to store  information about a column family such as the number of versions, compression settings, etc. It is used as input when creating a table or adding a column.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the lower bound of versions in Hbase?</label>
+<div class="toggle-content">
+<p>The lower bound of versions indicates the minimum number of versions to be stored in Hbase for a column. For example If the value is set to 3 then three latest version wil be maintained and the older ones will be removed.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is TTL (Time to live) in Hbase?</label>
+<div class="toggle-content">
+<p>TTL is a data retention technique using which the version of a cell can be preserved till a specific time period.Once that timestamp is reached the specific version will be removed.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Does Hbase support table joins?</label>
+<div class="toggle-content">
+<p>Hbase does not support table jons. But using a mapreduce job we can specify join queries to retrieve data from multiple Hbase tables.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a rowkey in Hbase?</label>
+<div class="toggle-content">
+<p>Each row in Hbase is identified by a unique byte of array called row key.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the two ways in which you can access data from Hbase?</label>
+<div class="toggle-content">
+<p>The data in Hbase can be accessed in two ways.</p>
+<ul class="list">
+<li><p>Using the rowkey and table scan for a range of row key values.</p></li>
+<li><p>Using mapreduce in a batch manner.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the two types of table design approach in Hbase?</label>
+<div class="toggle-content">
+<p>They are &minus; (i) Short and Wide (ii) Tall and Thin</p>
+</div>
+</section>
+<section class="toggle">
+<label> In which scenario should we consider creating a short and wide Hbase table?</label>
+<div class="toggle-content">
+<p>The short and wide table design is considered when there is</p>
+<ul class="list">
+<li><p>There is a small number of columns</p></li>
+<li><p>There is a large number of rows</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> In Which scenario should we consider a Tall-thin table design?</label>
+<div class="toggle-content">
+<p> The tall and thin table design is considered when there is</p>
+<ul class="list">
+<li><p>There is a large number of columns</p></li>
+<li><p>There is a small number of rows</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Give a command to store 4 versions in a table rather than the default 3.</label>
+<div class="toggle-content">
+<p>hbase &gt; alter 'tablename', {NAME =&gt; 'ColFamily', VERSIONS =&gt; 4}</p>
+</div>
+</section>
+<section class="toggle">
+<label> What does the following command do?<p></p>
+<pre class="prettyprint notranslate">
+hbase &gt; alter 'tablename', {NAME =&gt; 'colFamily', METHOD =&gt; 'delete'}
+</pre></label>
+<div class="toggle-content">
+<p>This command deletes the column family form the table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Give the commands to add a new column family “(newcolfamily”) to a table (“tablename”) which has a existing column family(“oldcolfamily”).</label>
+<div class="toggle-content">
+<pre class="prettyprint notranslate"> 
+Hbase &gt; disable ‘tablename’
+Hbase &gt; alter ‘tablename’ {NAME =&gt; ‘oldcolfamily’,NAME=&gt;’newcolfamily’}
+Habse &gt; enable ‘tablename’
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> What is the Hbase shell command to only 10 records form a table?</label>
+<div class="toggle-content">
+<pre class="prettyprint notranslate"> 
+scan 'tablename', {LIMIT=&gt;10,
+STARTROW=&gt;"start_row",
+STOPROW=&gt;"stop_row"}
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> What does the following command do?<p></p><p>major_compact 'tablename'</p></label>
+<div class="toggle-content">
+<p>Run a major compaction on the table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How does Hbase support Bulk data loading?</label>
+<div class="toggle-content">
+<p>There are two main steps to do a data bulk load in Hbase.</p>
+<ul class="list">
+<li><p>Generate Hbase data file(StoreFile) using a custom mapreduce job) from the data source. The StoreFile is created in Hbase internal format which can be efficiently loaded.</p></li>
+<li><p>The prepared file is imported using another tool like comletebulkload to import data into a running cluster. Each file gets loaded to one specific region.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> How does Hbase provide high availability?</label>
+<div class="toggle-content">
+<p>Hbase uses a feature called region replication. In this feature  for each region of a table, there will be multiple replicas that are opened in different RegionServers. The Load Balancer ensures that the region replicas are not co-hosted in the same region servers.</p>
+</div>
+</section>
+<section class="toggle">
+<label> what is HMaster?</label>
+<div class="toggle-content">
+<p>The Hmaster is the Master server responsible for monitoring all RegionServer instances in the cluster and it is the interface for all metadata changes. In a distributed cluster, it runs on the Namenode.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is HRegionServer in Hbase?</label>
+<div class="toggle-content">
+<p>HRegionServer is the RegionServer implementation. It is responsible for serving and managing regions. In a distributed cluster, a RegionServer runs on a DataNode.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different Block Caches in Hbase?</label>
+<div class="toggle-content">
+<p>HBase provides two different BlockCache implementations: the default on-heap LruBlockCache and the BucketCache, which is (usually) off-heap.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How does WAL help when a RegionServer crashes?</label>
+<div class="toggle-content">
+<p>The Write Ahead Log (WAL) records all changes to data in HBase, to file-based storage. if a RegionServer crashes or becomes unavailable before the MemStore is flushed, the WAL ensures that the changes to the data can be replayed.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why MultiWAL is needed?</label>
+<div class="toggle-content">
+<p>With a single WAL per RegionServer, the RegionServer must write to the WAL serially, because HDFS files must be sequential. This causes the WAL to be a performance bottleneck.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In Hbase what is log splitting?</label>
+<div class="toggle-content">
+<p>When a region is edited, the edits in the WAL file which belong to that region need to be replayed. Therefore, edits in the WAL file must be grouped by region so that particular sets can be replayed to regenerate the data in a particular region. The process of grouping the WAL edits by region is called log splitting.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can you disable WAL? What is the benefit?</label>
+<div class="toggle-content">
+<p>WAL can be disabled to improve performance bottleneck.</p>
+<p>This is done by calling the Hbase client field Mutation.writeToWAL(false).</p>
+</div>
+</section>
+<section class="toggle">
+<label> When do we do manula Region splitting?</label>
+<div class="toggle-content">
+<p>The manual region splitting is done we have an unexpected hotspot in your table because of many clients querying the same table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a Hbase Store?</label>
+<div class="toggle-content">
+<p>A Habse Store hosts a MemStore and 0 or more StoreFiles (HFiles). A Store corresponds to a column family for a table for a given region.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which file in Hbase is designed after the SSTable file of BigTable?</label>
+<div class="toggle-content">
+<p>The HFile in Habse which stores the Actual data(not metadata) is designed after the SSTable file of BigTable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we pre-create empty regions?</label>
+<div class="toggle-content">
+<p>Tables in HBase are initially created with one region by default. Then for bulk imports, all clients will write to the same region until it is large enough to split and become distributed across the cluster. So empty regions are created to make this process faster.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is hotspotting in Hbase?</label>
+<div class="toggle-content">
+<p>Hotspotting is asituation when a large amount of client traffic is directed at one node, or only a few nodes, of a cluster. This traffic may represent reads, writes, or other operations. This traffic overwhelms the single machine responsible for hosting that region, causing performance degradation and potentially leading to region unavailability.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the approaches to avoid hotspotting?</label>
+<div class="toggle-content">
+<p>Hotspotting can be avoided or minimized by distributing the rowkeys across multiple regions. The different techniques to do this is salting and Hashing.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why should we try to minimize the row name and column name sizes in Hbase?</label>
+<div class="toggle-content">
+<p>In Hbase values are always freighted with their coordinates; as a cell value passes through the system, it’ll be accompanied by its row, column name, and timestamp. If the rows and column names are large, especially compared to the size of the cell value, then indices that are kept on HBase storefiles (StoreFile (HFile)) to facilitate random access may end up occupying large chunks of the HBase allotted RAM than the data itself  because the cell value coordinates are large.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the scope of a rowkey in Habse?</label>
+<div class="toggle-content">
+<p>Rowkeys are scoped to ColumnFamilies. The same rowkey could exist in each ColumnFamily that exists in a table without collision.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the information stored in hbase:meta table?</label>
+<div class="toggle-content">
+<p>The Hbase:meta tables stores details of region in the system in the following format.</p>
+<p>info:regioninfo (serialized HRegionInfo instance for this region)</p>
+<p>info:server (server:port of the RegionServer containing this region)</p>
+<p>info:serverstartcode (start-time of the RegionServer process containing this region)</p>
+</div>
+</section><section class="toggle">
+<label> What is a Namespace in Hbase?</label>
+<div class="toggle-content">
+<p>A Namespace is a logical grouping of tables . It is similar to a database object in a Relational database system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do we get the complete list of columns that exist in a column Family?</label>
+<div class="toggle-content">
+<p>The complete list of columns in a column family can be obtained only querying all the rows for that column family.</p>
+</div>
+</section>
+<section class="toggle">
+<label> When the records are fetched form a Hbase tables, in which order are the sorted?</label>
+<div class="toggle-content">
+<p>The records fetched form Hbase are always sorted in the order of rowkey-&gt; column Family-&gt; column qualifier-&gt; tiestamp.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">hbase_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="hbase_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="hbase_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

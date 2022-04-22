@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Hadoop Mock Test - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="Hadoop Mock Test - This section presents you various set of Mock Tests related to Hadoop Framework.  You can download these sample mock tests at your local machine and solve offli"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/hadoop/hadoop_mock_test.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#39b9fa;
+}
+a.demo {
+    background:#39b9fa;
+}
+li.heading {
+    background:#39b9fa;
+}
+.course-box{background:#39b9fa}
+.home-intro-sub p{color:#39b9fa}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/hadoop/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/hadoop/images/hadoop-mini-logo.jpg" alt="Hadoop Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">Hadoop Tutorial</li>
+<li><a href="/hadoop/index.htm">Hadoop - Home</a></li>
+<li><a href="/hadoop/hadoop_big_data_overview.htm">Hadoop - Big Data Overview</a></li>
+<li><a href="/hadoop/hadoop_big_data_solutions.htm">Hadoop - Big Data Solutions</a></li>
+<li><a href="/hadoop/hadoop_introduction.htm">Hadoop - Introduction</a></li>
+<li><a href="/hadoop/hadoop_enviornment_setup.htm">Hadoop - Environment Setup</a></li>
+<li><a href="/hadoop/hadoop_hdfs_overview.htm">Hadoop - HDFS Overview</a></li>
+<li><a href="/hadoop/hadoop_hdfs_operations.htm">Hadoop - HDFS Operations</a></li>
+<li><a href="/hadoop/hadoop_command_reference.htm">Hadoop - Command Reference</a></li>
+<li><a href="/hadoop/hadoop_mapreduce.htm">Hadoop - MapReduce</a></li>
+<li><a href="/hadoop/hadoop_streaming.htm">Hadoop - Streaming</a></li>
+<li><a href="/hadoop/hadoop_multi_node_cluster.htm">Hadoop - Multi-Node Cluster</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Hadoop Useful Resources</li>
+<li><a  href="/hadoop/hadoop_questions_answers.htm">Hadoop - Questions and Answers</a></li>
+<li><a  href="/hadoop/hadoop_quick_guide.htm">Hadoop - Quick Guide</a></li>
+<li><a  href="/hadoop/hadoop_useful_resources.htm">Hadoop - Useful Resources</a></li>
+<li><a  href="/hadoop/hadoop_discussion.htm">Hadoop - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>Hadoop Mock Test</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="hadoop_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="hadoop_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>This section presents you various set of Mock Tests related to <b>Hadoop Framework</b>.  You can download these sample mock tests at your local machine and solve offline at your convenience. Every mock test is supplied with a mock test key to let you verify the final score and grade yourself.</p>
+<img src="/images/online_mock_tests.png" alt="Questions and Answers" />
+<a href="/hadoop/hadoop_mock_test.htm?min=1&max=32"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test I</button></a>
+<a href="/hadoop/hadoop_mock_test.htm?min=33&max=64"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test II</button></a>
+<a href="/hadoop/hadoop_mock_test.htm?min=65&max=96"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test III</button></a>
+<a href="/hadoop/hadoop_mock_test.htm?min=97&max=128"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test IV</button></a>
+<style>
+.B, .answer-sheet{
+   display:none !important;
+}
+.Q a{
+   pointer-events: none;
+   cursor: default;
+}
+</style>
+<h1>Hadoop Mock Test I </h1>
+<div class="QA">
+<div class="Q" id="Q1">
+<p><span>Q 1</span> - The concept using multiple machines to process data stored in distributed system is not new.</p>
+<p>The High-performance computing (HPC) uses many computing machines to process large volume of data stored in a storage area network (SAN). As compared to HPC, Hadoop</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Can process a larger volume of data.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Can run on a larger number of machines than HPC cluster.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Can process data faster under the same network bandwidth as compared to HPC.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Cannot run compute intensive jobs.</a></p>
+</div>
+<div class="A" id='A1'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('1')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q2">
+<p><span>Q 2</span> - Hadoop differs from volunteer computing in</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Volunteers donating CPU time and not network bandwidth.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Volunteers donating network bandwidth and not CPU time.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Hadoop cannot search for large prime numbers.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Only Hadoop can use mapreduce.</a></p>
+</div>
+<div class="A" id='A2'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('2')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q3">
+<p><span>Q 3</span> - As compared to RDBMS, Hadoop</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Has higher data Integrity.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Does ACID transactions</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - IS suitable for read and write many times</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Works better on unstructured and semi-structured data.</a></p>
+</div>
+<div class="A" id='A3'>
+<h3>Answer : D</h3>
+</div>
+ <div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('3')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q4">
+<p><span>Q 4</span> - What is the main problem faced while reading and writing data in parallel from multiple disks?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Processing high volume of data faster.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Combining data from multiple disks.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - The software required to do this task is extremely costly.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - The hardware required to do this task is extremely costly.</a></p>
+</div>
+<div class="A" id='A4'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('4')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q5">
+<p><span>Q 5</span> - Which of the following is true for disk drives over a period of time?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Data Seek time is improving faster than data transfer rate.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Data Seek time is improving more slowly than data transfer rate.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Data Seek time and data transfer rate are both increasing proportionately.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Only the storage capacity is increasing without increase in data transfer rate.</a></p>
+</div>
+<div class="A" id='A5'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('5')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q6">
+<p><span>Q 6</span> - Data locality feature in Hadoop means</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - store the same data across multiple nodes.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - relocate the data from one node to another.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - co-locate the data with the computing nodes.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Distribute the data across multiple nodes.</a></p>
+</div>
+<div class="A" id='A6'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('6')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q7">
+<p><span>Q 7</span> - Which of these provides a Stream processing system used in Hadoop ecosystem?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Solr</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Tez</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Spark</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Hive</a></p>
+</div>
+<div class="A" id='A7'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('7')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q8">
+<p><span>Q 8</span> - HDFS files are designed for</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Multiple writers and modifications at arbitrary offsets.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Only append at the end of file</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Writing into a file only once.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Low latency data access.</a></p>
+</div>
+<div class="A" id='A8'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('8')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q9">
+<p><span>Q 9</span> - A file in HDFS that is smaller than a single block size</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Cannot be stored in HDFS.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Occupies the full block's size.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Occupies only the size it needs and not the full block.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Can span over multiple blocks.</a></p>
+</div>
+<div class="A" id='A9'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('9')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q10">
+<p><span>Q 10</span> - HDFS block size is larger as compared to the size of the disk blocks so that </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Only HDFS files can be stored in the disk used.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - The seek time is maximum</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Transfer of a large files made of multiple disk blocks is not possible.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - A single file larger than the disk size can be stored across many disks in the cluster.</a></p>
+</div>
+<div class="A" id='A10'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('10')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q11">
+<p><span>Q 11</span> - In a Hadoop cluster, what is true for a HDFS block that is no longer available due to disk corruption or machine failure?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - It is lost for ever</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - It can be replicated form its alternative locations to other live machines.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - The namenode allows new client request to keep trying to read it.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - The Mapreduce job process runs ignoring the block and the data stored in it.</a></p>
+</div>
+<div class="A" id='A11'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('11')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q12">
+<p><span>Q 12</span> - Which utility is used for checking the health of a HDFS file system?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - fchk</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - fsck</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - fsch</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - fcks</a></p>
+</div>
+<div class="A" id='A12'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('12')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q13">
+<p><span>Q 13</span> - Which command lists the blocks that make up each file in the filesystem.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - hdfs fsck  / -files   -blocks</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - hdfs fsck  / -blocks  -files</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - hdfs fchk  / -blocks  -files</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - hdfs fchk  / -files  -blocks</a></p>
+</div>
+<div class="A" id='A13'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('13')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q14">
+<p><span>Q 14</span> - The datanode and namenode are respectiviley</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Master and worker nodes</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Worker and Master nodes </a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> -  Both are worker nodes</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None</a></p>
+</div>
+<div class="A" id='A14'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('14')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q15">
+<p><span>Q 15</span> - In the local disk of the namenode the files which are stored persistently are &minus;</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - namespace image and edit log</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - block locations and namespace image</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - edit log and block locations</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Namespace image, edit log and block locations.</a></p>
+</div>
+<div class="A" id='A15'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('15')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q16">
+<p><span>Q 16</span> - When a client communicates with the HDFS file system, it needs to communicate with</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - only the namenode</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - only the data node</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - both the namenode and datanode</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A16'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('16')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q17">
+<p><span>Q 17</span> - What mechanisms Hadoop uses to make namenode resilient to failure.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Take backup of filesystem metadata to a local disk and a remote NFS mount.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Store the filesystem metadata in cloud.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Use a machine with at least 12 CPUs</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Using expensive and reliable hardware.</a></p>
+</div>
+<div class="A" id='A17'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('17')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q18">
+<p><span>Q 18</span> - The main role of the secondary namenode is to</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Copy the filesystem metadata from primary namenode.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Copy the filesystem metadata from NFS stored by primary namenode</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Monitor if the primary namenode is up and running.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Periodically merge the namespace image with the edit log.</a></p>
+</div>
+<div class="A" id='A18'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('18')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q19">
+<p><span>Q 19</span> - For the frequently accessed HDFS files the blocks are cached in</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - the memory of the datanode</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - in the memory of the namenode</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Both A&amp;B</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - In the memory of the client application which requested the access to these files.</a></p>
+</div>
+<div class="A" id='A19'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('19')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q20">
+<p><span>Q 20</span> - User applications can instruct the namenode to cache the files by</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - adding cache file names to cache pool</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - adding cache config to cache pool</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - adding cache directive to cache pool</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - passing the file names as parameters to the cache pool</a></p>
+</div>
+<div class="A" id='A20'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('20')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q21">
+<p><span>Q 21</span> - In Hadoop 2.x release HDFS federation means</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Allowing namenodes to communicate with each other.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Allow a cluster to scale by adding more datanodes under one namenode.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Allow a cluster to scale by adding more namenodes.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Adding more physical memory to both namenode and datanode.</a></p>
+</div>
+<div class="A" id='A21'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('21')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q22">
+<p><span>Q 22</span> - Under HDFS federation</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Each namenode manages metadata of the entire filesystem.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Each namenode manages metadata of a portion of the filesystem.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Failure of one namenode causes loss of some metadata availability from the entire filesystem.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Each datanode registers with each namenode.</a></p>
+</div>
+<div class="A" id='A22'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('22')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q23">
+<p><span>Q 23</span> - The main goal of HDFS High availability is </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Faster creation of the replicas of primary namenode.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - To reduce the cycle time required to bring back a new primary namenode after existing primary fails.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Prevent data loss due to failure of primary namenode.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Prevent the primary namenode form becoming single point of failure.</a></p>
+</div>
+<div class="A" id='A23'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('23')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q24">
+<p><span>Q 24</span> - As part of the HDFS high availability a pair of primary namenodes are configured. What is true for them?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - When a client request comes, one of them chosen at random serves the request.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - One of them is active while the other one remains powered off.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Datanodes send block reports to only one of the namenodes.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - The standby node takes periodic checkpoints of active namenode’s namespace. </a></p>
+</div>
+<div class="A" id='A24'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('24')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q25">
+<p><span>Q 25</span> - Zookeeper ensures that </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - All the namenodes are actively serving the client requests</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Only one namenode is actively serving the client requests</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - A failover is triggered when any of the datanode fails.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - A failover can not be started by hadoop administrator.</a></p>
+</div>
+<div class="A" id='A25'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('25')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q26">
+<p><span>Q 26</span> - Under Hadoop High Availability, Fencing means</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Preventing a previously active namenode from start running again.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Preventing the start of a failover in the event of network failure with the active namenode.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Preventing the power down to the previously active namenode.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Preventing a  previously active namenode from writing to the edit log.</a></p>
+</div>
+<div class="A" id='A26'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('26')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q27">
+<p><span>Q 27</span> - Which of the following is not a fencing mechanism for a previously active namenode?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Disabling its network port via a remote management command.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Revoking its access to shared storage directory.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Formatting its disk drive.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - STONITH</a></p>
+</div>
+<div class="A" id='A27'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('27')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q28">
+<p><span>Q 28</span> - The property used to set the default filesystem for Hadoop in core-site.xml is-</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - filesystem.default</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - fs.default</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - fs.defaultFS</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - hdfs.default</a></p>
+</div>
+<div class="A" id='A28'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('28')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q29">
+<p><span>Q 29</span> - The default replication factor for HDFS file system in hadoop is</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 1</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 2</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - 3</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 4</a></p>
+</div>
+<div class="A" id='A29'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('29')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q30">
+<p><span>Q 30</span> - When running on a pseudo distributed mode the replication factor is set to</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 2</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - 1</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 0</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 3</a></p>
+</div>
+<div class="A" id='A30'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('30')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q31">
+<p><span>Q 31</span> - For a HDFS directory the replication factor(RF) is</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - same as the RF of the files in that directory</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Zero</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 3</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Does not apply.</a></p>
+</div>
+<div class="A" id='A31'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('31')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q32">
+<p><span>Q 32</span> - The following is not permitted on HDFS files</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Deleting</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Renaming</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Moving</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Executing.</a></p>
+</div>
+<div class="A" id='A32'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('32')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>   <h1 class="answer-sheet">Answer Sheet</h1>
+   <table class="table table-bordered">
+   <tr>
+   <th style="width:50%;">Question Number</th>
+   <th style="width:50%;">Answer Key</th>
+   </tr>      <tr>
+      <td>1</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>2</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>3</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>4</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>5</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>6</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>7</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>8</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>9</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>10</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>11</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>12</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>13</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>14</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>15</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>16</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>17</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>18</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>19</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>20</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>21</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>22</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>23</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>24</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>25</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>26</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>27</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>28</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>29</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>30</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>31</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>32</td>
+      <td>D</td>
+      </tr></table><div class="download-btn">
+<a target="_blank" href="/hadoop/pdf/hadoop_mock_test_i.pdf"><i class="fa fa-download"></i> Download</a>
+</div>
+<script type="text/javascript" src="/theme/js/exams.js"></script>
+<div class="parent-file">hadoop_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="hadoop_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="hadoop_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

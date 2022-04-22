@@ -1,0 +1,162 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Online Trace Route</title>
+<meta name="Description" content="Online Trace Route (Traces the route of packets to destination host from our server) - A free online collection of network and website penetration testing tools including port scan, information gathering, ping, traceout, DNS Lookup, Reverse Lookup, Whois Record, Proxy Checker, IP Location, IP Detail." />
+<meta name="Keywords" content="Online, Ping, Tool, Free,  Collection,  Network, Website,  Penetration,  Testing,  Port scan, information gathering, ping, traceout, DNS Lookup, Reverse Lookup, Whois Record, Proxy Checker, IP Location, IP Detail."/>
+<base href="https://www.tutorialspoint.com/" /> 
+<script src="themes/js/jquery.min.js"></script>
+<script src="themes/easyui/jquery.easyui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="themes/css/gray/easyui.css">
+<link rel="stylesheet" type="text/css" href="themes/css/icon.css">
+<link rel="stylesheet" type="text/css" href="themes/css/tools-common.css">
+</head>
+<body class="easyui-layout" id="cc">
+<div id="loading"></div>
+<div data-options="region:'north'" style="height:65px; width:100%;overflow:hidden;background:url(/images/top_bg.png);">
+<a href='https://www.tutorialspoint.com/'>
+<img src="green/images/logo.png" style="height:50px;padding:5px;float:left;" alt="Tutorials Point"/>
+</a>
+<h1 class="main-title">Traceroute Servers</h1>
+<div class="easyui-panel,border:false" style="margin:18px 0px 0px 0px; float:right;">
+<a id="help" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-help', plain:true" style="float:right">Help</a>
+<a id="tutorials" target="_blank" href="https://www.tutorialspoint.com/tutorialslibrary.htm" class="easyui-linkbutton" data-options="iconCls:'icon-library', plain:true" style="float:right; position:relative; top:-1px;">Tutorials</a>
+<a id="codingground" href="https://www.tutorialspoint.com/codingground.htm" class="easyui-linkbutton l-btn l-btn-small l-btn-plain" data-options="iconCls:'', plain:true" style="font-size:12px;float:right; position:relative; top:-1px;"><i class="fa-code"></i> Coding Ground</a>
+<a id="system" href="#" class="easyui-menubutton" data-options="menu:'#mm5', plain:true, iconCls:'icon-tools'" style="float:right">Dev Tools</a>
+</div>
+<div id="mm5" style="width:200px;">
+   <div data-options="plain:true, iconCls:'icon-image-optimizer'"><a href="http://www.tutorialspoint.com/online_image_optimizer.htm" style="color:#424242;text-decoration:none;">Online Image Optimizer</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-image-editor'"><a href="http://www.tutorialspoint.com/online_latex_editor.php" style="color:#424242;text-decoration:none;">Online LaTex Editor</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-sum'"><a href="http://www.tutorialspoint.com/latex_equation_editor.htm" style="color:#424242;text-decoration:none;">LaTex Equation Editor</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-whiteboard'"><a href="http://www.tutorialspoint.com/whiteboard.htm" style="color:#424242;text-decoration:none;" title="Web Collaboration Whiteboard">Whiteboard</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-image-editor'"><a href="http://www.tutorialspoint.com/online_image_editor.htm" style="color:#424242;text-decoration:none;">Online Image Editor</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-xml'"><a href="http://www.tutorialspoint.com/online_xml_editor.htm" style="color:#424242;text-decoration:none;">Online XML Editor</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-json'"><a href="http://www.tutorialspoint.com/online_json_editor.htm" style="color:#424242;text-decoration:none;">Online JSON Editor</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-refresh'"><a href="http://www.tutorialspoint.com/online_file_conversion.htm" style="color:#424242;text-decoration:none;">File Conversion</a></div>
+   <div class="menu-sep"></div>
+   <div data-options="plain:true, iconCls:'icon-project'"><a href="http://www.tutorialspoint.com/online_dev_tools.htm" style="color:#424242;text-decoration:none;">More Tools...</a></div>
+</div></div>
+<div id="center" data-options="region:'center'">
+   <div class="srch-inp">
+      <h1>Trace Route a Server Destination</h1>
+      <h3>Traces the route of packets to destination host from our server</h3>
+      <input type="text" name="txtUrl" id="txtUrl" class="search-url" placeholder="Enter domain name or IP address">
+      <span class="srch-btn">
+         <button type="submit" id="btnGo" name='btnGo' value="Go">GO</button>
+      </span>   
+      <div id="result" class="result" style="width:90.0%; white-space: normal;margin:0px auto; padding:7px; margin-top:20px; text-align:left !important; height:80% !important;"></div> 
+   </div>
+</div>
+<div data-options="region:'west', split:false" style="padding:0px;width:0px" id="left"><!-- STAGE STARTS -->
+</div>
+<!--EAST STARTS -->
+<div id="east" data-options="region:'east',iconCls:'icon-library', title:'Tutorials', split:true" style="overflow: hidden; width: 110px; background: rgb(142, 142, 142);" title="" class="panel-body layout-body">
+   <a href="/cplusplus/index.htm" title="Learn C++" target="_blank">
+   <img style="width:100px; height:80px;" src="/images/cplusplus_icon.png" alt="Learn C++">
+   </a>
+   <a href="/java/index.htm" title="Learn Java" target="_blank">
+   <img style="width:100px; height:80px;" src="/images/java_icon.png" alt="Learn Java">
+   </a>
+   <a href="/python/index.htm" title="Learn Python" target="_blank">
+   <img style="width:100px; height:80px;" src="/images/python_icon.png" alt="Learn Python">
+   </a>
+   <a href="/ruby/index.htm" title="Learn Ruby" target="_blank">
+   <img style="width:100px; height:80px;" src="/images/ruby_icon.png" alt="Learn Ruby">
+   </a>
+   <a href="/swift/index.htm" title="Learn Swift Programming" target="_blank">
+   <img style="width:100px; height:80px;" src="/images/swift_icon.png" alt="Learn Swift Programming">
+   </a>
+   <a href="/scala/index.htm" title="Learn Scala" target="_blank">
+   <img style="width:100px; height:80px;" src="/images/scala_icon.png" alt="Learn Scala">
+   </a>
+</div>
+<!--EAST ENDS -->
+<!--BOTTOM STARTS -->
+<div id="south" data-options="region:'south'" style="overflow:hidden;">
+<div class="simple-ad">
+      <div class="logo"><a href="index.htm"> <img alt="Tutorials Point" class="img-responsive" src="/scripts/img/logo-footer.png" style="width:60px; height:60px;"> </a></div>
+      <ul>
+         <li><a href="/about/about_privacy.htm">Privacy Policy</a></li>         
+         <li><a href="/about/about_privacy.htm#cookies">Cookies Policy</a></li>
+         <li><a href="/about/about_terms_of_use.htm">Terms of Use</a></li>
+         <li style="border-right:none;"><a href="/about/contact_us.htm">Contact</a></li>      </ul>
+      <div class="cprght">©Copyright 2020. All Rights Reserved.</div>
+      <div style="float:right; padding:25px 0px 0px 0px;"> <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('http://www.facebook.com/sharer.php?u=' + 'http://www.tutorialspoint.com/online_dev_tools.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/facebookIcon.jpg" alt="img">
+         </a>         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('http://twitter.com/share?url=' + 'http://www.tutorialspoint.com/online_dev_tools.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;"><img src="/images/twitterIcon.jpg" alt="img"></a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://www.linkedin.com/cws/share?url=' + 'http://www.tutorialspoint.com/online_dev_tools.htm&amp;title=Online Developers Tools','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/linkedinIcon.jpg" alt="img"></a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://plus.google.com/share?url=http://www.tutorialspoint.com/online_dev_tools.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;"><img src="/images/googlePlusIcon.jpg" alt="img">
+         </a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('http://www.stumbleupon.com/submit?url=http://www.tutorialspoint.com/online_dev_tools.htm&amp;title=Online Developers Tools','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/StumbleUponIcon.jpg" alt="img">
+         </a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('http://reddit.com/submit?url=http://www.tutorialspoint.com/online_dev_tools.htm&amp;title=Online Developers Tools','sharer','toolbar=0,status=0,width=626,height=656,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/reddit.jpg" alt="img">
+         </a>
+      </div>
+   </div>
+</div>
+<!--BOTTOM ENDS -->
+<!-- STAGE ENDS -->
+<script>
+$(document).ready(function() {
+  function trace_route(){
+    var url = "https://tools.tutorialspoint.com/trace_route_ajax.php";
+    if( !$("#txtUrl").val() ){
+        $.messager.alert('Alert', "Please enter either a domain name or IP address").window({  width:300, height:120 });
+        return;
+    }
+
+    var inputs = {'host': $("#txtUrl").val()};
+      $.ajax({
+         type: "GET",
+         data:inputs,
+         url: url,
+         beforeSend: function(  ) {
+            $("#result").hide();
+            $("#loading").css({"visibility":"visible"});
+            $("#txtUrl").css({"readonly":"true"});
+         },
+         success:function(data) {
+            $("#result").html( data );
+            $("#loading").css({"visibility":"hidden"});
+            $("#result").show();
+            $("#txtUrl").css({"readonly":"false"});
+            var i = 1;
+            setInterval(function() {
+                $('#string'+i).show();
+                i++;
+            }, 200);
+         }
+      });
+   }
+   $("#btnGo").click(function(){
+      trace_route();
+   });
+   $('#txtUrl').keypress(function(event){
+      var keycode = (event.keyCode ? event.keyCode : event.which);
+      if(keycode == '13'){
+         trace_route();
+      }
+  });
+  $("#loading").css({"visibility":"hidden"});
+  $("body#cc").css({"visibility":"visible"});
+});
+</script>
+<script src="https://www.google-analytics.com/urchin.js">
+</script>
+<script type="text/javascript">
+_uacct = "UA-232293-6";
+urchinTracker();
+</script>
+</body>
+</html>

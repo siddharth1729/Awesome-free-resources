@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>DSA Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="DSA Interview Questions - Dear readers, these Data Structures & Algorithms Interview Questions have been designed specially to get you acquainted with the nature of questions you may enc"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/data_structures_algorithms/data_structures_algorithms_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#cd3300;
+}
+a.demo {
+    background:#cd3300;
+}
+li.heading {
+    background:#cd3300;
+}
+.course-box{background:#cd3300}
+.home-intro-sub p{color:#cd3300}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/data_structures_algorithms/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/data_structures_algorithms/images/data-structure-mini-logo.jpg" alt="Data Structures & Algorithms Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">Data Structures &amp; Algorithms</li>
+<li><a href="/data_structures_algorithms/index.htm">DSA - Home</a></li>
+<li><a href="/data_structures_algorithms/data_structure_overview.htm">DSA - Overview</a></li>
+<li><a href="/data_structures_algorithms/data_structure_environment.htm">DSA - Environment Setup</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Algorithm</li>   
+<li><a href="/data_structures_algorithms/algorithms_basics.htm">DSA - Algorithms Basics</a></li>
+<li><a href="/data_structures_algorithms/asymptotic_analysis.htm">DSA - Asymptotic Analysis</a></li>
+<li><a href="/data_structures_algorithms/greedy_algorithms.htm">DSA - Greedy Algorithms</a></li>
+<li><a href="/data_structures_algorithms/divide_and_conquer.htm">DSA - Divide and Conquer</a></li>
+<li><a href="/data_structures_algorithms/dynamic_programming.htm">DSA - Dynamic Programming</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Data Structures</li>
+<li><a href="/data_structures_algorithms/data_structures_basics.htm">DSA - Data Structure Basics</a></li>
+<li><a href="/data_structures_algorithms/array_data_structure.htm">DSA - Array Data Structure</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Linked Lists</a></li>
+<li><a href="/data_structures_algorithms/linked_list_algorithms.htm">DSA - Linked List Basics</a></li>
+<li><a href="/data_structures_algorithms/doubly_linked_list_algorithm.htm">DSA - Doubly Linked List</a></li>
+<li><a href="/data_structures_algorithms/circular_linked_list_algorithm.htm">DSA - Circular Linked List</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Stack &amp; Queue</li>
+<li><a href="/data_structures_algorithms/stack_algorithm.htm">DSA - Stack</a></li>
+<li><a href="/data_structures_algorithms/expression_parsing.htm">DSA - Expression Parsing</a></li>
+<li><a href="/data_structures_algorithms/dsa_queue.htm">DSA - Queue</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Searching Techniques</li>
+<!--<li style="background:yellow;"><a href="/data_structures_algorithms/searching_algorithms.htm">DSA - Searching Algorithms</a></li>-->
+<li><a href="/data_structures_algorithms/linear_search_algorithm.htm">DSA - Linear Search</a></li>
+<li><a href="/data_structures_algorithms/binary_search_algorithm.htm">DSA - Binary Search</a></li>
+<li><a href="/data_structures_algorithms/interpolation_search_algorithm.htm">DSA - Interpolation Search</a></li>
+<li><a href="/data_structures_algorithms/hash_data_structure.htm">DSA - Hash Table</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Sorting Techniques</li>
+<li><a href="/data_structures_algorithms/sorting_algorithms.htm">DSA - Sorting Algorithms</a></li>
+<li><a href="/data_structures_algorithms/bubble_sort_algorithm.htm">DSA - Bubble Sort</a></li>
+<li><a href="/data_structures_algorithms/insertion_sort_algorithm.htm">DSA - Insertion Sort</a></li>
+<li><a href="/data_structures_algorithms/selection_sort_algorithm.htm">DSA - Selection Sort</a></li>
+<li><a href="/data_structures_algorithms/merge_sort_algorithm.htm">DSA - Merge Sort</a></li>
+<li><a href="/data_structures_algorithms/shell_sort_algorithm.htm">DSA - Shell Sort</a></li>
+<li><a href="/data_structures_algorithms/quick_sort_algorithm.htm">DSA - Quick Sort</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Graph Data Structure</li>
+<li><a href="/data_structures_algorithms/graph_data_structure.htm">DSA - Graph Data Structure</a></li>
+<li><a href="/data_structures_algorithms/depth_first_traversal.htm">DSA - Depth First Traversal</a></li>
+<li><a href="/data_structures_algorithms/breadth_first_traversal.htm">DSA - Breadth First Traversal</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Tree Data Structure</li>
+<li><a href="/data_structures_algorithms/tree_data_structure.htm">DSA - Tree Data Structure</a></li>
+<li><a href="/data_structures_algorithms/tree_traversal.htm">DSA - Tree Traversal</a></li>
+<li><a href="/data_structures_algorithms/binary_search_tree.htm">DSA - Binary Search Tree</a></li>
+<li><a href="/data_structures_algorithms/avl_tree_algorithm.htm">DSA - AVL Tree</a></li>
+<li><a href="/data_structures_algorithms/spanning_tree.htm">DSA - Spanning Tree</a></li>
+<li><a href="/data_structures_algorithms/heap_data_structure.htm">DSA - Heap</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Recursion</li>
+<li><a href="/data_structures_algorithms/recursion_basics.htm">DSA - Recursion Basics</a></li>
+<li><a href="/data_structures_algorithms/tower_of_hanoi.htm">DSA - Tower of Hanoi</a></li>
+<li><a href="/data_structures_algorithms/fibonacci_series.htm">DSA - Fibonacci Series</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">DSA Useful Resources</li>
+<li><a href="/data_structures_algorithms/data_structures_algorithms_questions_answers.htm">DSA - Questions and Answers</a></li>
+<li><a href="/data_structures_algorithms/dsa_quick_guide.htm">DSA - Quick Guide</a></li>
+<li><a href="/data_structures_algorithms/dsa_useful_resources.htm">DSA - Useful Resources</a></li>
+<li><a href="/data_structures_algorithms/dsa_discussion.htm">DSA - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>DSA Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="data_structures_algorithms_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="data_structures_algorithms_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>Data Structures &amp; Algorithms Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>Data Structures &amp; Algorithms</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label> What is data-structure?</label>
+<div class="toggle-content">
+<p>Data structure is a way of defining, storing &amp; retriving of data in a structural &amp; systemetic way. A data structure may contain different type of data items.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are various data-structures available?</label>
+<div class="toggle-content">
+<p>Data structure availability may vary by programming languages. Commonly available data structures are list, arrays, stack, queues, graph, tree etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is algorithm?</label>
+<div class="toggle-content">
+<p>Algorithm is a step by step procedure, which defines a set of instructions to be executed in certain order to get the desired output.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why we need to do algorithm analysis?</label>
+<div class="toggle-content">
+<p>A problem can be solved in more than one ways. So, many solution algorithms can be derived for a given problem. We analyze available algorithms to find and implement the best suitable algorithm.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the criteria of algorithm analysis?</label>
+<div class="toggle-content">
+<p>An algorithm are generally analyzed on two factors &minus; time and space. That is, how much <b>execution</b> time and how much <b>extra space</b> required by the algorithm.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is asymptotic analysis of an algorithm?</label>
+<div class="toggle-content">
+<p>Asymptotic analysis of an algorithm, refers to defining the mathematical boundation/framing of its run-time performance. Using asymptotic analysis, we can very well conclude the best case, average case and worst case scenario of an algorithm.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are asymptotic notations?</label>
+<div class="toggle-content">
+<p>Asymptotic analysis can provide three levels of mathematical binding of execution time of an algorithm &minus;</p>
+<ul class="list">
+<li>Best case is represented by &Omega;(n) notation.</li>
+<li>Worst case is represented by &Omicron;(n) notation.</li>
+<li>Average case is represented by &Theta;(n) notation.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is linear data structure?</label>
+<div class="toggle-content">
+<p>A linear data-structure has sequentially arranged data items. The next time can be located in the next memory address. It is stored and accessed in a sequential manner.  Array and list are example of linear data structure.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are common operations that can be performed on a data-structure?</label>
+<div class="toggle-content">
+<p>The following operations are commonly performed on any data-structure &minus;</p>
+<ul class="list">
+<li><p><b>Insertion</b> &minus; adding a data item</p></li>
+<li><p><b>Deletion</b> &minus; removing a data item</p></li>
+<li><p><b>Traversal</b> &minus; accessing and/or printing all data items</p></li>
+<li><p><b>Searching</b> &minus; finding a particular data item</p></li>
+<li><p><b>Sorting</b> &minus; arranging data items in a pre-defined sequence</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Briefly explain the approaches to develop algorithms.</label>
+<div class="toggle-content">
+<p>There are three commonly used approaches to develop algorithms &minus;</p>
+<ul class="list">
+<li><p><b>Greedy Approach</b> &minus; finding solution by choosing next best option</p></li>
+<li><p><b>Divide and Conquer</b> &minus; diving the problem to a minimum possible sub-problem and solving them independently</p></li>
+<li><p><b>Dynamic Programming</b> &minus; diving the problem to a minimum possible sub-problem and solving them combinedly</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Give some examples greedy algorithms.</label>
+<div class="toggle-content">
+<p>The below given problems find their solution using greedy algorithm approach &minus;</p>
+<ul class="list">
+<li>Travelling Salesman Problem</li>
+<li>Prim's Minimal Spanning Tree Algorithm</li>
+<li>Kruskal's Minimal Spanning Tree Algorithm</li>
+<li>Dijkstra's Minimal Spanning Tree Algorithm</li>
+<li>Graph - Map Coloring</li>
+<li>Graph - Vertex Cover</li>
+<li>Knapsack Problem</li>
+<li>Job Scheduling Problem</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are some examples of divide and conquer algorithms?</label>
+<div class="toggle-content">
+<p>The below given problems find their solution using divide and conquer algorithm approach &minus;</p>
+<ul class="list">
+<li>Merge Sort</li>
+<li>Quick Sort</li> 
+<li>Binary Search</li>
+<li>Strassen's Matrix Multiplication</li>
+<li>Closest pair (points)</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are some examples of dynamic programming algorithms?</label>
+<div class="toggle-content">
+<p>The below given problems find their solution using divide and conquer algorithm approach &minus;</p>
+<ul class="list">
+<li>Fibonacci number series</li>
+<li>Knapsack problem</li>
+<li>Tower of Hanoi</li>
+<li>All pair shortest path by Floyd-Warshall</li>
+<li>Shortest path by Dijkstra</li>
+<li>Project scheduling</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a linked-list?</label>
+<div class="toggle-content">
+<p>A linked-list is a list of data-items connected with links i.e. pointers or references. Most modern high-level programming language does not provide the feature of directly accessing memory location, therefore, linked-list are not supported in them or available in form of inbuilt functions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is stack?</label>
+<div class="toggle-content">
+<p>In data-structure, stack is an Abstract Data Type (ADT) used to store and retrieve values in Last In First Out method.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use stacks?</label>
+<div class="toggle-content">
+<p>Stacks follows LIFO method and addition and retrieval of a data item takes only &Omicron;(n) time. Stacks are used where we need to access data in the reverse order or their arrival. Stacks are used commonly in recursive function calls, expression parsing, depth first traversal of graphs etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What operations can be performed on stacks?</label>
+<div class="toggle-content">
+<p>The below operations can be performed on a stack &minus;</p>
+<ul class="list">
+<li><p><b>push()</b> &minus; adds an item to stack</p></li>
+<li><p><b>pop()</b> &minus; removes the top stack item</p></li>
+<li><p><b>peek()</b> &minus; gives value of top item without removing it</p></li>
+<li><p><b>isempty()</b> &minus; checks if stack is empty</p></li>
+<li><p><b>isfull()</b> &minus; checks if stack is full</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a queue in data-structure?</label>
+<div class="toggle-content">
+<p>Queue is an abstract data structure, somewhat similar to stack. In contrast to stack, queue is opened at both end. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use queues?</label>
+<div class="toggle-content">
+<p>As queues follows FIFO method, they are used when we need to work on data-items in exact sequence of their arrival. Every operating system maintains queues of various processes. Priority queues and breadth first traversal of graphs are some examples of queues.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What operations can be performed on Queues?</label>
+<div class="toggle-content">
+<p>The below operations can be performed on a stack &minus;</p>
+<ul class="list">
+<li><p><b>enqueue()</b> &minus; adds an item to rear of the queue</p></li>
+<li><p><b>dequeue()</b> &minus; removes the item from front of the queue</p></li>
+<li><p><b>peek()</b> &minus; gives value of front item without removing it</p></li>
+<li><p><b>isempty()</b> &minus; checks if stack is empty</p></li>
+<li><p><b>isfull()</b> &minus; checks if stack is full</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is linear searching?</label>
+<div class="toggle-content">
+<p>Linear search tries to find an item in a sequentially arranged data type. These sequentially arranged data items known as array or list, are accessible in incrementing memory location. Linear search compares expected data item with each of data items in list or array. The average case time complexity of linear search is &Omicron;(n) and worst case complexity is &Omicron;(n<sup>2</sup>). Data in target arrays/lists need not to be sorted.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is binary search?</label>
+<div class="toggle-content">
+<p>A binary search works only on sorted lists or arrays. This search selects the middle which splits the entire list into two parts. First the middle is compared.</p>
+<p>This search first compares the target value to the mid of the list. If it is not found, then it takes decision on whether.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is bubble sort and how bubble sort works?</label>
+<div class="toggle-content">
+<p>Bubble sort is comparison based algorithm in which each pair of adjacent elements is compared and elements are swapped if they are not in order. Because the time complexity is &Omicron;(n<sup>2</sup>), it is not suitable for large set of data.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Tell me something about 'insertion sort'?</label>
+<div class="toggle-content">
+<p>Insertion sort divides the list into two sub-list, sorted and unsorted. It takes one element at time and finds it appropriate location in sorted sub-list and insert there.  The output after insertion is a sorted sub-list. It iteratively works on all the elements of unsorted sub-list and inserts them to sorted sub-list in order.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is selection sort?</label>
+<div class="toggle-content">
+<p>Selection sort is in-place sorting technique. It divides the data set into two sub-lists: sorted and unsorted. Then it selects the minimum element from unsorted sub-list and places it into the sorted list. This iterates unless all the elements from unsorted sub-list are consumed into sorted sub-list.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How insertion sort and selection sorts are different?</label>
+<div class="toggle-content">
+<p>Both sorting techniques maintains two sub-lists, sorted and unsorted and both take one element at a time and places it into sorted sub-list. Insertion sort works on the current element in hand and places it in the sorted array at appropriate location maintaining the properties of insertion sort. Whereas, selection sort searches the minimum from the unsorted sub-list and replaces it with the current element in hand.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is merge sort and how it works?</label>
+<div class="toggle-content">
+<p>Merge sort is sorting algorithm based on divide and conquer programming approach. It keeps on dividing the list into smaller sub-list until all sub-list has only 1 element.  And then it merges them in a sorted way until all sub-lists are consumed. It has run-time complexity of &Omicron;(n log n) and it needs &Omicron;(n) auxiliary space.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is shell sort?</label>
+<div class="toggle-content">
+<p>Shell sort can be said a variant of insertion sort. Shell sort divides the list into smaller sublist based on some <b>gap</b> variable and then each sub-list is sorted using insertion sort. In best cases, it can perform upto &Omicron;(n log n).</p>
+</div>
+</section>
+<section class="toggle">
+<label> How quick sort works?</label>
+<div class="toggle-content">
+<p>Quick sort uses divide and conquer approach. It divides the list in smaller 'partitions' using 'pivot'. The values which are smaller than the pivot are arranged in the left partition and greater values are arranged in the right partition. Each partition is recursively sorted using quick sort.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a graph?</label>
+<div class="toggle-content">
+<p>A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How depth first traversal works?</label>
+<div class="toggle-content">
+<p>Depth First Search algorithm(DFS) traverses a graph in a depthward motion and uses a stack to remember to get the next vertex to start a search when a dead end occurs in any iteration.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How breadth first traversal works?</label>
+<div class="toggle-content">
+<p>Breadth First Search algorithm(BFS) traverses a graph in a breadthwards motion and uses a queue to remember to get the next vertex to start a search when a dead end occurs in any iteration.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a tree?</label>
+<div class="toggle-content">
+<p>A tree is a minimally connected graph having no loops and circuits.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a binary tree?</label>
+<div class="toggle-content">
+<p>A binary tree has a special condition that each node can have two children at maximum.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a binary search tree?</label>
+<div class="toggle-content">
+<p>A binary search tree is a binary tree with a special provision where a node's left child must have value less than its parent's value and node's right child must have value greater than it's parent value.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is tree traversal?</label>
+<div class="toggle-content">
+<p>Tree traversal is a process to visit all the nodes of a tree. Because, all nodes are connected via edges (links) we always start from the root (head) node. There are three ways which we use to traverse a tree &minus;</p>
+<ul class="list">
+<li>In-order Traversal</li>
+<li>Pre-order Traversal</li>   
+<li>Post-order Traversal</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> See the below image of a binary search tree, and traverse it using all available methods &minus;
+<img src="/data_structures_algorithms/images/binary_search_tree.jpg" alt="Tree Traversal" /></label>
+<div class="toggle-content">
+<ul class="list">
+<li>In-order traversal &minus; 10 14 19 27 31 35 42</li>
+<li>Pre-order traversal &minus; 27 14 10 19 35 31 42</li>
+<li>Post-order traversal &minus; 10 19 14 31 42 35 27</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is an AVL Tree?</label>
+<div class="toggle-content">
+<p>AVL trees are height balancing binary search tree. AVL tree checks the height of left and right sub-trees and assures that the difference is not more than 1. This difference is called Balance Factor.</p>
+<pre class="result notranslate">
+BalanceFactor = height(left-sutree) − height(right-sutree)
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> What is a spanning tree?</label>
+<div class="toggle-content">
+<p>A spanning tree is a subset of Graph G, which has all the vertices covered with minimum possible number of edges. A spanning tree does not have cycles and it can not be disconnected.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How many spanning trees can a graph has?</label>
+<div class="toggle-content">
+<p>It depends on how connected the graph is. A complete undirected graph can have maximum n<sup>n-1</sup> number of spanning trees, where n is number of nodes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How Kruskal's algorithm works?</label>
+<div class="toggle-content">
+<p>This algorithm treats the graph as a forest and every node it as an individual tree. A tree connects to another only and only if it has least cost among all available options and does not violate MST properties.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How Prim's algorithm finds spanning tree?</label>
+<div class="toggle-content">
+<p>Prim's algorithm treats the nodes as a single tree and keeps on adding new nodes to the spanning tree from the given graph.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a minimum spanning tree (MST)?</label>
+<div class="toggle-content">
+<p>In a weighted graph, a minimum spanning tree is a spanning tree that has minimum weight that all other spanning trees of the same graph.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a heap in data structure?</label>
+<div class="toggle-content">
+<p>Heap is a special balanced binary tree data structure where root-node key is compared with its children and arranged accordingly. A min-heap, a parent node has key value less than its childs and a max-heap parent node has value greater than its childs.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a recursive function?</label>
+<div class="toggle-content">
+<p>A recursive function is one which calls itself, directly or calls a function that in turn calls it. Every recursive function follows the recursive properties &minus; <b>base criteria</b> where functions stops calling itself and <b>progressive approach</b> where the functions tries to meet the base criteria in each iteration.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is tower of hanoi?</label>
+<div class="toggle-content">
+<p>Tower of Hanoi, is a mathematical puzzle which consists of three tower (pegs) and more than one rings. All rings are of different size and stacked upon each other where the large disk is always below the small disk. The aim is to move the tower of disk from one peg to another, without breaking its properties.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is fibonacci series?</label>
+<div class="toggle-content">
+<p> Fibonacci Series generates subsequent number by adding two previous numbers. For example &minus; 0 1 1 2 3 5 8 13.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is hashing?</label>
+<div class="toggle-content">
+<p>Hashing is a technique to convert a range of key values into a range of indexes of an array. By using hash tables, we can create an associative data storage where data index can be find by providing its key values.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is interpolation search technique?</label>
+<div class="toggle-content">
+<p>Interpolation search is an improved variant of binary search. This search algorithm works on the probing position of required value.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the prefix and post fix notation of (a + b) * (c + d) ?</label>
+<div class="toggle-content">
+<p>Prefix Notation  &minus; * + a b + c d</p>
+<p>Postfix Notation &minus; a b + c d + *</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">data_structures_algorithms_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="data_structures_algorithms_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="data_structures_algorithms_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

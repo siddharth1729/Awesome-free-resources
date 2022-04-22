@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SAP FICO Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SAP FICO Interview Questions - Dear readers, these SAP FICO Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your i"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sap_fico/sap_fico_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#1c397f;
+}
+a.demo {
+    background:#1c397f;
+}
+li.heading {
+    background:#1c397f;
+}
+.course-box{background:#1c397f}
+.home-intro-sub p{color:#1c397f}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sap_fico/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sap_fico/images/sap-fico-mini-logo.jpg" alt="SAP FICO Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">SAP FICO Tutorial</li>
+<li><a href="/sap_fico/index.htm">SAP FICO - Home</a></li>
+<li><a href="/sap_fico/sap_fi_overview.htm">SAP FI - Overview</a></li>
+<li><a href="/sap_fico/sap_fi_submodules.htm">SAP FI - Submodules</a></li>
+<li><a href="/sap_fico/sap_fi_company_basics.htm">SAP FI - Company Basics</a></li>
+<li><a href="/sap_fico/sap_fi_define_business_area.htm">SAP FI - Define Business Area</a></li>
+<li><a href="/sap_fico/sap_fi_define_functional_area.htm">SAP FI - Define Functional Area</a></li>
+<li><a href="/sap_fico/sap_define_credit_control.htm">SAP FI - Define Credit Control</a></li>
+<li><a href="/sap_fico/sap_fi_general_ledger.htm">SAP FI - General Ledger</a></li>
+<li><a href="/sap_fico/sap_fi_coa_group.htm">SAP FI - COA Group</a></li>
+<li><a href="/sap_fico/sap_fi_retained_earnings_account.htm">SAP FI - Retained Earnings Account</a></li>
+<li><a href="/sap_fico/sap_fi_gl_account.htm">SAP FI - G/L Account</a></li>
+<li><a href="/sap_fico/sap_fi_block_gl_account.htm">SAP FI - Block G/L Account</a></li>
+<li><a href="/sap_fico/sap_fi_delete_gl_account.htm">SAP FI - Deleting G/L Accounts</a></li>
+<li><a href="/sap_fico/sap_fi_financial_statement_version.htm">SAP FI - Financial Statement Version</a></li>
+<li><a href="/sap_fico/sap_fi_journal_entry_posting.htm">SAP FI - Journal Entry Posting</a></li>
+<li><a href="/sap_fico/sap_fi_fiscal_year_variant.htm">SAP FI - Fiscal Year Variant</a></li>
+<li><a href="/sap_fico/sap_fi_posting_period_variant.htm">SAP FI - Posting Period Variant</a></li>
+<li><a href="/sap_fico/sap_fi_field_status_variant.htm">SAP FI - Field Status Variant</a></li>
+<li><a href="/sap_fico/sap_fi_field_status_group.htm">SAP FI - Field Status Group</a></li>
+<li><a href="/sap_fico/sap_fi_define_posting_keys.htm">SAP FI - Define Posting Keys</a></li>
+<li><a href="/sap_fico/sap_fi_define_document_type.htm">SAP FI - Define Document Type</a></li>
+<li><a href="/sap_fico/sap_fi_document_number_ranges.htm">SAP FI - Document Number Ranges</a></li>
+<li><a href="/sap_fico/sap_fi_post_with_reference.htm">SAP FI - Post with Reference</a></li>
+<li><a href="/sap_fico/sap_fi_hold_gl_document_posting.htm">SAP FI - Hold a G/L Document Posting</a></li>
+<li><a href="/sap_fico/sap_fi_park_gl_document_posting.htm">SAP FI - Park a G/L Document Posting</a></li>
+<li><a href="/sap_fico/sap_fi_gl_reporting.htm">SAP FI - G/L Reporting</a></li>
+<li><a href="/sap_fico/sap_fi_accounts_receivable.htm">SAP FI - Accounts Receivable</a></li>
+<li><a href="/sap_fico/sap_fi_customer_master_data.htm">SAP FI - Customer Master Data</a></li>
+<li><a href="/sap_fico/sap_fi_block_customer.htm">SAP FI - Block a Customer</a></li>
+<li><a href="/sap_fico/sap_fi_delete_customer.htm">SAP FI - Delete a Customer</a></li>
+<li><a href="/sap_fico/sap_fi_customer_account_group.htm">SAP FI - Customer Account Group</a></li>
+<li><a href="/sap_fico/sap_fi_onetime_customer_master.htm">SAP FI - One-Time Customer Master</a></li>
+<li><a href="/sap_fico/sap_fi_post_sales_invoice.htm">SAP FI - Post a Sales Invoice</a></li>
+<li><a href="/sap_fico/sap_fi_document_reversal.htm">SAP FI - Document Reversal</a></li>
+<li><a href="/sap_fico/sap_fi_sales_returns.htm">SAP FI - Sales Returns</a></li>
+<li><a href="/sap_fico/sap_fi_post_incoming_payment.htm">SAP FI - Post Incoming Payment</a></li>
+<li><a href="/sap_fico/sap_fi_foreign_currency_invoice.htm">SAP FI - Foreign Currency Invoice</a></li>
+<li><a href="/sap_fico/sap_fi_incoming_partial_payments.htm">SAP FI - Incoming Partial Payments</a></li>
+<li><a href="/sap_fico/sap_fi_reset_ar_cleared_items.htm">SAP FI - Reset AR Cleared Items</a></li>
+<li><a href="/sap_fico/sap_fi_credit_control.htm">SAP FI - Credit Control</a></li>
+<li><a href="/sap_fico/sap_fi_accounts_payable.htm">SAP FI - Accounts Payable</a></li>
+<li><a href="/sap_fico/sap_fi_create_vendor.htm">SAP FI - Create a Vendor</a></li>
+<li><a href="/sap_fico/sap_fi_create_vendor_account_group.htm">SAP FI - Create Vendor Acct Group</a></li>
+<li><a href="/sap_fico/sap_fi_display_changed_fields.htm">SAP FI - Display Changed Fields</a></li>
+<li><a href="/sap_fico/sap_fi_block_vendor.htm">SAP FI - Block a Vendor</a></li>
+<li><a href="/sap_fico/sap_fi_delete_vendor.htm">SAP FI - Delete a Vendor</a></li>
+<li><a href="/sap_fico/sap_fi_onetime_vendor.htm">SAP FI - One-Time Vendor</a></li>
+<li><a href="/sap_fico/sap_fi_post_purchase_invoice.htm">SAP FI - Post Purchase Invoice</a></li>
+<li><a href="/sap_fico/sap_fi_purchases_returns.htm">SAP FI - Purchases Returns</a></li>
+<li><a href="/sap_fico/sap_fi_post_outgoing_vendor_payment.htm">Post Outgoing Vendor Payment</a></li>
+<li><a href="/sap_fico/sap_foreign_currency_invoice.htm">SAP FI - Foreign Currency Invoice</a></li>
+<li><a href="/sap_fico/sap_fi_withholding_tax_vendor_invoice.htm">Withholding Tax in vendor invoice</a></li>
+<li><a href="/sap_fico/sap_fi_outgoing_partial_payments.htm">SAP FI - Outgoing Partial Payments</a></li>
+<li><a href="/sap_fico/sap_fi_reset_ap_cleared_items.htm">SAP FI - Reset AP Cleared Items</a></li>
+<li><a href="/sap_fico/sap_fi_automatic_payment_run.htm">SAP FI - Automatic Payment Run</a></li>
+<li><a href="/sap_fico/sap_fi_posting_rounding_differences.htm">SAP FI - Posting Rounding Differences</a></li>
+<li><a href="/sap_fico/sap_fi_month_end_closing.htm">SAP FI - Month End Closing</a></li>
+<li><a href="/sap_fico/sap_fi_dunning.htm">SAP FI - Dunning</a></li>
+<li><a href="/sap_fico/sap_fi_exchange_rates.htm">SAP FI - Exchange Rates</a></li>
+<li><a href="/sap_fico/sap_tables_fi_module.htm">SAP FI - Tables in Module</a></li>
+<li><a href="/sap_fico/sap_fi_ar_invoice_processes.htm">SAP FI - AR Invoice Processes</a></li>
+<li><a href="/sap_fico/sap_fi_ar_account_analysis.htm">SAP FI - AR Account Analysis</a></li>
+<li><a href="/sap_fico/sap_fi_ar_reporting.htm">SAP FI - AR Reporting</a></li>
+<li><a href="/sap_fico/sap_fi_aa_overview.htm">SAP FI - AA Overview</a></li>
+<li><a href="/sap_fico/sap_fi_aa_asset_explorer.htm">SAP FI - AA Asset Explorer</a></li>
+<li><a href="/sap_fico/sap_fi_cash_management.htm">SAP FI - Cash Management</a></li>
+<li><a href="/sap_fico/sap_co_overview.htm">SAP CO - Overview</a></li>
+<li><a href="/sap_fico/sap_co_submodules.htm">SAP CO - Submodules</a></li>
+<li><a href="/sap_fico/sap_co_cost_center.htm">SAP CO - Cost Center</a></li>
+<li><a href="/sap_fico/sap_co_create_cost_center.htm">SAP CO - Create Cost Center</a></li>
+<li><a href="/sap_fico/sap_co_post_to_cost_center.htm">SAP CO – Post to a Cost Center</a></li>
+<li><a href="/sap_fico/sap_co_internal_orders.htm">SAP CO - Internal Orders</a></li>
+<li><a href="/sap_fico/sap_co_settlement_io.htm">SAP CO - Settlement of IO</a></li>
+<li><a href="/sap_fico/sap_co_profit_center.htm">SAP CO - Profit Center</a></li>
+<li><a href="/sap_fico/sap_co_postings_to_profit_center.htm">SAP CO - Postings to Profit Center</a></li>
+<li><a href="/sap_fico/sap_co_profit_center_standard_hierarchy.htm">Profit Center Standard Hierarchy</a></li>
+<li><a href="/sap_fico/sap_co_cost_to_profit_center.htm">Assigning Cost to Profit Centers</a></li>
+<li><a href="/sap_fico/sap_co_materials_profit_center.htm">Assigning Materials to Profit Center</a></li>
+<li><a href="/sap_fico/sap_co_tables_module.htm">SAP CO - Tables in Module</a></li>
+<li><a href="/sap_fico/sap_co_product_costing.htm">SAP CO - Product Costing</a></li>
+<li><a href="/sap_fico/sap_co_profitability_analysis.htm">SAP CO - Profitability Analysis</a></li>
+<li><a href="/sap_fico/sap_co_planning_methods.htm">SAP CO - Planning Methods</a></li>
+<li><a href="/sap_fico/sap_fi_integration.htm">SAP FI - Integration</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP FICO Useful Resources</li>
+<li><a href="/sap_fico/sap_fico_questions_answers.htm">SAP FICO - Questions Answers</a></li>
+<li><a href="/sap_fico/sap_fico_quick_guide.htm">SAP FICO - Quick Guide</a></li>
+<li><a href="/sap_fico/sap_fico_useful_resources.htm">SAP FICO - Useful Resources</a></li>
+<li><a href="/sap_fico/sap_fico_discussion.htm">SAP FICO - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SAP FICO Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="sap_fico_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_fico_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>SAP FICO Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>SAP FICO</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer &minus;</p>
+<section class="toggle">
+<label> What is financial accounting?</label>
+<div class="toggle-content"> 
+<p>SAP FI stands for Financial Accounting and it is one of important module of SAP ERP. It is used to store the financial data of an organization. SAP FI helps to analyze the financial condition of a company in the market. It can integrate with other SAP modules like SD, PP, SAP MM, SAP SCM etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use SAP FI?</label>
+<div class="toggle-content"> 
+<p>SAP Financials accounting module enables you to manage financial accounting data within an international framework of multiple companies, currencies, and languages. SAP FI module mainly deals with the below financial components &minus;</p>
+<ul class="list">
+<li>Fixed asset</li>
+<li>Accrual</li>
+<li>Cash journal</li>
+<li>Accounts receivable and payable</li>
+<li>Inventory</li>
+<li>Tax accounting</li>
+<li>General ledger</li>
+<li>Fast close functions</li>
+<li>Financial statements</li>
+<li>Parallel valuations</li>
+<li>Master data governance</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different submodules in SAP FI?</label>
+<div class="toggle-content"> 
+<ul class="list"> 
+<li>General Ledger</li>
+<li>AR/AP</li>
+<li>Banks</li>
+<li>Fixed Assets</li>
+<li>Travel Management</li>
+<li>Lease Accounting, etc.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is General Ledger in Finance accounting?</label>
+<div class="toggle-content"> 
+<p>A General Ledger contains all the transaction details of a company. It acts as primary record to maintain all accounting details. Common general ledger entries are customer transactions, purchases from vendors, and internal company transactions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a Company in SAP FI? What does it consists of?</label>
+<div class="toggle-content"> 
+<p>A company is defined as smallest unit for which financial statements can be created in accordance with commercial legal regulations.</p>
+<p>In SAP FI, a company can comprise of multiple codes, however it acts as a single unit for which financial statements are available. All the company codes must use the same chart of accounts list and fiscal year however each code can have a different local currency.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you manage transactions that comes from different line of business in a company?</label>
+<div class="toggle-content"> 
+<p>Business Areas are used to differentiate transactions that comes from different line of business in a company.</p>
+<p><b>Example</b></p>
+<p>There is a big company XYZ, which runs multiple business. Let us say it has 3 different domains like manufacturing, marketing and sales.</p>
+<p>Now you have 2 options &minus;</p>
+<ul class="list">
+<li>First is to create different company codes</li>
+<li>And other better option is to create each of these business lines into business areas,</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the benefits of using Business areas in a company?</label>
+<div class="toggle-content"> 
+<p>You can use these business areas if other company codes require the same areas</p>
+<p>It is easy to configure if you use Business Area as you just need to attach to the company code and the other details in business area will get attach itself.</p>
+<p>By using Business areas in controlling, you can create Profit and loss statement, Balance sheet, etc. for business areas so this is used for management accounting in few companies.</p>
+<p><b>Note</b> &minus; Business areas are more used in Controlling as compare to Finance Accounting.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you manage credit limit for the customer in FI?</label>
+<div class="toggle-content"> 
+<p>Credit control in FI is used to check the credit limit for the customer and it can use one or more codes. It is used for credit management in Application components- Account Receivable (AR) and Sales and Distribution.</p>
+<p>The credit control area is determined in the following sequence &minus;</p>
+<ul class="list">
+<li>User exit</li>
+<li>Distribution channel</li>
+<li>Customer master</li>
+<li>Company code for the sales organization</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is Chart of accounts? What are the different types of COA in FI?</label>
+<div class="toggle-content"> 
+<p>The FI chart of accounts represent the list of GL accounts that are used to meet daily needs and country’s legal requirement in a company. The master chart of accounts must be assigned to each company code.</p>
+<p>Chart of accounts COA can be divided into below types &minus;</p>
+<p><b>Operating Chart of Accounts</b></p>
+<p>It contains all General Ledger accounts that are used to meet daily needs in a company. Operating chart of accounts has to be assigned to a company code.</p>
+<p><b>Country Chart of Accounts</b></p>
+<p>It contains list of all General Ledger accounts that are required to meet country legal requirements. You can also assign company chart of account to company code.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In your company you have large number of G/L accounts, how can you manage them effectively?</label>
+<div class="toggle-content"> 
+<p>You can create SAP FI chart of accounts group as per the requirement. To effectively manage and control large number of G/L accounts, you should use COA groups.</p>
+</div>
+</section>
+<section class="toggle">
+<label> If you want to carry forward the balance from one fiscal year to next fiscal year. Which account type you should use?</label>
+<div class="toggle-content"> 
+<p>Retained Earnings Account are used to carry forward the balance from one fiscal year to next fiscal year. You can assign Retained Earning account to each Profit and loss account P&amp;L account in the chart of accounts COA. To automatically carry forward the balance to next fiscal year you can define P&amp;L statements as per COA and assign them to retained earning accounts.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different steps involved in G/L posting?</label>
+<div class="toggle-content"> 
+<p>After you complete the payroll run, next is to add results to the GL accounts and this includes cost centers. GL posting includes the below steps &minus;</p>
+<ul class="list">
+<li>Groups together posting-relevant information from the payroll results.</li>
+<li>Creates summarized documents.</li>
+<li>Performs the relevant postings to appropriate GL accounts and cost centers.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of fiscal year variant? How many variants you can use?</label>
+<div class="toggle-content"> 
+<p>It contains the number of posting periods in fiscal year and number of special periods. You can define up to 16 posting periods in a fiscal year in controlling component CO.</p>
+<p>You need to specify the fiscal year variant for each company code. When you create a controlling area, you also need to specify the fiscal year variant.</p>
+<p>The fiscal year variants of the company code and controlling area may only differ in the number of special periods used. You need to ensure that the fiscal year variants match, in other words, they may not have a time conflict.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of posting period variants?</label>
+<div class="toggle-content"> 
+<p>SAP FI Posting period variant is used to maintain accounting periods that are open for posting and all closed period are balanced. This is used for opening and closing period in fiscal year for posting purpose.</p>
+<p>You can assign these posting periods to one or more company codes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is difference between field status variant and field status group?</label>
+<div class="toggle-content"> 
+<p>Field status variant will have filed status groups. Filed status group is maintained in GL account and It defines the field’s while posting to the GL.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different account types in SAP FI? How do you identify account types?</label>
+<div class="toggle-content"> 
+<p>Posting Keys in SAP FI is used to determine Account types (A, D, K, M, and S) and also the type of posting. It is 2 digit numerical key.</p>
+<p>Different Account Types in SAP FI &minus;</p>
+<ul class="list">
+<li>A = Assets</li>
+<li>D = Customers</li>
+<li>K = Vendors</li>
+<li>M = Materials</li>
+<li>S = General Ledger Account</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use document type in business transactions?</label>
+<div class="toggle-content"> 
+<p>Document type key is used to distinguish between different business transactions and to classify accounting documents.</p>
+<p>Document types key is used to determine number range for documents and account types like-asset, material, vendor, etc. for posting.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the common document types in FI?</label>
+<div class="toggle-content"> 
+<p>Common Document types Key are &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center">Document Type</th>
+<th style="text-align:center">Document Type Description</th>
+</tr>
+<tr>
+<td style="text-align:center">AA</td>
+<td style="text-align:center">Asset Posting</td>
+</tr>
+<tr>
+<td style="text-align:center">AN</td>
+<td style="text-align:center">Net Asset Posting</td>
+</tr>
+<tr>
+<td style="text-align:center">DR</td>
+<td style="text-align:center">Customer Invoice</td>
+</tr>
+<tr>
+<td style="text-align:center">DZ</td>
+<td style="text-align:center">Customer Payment</td>
+</tr>
+<tr>
+<td style="text-align:center">KA</td>
+<td style="text-align:center">Vendor Document</td>
+</tr>
+<tr>
+<td style="text-align:center">KG</td>
+<td style="text-align:center">Vendor Credit Memo</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> When G/L document is not complete and you want to save the document at later stage, how can you manage this in FI?</label>
+<div class="toggle-content"> 
+<p>You can also hold posting of a G/L document or temporarily save the document in below conditions &minus;</p>
+<ul class="list">
+<li>When G/L document is not complete</li>
+<li>Incomplete/Incorrect Information in the document</li>
+<li>To save the document at later stage</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> In case you want to feed a document with an amount of &dollar;5000 for which you don’t have the authority. To post G/L account with amount, how can you do this?</label>
+<div class="toggle-content"> 
+<p>SAP FI also provides an option with Limited Authorization Amount for Posting.</p>
+<p><b>Example</b></p>
+<p>An Accountant has an authority to post documents to a maximum amount &dollar;2000, now he has to feed a document with an amount of &dollar;5000 for which he does not have the authority.</p>
+<p>SAP FI provides a Park Facility for the document which allows the user to save the document but the amount is not posted in the G/L accounts.</p>
+<p>This allows to review the document later reviewed by higher authority Personnel who has appropriate posting amount authorization. Once approved, the document is posted in G/L accounts.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the most common G/L reports in FI?</label>
+<div class="toggle-content"> 
+<p>There are various G/L reports that can be generated in SAP FI. Most common are &minus;</p>
+<ul class="list">
+<li>G/L Chart of Accounts List</li>
+<li>G/L Account Balances</li>
+<li>G/L Account List</li>
+<li>G/L Account Totals and Balances</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Account Receivables in FI?</label>
+<div class="toggle-content"> 
+<p>SAP FI Accounts Receivable component records and manages accounting data of all customers. It is also an integral part of sales management.</p>
+<p>All postings in Accounts Receivable are also recorded directly in the General Ledger. Different G/L accounts are updated depending on the transaction involved (for example, receivables, down payments, and bills of exchange).</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by company and company code?</label>
+<div class="toggle-content"> 
+<p>A company is the organizational unit used in the legal consolidation module to roll up financial statements of several company codes. The Company Code is the smallest organizational unit for which a complete self-contained set of accounts can be drawn up for purposes of external reporting.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the relationship between company code and controlling area?</label>
+<div class="toggle-content"> 
+<p>A controlling area may include one or more company codes which must use the same operative chart of accounts as the controlling area. A Controlling Area can contain multiple company code assignments but a single company code can be assigned to only one controlling area.</p>
+</div>
+</section>
+<section class="toggle">
+<label> It is recommended to copy the company codes or it is advisable to create them manually?</label>
+<div class="toggle-content"> 
+<p>There are loads of tables that get copied over when copying company codes. This might be incomplete in a manual copy, and hence the manual route is not advisable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain blocking a customer in FI?</label>
+<div class="toggle-content"> 
+<p>You can block a customer account in AR so that postings are no longer made to that account. You have to block a customer account before marking a customer master record for deletion.</p>
+<p><b>Example</b></p>
+<p>You would also block a customer that you use only as an alternative dunning recipient, so that nobody can post to that customer by mistake.</p>
+<p>In Sales and Distribution (SD) application component, you can set the following blocks for a customer &minus;</p>
+<ul class="list">
+<li>Posting block</li>
+<li>Order block</li>
+<li>Delivery block</li>
+<li>Invoicing block</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different accounting groups that can be created in Account Receivable in SAP FI?</label>
+<div class="toggle-content"> 
+<p>There are different types of customer account group that can be created in Account Receivable in SAP FI.</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center">Group</th>
+<th style="text-align:center">Name</th>
+</tr>
+<tr>
+<td style="text-align:center">X001</td>
+<td style="text-align:center">Domestic Customers</td>
+</tr>
+<tr>
+<td style="text-align:center">X002</td>
+<td style="text-align:center">Export Customers</td>
+</tr>
+<tr>
+<td style="text-align:center">X003</td>
+<td style="text-align:center">One Time Customers</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> Which scenarios you can use document reversal?</label>
+<div class="toggle-content"> 
+<p>You can also reverse an incorrect document and can also clear the open items. A document can only be reversed if &minus;</p>
+<ul class="list">
+<li><p>It contains no cleared items</p></li>
+<li><p>It contains only customer, vendor, and G/L account items</p></li>
+<li><p>It was posted with Financial Accounting</p></li>
+<li><p>All entered values (such as business area, cost center, and tax code) are still valid</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Sales returns in FI?</label>
+<div class="toggle-content"> 
+<p>Sales Returns in SAP FI is used to manage full products that the customer has returned due to a complaint. These are used in consumer good industry.</p>
+<p>All returns are related to quality defects and not incorrect deliveries. The path that the returned merchandise takes often has to be tracked in detail. Returned item has to be sent for inspection.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can you manage partial payment from customers in FI?</label>
+<div class="toggle-content"> 
+<p>In SAP FI, you can also post partial payments from customer. These partial payments are posted as separate open items.</p>
+<p>Customer can see clearly what all invoice has been issued to customer and what payments he has made. But it keeps the multiple open items, until the invoice is fully paid/ cleared.</p>
+<p><b>Example</b></p>
+<p>There is a customer with an outstanding amount of 1500  and makes a payment of  500  as partial payment then there will two separate open items of  1500 Debit and 500 Credit in FI system and there will be no clearing document is created.</p>
+</div>
+</section>
+<section class="toggle">
+<label> If a payment is made to incorrect invoices then it can be reset?</label>
+<div class="toggle-content"> 
+<p>In SAP FI, this is used to reset the incorrect payment invoices. If a payment is made to incorrect invoices then it can be reset.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you define credit control area in FI?</label>
+<div class="toggle-content"> 
+<p>T-code: FD32</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Account payable in FI? How it is related to G/L?</label>
+<div class="toggle-content"> 
+<p>SAP FI Accounts payable is used to manage and record accounting data for all the vendors. All invoices and deliveries are managed as per vendor requests. Payables are managed as per payment program and all payments can be made using checks, transfer, electronic transfers, etc.</p>
+<p>All the postings that are made in Account Payable are also updated in General Ledger simultaneously and system also maintains forecasts and standard reports that can be used to keep track of all the open items.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you log changes and generate change documents in FI?</label>
+<div class="toggle-content"> 
+<p>When you change a master record, the system logs these changes and generates change documents. For each field, it stores the time of change, the name of the user, and the previous field contents.</p>
+<p>Go to Accounting &rarr; Financial Accounting &rarr; Accounts Payable &rarr; Master Records &rarr; Display Changes</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which of the fields you can display and log changes in FI?</label>
+<div class="toggle-content"> 
+<p>When you change a master record, the system logs these changes and generates change documents. For each field, it stores the time of change, the name of the user, and the previous field contents.</p>
+<p>You can display all the changes for the following &minus;</p>
+<ul class="list">
+<li>A certain field</li>
+<li>A master record</li>
+</ul>
+<p>For several vendor master records, following changes are displayed separately &minus;</p>
+<ul class="list">
+<li><p>Overwritten field contents</p></li>
+<li><p>Any bank details and/or dunning areas entered after the master record was created</p></li>
+<li><p>Any bank details and/or dunning areas that have been deleted</p></li>
+<li><p>Using the change documents, you can find all the changes that are made and when they were made.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different block that you can apply to a vendor account?</label>
+<div class="toggle-content"> 
+<p>You can apply below blocks &minus;</p>
+<ul class="list">
+<li><p>Posting block for certain company codes or for all company codes</p></li>
+<li><p>Purchasing block for certain purchasing organizations or for all purchasing organizations. This is of course only if you have purchased and installed the purchasing application component.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> How do you manage outgoing partial payment for vendor in FI?</label>
+<div class="toggle-content"> 
+<p>In SAP FI, you can also post outgoing partial payments for vendor. Partial payment from vendor will be open as open item and no clearing document will be generated.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is automatic payment program?</label>
+<div class="toggle-content"> 
+<p>Automatic Payment Program serves the purpose of posting accounts payable like payment to a vendor based on vendor invoices automatically, shortly termed as APP.</p>
+<p>It is used to find out due/overdue invoices and to process list of customer and vendor invoices to make payments in one go. APP can’t be used for all company codes from different countries.</p>
+<p>APP has below categories &minus;</p>
+<ul class="list">
+<li>Setup all company codes</li>
+<li>Setup paying company codes</li>
+<li>Payment method per country</li>
+<li>Payment method per country code</li>
+<li>Bank Selection</li>
+<li>House Bank</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the common activities performed in month end closing in SAP FI?</label>
+<div class="toggle-content"> 
+<p>In SAP FI, month end closing involves activities in posting a closing period. You can carry out the following activities as part of month-end closing &minus;</p>
+<ul class="list">
+<li><p>Open and close posting periods</p></li>
+<li><p>You close one or more posting periods in the past for posting, and permit posting to be made to one or more current or future posting periods.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is dunning in FI? What are the requirement of using Dunning?</label>
+<div class="toggle-content"> 
+<p>In SAP FI, If customer misses the payment for the outstanding invoice by payment due date You can generate dunning letter using SAP FI and send it to customer address for reminding the customer outstanding payment.</p>
+<p><b>Requirement</b> &minus;</p>
+<p>The dunning system enables to trace liable customers who have not paid their open invoices within a given time span. It enables you to handle the process from, for example, sending a reminder to customers of their outstanding payments through to referring such customers to collections agencies.</p>
+<p>The dunning system covers below documents &minus;</p>
+<ul class="list">
+<li>Open A/R invoices, including invoices that are partially credited or partially paid</li>
+<li>Invoices that include installments</li>
+<li>A/R credit memos</li>
+<li>Incoming payments that are not based on invoices</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> How do you manage relationship between two currencies in SAP FI?</label>
+<div class="toggle-content"> 
+<p>Exchange Rates are used to define relationship between two currencies and also to maintain exchange rates are used to translate an amount into another currency.</p>
+<p>You define exchange rates in the system for the following purposes &minus;</p>
+<p><b>Posting and Clearing</b></p>
+<p>To translate amounts posted or cleared in foreign currency, or to check a manually entered exchange rate during posting or clearing.</p>
+<p><b>Exchange Rate Differences</b></p>
+<p>To determine gains or losses from exchange rate differences.</p>
+<p><b>Foreign Currency Valuation</b></p>
+<p>To valuate open items in foreign currency and foreign currency balance sheet accounts as part of the closing operations.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Name few of the tables in G/L accounting and customizing in FI?</label>
+<div class="toggle-content"> 
+<table class="table table-bordered">
+<tr>
+<td>SKAS</td>
+<td>G/L Account Master (Chart of Accounts – Key Word list)</td>
+<td>MANDT / SPRAS / KTOPL / SAKNR / SCHLW</td>
+</tr>
+<tr>
+<td>SKB1</td>
+<td>G/L Account Master (Company Code)</td>
+<td>MANDT / BUKRS / SAKNR
+</td>
+</tr>
+<tr>
+<td>FI-GL-GL (FBSC)</td>
+<td colspan="2">General Ledger Accounting: Basic Functions - R/3 Customizing for G/L Accounts</td>
+</tr>
+<tr>
+<td>FIGLREP</td>
+<td>Settings for G/L Posting Reports</td>
+<td>MANDT</td>
+</tr>
+<tr>
+<td>TSAKR</td>
+<td>Create G/L account with reference</td>
+<td>MANDT / BUKRS / SAKNR</td>
+</tr>
+<tr>
+<td>KOMU</td>
+<td>Account Assignment Templates for G/L Account items</td>
+<td>MANDT / KMNAM / KMZEI</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the process steps of Invoicing in Contract Accounts Receivable and Payable?</label>
+<div class="toggle-content"> 
+<p><b>Data Selection</b></p>
+<p>In data selection, the invoicing orders are selected for the invoicing process. You define the selection criteria for the data selection for the invoicing process.</p>
+<p><b>Creation of Invoicing Units</b></p>
+<p>The invoicing orders selected are grouped into invoicing units for each contract account. You can create several invoicing units for each contract account. For each invoicing unit, "Invoicing in Contract Accounts Receivable and Payable" creates one invoicing document.</p>
+<p>You define the criteria for creating the invoicing units for the invoicing process.</p>
+<p><b>Processing of Billing Documents</b></p>
+<p>The billing documents selected for an invoicing unit are included in the invoicing document. The billing document items are linked with the items of the invoicing document, and the derivations required for the posting in "Contract Accounts Receivable and Payable" (FI-CA) are performed.</p>
+<p><b>Performance of Additional Functions</b></p>
+<p>In addition to processing billing documents, in "Invoicing in Contract Accounts Receivable and Payable" , you can integrate further functions of FI-CA. For example, interest calculation, creation of dunning proposals, or the calculation of charges and discounts. You define which additional functions are performed for each invoicing process.</p>
+<p><b>Account Maintenance</b></p>
+<p>Using the account maintenance integrated in "Invoicing in Contract Accounts Receivable and Payable" , you can perform clearing between the posting documents entered in Invoicing and the open items of the contract account posted before invoicing. You define the criteria for clearing in the clearing control.</p>
+<p><b>Update</b></p>
+<p>The invoicing document created for the invoicing unit and the posting documents are written to the database. The invoicing orders processed are deleted.</p>
+<p>As well as the invoicing unit, a correspondence container for invoice printing and an extraction order for the update to BW are created.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the common types of reports that can be used for Account Analysis (A/R)?</label>
+<div class="toggle-content"> 
+<p>There are many types of reports that can be used for account analysis (A/R) &minus;</p>
+<ul class="list">
+<li>Customer Line Item Analysis</li>
+<li>Balance Analysis</li>
+<li>Customer Evaluation Report</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of FI-Asset Accounting component?</label>
+<div class="toggle-content"> 
+<p>The FI-Asset Accounting (FI-AA) component is used for managing the fixed assets in FI system. In Financial Accounting, it serves as a subsidiary ledger to the General Ledger, providing detailed information on transactions involving fixed assets.</p>
+<p><b>Integration with other components</b> &minus;</p>
+<p>As a result of the integration in the SAP System, Asset Accounting (FI-AA) transfers data directly to and from other SAP components.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by cost center, profit center in Controlling?</label>
+<div class="toggle-content"> 
+<p>A Cost center is defined as a component in an organization that adds to the cost and indirectly adds to profit if the organization. Examples include Marketing and Customer Service.</p>
+<p>A company can classify business unit as profit center, cost center or an investment center. The simple and straight forward division in an organization can be classified as cost center as cost is easy to measure.</p>
+<p>SAP CO-Profit center is used for managing internal controlling. When you dividing your company into profit centers, it allows you to delegate responsibility to decentralized units and allows you to treat as separate companies in a company.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we create Profit Centers in Controlling?</label>
+<div class="toggle-content"> 
+<p>The main aim of creating a Profit Center in Controlling is to analyze the cost of a product line or a business unit.</p>
+<p>You can also generate profit and loss accounts according to Profit Center and also generate balance sheets however Profit center should only be used for internal reporting purposes.</p>
+<p>The key components of a profit center includes - name of the profit center, the controlling area under which it is assigned, time period, person responsible for the profit center, standard hierarchy, etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by Product costing in SAP Controlling?</label>
+<div class="toggle-content"> 
+<p>SAP CO-Product Costing module is used to find the value of internal cost of products. It is also used for profitability and management accounting for production.</p>
+<p>While configuring Product Costing, it involves two areas for setting &minus;</p>
+<ul class="list">
+<li>Product Cost Planning</li>
+<li>Cost Object Controlling</li>
+</ul>
+<p>The basics of Product Costing is Cost Center Planning. The goal of cost center planning is to plan total dollars and quantities in each Cost Center in a Plant.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you perform Profitability analysis in SAP CO? What are the different types of profitability analysis?</label>
+<div class="toggle-content"> 
+<p>SAP CO-PA is used to analyze the market segments classified as products, customers, sales area, business area, etc.</p>
+<p>SAP CO Profitability Analysis (CO-PA) is used for the evaluation of Market segments, which is classified according to &minus;</p>
+<ul class="list">
+<li>products, customers, and orders</li>
+<li>or any combination of these</li>
+<li>or Strategic business units such as sales organizations</li>
+<li>or business areas, with reference to company's profit</li>
+<li>or contribution margin</li>
+</ul>
+<p>There are two types of Profitability Analysis are supported &minus;</p>
+<ul class="list">
+<li>Costing-based</li>
+<li>Account-based</li>
+</ul>
+<p><b>Costing-based Profitability Analysis</b> &minus;</p>
+<p>It is used to group the costs and revenues as per the value fields. It is used to ensure that you access at all times to a complete, short-term profitability report.</p>
+<p><b>Account-based Profitability Analysis</b> &minus;</p>
+<p>It is used to provide you with a profitability report that is permanently reconciled with financial accounting.</p>
+<p>It is mainly used for getting information related to sales, marketing, product management and corporate planning departments to support internal accounting and decision-making.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">sap_fico_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sap_fico_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_fico_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

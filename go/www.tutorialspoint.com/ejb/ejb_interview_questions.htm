@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>EJB - Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="EJB - Interview Questions - Dear readers, these EJB 3.0 Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your in"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/ejb/ejb_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#ac1d01;
+}
+a.demo {
+    background:#ac1d01;
+}
+li.heading {
+    background:#ac1d01;
+}
+.course-box{background:#ac1d01}
+.home-intro-sub p{color:#ac1d01}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/ejb/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/ejb/images/ejb-mini-logo.jpg" alt="EJB Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">EJB Tutorial</li>
+<li><a href="/ejb/index.htm">EJB - Home</a></li>
+<li><a href="/ejb/ejb_overview.htm">EJB - Overview</a></li>
+<li><a href="/ejb/ejb_environment.htm">EJB - Environment Setup</a></li>
+<li><a href="/ejb/ejb_create_application.htm">EJB - Create Application</a></li>
+<li><a href="/ejb/ejb_stateless_beans.htm">EJB - Stateless Bean</a></li>
+<li><a href="/ejb/ejb_stateful_beans.htm">EJB - Stateful Bean</a></li>
+<li><a href="/ejb/ejb_persistence.htm">EJB - Persistence</a></li>
+<li><a href="/ejb/ejb_message_driven_beans.htm">EJB - Message Driven Beans</a></li>
+<li><a href="/ejb/ejb_annotations.htm">EJB - Annotations</a></li>
+<li><a href="/ejb/ejb_callbacks.htm">EJB - Callbacks</a></li>
+<li><a href="/ejb/ejb_timer_service.htm">EJB - Timer Service</a></li>
+<li><a href="/ejb/ejb_dependency_injection.htm">EJB - Dependency Injection</a></li>
+<li><a href="/ejb/ejb_interceptors.htm">EJB - Interceptors</a></li>
+<li><a href="/ejb/ejb_embeddable_objects.htm">EJB - Embeddable Objects</a></li>
+<li><a href="/ejb/ejb_blobs_clobs.htm">EJB - Blobs/Clobs</a></li>
+<li><a href="/ejb/ejb_transactions.htm">EJB - Transactions</a></li>
+<li><a href="/ejb/ejb_security.htm">EJB - Security</a></li>
+<li><a href="/ejb/ejb_jndi_bindings.htm">EJB - JNDI Bindings</a></li>
+<li><a href="/ejb/ejb_entity_relationships.htm">EJB - Entity Relationships</a></li>
+<li><a href="/ejb/ejb_access_database.htm">EJB - Access Database</a></li>
+<li><a href="/ejb/ejb_query_language.htm">EJB - Query Language</a></li>
+<li><a href="/ejb/ejb_exception_handling.htm">EJB - Exception Handling</a></li>
+<li><a href="/ejb/ejb_web_services.htm">EJB - Web Services</a></li>
+<li><a href="/ejb/ejb_packaging_applications.htm">EJB - Packaging Applications</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">EJB Useful Resources</li>
+<li><a href="/ejb/ejb_quick_guide.htm">EJB - Quick Guide</a></li>
+<li><a href="/ejb/ejb_useful_resources.htm">EJB - Useful Resources</a></li>
+<li><a href="/ejb/ejb_discussion.htm">EJB - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>EJB - Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="ejb_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="ejb_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>EJB 3.0 Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>EJB 3.0</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label> What is EJB? </label>
+<div class="toggle-content">
+<p>EJB stands for Enterprise Java Beans. EJB is an essential part of a J2EE platform. J2EE platform have component based architecture to provide multi-tiered, distributed and highly transactional features to enterprise level applications.</p>
+<p>EJB provides an architecture to develop and deploy component based enterprise applications considering robustness, high scalability and high performance. An EJB application can be deployed on any of the application server compliant with J2EE 1.3 standard specification.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the benefits of EJB? </label>
+<div class="toggle-content">
+<p>Following are the key benefits of EJB.</p>
+<ul class="list">
+<li><p>Simplified development of large scale enterprise level application.</p></li>
+<li><p>Application Server/ EJB container provides most of the system level services like transaction handling, logging, load balancing, persistence mechanism, exception handling and so on. Developer has to focus only on business logic of the application.</p></li>
+<li><p>EJB container manages life cycle of ejb instances thus developer needs not to worry about when to create/delete ejb objects.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a Session Bean in EJB? </label>
+<div class="toggle-content">
+<p>Session bean stores data of a particular user for a single session. It can be stateful or stateless. It is less resource intensive as compared to entity beans. Session bean gets destroyed as soon as user session terminates.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Stateful Session Bean in EJB? </label>
+<div class="toggle-content">
+<p>A stateful session bean is a type of enterprise bean which preserve the conversational state with client. A stateful session bean as per its name keeps associated client state in its instance variables. EJB Container creates a separate stateful session bean to process client's each request. As soon as request scope is over, statelful session bean is destroyed.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Stateless Session Bean in EJB? </label>
+<div class="toggle-content">
+<p>A stateless session bean is a type of enterprise bean which is normally used to do independent operations. A stateless session bean as per its name does not have any associated client state, but it may preserve its instance state. EJB Container normally creates a pool of few stateless bean's objects and use these objects to process client's request. Because of pool, instance variable values are not guaranteed to be same across lookups/method calls.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Entity Bean in EJB? </label>
+<div class="toggle-content">
+<p>Entity beans represents persistent data storage. User data can be saved to database via entity beans and later on can be retrived from the database in the entity bean.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Message Driven Bean in EJB? </label>
+<div class="toggle-content">
+<p>A message driven bean is a type of enterprise bean which is invoked by EJB container when it receives a message from queue or topic. Message driven bean is a stateless bean and is used to do task asynchronously.</p>
+</div>
+</section>
+<section class="toggle">
+<label> When a local session bean is used in EJB? </label>
+<div class="toggle-content">
+<p>If ejb client is in same environment where ejb session bean is to be deployed then we use local session bean.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What a remote session bean is used in EJB? </label>
+<div class="toggle-content">
+<p>if ejb client is in different environment where ejb session bean is to be deployed then we use remote session bean.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the differences between stateful session bean and stateless session bean? </label>
+<div class="toggle-content">
+<p>Following are the differences between stateful session bean and stateless session bean:</p>
+<ul class="list">
+<li><p>EJB Container creates a separate stateful session bean to process client's each request.whereas EJB Container normally creates a pool of few stateless bean's objects and use these objects to process client's request.</p></li>
+<li><p>As soon as request scope is over, statelful session bean is destroyed but stateless bean remains active.</p></li>
+<li><p>A stateful session bean is a type of enterprise bean which preserve the conversational state with client. A stateful session bean as per its name keeps associated client state in its instance variables Whereas because of pool of stateless session beans, instance variable values are not guaranteed to be same across lookups/method calls in stateless session beans.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the key components of persistence API in EJB? </label>
+<div class="toggle-content">
+<p>Following are the key components of persistence API in EJB:</p>
+<ul class="list">
+<li><p><b>Entity</b> - A persistent object representing the data-store record. It is good to be serializable.</p></li>
+<li><p><b>EntityManager</b> - Persistence interface to do data operations like add/delete/update/find on persistent object(entity). It also helps to execute queries using Query interface.</p></li>
+<li><p><b>Persistence unit (persistence.xml)</b> - Persistence unit describes the properties of persistence mechanism.</p></li>
+<li><p><b>Data Source (*ds.xml)</b> - Data Source describes the data-store related properties like connection url. user-name,password etc.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Is Message Driven bean a stateless bean? </label>
+<div class="toggle-content">
+<p>Message driven bean is a stateless bean and is used to do task asynchronously.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.Stateless annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.Stateless annotation specifies that a given ejb class is a stateless session bean.Following are its attributes:</p>
+<ul class="list">
+<li><p><b>name</b> - Used to specify name of the session bean.</p></li>
+<li><p><b>mappedName</b> - Used to specify the JNDI name of the session bean.</p></li>
+<li><p><b>description</b> - Used to provide description of the session bean.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.Stateful annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.Stateful annotation specifies that a given ejb class is a stateful session bean.Following are its attributes:</p>
+<ul class="list">
+<li><p><b>name</b> - Used to specify name of the session bean.</p></li>
+<li><p><b>mappedName</b> - Used to specify the JNDI name of the session bean.</p></li>
+<li><p><b>description</b> - Used to provide description of the session bean.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.MessageDrivenBean annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.MessageDrivenBean annotation specifies that a given ejb class is a message driven bean.
+Following are its attributes:
+name - Used to specify name of the message driven bean.
+messageListenerInterface - Used to specify message listener interface for the message driven bean.
+activationConfig - Used to specify the configuration details of the message-driven bean in operational environment of the message driven bean.
+mappedName - Used to specify the JNDI name of the message driven bean.
+description - Used to provide description of the message driven bean.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.EJB annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.EJB annotation is used to specify or inject a dependency as ejb instance into another ejb. Following are its attributes:</p>
+<ul class="list">
+<li><p><b>name</b> - Used to specify name which will be used to locate the referenced bean in environment.</p></li>
+<li><p><b>beanInterface</b> - Used to specify the interface type of the referenced bean.</p></li>
+<li><p><b>beanName</b> - Used to provide name of the referenced bean.</p></li>
+<li><p><b>mappedName</b> - Used to specify the JNDI name of the referenced bean.</p></li>
+<li><p><b>description</b> - Used to provide description of the referenced bean.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.Local annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.Local annotation is used to specify Local interface(s) of a session bean. This local interface states the business methods of the session bean (which can be stateless or stateful).</p>
+<p>This interface is used to expose the business methods to local clients which are running in same deployment/application as EJB.</p>
+<p>Following are its attributes:</p>
+<ul class="list">
+<li><p><b>value</b> - Used to specify the list of local interfaces as an array of interfaces.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.Remote annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.Remote annotation is used to specify Remote interface(s) of a session bean. This remote interface states the business methods of the session bean (which can be stateless or stateful).</p>
+<p>This interface is used to expose the business methods to remote clients which are running in different deployment/application as EJB.</p>
+<p>Following are its attributes:</p>
+<ul class="list">
+<li><p><b>value</b> - Used to specify the list of remote interfaces as an array of interfaces.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.ActivationConfigProperty annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.ActivationConfigProperty annotation is used to specify properties required for a message driven bean. For example end point, destination, message selector etc.</p>
+<p>This annotation is passed as a parameter to activationConfig attribute of javax.ejb.MessageDrivenBean annotation.
+Following are its attributes:</p>
+<ul class="list">
+<li><p><b>propertyName</b> - name of the property.</p></li>
+<li><p><b>propertyValue</b> - value of the property.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @javax.ejb.PostActivate annotation. </label>
+<div class="toggle-content">
+<p>@javax.ejb.PostActivate annotation is used to specify callback method of ejb lifecycle. This method will be called when EJB container just activated/reactivated the bean instance.</p>
+<p>This interface is used to expose the business methods to local clients which are running in same deployment/application as EJB.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Callback in EJB? </label>
+<div class="toggle-content">
+<p>Callback is a mechanism by which life cycle of an enterprise bean can be intercepted. EJB 3.0 specification has specified callbacks for which callback handler methods are to be created. EJB Container calls these callbacks. We can define callback methods in the ejb class itself or in a separate class. EJB 3.0 has provided many annotations for callbacks.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the callback annotations for stateless bean? </label>
+<div class="toggle-content">
+<p>Following is the list of callback annotations for stateless bean:</p>
+<ul class="list">
+<li><p><b>@PostConstruct</b> - method is invoked when a bean is created for the first time.</p></li>
+<li><p><b>@PreDestroy</b>  - method is invoked when a bean is removed from the bean pool or is destroyed.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the callback annotations for stateful bean? </label>
+<div class="toggle-content">
+<p>Following is the list of callback annotations for stateful bean:</p>
+<ul class="list">
+<li><p><b>@PostConstruct</b> - method is invoked when a bean is created for the first time.</p></li>
+<li><p><b>@PreDestroy</b>  - method is invoked when a bean is removed from the bean pool or is destroyed.</p></li>
+<li><p><b>@PostActivate</b> - method is invoked when a bean is loaded to be used.</p></li>
+<li><p><b>@PrePassivate</b> - method is invoked when a bean is put back to bean pool.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the callback annotations for message driven bean? </label>
+<div class="toggle-content">
+<p>Following is the list of callback annotations for message driven bean:</p>
+<ul class="list">
+<li><p><b>@PostConstruct</b> - method is invoked when a bean is created for the first time.</p></li>
+<li><p><b>@PreDestroy</b> - method is invoked when a bean is removed from the bean pool or is destroyed.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the callback annotations for entity bean? </label>
+<div class="toggle-content">
+<p>Following is the list of callback annotations for entity bean:</p>
+<ul class="list">
+<li><p><b>@PrePersist</b>  - method is invoked when an entity is created in database.</p></li>
+<li><p><b>@PostPersist</b> - method is invoked after an entity is created in database.</p></li>
+<li><p><b>@PreRemove</b> - method is invoked when an entity is deleted from the database.</p></li>
+<li><p><b>@PostRemove</b> - method is invoked after an entity is deleted from the database.</p></li>
+<li><p><b>@PreUpdate</b> - method is invoked before an entity is to be updated in the database.</p></li>
+<li><p><b>@PostLoad</b> - method is invoked when a record is fetched from database and loaded into the entity.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a timer service in EJB? </label>
+<div class="toggle-content">
+<p>Timer Service is a mechanism using which scheduled application can be build. For example, salary slip generation on 1st of every month. EJB 3.0 specification has specified @Timeout annotation which helps in programming the ejb service in a stateless or message driven bean. EJB Container calls the method which is annotated by @Timeout.</p>
+<p>EJB Timer Service is a service provided by Ejb container which helps to create timer and to schedule callback when timer expires.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which annoatation is used to inject an ejb into another ejb? </label>
+<div class="toggle-content">
+<p>@EJB annotation is used to inject other EJB reference.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which annoatation is used to inject an datasource into an ejb?</label>
+<div class="toggle-content">
+<p>@Resource annotation is used to inject an datasource into an ejb.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which annoatation is used to inject singleton services like timer service into an ejb?</label>
+<div class="toggle-content">
+<p>@Resource annotation is used to inject singleton services like timer service into an ejb.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which annoatation is used to inject SessionContext into an ejb?</label>
+<div class="toggle-content">
+<p>@Resource annotation is used to inject SessionContext into an ejb.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How EJB implements dependency injection?</label>
+<div class="toggle-content">
+<p>EJB 3.0 specification provides annotations which can be applied on fields or setter methods to inject dependencies. EJB Container uses the global JNDI registry to locate the dependency.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is an EJB Interceptor? </label>
+<div class="toggle-content">
+<p>EJB 3.0 provides specification to intercept business methods calls using methods annotated with @AroundInvoke annotation. An interceptor method is called by ejbContainer before business method call it is intercepting.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is class level interceptor in EJB? </label>
+<div class="toggle-content">
+<p>Class level interceptor is invoked for every method of the bean. Class level interceptor can be applied both by annotation or via xml(ejb-jar.xml).</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is default interceptor in EJB? </label>
+<div class="toggle-content">
+<p>Default interceptor is invoked for every bean within deployment.Default interceptor can be applied only via xml (ejb-jar.xml).</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is method level interceptor in EJB? </label>
+<div class="toggle-content">
+<p> Method level interceptor is invoked for a particular method of the bean. Method level interceptor can be applied both by annotation of via xml(ejb-jar.xml).</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain  @Embeddable annotation. </label>
+<div class="toggle-content">
+<p>EJB 3.0 provides option to embed JAVA POJO (Plain Old Java Object) into an entity bean and allows to map column names with the methods of the embedded POJO class. A java POJO to be embedded must be annotated as @Embeddable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain @Lob annotation. </label>
+<div class="toggle-content">
+<p>EJB 3.0 provides support for Blob and Clob types using @Lob annotation.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which types of java classes can be mapped using @Lob annotation?</label>
+<div class="toggle-content">
+<p>Following java types can be mapped using @Lob annotation:</p>
+<ul class="list">
+<li><p>java.sql.Blob</p></li>
+<li><p>java.sql.Clob</p></li>
+<li><p>byte[]</p></li>
+<li><p>String</p></li>
+<li><p>Serializable Object</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a transaction? </label>
+<div class="toggle-content">
+<p>A transaction is a single unit of work items which follows the ACID properties. ACID stands for Atomic, Consistent,Isolated and Durable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What ACID stands for? </label>
+<div class="toggle-content">
+<p>ACID stands for Atomic, Consistent,Isolated and Durable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain ACID in context of transaction management. </label>
+<div class="toggle-content">
+<ul class="list">
+<li><p><b>Atomic</b> - If any of work item fails, the complete unit is considered failed. Success meant all items executes successfully.</p></li>
+<li><p><b>Consistent</b> - A transaction must keep the system in consistent state.</p></li>
+<li><p><b>Isolated</b> - Each transaction executes independent of any other transaction.</p></li>
+<li><p><b>Durable</b> - Transaction should survive system failure if it has been executed or committed.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is Container Managed Transactions? </label>
+<div class="toggle-content">
+<p>In this type, container manages the transaction states.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Bean Managed Transactions? </label>
+<div class="toggle-content">
+<p>In this type, developer manages the life cycle of transaction states.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which are the attributes of Container Managed Transactions? </label>
+<div class="toggle-content">
+<p>EJB 3.0 has specified following attributes of transactions which EJB containers implement:</p>
+<ul class="list">
+<li><p><b>REQUIRED</b> - Indicates that business method has to be executed within transaction otherwise a new transaction will be started for that method.</p></li>
+<li><p><b>REQUIRES_NEW</b> - Indicates that a new transaction is to be started for the business method.</p></li>
+<li><p><b>SUPPORTS</b> - Indicates that business method will execute as part of transaction.</p></li>
+<li><p><b>NOT_SUPPORTED</b> - Indicates that business method should not be executed as part of transaction.</p></li>
+<li><p><b>MANDATORY</b> - Indicates that business method will execute as part of transaction otherwise exception will be thrown.</p></li>
+<li><p><b>NEVER</b> - Indicates if business method executes as part of transaction then an exception will be thrown.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Which are the attributes of Bean Managed Transactions? </label>
+<div class="toggle-content">
+<p>In Bean Managed Transactions, Transactions can be managed by handling exceptions at application level. Following are the key points to be considered:</p>
+<ul class="list">
+<li><p><b>Start</b> - When to start a transaction in a business method.</p></li>
+<li><p><b>Sucess</b> - Identify success scenario when a transaction is to be committed.</p></li>
+<li><p><b>Failed</b> - Identify failure scenario when a transaction is to be rollback.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Which are the attributes of Container Managed Security? </label>
+<div class="toggle-content">
+<p>EJB 3.0 has specified following attributes/annotations of security which EJB containers implement:</p>
+<ul class="list">
+<li><p><b>DeclareRoles</b> - Indicates that class will accept those declared roles. Annotations are applied at class level.</p></li>
+<li><p><b>RolesAllowed</b> - Indicates that a method can be accessed by user of role specified. Can be applied at class level resulting which all methods of class can be accessed buy user of role specified.</p></li>
+<li><p><b>PermitAll</b> - Indicates that business method is accessible to all. Can be applied at class as well as at method level.</p></li>
+<li><p><b>DenyAll</b> - Indicates that business method is not accessible to any of user specified at class or at method level.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is JNDI? Explain its terms in terms of EJB. </label>
+<div class="toggle-content">
+<p>JNDI stands for Java Naming and Directory Interface. It is a set of API and service interfaces. Java based applications use JNDI for naming and directory services. In context of EJB, there are two terms:</p>
+<ul class="list">
+<li><p><b>Binding</b> - This refers to assigning a name to an ejb object which can be used later.</p></li>
+<li><p><b>Lookup</b> - This refers to looking up and getting an object of ejb.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Explain annotation in EJB to do the database entity relationships/mappings. </label>
+<div class="toggle-content">
+<p>EJB 3.0 provides option to define database entity relationships/mappings like one to one, one to many, many to one and many to many relationships. Following are the relevant annotations:</p>
+<ul class="list">
+<li><p><b>OneToOne</b> - Objects are having one to one relationship. For example, a passenger can travel using a single ticket at time.</p></li>
+<li><p><b>OneToMany</b> - Objects are having one to many relationship. For example, a father can have multiple kids.</p></li>
+<li><p><b>ManyToOne</b> - Objects are having many to one relationship. For examples, multiple kids having a single mother.</p></li>
+<li><p><b>ManyToMany</b> - Objects are having many to many relationship. For examples, a book can have mutiple authors and a author can write multiple books.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is  EJBQL? </label>
+<div class="toggle-content">
+<p>EJB 3.0, ejb query language is quite handy to write custom queries without worrying about underlying database details. It is quite similar to HQL, hibernate query language and is often referred by name EJBQL.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Application level Exception in EJB? </label>
+<div class="toggle-content">
+<p>If business rule is voilated or exception occurs while executing the business logic. Then EJB container treats it as Application level exception.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is System level Exception in EJB? </label>
+<div class="toggle-content">
+<p>Any exception which is not caused by business logic or business code. RuntimeException, RemoteException are SystemException. For example, error during ejb lookup.Then EJB container treats such exception as System level exception.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How EJB Container handles exceptions? </label>
+<div class="toggle-content">
+<p>When Application Exception occurs, ejb container intercepts the exception but returns the same to the client as it is. It does not roll back the transaction unless it is specified in code by EJBContext.setRollBackOnly() method. EJB Container does not wrap the exception in case of Application Exception.</p>
+<p>When System Exception occurs, ejb container intercepts the exception, rollbacks the transaction and start the clean up tasks. It wraps the exception into RemoteException and throws it to the client.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">ejb_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="ejb_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="ejb_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

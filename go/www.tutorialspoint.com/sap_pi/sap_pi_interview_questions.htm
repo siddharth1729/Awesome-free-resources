@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SAP PI Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SAP PI Interview Questions - Dear readers, these SAP PI Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your int"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sap_pi/sap_pi_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#017385;
+}
+a.demo {
+    background:#017385;
+}
+li.heading {
+    background:#017385;
+}
+.course-box{background:#017385}
+.home-intro-sub p{color:#017385}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sap_pi/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sap_pi/images/sap-pi-mini-logo.jpg" alt="SAP PI Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">SAP PI Tutorial</li>
+<li><a href="/sap_pi/index.htm">SAP PI - Home</a></li>
+<li><a href="/sap_pi/sap_pi_introduction.htm">SAP PI - Introduction</a></li>
+<li><a href="/sap_pi/sap_pi_installation_options.htm">SAP PI - Installation Options</a></li>
+<li><a href="/sap_pi/sap_pi_netweaver_pi_architecture.htm">SAP PI - Netweaver PI Architecture</a></li>
+<li><a href="/sap_pi/sap_pi_ui_tools.htm">SAP PI - UI Tools</a></li>
+<li><a href="/sap_pi/sap_pi_home_page.htm">SAP PI - Home Page</a></li>
+<li><a href="/sap_pi/sap_pi_system_landscape_directory.htm">SAP PI - System Landscape Directory</a></li>
+<li><a href="/sap_pi/sap_pi_communication.htm">SAP PI - Communication</a></li>
+<li><a href="/sap_pi/sap_pi_securing_objects.htm">SAP PI - Securing Objects</a></li>
+<li><a href="/sap_pi/sap_pi_creating_objects.htm">SAP PI - Creating Objects</a></li>
+<li><a href="/sap_pi/sap_pi_modeling_scenarios.htm">SAP PI - Modeling Scenarios</a></li>
+<li><a href="/sap_pi/sap_pi_design_objects.htm">SAP PI - Design Objects</a></li>
+<li><a href="/sap_pi/sap_pi_display_design_objects.htm">SAP PI - Display Design Objects</a></li>
+<li><a href="/sap_pi/sap_pi_integration_scenarios.htm">SAP PI - Integration Scenarios</a></li>
+<li><a href="/sap_pi/sap_pi_file_to_file_scenario.htm">SAP PI - File to File Scenario</a></li>
+<li><a href="/sap_pi/sap_pi_creating_service_interface.htm">SAP PI - Creating Service Interface</a></li>
+<li><a href="/sap_pi/sap_pi_creating_message_mapping.htm">SAP PI - Creating Message Mapping</a></li>
+<li><a href="/sap_pi/sap_pi_creating_operation_mapping.htm">Creating Operation Mapping</a></li>
+<li><a href="/sap_pi/sap_pi_creating_communication_channel.htm">Creating a Communication Channel</a></li>
+<li><a href="/sap_pi/sap_pi_creating_integrated_configuration.htm">Creating Integrated Configuration</a></li>
+<li><a href="/sap_pi/sap_pi_connectivity.htm">SAP PI - Connectivity</a></li>
+<li><a href="/sap_pi/sap_pi_ccbpm_overview.htm">SAP PI - ccBPM Overview</a></li>
+<li><a href="/sap_pi/sap_pi_ccbpm_configuration.htm">SAP PI - ccBPM Configuration</a></li>
+<li><a href="/sap_pi/sap_pi_monitoring_integration_processes.htm">Monitoring Integration Processes</a></li>
+<li><a href="/sap_pi/sap_pi_web_services.htm">SAP PI - Web Services</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP PI Useful Resources</li>
+<li><a href="/sap_pi/sap_pi_questions_answers.htm">SAP PI - Questions Answers</a></li>
+<li><a href="/sap_pi/sap_pi_quick_guide.htm">SAP PI - Quick Guide</a></li>
+<li><a href="/sap_pi/sap_pi_useful_resources.htm">SAP PI - Useful Resources</a></li>
+<li><a href="/sap_pi/sap_pi_discussion.htm">SAP PI - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SAP PI Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="sap_pi_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_pi_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>SAP PI Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>SAP PI</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer &minus;</p>
+<section class="toggle">
+<label> What is SAP PI/XI?</label>
+<div class="toggle-content"> 
+<p>SAP Process Integration is part of SAP NetWeaver platform and in NetWeaver 7.0 ehp2 and older versions it is called SAP NetWeaver Exchange Infrastructure XI. SAP NetWeaver Process Integration is part of NetWeaver software component and is used for exchange of information in company’s internal system or with external parties.</p>
+<p>SAP PI/XI enables you to set up cross system communication and integration and allows you to connect SAP and non-SAP systems based on different programming language like Java and SAP ABAP. It provides an open source environment that are necessary in complex system landscape for integration of systems and for communication.</p>
+<p>SAP Process Integration is a middleware to allow seamless integration between SAP and non-SAP application in a company or with systems outside the company.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Give an example of using SAP PI system?</label>
+<div class="toggle-content"> 
+<p>An application run on different systems that are part of different business units in a company or implemented in a distributed environment between different companies that has a business relationship with each other. In this environment, there is a need for seamless integration and transfer of information between different systems. SAP PI provides a middleware platform that doesn’t deal with how application components are implemented with a business logic and focuses more on data exchange between the different components.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we need SAP PI system? What are the key capabilities provided by PI system?</label>
+<div class="toggle-content"> 
+<p>In an organization, SAP ERP doesn’t contain a single system but consists of number of integrated systems like SAP CRM, FICO, EWM, etc. SAP PI provides a platform as single point of integration for all systems without touching complex legacy system for all data and information exchange.</p>
+<p>These are the key capabilities that are provided by SAP Process Integration &minus;</p>
+<p><b>Connectivity</b> &minus;</p>
+<p>Using SAP PI, you can connect different applications and systems that has different technical way of communication. It provides you with variety of adapters that allows you to connect applications based on different protocols like HTTPS or Remote Function call RFC.</p>
+<p><b>Routing</b> &minus;</p>
+<p>Routing define the rules for flow of messages between different systems at run time.</p>
+<p><b>Mapping</b> &minus;</p>
+<p>As SAP PI is used to connect different applications or systems in a distributed environment that can be set up between different companies so there is a possibility that structure of data exchange between two components differs from each other.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different installation options available for SAP PI system?</label>
+<div class="toggle-content"> 
+<p>When you run a scenario in SAP PI, the communication and processing capabilities depends on runtime engines that are installed with installation of SAP PI. You can install one or more run time engines on a host system. SAP PI provides following two installation options &minus;</p>
+<p><b>Type 1 Dual Usage Type</b> &minus;</p>
+<p>This installation is based on ABAP and Java and provide tools for designing and configuring integration content and also these run time engines &minus;</p>
+<ul class="list">
+<li>Integration Engine</li>
+<li>Business Process Engine</li>
+<li>Advanced Adapter Engine</li>
+</ul>
+<p><b>Type 2 Advance Adapter Engine Extended AEX</b> &minus;</p>
+<p>This installation is based on Java and provide tools for designing and configuring integration content and contain Advance adapter engine as run time engine.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the architecture and different components in PI system?</label>
+<div class="toggle-content"> 
+<p>SAP PI architecture consists of multiple components which are used at design time, configuration time and run time. In SAP PI, sender system is known as source and receiver is called as target system and architecture is known as Hub and Spoke structure. The Spoke is used to connect with external systems and hub is used to exchange messages.</p>
+<p><b>SAP PI system is divided into following components</b> &minus;</p>
+<ul class="list">
+<li>Integration Server</li>
+<li>Integration Builder</li>
+<li>System Landscape Directory SLD</li>
+<li>Configuration and Monitoring</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Runtime workbench in PI system?</label>
+<div class="toggle-content"> 
+<p>This is a tool used to provide central monitoring of PI components and messages.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Integration server? What are the components in Integration server?</label>
+<div class="toggle-content"> 
+<p>This is one of the key component of SAP PI system and is used for processing of messages. It consists of three engines &minus;</p>
+<ul class="list">
+<li>Business Process Engine</li>
+<li>Integration Engine</li>
+<li>Central Advanced Adapter Engine AAE</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is synchronous and asynchronous message in SAP PI system?</label>
+<div class="toggle-content"> 
+<p>Synchronous message is defined as message contains both the request-response part.</p>
+<p>Asynchronous message is defined as message contains either request or the response part only.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Adapter engine AAE in PI system?</label>
+<div class="toggle-content"> 
+<p>As Integration engine handles messages in XML and SOAP protocol so if business system doesn’t contain data in specific format, Adapters are used to convert the messages specific protocol and message format required by integration engine.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In dual stack system, what are the ABAP and Java stack adapters?</label>
+<div class="toggle-content"> 
+<p><b>Java Stack Adapters</b> &minus;</p>
+<p>RFC adapter, SAP Business Connector adapter, file/FTP adapter, JDBC adapter, JMS adapter, SOAP adapter, Marketplace Adapter, Mail adapter, RNIF adapter, CIDX adapter</p>
+<p><b>ABAP Stack Adapters</b> &minus;</p>
+<p>IDOC and HTTP adapter</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by single stack system?</label>
+<div class="toggle-content"> 
+<p>In latest releases when SAP PI moved to single stack system, these two ABAP adapters are also moved to Java stack adapters and new engine is known as Advanced Adapter Engine AAE.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Enterprise Service Repository?</label>
+<div class="toggle-content"> 
+<p>This is used to store design time repository objects like mapping, interfaces and process definitions in PI system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of System Landscape directory SLD?</label>
+<div class="toggle-content"> 
+<p>This directory contains the information about landscape and software component versions. A SAP system can be configured to register under SLD.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which SAP PI user interface tools you have used?</label>
+<div class="toggle-content"> 
+<p>You can use different SAP PI user interface tools to access different components of SAP PI system architecture. Most common UI tools are &minus;</p>
+<p><b>ES Builder</b> &minus;</p>
+<p>This tool provides Java user interface for working in Enterprise Service Repository ESR.</p>
+<p><b>SAP NW Developer Studio</b> &minus;</p>
+<p>This is Java Eclipsed based tool to view and edit some object types in Enterprise Service Repository.</p>
+<p><b>Integration Builder</b> &minus;</p>
+<p>This tool provides Java based user interface to work in Integration directory.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In SAP PI system, it contains interface objects like service interface, data type and message type. What is cardinality between these objects?</label>
+<div class="toggle-content"> 
+<p><b>Interface Objects</b> &minus; Service Interface, Data type and message type</p>
+<p><b>Mapping Objects</b> &minus; Mapping of messages as per sender and receiver data structure</p>
+<img src="/sap_pi/images/sap_pi_system.jpg" alt="SAP PI system" />
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of message mapping? What are different message mapping types?</label>
+<div class="toggle-content"> 
+<p>Operation Mapping is used for converting source structure to target structure if data structure is different. Complex operation mapping can be simplified using message mapping.</p>
+<p>Message Mapping can be implemented in these ways &minus;</p>
+<ul class="list">
+<li>Graphical Mapping</li>
+<li>Java Mapping</li>
+<li>XSLT Mapping</li>
+<li>ABAP Mapping</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What functions you can perform using Web based ESR function?</label>
+<div class="toggle-content"> 
+<p>In Web based interface, you can perform these tasks &minus;</p>
+<p><b>Search</b></p>
+<p>Search for service interfaces, data types, and so on</p>
+<p><b>Subscribe</b></p>
+<p>Subscribe for Notifications.</p>
+<p><b>Manage</b></p>
+<p>Manage lifecycle status of service interfaces, data types, and so on.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Integration directory?</label>
+<div class="toggle-content"> 
+<p>Integration directory is used for the configuration of objects that are created in Enterprise Service Repository and configuration is executed by integration engine at run time. To configure ESR objects, you need to import object - Service and Communication channel.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different configurations that can be done in Integration directory?</label>
+<div class="toggle-content"> 
+<p>In Integration directory, you can make four types of configuration &minus;</p>
+<ul class="list">
+<li><p>Sender Agreement to determine how the message is transformed by Integration server.</p></li>
+<li><p>Receiver Determination is used to determine information of receiver to whom message to be sent.</p></li>
+<li><p>Interface Determination is used to determine inbound interface to which message to be sent and interface mapping for processing the message.</p></li>
+<li><p>Receiver agreement define how message is transformed and to be processed by receiver.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> To view the products and software components, which of the PI component can be used?</label>
+<div class="toggle-content"> 
+<p>Under SLD, Software Catalog &minus;</p>
+<ul class="list">
+<li><p><b>Products</b> &minus; To view products in SAP software catalog.</p></li>
+<li><p><b>Software components</b> &minus; To view software components in SAP Software catalog.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> How do you monitor the function of Integration engine, CCMS integration and process monitoring infrastructure in SAP system.</label>
+<div class="toggle-content"> 
+<p>Configuration and Monitoring option on SAP PI tools home page allows you to monitor the functions of integration engine, CCMS integration and process monitoring infrastructure in SAP system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which components you can configure and monitor under Configuration and Monitoring option?</label>
+<div class="toggle-content"> 
+<p>Using Configuration and Monitoring, you can monitor these functions &minus;</p>
+<p><b>Component Monitoring</b> &minus;</p>
+<p>To monitor different SAP PI Java and ABAP components.</p>
+<p><b>Message Monitoring</b> &minus;</p>
+<p>To monitor the status of message processing in a SAP PI component.</p>
+<p><b>Performance Monitoring</b> &minus;</p>
+<p>Using runtime workbench you can monitor different performance measures in a SAP PI system. You can create various aggregation reports.</p>
+<p><b>End to End Monitoring</b> &minus;</p>
+<p>To monitor end to end lifecycle in SAP PI system for a scenario.</p>
+<p><b>Message Index Search</b> &minus;</p>
+<p>You can perform Index based message search in message monitoring and you can also search based on adapter specific selection, etc.</p>
+<p><b>Alert Inbox</b> &minus;</p>
+<p>Alert inbox is as per role assigned to a business user and is used for viewing all the alerts in SAP PI system as per configuration.</p>
+<p><b>Alert Configuration</b> &minus;</p>
+<p>Alert framework in C&M allows you to report all the errors during message processing in ABAP and Java. Using alert configuration, you can define policy if an alert has to be reported for error and to perform analysis or not.</p>
+<p><b>Monitoring of runtime cache</b> &minus;</p>
+<p>This is used to view objects in runtime cache.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In SAP PI system, which tests you can perform under monitoring and configuration part?</label>
+<div class="toggle-content">
+<p><b>Send Test Message</b> &minus;</p>
+<p>To simulate a message flow and verify that the SAP NetWeaver Process Integration runtime is functioning correctly by sending a test message to the Integration Engine or the Advanced Adapter Engine.</p>
+<p><b>Cache Connectivity Test</b> &minus;</p>
+<p>This is used to inspect the cache connectivity status of the infrastructure components of SAP NetWeaver Process Integration and test their connectivity with the runtime caches.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Synchronous communication under SAP PI communication?</label>
+<div class="toggle-content"> 
+<p>In a Synchronous communication, it is invoked by request and response operation and process output is returned immediately after the operation. In general terms, you can say that a synchronous scenario when a sender process sends a request to receiver and waits for a response. If an error occurs at receiver side, sender application is responsible for sending the message again.</p>
+<p>In this approach, there is a possibility that sender might resend message after time out and duplicate message may exists. This approach in PI is known as BE Best Effort.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In Synchronous communication, what are common errors that can occur in this communication scenario?</label>
+<div class="toggle-content">
+<p><b>Application Error</b> &minus;</p>
+<p>There is an error at receiver end while processing a message and sender is not aware about this error and keeps waiting for the reply.</p>
+<p><b>Network level Error</b> &minus;</p>
+<p>In this error, there is an error in communication network between sender and receiver. Sender is not aware about this and message stuck in between and sender waits till the operation timeout.</p>
+<p><b>Error is response message</b> &minus;</p>
+<p>In this scenario, an error occurs and response message gets stuck in between and sender keeps on waiting.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the benefits of using Synchronous communication?</label>
+<div class="toggle-content"> 
+<p>There is no need to configure response message routing.</p>
+<p>There is no need to correlate response to a request.</p>
+<p>In this communication, response is received immediately.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Where do you prefer Synchronous communication method in PI system? Any example?</label>
+<div class="toggle-content"> 
+<p>This is suitable for operations that involve read operations.</p>
+<p><b>Example</b> &minus; viewing a purchase order.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the disadvantages of using Synchronous communication?</label>
+<div class="toggle-content"> 
+<p>In case of a failure, sender needs to send a message again.</p>
+<p>Receiving system should be configure to check duplicate messages.</p>
+<p>In this scenario, sender application is blocked till a response is received or a time out error occurs.</p>
+<p>You can’t configure multiple receivers.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is asynchronous communication under SAP PI communication?</label>
+<div class="toggle-content"> 
+<p>In an Asynchronous communication, you add an intermediate system or a middleware between two systems. When a Sender application sends a request, it does not wait for the Receiving application to send the response. If there is a failure due to some reason, the middleware is responsible for re-sending the message. If required, the receiving system can send a response back to Sender as a separate asynchronous call.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Where do you recommend of using asynchronous communication under SAP PI communication?</label>
+<div class="toggle-content"> 
+<p>This is recommended for modify operations like creating a purchase order or modify a purchase order.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the advantages of using asynchronous communication?</label>
+<div class="toggle-content"> 
+<p>In case of failure, SAP PI system ensures the guaranteed delivery and will resend the message.</p>
+<p>No configure required for duplicate checks.</p>
+<p>You can configure multiple receivers in this scenario.</p>
+<p>Both sender system and receiver system need not be online at same time.</p>
+<p>PI logs all the messages send via asynchronous communication.</p>
+<p>No time out as intermediate system keeps the message and response request.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the drawbacks of using asynchronous communication?</label>
+<div class="toggle-content"> 
+<p>In this scenario, sender needs to correlated responses to request on its own.</p>
+<p>Response message needs to be implemented and routed separately.</p>
+<p>It doesn’t provide an immediate response.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To transfer the objects from one repository to other what are the different methods you can use?</label>
+<div class="toggle-content"> 
+<p>For transferring information in form of objects from one Enterprise Service Repository to other, you can select between three mean of transports &minus;</p>
+<ul class="list">
+<li>File System Based Transport</li>
+<li>Change Management Service (CMS)</li>
+<li>Change and Transport System (CTS)</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> When you create a PI scenario, what are the different objects- mandate/non-mandate that you have to use?</label>
+<div class="toggle-content"> 
+<table style="text-align:center;" class="table table-bordered">
+<tr>
+<th style="text-align:center;">Design Object</th>
+<th style="text-align:center;">Mandatory</th>
+<th style="text-align:center;">Function</th>
+</tr>
+<tr>
+<td>Integration scenarios</td>
+<td style="vertical-align:middle;">No</td>
+<td>It is used to bundle all necessary design objects</td>
+</tr>
+<tr>
+<td>Message types</td>
+<td>Yes</td>
+<td>It is used to encapsulate data types</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;">Data types</td>
+<td style="vertical-align:middle;">Yes</td>
+<td>It is used to describe structure of data to be exchanged</td>
+</tr>
+<tr>
+<td>Service Interfaces</td>
+<td>Yes</td>
+<td>It encapsulates message types and parameters</td>
+</tr>
+<tr>
+<td>Mapping</td>
+<td>No</td>
+<td>Mapping of message</td>
+</tr>
+<tr>
+<td>Integration processes</td>
+<td style="vertical-align:middle;">No</td>
+<td style="vertical-align:middle;">It defines ccBPM workflows</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> How you can transfer up to date software components in SLD</label>
+<div class="toggle-content"> 
+<p>How to transfer software components in SLD?</p>
+<p>When you install system landscape directory, initial catalog is installed.</p>
+<p>From SAP Market Place, you can import more up to date catalog.</p>
+<p>You can also import your own software components and products depending on the project and integration scenario.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you implement a File to File scenario in PI system?</label>
+<div class="toggle-content"> 
+<p>In SAP PI file to file scenario, we transfer a file from source system to target system. Once the components are built in SAP PI, you can transfer a file in SAP PI system by creating objects in Enterprise Service builder.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In SAP PI F2F scenario, if structure of my input file and output file is different, how do you implement message and data types?</label>
+<div class="toggle-content"> 
+<p>If structure of my input file and output file is same, I can use one data type and one message type only. If structure is different, you have to create two data types and message types for inbound and outbound. In this example we are using same structure of input and output file.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In SAP PI File to file scenario, what is the use of service interface?</label>
+<div class="toggle-content"> 
+<p>You have to create two service interface here one for inbound and one for the outbound.</p>
+<p>Right click on Namespace &rarr; New &rarr; Interface objects &rarr; Service Interface</p>
+</div>
+</section>
+<section class="toggle">
+<label> Name different adapters in AAE and Integration engine in PI system and when they are used?</label>
+<div class="toggle-content"> 
+<p><b>RFC Adapter</b> &minus;</p>
+<p>This adapter is used to communicate with other SAP systems using RFC interface.</p>
+<p><b>HTTP Adapter/HTTP AAE Adapter</b> &minus;</p>
+<p>It allows the exchange data using HTTP protocol, adapters are available both in the Integration engine and also in the Advanced Adapter Engine.</p>
+<p><b>JDBC Adapter</b> &minus;</p>
+<p>It allows the access to databases using JDBC</p>
+<p><b>File/FTP Adapter</b> &minus;</p>
+<p>This adapter is used to perform data exchange with external systems using a file interface or an FTP server.</p>
+<p><b>Mail Adapter</b> &minus;</p>
+<p>It allows you to connect e-mail servers to the Integration Engine.</p>
+<p><b>IDoc Adapter</b> &minus;</p>
+<p>It allows the exchange of IDocs, adapters are available both in the Integration engine and also in the Advanced Adapter Engine.</p>
+<p><b>XI Adapter</b> &minus;</p>
+<p>This adapter allows you to communicate using proxy. This adapter does not run in the Advanced Adapter Engine and runs in the Integration Engine. it is used only for establishing the HTTP connection to the receiver.</p>
+<p><b>WS Adapter</b> &minus;</p>
+<p>This adapter is used to provide the connectivity with WS providers and WS consumers according to the standard Web Services Reliable Messaging (WS-RM) protocol. SAP has developed the WS-RM protocol with its own inbox, which is implemented in the ABAP stack on the Integration Engine.</p>
+<p><b>JMS Adapter</b> &minus;</p>
+<p>It enables communication with messaging systems using the JMS API.</p>
+<p><b>SOAP Adapter</b> &minus;</p>
+<p>It allows the integration of remote clients or Web service providers using SOAP.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Cross component BPM in SAP PI system?</label>
+<div class="toggle-content"> 
+<p>Business Process management deals with cross component BPM. This includes SAP workflow in SAP backend and processing of message on Integration server.</p>
+<p>Cross component Business Process Management provides SAP NetWeaver Process Integration with functions for stateful message processing, that is, the status of an integration process is persisted on the Integration Server. This means that an integration process can, for example, wait infinitely until further messages are received or until a particular deadline is reached. Moreover, it is possible to process messages further within an integration process.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a web service?</label>
+<div class="toggle-content"> 
+<p>A Web service is an application function or a service and can be used through internet standard. It is an independent, modular, and self-describing application function or service.</p>
+<p>It can be described, made available, located and transformed or called using the standard Internet protocols.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the quality of services under asynchronous process in PI system?</label>
+<div class="toggle-content"> 
+<p>This approach in SAP PI is called exactly once EO or Exactly Once In Order EOIO.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which adapter is used to contain central monitoring and configuration?</label>
+<div class="toggle-content"> 
+<p>Adapter Engine</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different types of mapping that can be used in PI?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>Graphical Mapping</li>
+<li>Java Mapping</li>
+<li>XSLT Mapping</li>
+<li>ABAP Mapping</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Where do you execute BPM process in PI system?</label>
+<div class="toggle-content"> 
+<p>BPM is executed in integration Engine.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of global containers in PI?</label>
+<div class="toggle-content"> 
+<p>Global Container allows you to cache the values that you want to read again when you next call any userdefined function in the same message mapping. Note that the sequence in which user-defined functions are called is predefined. It depends on the position of the target fields that the function was assigned to.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Where do you access alert inbox and alert configuration?</label>
+<div class="toggle-content"> 
+<p>Runtime Workbench</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the T-code for opening Integration Builder?</label>
+<div class="toggle-content"> 
+<p>SXMB_IFR</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different non-SAP Application adapters? Can you name few?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>BAAN</li>
+<li>Oracle</li>
+<li>Seibel</li>
+<li>People Soft</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the advantages of using Web services?</label>
+<div class="toggle-content"> 
+<p>Web service allows programs running on different platforms, operating systems and different languages to communicate with each other.</p>
+<p>Web Service is an application function or a service.</p>
+<p>Web Service can be used through internet standard.</p>
+<p>Web services can be published and traced.</p>
+<p>Web service form a basis for Enterprise Services Architecture (ESA) which is known as SAP's enhanced version of service-oriented architecture SOA.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">sap_pi_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sap_pi_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_pi_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

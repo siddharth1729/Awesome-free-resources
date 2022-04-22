@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>CICS Mock Test - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="CICS Mock Test - This section presents you various set of Mock Tests related to CICS Framework.  You can download these sample mock tests at your local machine and solve offline"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/cics/cics_mock_test.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#00a79d;
+}
+a.demo {
+    background:#00a79d;
+}
+li.heading {
+    background:#00a79d;
+}
+.course-box{background:#00a79d}
+.home-intro-sub p{color:#00a79d}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/cics/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/cics/images/cics-mini-logo.jpg" alt="CICS Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">CICS Tutorial</li>
+<li><a href="/cics/index.htm">CICS - Home</a></li>
+<li><a href="/cics/cics_overview.htm">CICS - Overview</a></li>
+<li><a href="/cics/cics_environment.htm">CICS - Environment</a></li>
+<li><a href="/cics/cics_basic_terms.htm">CICS - Basic Terms</a></li>
+<li><a href="/cics/cics_nucleus.htm">CICS - Nucleus</a></li>
+<li><a href="/cics/cics_transactions.htm">CICS - Transactions</a></li>
+<li><a href="/cics/cics_cobol_basics.htm">CICS - COBOL Basics</a></li>
+<li><a href="/cics/cics_bms.htm">CICS - BMS</a></li>
+<li><a href="/cics/cics_map.htm">CICS - MAP</a></li>
+<li><a href="/cics/cics_interface_block.htm">CICS - Interface Block</a></li>
+<li><a href="/cics/cics_pseudo_programming.htm">CICS - Pseudo Programming</a></li>
+<li><a href="/cics/cics_aid_keys.htm">CICS - Aid Keys</a></li>
+<li><a href="/cics/cics_file_handling.htm">CICS - File Handling</a></li>
+<li><a href="/cics/cics_error_handling.htm">CICS - Error Handling</a></li>
+<li><a href="/cics/cics_control_operations.htm">CICS - Control Operations</a></li>
+<li><a href="/cics/cics_temporary_storage.htm">CICS - Temporary Storage</a></li>
+<li><a href="/cics/cics_intercommunication.htm">CICS - Intercommunication</a></li>
+<li><a href="/cics/cics_status_codes.htm">CICS - Status Codes</a></li>
+<li><a href="/cics/cics_interview_questions.htm">CICS - Interview Questions</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">CICS Useful Resources</li>
+<li><a href="/cics/cics_quick_guide.htm">CICS - Quick Guide</a></li>
+<li><a href="/cics/cics_useful_resources.htm">CICS - Useful Resources</a></li>
+<li><a href="/cics/cics_discussion.htm">CICS - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>CICS Mock Test</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="cics_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="cics_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>This section presents you various set of Mock Tests related to <b>CICS Framework</b>.  You can download these sample mock tests at your local machine and solve offline at your convenience. Every mock test is supplied with a mock test key to let you verify the final score and grade yourself.</p>
+<img src="/images/online_mock_tests.png" alt="Questions and Answers" />
+<a href="/cics/cics_mock_test.htm?min=1&max=25"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test I</button></a>
+<a href="/cics/cics_mock_test.htm?min=26&max=50"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test II</button></a>
+<a href="/cics/cics_mock_test.htm?min=51&max=75"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test III</button></a>
+<a href="/cics/cics_mock_test.htm?min=76&max=100"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test IV</button></a>
+<style>
+.B, .answer-sheet{
+   display:none !important;
+}
+.Q a{
+   pointer-events: none;
+   cursor: default;
+}
+</style>
+<h1>CICS Mock Test I </h1>
+<div class="QA">
+<div class="Q" id="Q1">
+<p><span>Q 1</span> - What does CICS stands for?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Customer Information Control System</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Customer Interaction Control System</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Customer Information Command System</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A1'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>CICS stands for Customer Information Control System.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('1')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q2">
+<p><span>Q 2</span> - Which one of these is not an online system?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Airline reservations system</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Online banking system</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Both A &amp; B</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Payroll systems</a></p>
+</div>
+<div class="A" id='A2'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>Payroll system are example of batch programs. They are executed every month in batches. </p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('2')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q3">
+<p><span>Q 3</span> - In which system user interaction is not possible?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Online System</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Batch System</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Both A & B</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A3'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>In batch system, user interaction is not possible. All the inputs are given before starting the batch execution.</p>
+</div>
+ <div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('3')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q4">
+<p><span>Q 4</span> - What does OLTP stands for?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Online Transaction Processing</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Online Terminal Processing</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Online Transaction Process</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A4'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>CICS is a transaction processing system which is also called as Online Transaction Processing (OLTP) Software. </p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('4')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q5">
+<p><span>Q 5</span> - Which component in CICS maintains control functions to manage the allocation or de-allocation of resources with in the system ?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - System Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Data Communication Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Data Handling Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Application Programming Services</a></p>
+</div>
+<div class="A" id='A5'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>System services are responsible for managing allocation and de-allocation of resources. </p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('5')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q6">
+<p><span>Q 6</span> - Which component in CICS interfaces with telecommunication access methods such as BTAM, VTAM and TCAM for handling data communication requests from application programs?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - System Services</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Data Communication Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Data Handling Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Application Programming Services</a></p>
+</div>
+<div class="A" id='A6'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>Data Communication Services interfaces with telecommunication access methods such as BTAM, VTAM and TCAM for handling data communication requests from application programs.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('6')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q7">
+<p><span>Q 7</span> - Which component in CICS interfaces with data access methods such as BDAM, VSAM?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - System Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Data Communication Services</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Data Handling Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Application Programming Services</a></p>
+</div>
+<div class="A" id='A7'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>Data Handling Services interfaces with data access methods such as BDAM, VSAM, etc. Data Handling Services interfaces with database access methods such as IMS/DB, DB2, etc. and facilitate servicing of database requests from application programs.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('7')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q8">
+<p><span>Q 8</span> - Which component in CICS provide features such as command level translation, CEDF (the debug facility) and CECI (the command interpreter facility)?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - System Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Data Communication Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Data Handling Services</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Application Programming Services</a></p>
+</div>
+<div class="A" id='A8'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>Application Programming Services interfaces with application programs. The application programming services of CICS provide features such as command level translation, CEDF (the debug facility) and CECI (the command interpreter facility).</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('8')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q9">
+<p><span>Q 9</span> - Which component in CICS monitors various events within CICS address space?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - System Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Data Communication Services</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Data Handling Services</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Monitoring Services</a></p>
+</div>
+<div class="A" id='A9'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>Monitoring Services monitors various events within CICS address space. It provides series of statistical information that can be used for system tuning.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('9')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q10">
+<p><span>Q 10</span> - What does BMS stands for?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Basic Mapping Support</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Basic Mapping System</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Basic Managing Support</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A10'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>BMS stands for Basic Mapping Support which handles the burden of dealing with terminal hardware issues.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('10')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q11">
+<p><span>Q 11</span> - What does MRO stands for?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Multi Region Operation</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Mixed Region Operation</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Multi Region Output</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A11'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>CICS provides Multi Region Operation (MRO) through which more than one CICS region in the same system can communicate.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('11')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q12">
+<p><span>Q 12</span> - </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Inter System Command</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Inter Software Communication</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Inter System Communication</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A12'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>CICS provides Inter System Communication (ISC) through which a CICS region in a system can communicate with CICS region on another system.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('12')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q13">
+<p><span>Q 13</span> - How many characters can be displayed on a CICS CRT monitor?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 2000</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 1900</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - 1920</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 1950</a></p>
+</div>
+<div class="A" id='A13'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>A CRT monitor is capable of displaying 1920 characters (24 Rows and 80 Columns).</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('13')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q14">
+<p><span>Q 14</span> - Which keys are known as function keys and allows transfer of data from terminal to CICS?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - PF Keys</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - PA Keys</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Non-AID Keys</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A14'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>PF keys are known as function keys. PF keys allows transfer of data from terminal to CICS. PF Keys are ENTER and PF1 to PF24.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('14')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q15">
+<p><span>Q 15</span> - Which keys are known as Program Access keys and does not allow transfer of data between terminal and CICS?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - PF Keys</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - PA Keys</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Non-AID Keys</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A15'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>PA keys are known as Program Access keys. PA keys does not allow transfer of data between terminal and CICS. PA Keys are PA1 to PA3 and CLEAR.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('15')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q16">
+<p><span>Q 16</span> - Alphabets, numeric, punctuation comes under which type of category?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - PF Keys</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - PA Keys</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Non-AID Keys</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of these</a></p>
+</div>
+<div class="A" id='A16'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>All other keys for alphabets, numeric, punctuation etc. are Non-Aid keys. When the user types text, numbers etc. using non-aid keys CICS will not even know if the user is typing anything or not.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('16')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q17">
+<p><span>Q 17</span> - What is the length of transaction identifier in CICS?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - 1 to 4 characters</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 1 to 8 characters</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 1 to 6 characters</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 1 to 10 characters</a></p>
+</div>
+<div class="A" id='A17'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>Transaction identifier which is 1 to 4 character long is used to do the identify the transaction which user want to do.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('17')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q18">
+<p><span>Q 18</span> - Which CICS program is used to receive messages from terminal?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Terminal Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Task Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Program Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - File Control Program</a></p>
+</div>
+<div class="A" id='A18'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>TCP is known as Terminal Control Program. TCP is used to receive messages from terminal. TCP maintains hardware communication requirements.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('18')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q19">
+<p><span>Q 19</span> - Which CICS program is used to simultaneously control the execution of tasks and its related properties?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Terminal Control Program</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Task Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Program Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - File Control Program</a></p>
+</div>
+<div class="A" id='A19'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>KCP is known as Task Control Program. KCP is used to simultaneously control the execution of tasks and its related properties. KCP handles all issues related to multi-tasking.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('19')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q20">
+<p><span>Q 20</span> - Which CICS program is used to locate and load programs for execution?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Terminal Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Task Control Program</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Program Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - File Control Program</a></p>
+</div>
+<div class="A" id='A20'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>PCP is known as Program Control Program. PCP is used to locate and load programs for execution. PCP transfers the control between programs and in the end it returns control to CICS. </p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('20')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q21">
+<p><span>Q 21</span> - Which CICS program is used to provide application programs with services like read, insert, update or delete records in a file?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Terminal Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Task Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Program Control Program</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - File Control Program</a></p>
+</div>
+<div class="A" id='A21'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>FCP is known as File Control Program. FCP is used to provide application programs with services like read, insert, update or delete records in a file. FCP manages exclusive control over the records in order to maintain data integrity during record updates. </p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('21')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q22">
+<p><span>Q 22</span> - Which CICS program is used to control allocation and de-allocation of storage within CICS region?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Terminal Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Task Control Program</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Program Control Program</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Storage Control Program</a></p>
+</div>
+<div class="A" id='A22'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>SCP is known as Storage Control Program. SCP is used to control allocation and de-allocation of storage within CICS region.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('22')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q23">
+<p><span>Q 23</span> - In which table entry is made when we login to CICS terminal?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Terminal Control Table</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Program Control Table</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Processing Program Table</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - File Control Table</a></p>
+</div>
+<div class="A" id='A23'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>TCT is known as Terminal Control Table. When we login to CICS terminal an entry is made in the TCT table. TCT contains the terminal ID's that are connected to current CICS region. </p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('23')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q24">
+<p><span>Q 24</span> - Which table contains the Transaction IDs (TRANSID) and the corresponding program names or program IDs?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Terminal Control Table</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Program Control Table</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Processing Program Table</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - File Control Table</a></p>
+</div>
+<div class="A" id='A24'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>PCT is known as Program Control Table. PCT contains the Transaction IDs (TRANSID) and the corresponding program names or program IDs. TRANSID is unique in PCT table.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('24')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q25">
+<p><span>Q 25</span> - Which table contains Program name or Mapset name, Task Use Counter, Language, Size, Main storage address, Load library address?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Terminal Control Table</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Program Control Table</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Processing Program Table</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - File Control Table</a></p>
+</div>
+<div class="A" id='A25'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>PPT is known as Processing Program Table. PPT contains Program name or Mapset name, Task Use Counter, Language, Size, Main storage address, Load library address, etc. Program or Mapset name is unique in PPT table.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('25')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>   <h1 class="answer-sheet">Answer Sheet</h1>
+   <table class="table table-bordered">
+   <tr>
+   <th style="width:50%;">Question Number</th>
+   <th style="width:50%;">Answer Key</th>
+   </tr>      <tr>
+      <td>1</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>2</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>3</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>4</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>5</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>6</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>7</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>8</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>9</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>10</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>11</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>12</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>13</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>14</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>15</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>16</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>17</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>18</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>19</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>20</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>21</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>22</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>23</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>24</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>25</td>
+      <td>C</td>
+      </tr></table><div class="download-btn">
+<a target="_blank" href="/cics/pdf/cics_mock_test_i.pdf"><i class="fa fa-download"></i> Download</a>
+</div>
+<script type="text/javascript" src="/theme/js/exams.js"></script>
+<div class="parent-file">cics_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="cics_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="cics_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

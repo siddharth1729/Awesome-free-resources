@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SAP SD Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SAP SD Interview Questions - Dear readers, these SAP SD Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your int"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sap_sd/sap_sd_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#014185;
+}
+a.demo {
+    background:#014185;
+}
+li.heading {
+    background:#014185;
+}
+.course-box{background:#014185}
+.home-intro-sub p{color:#014185}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sap_sd/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sap_sd/images/sap-sd-mini-logo.jpg" alt="SAP SD Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">SAP SD Tutorial</li>
+<li><a href="/sap_sd/index.htm">SAP SD - Home</a></li>
+<li><a href="/sap_sd/sap_sd_introduction.htm">SAP SD - Introduction</a></li>
+<li><a href="/sap_sd/sap_sd_customer_material_master_data.htm">Customer &amp; Material Master Data</a></li>
+<li><a href="/sap_sd/sap_sd_create_partner_function.htm">SAP SD - Create Partner Function</a></li>
+<li><a href="/sap_sd/sap_sd_create_material_stock.htm">SAP SD - Create Material Stock</a></li>
+<li><a href="/sap_sd/sap_sd_create_mm_for_sales_view.htm">SAP SD - Create MM For Sales View</a></li>
+<li><a href="/sap_sd/sap_sd_customer_account_groups.htm">SAP SD - Customer Account Groups</a></li>
+<li><a href="/sap_sd/sap_sd_pre_sales_activities.htm">SAP SD - Pre-Sales Activities</a></li>
+<li><a href="/sap_sd/sap_sd_create_quotations.htm">SAP SD - Create Quotations</a></li>
+<li><a href="/sap_sd/sap_sd_sales_support.htm">SAP SD - Sales Support</a></li>
+<li><a href="/sap_sd/sap_sd_sales_order_processing.htm">SAP SD - Sales Order Processing</a></li>
+<li><a href="/sap_sd/sap_sd_creation_sales_order.htm">SAP SD - Creation of Sales Order</a></li>
+<li><a href="/sap_sd/sap_sd_defining_sales_document.htm">SAP SD - Defining a Sales Document</a></li>
+<li><a href="/sap_sd/sap_sd_item_categories.htm">SAP SD - Item Categories</a></li>
+<li><a href="/sap_sd/sap_sd_schedule_lines_categories.htm">SAP SD - Schedule Lines Categories</a></li>
+<li><a href="/sap_sd/sap_sd_copy_control.htm">SAP SD - Copy Control</a></li>
+<li><a href="/sap_sd/sap_sd_log_incomplete_items.htm">SAP SD - Log of INComplete Items</a></li>
+<li><a href="/sap_sd/sap_sd_pricing.htm">SAP SD - Pricing</a></li>
+<li><a href="/sap_sd/sap_sd_condition_record_table.htm">SAP SD - Condition Record &amp; Table</a></li>
+<li><a href="/sap_sd/sap_sd_condition_techniques_types.htm">Condition Techniques &amp; Types</a></li>
+<li><a href="/sap_sd/sap_sd_access_sequence.htm">SAP SD - Access Sequence</a></li>
+<li><a href="/sap_sd/sap_sd_prices_surcharges_discounts.htm">Prices, Surcharges &amp; Discounts</a></li>
+<li><a href="/sap_sd/sap_sd_product_proposals.htm">SAP SD - Product Proposals</a></li>
+<li><a href="/sap_sd/sap_sd_product_listing_determination_exclusion.htm">Listing, Determination &amp; Exclusion</a></li>
+<li><a href="/sap_sd/sap_sd_sales_order_types.htm">SAP SD - Sales Order Types</a></li>
+<li><a href="/sap_sd/sap_sd_free_charge_deliveries.htm">SAP SD - Free of Charge Deliveries</a></li>
+<li><a href="/sap_sd/sap_sd_outline_agreements.htm">SAP SD - Outline Agreements</a></li>
+<li><a href="/sap_sd/sap_sd_quota_arrangement.htm">SAP SD - Quota Arrangement</a></li>
+<li><a href="/sap_sd/sap_sd_special_business_process.htm">SAP SD - Special Business Process</a></li>
+<li><a href="/sap_sd/sap_sd_shipping.htm">SAP SD - Shipping</a></li>
+<li><a href="/sap_sd/sap_sd_shipping_point_route_determination.htm">Shipping Point &amp; Route Determination</a></li>
+<li><a href="/sap_sd/sap_sd_define_routes_stages.htm">SAP SD - Define Routes &amp; Stages</a></li>
+<li><a href="/sap_sd/sap_sd_outbound_delivery.htm">SAP SD - Outbound Delivery</a></li>
+<li><a href="/sap_sd/sap_sd_delivery_processing.htm">SAP SD - Delivery Processing</a></li>
+<li><a href="/sap_sd/sap_sd_picking_packing_post_goods_issue.htm">Picking, Packing &amp; Post Good Issue</a></li>
+<li><a href="/sap_sd/sap_sd_introduction_to_billing.htm">SAP SD - Introduction to Billing</a></li>
+<li><a href="/sap_sd/sap_sd_billing_methods.htm">SAP SD - Billing Methods</a></li>
+<li><a href="/sap_sd/sap_sd_credit_management.htm">SAP SD - Credit Management</a></li>
+<li><a href="/sap_sd/sap_sd_mapping_enterprise_structure.htm">Mapping Enterprise Structure</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP SD Useful Resources</li>
+<li><a href="/sap_sd/sap_sd_questions_answers.htm">SAP SD - Questions Answers</a></li>
+<li><a href="/sap_sd/sap_sd_quick_guide.htm">SAP SD - Quick Guide</a></li>
+<li><a href="/sap_sd/sap_sd_useful_resources.htm">SAP SD - Useful Resources</a></li>
+<li><a href="/sap_sd/sap_sd_discussion.htm">SAP SD - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SAP SD Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="sap_sd_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_sd_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>SAP SD Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>SAP SD</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer &minus;</p>
+<section class="toggle">
+<label> What is SAP Sales and Distribution?</label>
+<div class="toggle-content"> 
+<p>SAP Sales and Distribution is one of key component of SAP ERP system and is used to manage shipping, billing, selling and transportation of products and services in an organization.</p>
+<p>SAP Sales and Distribution module is part of SAP Logistics module that manages customer relationship starting from raising a quotation to sales order and billing of the product or service. This module is closely integrated with other modules like SAP Material Management and PP.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by Organization structure in SAP Sales and Distribution?</label>
+<div class="toggle-content"> 
+<p>SAP SD organization structure majorly consists of two steps: Creation of Organization elements in SAP system and second is to link each element as per requirement. On the top of organization structure in SD module, sales organization is at highest level and is responsible for distribution of goods and services.</p>
+<p>SAP recommends to keep number of sales organization in organizational structure to be minimum which helps in making reporting process easy and ideally it should have a single Sales organization.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Sales area, Distribution channel and division in SAP Sales and Distribution? </label>
+<div class="toggle-content"> 
+<ul class="list">
+<li><p>Distribution channel tells the medium by which products and services are distributed by an organization to its end users. Division in an organizational structure represents a product or service line in a single organization.</p></li>
+<li><p>A Sales area is known as entity which is required to process an order in a company. It is comprised of Sales organization, distribution channel and a division.</p></li>
+<li><p>In SAP SD organizational structure, each sales organization is assigned to a company code. Distribution channel and divisions are assigned to Sales organization and all comprise to make a sales area.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Sales area?</label>
+<div class="toggle-content"> 
+<p>A Sales area is known as entity which is required to process an order in a company. It is comprised of Sales organization, distribution channel and a division.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can you do delivery without shipping point?</label>
+<div class="toggle-content"> 
+<p>No, shipping point is required to perform goods delivery.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Is it possible to create invoices without delivery?</label>
+<div class="toggle-content"> 
+<p>No, invoice is not possible without delivery.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Give an example of Material Management integration with Sales and Distribution?</label>
+<div class="toggle-content"> 
+<p>Consider an example of creating a sales order in SAP SD, it involves copying details of item from Material Management.</p>
+<p>Availability check of the item and price details are also taken from MM but this can be controlled this data in SD module. To create inbound and outbound delivery of goods for a sales order, shipping details, loading point etc. also come from Material Master.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of SAP FI in SAP Sales and Distribution?</label>
+<div class="toggle-content"> 
+<p>In case of standard sales order, you create an outbound goods delivery to the customer. Here movement 601 takes place. This movement is configured in MM and movement of goods hit some G/L account in FI.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the link point of SAP Sales and Distribution with other SAP modules?</label>
+<div class="toggle-content"> 
+<table class="table table-bordered">
+<tr>
+<th>Link Points</th>
+<th>Module Involved</th>
+</tr>
+<tr>
+<td>Availability Check</td>
+<td>MM</td>
+</tr>
+<tr>
+<td>Credit Check</td>
+<td>FI</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>CO/MM</td>
+</tr>
+<tr>
+<td>Tax Determination</td>
+<td>FI</td>
+</tr>
+<tr>
+<td>Transfer of Requirements</td>
+<td>PP/MM</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of partner function in SAP Sales and Distribution?</label>
+<div class="toggle-content"> 
+<p>Partner function allows you to identify which functions partner has to be perform in business process. Consider a simplest case, where all the customer functions are performed by partner customer. As these are mandate functions they has to be defined as obligatory functions in SD system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different partner type functions available in SAP SD?</label>
+<div class="toggle-content"> 
+<p>Below partner types are Customer, Vendor, Personnel, Contact Person and common partner functions as per these partner types are &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Partner Type</th> 
+<th style="text-align:center;">Partner Function</th> 
+<th style="text-align:center;">Entry from System</th> 
+<th style="text-align:center;">Master Record</th>
+</tr>
+<tr>
+<td style="vertical-align:middle;">Customer (CU)</td>
+<td><p>Sold-to party (SP)</p>
+<p>Ship-to party (SH)</p>
+<p>Bill-to party (BP)</p>
+<p>Payer (PY)</p>
+</td>
+<td style="vertical-align:middle;">Customer number</td>
+<td style="vertical-align:middle;">Customer master record</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;">Vendor (V)</td>
+<td>Forwading agent (fwdg agent)</td>
+<td style="vertical-align:middle;">Vendor number</td>
+<td style="vertical-align:middle;">Vendor master record</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;">Human resources (HR)</td>
+<td><p>Employee responsible (ER)</p>
+<p>Sales personnel (SP)</p>
+</td>
+<td style="vertical-align:middle;">Personnel number</td>
+<td style="vertical-align:middle;">Personnel master record</td>
+</tr>
+<tr>
+<td>Contact Person (CP)</td>
+<td>Contact person (CP)</td>
+<td>Contact partner number</td>
+<td><p>(created in customer master recors, no master record of its own)</p></td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different Customer account groups that you can create in SAP SD?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>Domestic customers</li>
+<li>Export Customers</li>
+<li>One Time Customers</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a Sales activity? What are different sales activity that you perform in SD? </label>
+<div class="toggle-content"> 
+<p>All Sales activities in SAP SD system can be divided into presales and post sales activities. Presales activities are classified as activities which occurs before product is sold to customer and post sales activities are those which occurs after product is sold.</p>
+<ul class="list">
+<li><p><b>Pre Sales Activities</b> &minus; Inquiry, quotation</p></li>
+<li><p><b>Post Sales Activities</b> &minus; Support, Relationship management</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Sales support in SAP SD module?</label>
+<div class="toggle-content"> 
+<p>Sales support is one of the key component in Sales and Distribution SD module. It is also called computer Aided Selling SD-CAS.</p>
+<p>This module helps organizations to create new sales, tracking of existing sales, and performance and eventually help in improving marketing and sales in an organization.</p>
+<p>SAP SD Sales support module provides an option of creating email list for the customer and directly sending mails for new leads.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by Sales Order processing?</label>
+<div class="toggle-content"> 
+<p>Sales order processing describes a function related to whole sale part of an organizational business. Common functions under sales order processing &minus;</p>
+<ul class="list">
+<li>Availability of the articles purchased</li>
+<li>Checking for incomplete data</li>
+<li>Checking the status of the sales transaction</li>
+<li>Calculation of pricing and taxes</li>
+<li>Schedule the deliveries of goods</li>
+<li>Printing of documents or e-transfer of documents</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the structure of Sales Order in SAP SD? How can you create, edit or display an existing sales order?</label>
+<div class="toggle-content"> 
+<p><b>Structure of a Sales Order</b> &minus;</p>
+<p>An inquiry from a customer consists one or more items that contains the quantity of a material or service entered in the order.</p>
+<p>The quantity in a Sales order is further divided into business lines and comprise of various subsets and delivering dates.</p>
+<p>Items in Sales order are combined in a hierarchy and allows to differentiate between batches or to use combinations of materials.</p>
+<p>All the valid conditions on the items are mentioned in item conditions. These conditions for an item can be derived via a full condition and can be valid for entire sales order.</p>
+<p>You can divide an item to multiple billing plan deadlines and each tells the time when a fixed amount of the item is to be billed.</p>
+<ul class="list">
+<li>VA02 &minus; Edit a Sales Order</li>
+<li>VA03 &minus; Display a Sales Order</li>
+<li>T-Code &minus; VA01 Create a Sales Order</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is an inquiry under presales activity? How to create a new inquiry?</label>
+<div class="toggle-content"> 
+<p>An Inquiry is not a legal document and is used to record the information about delivery or services from customers. The information that is captured using an inquiry is related to materials and quality of goods.</p>
+<p>Menu Path &minus; Logistics &rarr; Sales and Distribution &rarr; Sales &rarr; Inquiry &rarr; Create</p>
+<p>T-Code &minus; VA11</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can you create a quotation in SAP Sales and Distribution?</label>
+<div class="toggle-content"> 
+<p>Quotation is a legal document to customer for delivery of goods and services. This is normally issued after an inquiry from customer or without an inquiry.</p>
+<ul class="list">
+<li>SAP R/3 Menu</li>
+<li>Logistics &rarr; Sales and Distribution &rarr; Sales &rarr; Quotation &rarr; Create</li>
+<li>T-Code &minus; VA21</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between a Sales activity and a sales document?</label>
+<div class="toggle-content"> 
+<p><b>Sales Activity</b> &minus;</p>
+<p>Sales activities are categorized as Presales and post sales &minus;</p>
+<p>This include when you sell material rather you do your preparation for sales with the customer...</p>
+<p>Sales Call, Phone Call, Sales Letter, and post sales like support and relationship, etc.</p>
+<p><b>Sales documents</b> &minus;</p>
+<p>These documents are considered under sales, where you sell the materials to the customer and are created in SAP system to manage sales process.</p>
+<p><b>Example</b> &minus; Sales orders, Quotations, etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you assign a sales organization to delivering plant?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li><p>SPRO-IMG-Enterprise Structure-Assignment-SD-Assign Plant to Sales Organization/Dist.Channel</p></li>
+<li><p>T-Code &minus; OVX6</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Is it possible to process outbound delivery without a shipping point?</label>
+<div class="toggle-content"> 
+<p>No</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Sales support function in SD module?</label>
+<div class="toggle-content"> 
+<p>Sales support is one of the key component in Sales and Distribution SD module. It is also called computer Aided Selling SD-CAS.</p>
+<p>This module helps organizations to create new sales, tracking of existing sales, and performance and eventually help in improving marketing and sales in an organization.</p>
+<p>SAP SD Sales support module provides an option of creating email list for the customer and directly sending mails for new leads.</p>
+<p>Sales support stores all the data related to sales and distribution related to customers, products, materials, competitor products, etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Give an example of a sales process from presales activity to free of charge replacement?</label>
+<div class="toggle-content"> 
+<p>There is a customer telephone inquiry in the system and then customer requests a quotation which can be created by referring to same inquiry. Next is the customer place an order on the basis of quotation and a sales order is created by copying the information from the quotation and if any modifications are required.</p>
+<p>Merchandise is shipped and bill is sent to the customer. After the delivery of goods, customer raises a claim damaged articles, a delivery can be created free of charge with reference to the sales order.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different sales document in SAP system? How to create a sales document?</label>
+<div class="toggle-content"> 
+<p>There are different types of sales document that can be defined in SAP system &minus;</p>
+<ul class="list">
+<li>Credit Memo</li>
+<li>Debit Memo</li>
+<li>Standard Order</li>
+<li>Delivery Returns, etc.</li>
+</ul>
+<p>To define a Sales Document</p>
+<p>Enter T-Code &minus; VOV8 or SPRO &rarr; IMG &rarr; Sales and Distribution &rarr; Sales &rarr; Sales Document &rarr; Sales Document Header &rarr; Define Sales Document Type</p>
+</div>
+</section>
+<section class="toggle">
+<label> In SAP Sales process, a standard item function is same as function of free or charge item or text item?</label>
+<div class="toggle-content"> 
+<p>No</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different factors to be considered while defining different types of item categories?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>General Data Control Elements</li>
+<li>Shipping data Control Elements</li>
+<li>Billing Data Control Elements</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are different schedule line categories as per different sales document?</label>
+<div class="toggle-content"> 
+<p><b>Inquiry</b> &minus;</p>
+<ul class="list">
+<li>No Delivery of an item</li>
+<li>No Availability check</li>
+<li>Information purpose</li>
+</ul>
+<p><b>Quotation</b> &minus;</p>
+<ul class="list">
+<li>No Delivery</li>
+<li>No Movement</li>
+</ul>
+<p><b>Order</b> &minus;</p>
+<ul class="list">
+<li>Schedule line is suitable for delivery</li>
+<li>Movement type 601</li>
+</ul>
+<p><b>Return</b> &minus;</p>
+<ul class="list">
+<li>Schedule line is suitable for delivery</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> In a sales order how system does picks up plant?</label>
+<div class="toggle-content"> 
+<p>You can assign particular material master to particular Plant and it picks up from there.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do you use pricing date in condition type?</label>
+<div class="toggle-content"> 
+<p>It shows date of calculation of pricing procedure for that Particular document. So that in future you can see the date on which pricing calculated for that particular document.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of copy control, explain?</label>
+<div class="toggle-content"> 
+<p>Copy Control is defined as a process in which important transactions in a sales document are copied from one document to other. It consist of routines which determines the system how the data is to be copied from source document to target document.</p>
+<p>A SAP system contains number of these routines and you can also create additional routines to meet the business requirements. To create a new routine you can use an existing sales document as a reference.</p>
+<p><b>How to find Copy Controls in SAP system?</b></p>
+<p>These controls are created and configured under IMG and can be found at below menu path &minus;</p>
+<ul class="list">
+<li><p>SPRO &rarr; IMG &rarr; Sales and Distribution &rarr; Sales &rarr; Maintain copy control for sales documents</p></li>
+<li><p>SPRO &rarr; IMG &rarr; Sales and Distribution &rarr; Shipping &rarr; Specify copy control for deliveries</p></li>
+<li><p>SPRO &rarr; IMG &rarr; Sales and Distribution &rarr; Billing &rarr; Billing Documents &rarr; Maintain copy control for billing</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is pricing in Sales and Distribution? Explain?</label>
+<div class="toggle-content"> 
+<p>Pricing in Sales and Distribution is used to define the calculation of prices for external vendors or customers and cost. Condition is defined as set of conditions when a price is calculated.</p>
+<p><b>Example</b> &minus;</p>
+<p>Consider a case when a customer orders specific quantity of a product on a particular day. Various factors like customer, product, order quantity and date tells the final price to customer. This information is stored in the system as master data in the form of condition records.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different pricing elements in SAP system?</label>
+<div class="toggle-content"> 
+<p>There are various pricing elements like prices, surcharges, discounts, and taxes are defined in SAP system as condition types. To manage pricing information for a pricing element in a system, you have to create condition records.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is condition record and condition table?</label>
+<div class="toggle-content"> 
+<p>A Condition table is defined as combination of keys to identify an individual condition record. A condition record is defined as how system stores the specific condition.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Give an example of condition record and condition table?</label>
+<div class="toggle-content"> 
+<p><b>Example of Condition Record</b> &minus;</p>
+<p>Entering the price of a product or to specify the discount for a privilege customer.</p>
+<p><b>Example of Condition Table</b> &minus;</p>
+<p>Condition records for a customer specific material prices are stored by a sales department. SAP system contains a conditional table 005 for this purpose. Key of table 005 includes below field &minus;</p>
+<ul class="list">
+<li>Customer</li>
+<li>Material</li>
+<li>Sales Organization</li>
+<li>Distribution Channel</li>
+</ul>
+<p>First two fields &minus; Customer and Material determines the relationship between customers and specific materials. Last two fields are used to identify organization data in SAP system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by condition technique and type?</label>
+<div class="toggle-content"> 
+<p>Condition type is defined as specific features of daily pricing activities in SAP system. Using condition type you can also put different condition types for each pricing, discounts on goods, tax and surcharge that occurs in business transactions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Any example of using condition technique and type?</label>
+<div class="toggle-content"> 
+<p>Condition type allows you to define the discount for special material. This can be specified in the system to calculate discount as an amount or it can calculate discount in terms of percentage.</p>
+<p>In case you have to use both discount types, two separate condition types has to be defined in the system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the predefined condition types in SAP SD system?</label>
+<div class="toggle-content"> 
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Condition Type</th>
+<th style="text-align:center;">Description</th>
+</tr>
+<tr>
+<td>PR00</td>
+<td>price</td>
+</tr>
+<tr>
+<td>K004</td>
+<td>Material discount</td>
+</tr>
+<tr>
+<td>K005</td>
+<td>Customer-specific material discount</td>
+</tr>
+<tr>
+<td>K007</td>
+<td>Customer discount</td>
+</tr>
+<tr>
+<td>K020</td>
+<td>Price group discount</td>
+</tr>
+<tr>
+<td>KF00</td>
+<td>Freight surcharge (by item)</td>
+</tr>
+<tr>
+<td>UTX1</td>
+<td>State tax</td>
+</tr>
+<tr>
+<td>UTX2</td>
+<td>Country tax</td>
+</tr>
+<tr>
+<td>UTX3</td>
+<td>City tax</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by surcharge and discount? What are predefined discount type in SAP system?</label>
+<div class="toggle-content"> 
+<p>A standard SAP system includes variety of common discount types. You can also define customize discounts and surcharges as per business requirement.</p>
+<p><b>Standard SAP system includes below discount types</b> &minus;</p>
+<table class="table table-bordered">
+<tr>
+<td>Discount (Key)</td>
+<td>Kind of discount</td>
+</tr>
+<tr>
+<td>Customer (K007)</td>
+<td>Percentage</td>
+</tr>
+<tr>
+<td>Material (K004)</td>
+<td>Absolute</td>
+</tr>
+<tr>
+<td>Price group (K020)</td>
+<td>Percentage</td>
+</tr>
+<tr>
+<td>Material group (K029)</td>
+<td>Absolute discount by weight</td>
+</tr>
+<tr>
+<td>Customer/material (K005)</td>
+<td>Absolute</td>
+</tr>
+<tr>
+<td>Customer/material group (K030)</td>
+<td>Percentage</td>
+</tr>
+<tr>
+<td>Price group/material (K032)</td>
+<td>Absolute</td>
+</tr>
+<tr>
+<td>Price group/material group(K030)</td>
+<td>Percentage</td>
+</tr>
+<tr>
+<td>Rebate processing (BO01)</td>
+<td>Group rebate (%)</td>
+</tr>
+<tr>
+<td>Rebate Processing (BO02)</td>
+<td>Material rebate (fixed)</td>
+</tr>
+<tr>
+<td>Rebate processing(BO03)</td>
+<td>Customer rebate(%)</td>
+</tr>
+<tr>
+<td>Inter-company processing (P101)</td>
+<td>Intercompany discount (fixed)</td>
+</tr>
+<tr>
+<td>Inter-company billing (P102)</td>
+<td>Intercompany discount (%)</td>
+</tr>
+<tr>
+<td>Invoice lists (RL00)</td>
+<td>Factoring discount</td>
+</tr>
+<tr>
+<td>Invoice lists (MW15)</td>
+<td>Factoring discount tax</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> How do you manage discounts in Condition record?</label>
+<div class="toggle-content"> 
+<p>While creating a condition records, you can use any of standard discount types. While doing automatic pricing, system checks for the discount that satisfies a certain condition and it checks for a valid condition records.</p>
+<p>If a discount refers to a group like a material group or price groups, that group must be assigned to relevant customer or material master record before automatic pricing is done in the system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of product proposals in SAP SD module?</label>
+<div class="toggle-content"> 
+<p>Product Proposal helps an organization to increase the sales by recommended other products to the already added products or by replacing one already added. The products recommended can be cheaper, expensive or similar to the product that is requested by the customer.</p>
+<p>Automatic Product Proposal is one of most powerful tool used in online marketing of products.</p>
+<p>Product Proposals can be mapped to specific requirement of business partners to match their market requirement.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can we extend material and customer to other sales area in SAP Sales and Distribution?</label>
+<div class="toggle-content"> 
+<p>Sales area is a combination of sales organization and distribution channel and Division. Division is a logical grouping of products, hence you can’t extend material to other sales areas. But you can extend customer to other sales areas through common Distribution channel & division.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different sales order type that can be used in SAP SD system?</label>
+<div class="toggle-content"> 
+<p>There are different types of Sales Order that can be placed &minus;</p>
+<p><b>Cash Sales</b></p>
+<p>This is defined an order type where customer place an order, pick up the order and pay for the goods. In this order type delivery of the order is executed immediately when the order has been entered. Cash invoice and billing can be printed immediately from the order.</p>
+<p>No Receivables is entered for customer as invoice amount is paid cash and directly entered to a cash account.</p>
+<p><b>Rush Order</b></p>
+<p>In this order type, delivery of good is picked by customer or you deliver the goods on the same day when the order is placed.</p>
+<p><b>Scheduling Agreement</b></p>
+<p>A scheduling agreement is defined as an external agreement with the customer and having details of quantity of goods and delivery dates. This information is mentioned as schedule lines In a standard system, Schedule lines can be created with the scheduling agreement or you can also create these at later stage.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you manage deliveries when customer is not satisfied with product/service?</label>
+<div class="toggle-content"> 
+<p>Free of charge delivery or subsequent delivery is made when customer is not satisfied with product or good or lesser quantity of good is delivered and company has to initiate a return as per customer request. In this delivery, customer is not charged for shipping of goods.</p>
+<p><b>Steps to be followed in case of Return request</b> &minus;</p>
+<p><b>Credit Memo</b> &minus;</p>
+<p>This is done when customer wants refund for the delivered goods. System creates credit memo sales document to customer with reference to sales order.</p>
+<p><b>Subsequent delivery</b> &minus;</p>
+<p>This includes free of charge delivery of disputed goods to the customer. This is required when incorrect quantity of goods is delivered to customer.</p>
+<p><b>Creating a return request in system</b> &minus;</p>
+<p>T-Code &minus; VA01</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is an outline agreement?</label>
+<div class="toggle-content"> 
+<p>Outline agreement is a long term purchasing agreement with vendor containing terms and conditions regarding the material that is supplied by vendor.</p>
+<p>Outline agreement are valid up to certain period of time and cover a certain predefined quantity or value.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different type of outline agreements?</label>
+<div class="toggle-content"> 
+<p>Outline agreement is of following two types.</p>
+<ul class="list">
+<li>Contract</li>
+<li>Scheduling Agreement</li>
+</ul>
+<p><b>Contract</b></p>
+<p>Contract is a long term outline agreement between vendor and ordering party over predefined material or services over certain framework of time. There are two types of contract</p>
+<p><b>Scheduling Agreement</b></p>
+<p>A scheduling agreement is defined as an external agreement with the customer and having details of quantity of goods and delivery dates. This information is mentioned as schedule lines In a standard system, Schedule lines can be created with the scheduling agreement or you can also create these at later stage.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different contract types?  How to create a contract in SAP system?</label>
+<div class="toggle-content"> 
+<p><b>Quantity Contract</b> &minus; In this type of contract overall value is specified in terms of total quantity of material to be supplied by vendor.</p>
+<p><b>Value Contract</b> &minus; In this type of contract overall value is specified in terms of total amount to be paid for that material to the vendor.</p>
+<p>Contract can be created by following the below steps &minus;</p>
+<ul class="list">
+<li><p>Path to create Contract &minus;</p>
+<p>Logistics &rArr; Materials Management &rArr; Purchasing &rArr; Outline Agreement &rArr; Contract &rArr; Create</p>
+</li>
+<li><p>T-code &minus; ME31K</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> How you can create a scheduling agreement?</label>
+<div class="toggle-content"> 
+<p><b>Path to create Scheduling Agreement</b> &minus;</p>
+<ul class="list">
+<li><p>Logistics &rArr; Materials Management &rArr; Purchasing &rArr; Outline Agreement &rArr; Scheduling Agreement &rArr; Create &rArr; Vendor Known</p></li>
+<li><p>T-code &minus; ME31L</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different activities under consignment stock in SAP SD?</label>
+<div class="toggle-content"> 
+<p>Consignment stock management includes four key activities in the system &minus;</p>
+<ul class="list">
+<li><p>Creating a Consignment Fill-Up (Stock is fill up at warehouse)</p></li>
+<li><p>Creating Consignment Issue (Stock issued from warehouse)</p></li>
+<li><p>Creating a Consignment Pick-Up (Stock return to manufacturer)</p></li>
+<li><p>Displaying Consignment Returns (Stock return from customer)</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of shipping process in SAP Sales and Distribution? How do you define modes of transport?</label>
+<div class="toggle-content"> 
+<p>Shipping is defined as an important activity in sales process. It comes under logistic chain and guarantees customer service and distribution of goods.</p>
+<p>It is a component of Sales and Distribution module and is used to perform outbound delivery and other shipping activities like picking and packing of the goods.</p>
+<p>In shipping process, below are the key sub processes &minus;</p>
+<ul class="list">
+<li>Delivery processing of the goods</li>
+<li>Picking of items</li>
+<li>Packing of the goods</li>
+<li>Post goods issue</li>
+<li>Shipping communication</li>
+<li>Planning &amp; monitoring of shipping</li>
+</ul>
+<p>To define Modes of Transport, navigate &minus;</p>
+<ul class="list">
+<li><p>SPRO &rarr; IMG &rarr; Logistics Execution &rarr; Transportation &rarr; Basic Transportation Function &rarr; Routes &rarr; Define Routes &rarr; Define modes of transport &rarr; Execute.</p></li>
+</ul>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">sap_sd_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sap_sd_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_sd_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

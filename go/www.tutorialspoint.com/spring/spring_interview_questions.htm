@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Spring Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="Spring Interview Questions - Dear readers, these Spring Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your int"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/spring/spring_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#387b2c;
+}
+a.demo {
+    background:#387b2c;
+}
+li.heading {
+    background:#387b2c;
+}
+.course-box{background:#387b2c}
+.home-intro-sub p{color:#387b2c}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/spring/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/spring/images/spring-mini-logo.jpg" alt="Spring Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">Spring Core Basics</li>
+<li><a href="/spring/index.htm">Spring - Home</a></li>
+<li><a href="/spring/spring_overview.htm">Spring - Overview</a></li>
+<li><a href="/spring/spring_architecture.htm">Spring - Architecture</a></li>
+<li><a href="/spring/spring_environment_setup.htm">Spring - Environment Setup</a></li>
+<li><a href="/spring/spring_hello_world_example.htm">Spring - Hello World Example</a></li>
+<li><a href="/spring/spring_ioc_containers.htm">Spring - IoC Containers</a></li>
+<li><a href="/spring/spring_bean_definition.htm">Spring - Bean Definition</a></li>
+<li><a href="/spring/spring_bean_scopes.htm">Spring - Bean Scopes</a></li>
+<li><a href="/spring/spring_bean_life_cycle.htm">Spring - Bean Life Cycle</a></li>
+<li><a href="/spring/spring_bean_post_processors.htm">Spring - Bean Post Processors</a></li>
+<li><a href="/spring/spring_bean_definition_inheritance.htm">Spring - Bean Definition Inheritance</a></li>
+<li><a href="/spring/spring_dependency_injection.htm">Spring - Dependency Injection</a></li>
+<li><a href="/spring/spring_injecting_inner_beans.htm">Spring - Injecting Inner Beans</a></li>
+<li><a href="/spring/spring_injecting_collection.htm">Spring - Injecting Collection</a></li>
+<li><a href="/spring/spring_beans_autowiring.htm">Spring - Beans Auto-Wiring</a></li>
+<li><a href="/spring/spring_annotation_based_configuration.htm">Annotation Based Configuration</a></li>
+<li><a href="/spring/spring_java_based_configuration.htm">Spring - Java Based Configuration</a></li>
+<li><a href="/spring/event_handling_in_spring.htm">Spring - Event Handling in Spring</a></li>
+<li><a href="/spring/custom_events_in_spring.htm">Spring - Custom Events in Spring</a></li>
+<li><a href="/spring/aop_with_spring.htm">Spring - AOP with Spring Framework</a></li>
+<li><a href="/spring/spring_jdbc_framework.htm">Spring - JDBC Framework</a></li>
+<li><a href="/spring/spring_transaction_management.htm">Spring - Transaction Management</a></li>
+<li><a href="/spring/spring_web_mvc_framework.htm">Spring - Web MVC Framework</a></li>
+<li><a href="/spring/logging_with_log4j.htm">Spring - Logging with Log4J</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Spring Questions and Answers</li>
+<li><a href="/spring/spring_questions_answers.htm">Spring - Questions and Answers</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Spring Useful Resources</li>
+<li><a href="/spring/spring_quick_guide.htm">Spring - Quick Guide</a></li>
+<li><a href="/spring/spring_useful_resources.htm">Spring - Useful Resources</a></li>
+<li><a href="/spring/spring_discussion.htm">Spring - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>Spring Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="spring_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="spring_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>Spring Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>Spring</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label> What is Spring?</label>
+<div class="toggle-content">
+<p>Spring is an open source development framework for enterprise Java. The core features of the Spring Framework can be used in developing any Java application, but there are extensions for building web applications on top of the Java EE platform. Spring framework targets to make J2EE development easier to use and promote good programming practice by enabling a POJO-based programming model.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are benefits of using spring?</label>
+<div class="toggle-content">
+<p>Following is the list of few of the great benefits of using Spring Framework:</p>
+<ul class="list">
+<li><p><b>Lightweight</b> &minus; Spring is lightweight when it comes to size and transparency. The basic version of spring framework is around 2MB.</p></li>
+<li><p><b>Inversion of control (IOC)</b> &minus; Loose coupling is achieved in spring using the technique Inversion of Control. The objects give their dependencies instead of creating or looking for dependent objects.</p></li>
+<li><p><b>Aspect oriented (AOP)</b> &minus; Spring supports Aspect oriented programming and enables cohesive development by separating application business logic from system services.</p></li>
+<li><p><b>Container</b> &minus; Spring contains and manages the life cycle and configuration of application objects.</p></li>
+<li><p><b>MVC Framework</b> &minus; Spring's web framework is a well-designed web MVC framework, which provides a great alternative to web frameworks such as Struts or other over engineered or less popular web frameworks.</p></li>
+<li><p><b>Transaction Management</b> &minus; Spring provides a consistent transaction management interface that can scale down to a local transaction (using a single database, for example) and scale up to global transactions (using JTA, for example).</p></li>
+<li><p><b>Exception Handling</b> &minus; Spring provides a convenient API to translate technology-specific exceptions (thrown by JDBC, Hibernate, or JDO, for example) into consistent, unchecked exceptions.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different modules in Spring framework?</label>
+<div class="toggle-content">
+<p>Following are the modules of the Spring framework:</p>
+<ul class="list">
+<li>Core module</li>
+<li>Bean module</li>
+<li>Context module</li>
+<li>Expression Language module</li>
+<li>JDBC module</li>
+<li>ORM module</li>
+<li>OXM module</li>
+<li>Java Messaging Service(JMS) module</li>
+<li>Transaction module</li>
+<li>Web module</li>
+<li>Web-Servlet module</li>
+<li>Web-Struts module</li>
+<li>Web-Portlet module</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is Spring configuration file?</label>
+<div class="toggle-content">
+<p>Spring configuration file is an XML file. This file contains the classes information and describes how these classes are configured and introduced to each other.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Dependency Injection?</label>
+<div class="toggle-content">
+<p>Inversion of Control (IoC) is a general concept, and it can be expressed in many different ways and Dependency Injection is merely one concrete example of Inversion of Control.</p>
+<p>This concept says that you do not create your objects but describe how they should be created. You don't directly connect your components and services together in code but describe which services are needed by which components in a configuration file. A container (the IOC container) is then responsible for hooking it all up.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different types of IoC (dependency injection)?</label>
+<div class="toggle-content">
+<p>Types of IoC are &minus;</p>
+<ul class="list">
+<li><p><b>Constructor-based dependency injection</b> &minus; Constructor-based DI is accomplished when the container invokes a class constructor with a number of arguments, each representing a dependency on other class.</p></li>
+<li><p><b>Setter-based dependency injection</b> &minus; Setter-based DI is accomplished by the container calling setter methods on your beans after invoking a no-argument constructor or no-argument static factory method to instantiate your bean.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Which DI would you suggest Constructor-based or setter-based DI?</label>
+<div class="toggle-content">
+<p>Since you can mix both, Constructor- and Setter-based DI, it is a good rule of thumb to use constructor arguments for mandatory dependencies and setters for optional dependencies. Note that the use of a <i>@Required</i> annotation on a setter can be used to make setters required dependencies.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the benefits of IOC?</label>
+<div class="toggle-content">
+<p>The main benefits of IOC or dependency injection are &minus;</p>
+<ul class="list">
+<li><p>It minimizes the amount of code in your application.</p></li>
+<li><p>It makes your application easy to test as it doesn't require any singletons or JNDI lookup mechanisms in your unit test cases.</p></li>
+<li><p>Loose coupling is promoted with minimal effort and least intrusive mechanism.</p></li>
+<li><p>IOC containers support eager instantiation and lazy loading of services.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is AOP?</label>
+<div class="toggle-content">
+<p>Aspect-oriented programming, or AOP, is a programming technique that allows programmers to modularize crosscutting concerns, or behavior that cuts across the typical divisions of responsibility, such as logging and transaction management. The core construct of AOP is the aspect, which encapsulates behaviors affecting multiple classes into reusable modules.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Spring IoC container?</label>
+<div class="toggle-content">
+<p>The Spring IoC creates the objects, wire them together, configure them, and manage their complete lifecycle from creation till destruction. The Spring container uses dependency injection (DI) to manage the components that make up an application.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are types of IoC containers? Explain them.</label>
+<div class="toggle-content">
+<p>There are two types of IoC containers &minus;</p>
+<ul class="list">
+<li><p><b>Bean Factory container</b> &minus; This is the simplest container providing basic support for DI .The BeanFactory is usually preferred where the resources are limited like mobile devices or applet based applications</p></li>
+<li><p><b>Spring ApplicationContext Container</b> &minus; This container adds more enterprise-specific functionality such as the ability to resolve textual messages from a properties file and the ability to publish application events to interested event listeners.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Give an example of BeanFactory implementation.</label>
+<div class="toggle-content">
+<p>The most commonly used BeanFactory implementation is the <b>XmlBeanFactory</b> class. This container reads the configuration metadata from an XML file and uses it to create a fully configured system or application.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the common implementations of the ApplicationContext?</label>
+<div class="toggle-content">
+<p>The three commonly used implementation of 'Application Context' are &minus;</p>
+<ul class="list">
+<li><p><b>FileSystemXmlApplicationContext</b> &minus; This container loads the definitions of the beans from an XML file. Here you need to provide the full path of the XML bean configuration file to the constructor.</p></li>
+<li><p><b>ClassPathXmlApplicationContext</b> &minus; This container loads the definitions of the beans from an XML file. Here you do not need to provide the full path of the XML file but you need to set CLASSPATH properly because this container will look bean configuration XML file in CLASSPATH.</p></li>
+<li><p><b>WebXmlApplicationContext</b> &minus; This container loads the XML file with definitions of all beans from within a web application.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between Bean Factory and ApplicationContext?</label>
+<div class="toggle-content">
+<p>Following are some of the differences &minus;</p>
+<ul class="list">
+<li><p>Application contexts provide a means for resolving text messages, including support for i18n of those messages.</p></li>
+<li><p>Application contexts provide a generic way to load file resources, such as images.</p></li>
+<li><p>Application contexts can publish events to beans that are registered as listeners.</p></li>
+<li><p>Certain operations on the container or beans in the container, which have to be handled in a programmatic fashion with a bean factory, can be handled declaratively in an application context.</p></li>
+<li><p>The application context implements MessageSource, an interface used to obtain localized messages, with the actual implementation being pluggable.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are Spring beans?</label>
+<div class="toggle-content">
+<p>The objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container. These beans are created with the configuration metadata that you supply to the container, for example, in the form of XML &lt;bean/&gt; definitions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What does a bean definition contain?</label>
+<div class="toggle-content">
+<p>The bean definition contains the information called configuration metadata which is needed for the container to know the followings &minus;</p>
+<ul class="list">
+<li>How to create a bean</li>
+<li>Bean's lifecycle details</li>
+<li>Bean's dependencies</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> How do you provide configuration metadata to the Spring Container?</label>
+<div class="toggle-content">
+<p>There are following three important methods to provide configuration metadata to the Spring Container &minus;</p>
+<ul class="list">
+<li>XML based configuration file.</li>
+<li>Annotation-based configuration</li>
+<li>Java-based configuration</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> How do add a bean in spring application?</label>
+<div class="toggle-content">
+<p>Check the following example &minus;</p>
+<pre class="prettyprint notraslate">
+&lt;?xml version = "1.0" encoding = "UTF-8"?&gt;
+
+&lt;beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd"&gt;
+
+   &lt;bean id = "helloWorld" class = "com.tutorialspoint.HelloWorld"&gt;
+      &lt;property name = "message" value = "Hello World!"/&gt;
+   &lt;/bean&gt;
+
+&lt;/beans&gt;
+</pre> 
+</div>
+</section>
+<section class="toggle">
+<label> How do you define a bean scope?</label>
+<div class="toggle-content">
+<p>When defining a &lt;bean&gt; in Spring, you have the option of declaring a scope for that bean. For example, to force Spring to produce a new bean instance each time one is needed, you should declare the bean's scope attribute to be <b>prototype</b>. Similar way if you want Spring to return the same bean instance each time one is needed, you should declare the bean's scope attribute to be <b> singleton.</b></p>
+</div>
+</section>
+<section class="toggle">
+<label> What bean scopes does Spring support? Explain them.</label>
+<div class="toggle-content">
+<p>The Spring Framework supports following five scopes, three of which are available only if you use a web-aware ApplicationContext.</p>
+<ul class="list">
+<li><p><b>singleton</b> &minus; This scopes the bean definition to a single instance per Spring IoC container.</p></li>
+<li><p><b>prototype</b> &minus; This scopes a single bean definition to have any number of object instances.</p></li>
+<li><p><b>request</b> &minus; This scopes a bean definition to an HTTP request. Only valid in the context of a web-aware Spring ApplicationContext.</p></li>
+<li><p><b>session</b> &minus; This scopes a bean definition to an HTTP session. Only valid in the context of a web-aware Spring ApplicationContext.</p></li>
+<li><p><b>global-session</b> &minus; This scopes a bean definition to a global HTTP session. Only valid in the context of a web-aware Spring ApplicationContext.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is default scope of bean in Spring framework?</label>
+<div class="toggle-content">
+<p>The default scope of bean is Singleton for Spring framework.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Are Singleton beans thread safe in Spring Framework?</label>
+<div class="toggle-content">
+<p>No, singleton beans are not thread-safe in Spring framework.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain Bean lifecycle in Spring framework?</label>
+<div class="toggle-content">
+<p>Following is sequence of a bean lifecycle in Spring &minus;</p>
+<ul class="list">
+<li><p><b>Instantiate</b> &minus; First the spring container finds the bean's definition from the XML file and instantiates the bean..</p></li>
+<li><p><b>Populate properties</b> &minus; Using the dependency injection, spring populates all of the properties as specified in the bean definition.</p></li>
+<li><p><b>Set Bean Name</b> &minus; If the bean implements BeanNameAware interface, spring passes the  bean's id to setBeanName() method.</p></li>
+<li><p><b>Set Bean factory</b> &minus; If Bean implements BeanFactoryAware interface, spring passes the beanfactory to setBeanFactory() method.</p></li>
+<li><p><b>Pre Initialization</b> &minus;  Also called postprocess of bean. If there are any bean BeanPostProcessors associated with the bean, Spring calls postProcesserBeforeInitialization() method.</p></li>
+<li><p><b>Initialize beans</b> &minus; If the bean implements IntializingBean,its afterPropertySet() method is called. If the bean has init method declaration, the specified initialization method is called.</p></li>
+<li><p><b>Post Initialization</b> &minus; If there are any BeanPostProcessors associated with the bean, their postProcessAfterInitialization() methods will be called.</p></li>
+<li><p><b>Ready to use</b> &minus; Now the bean is ready to use by the application.</p></li>
+<li><p><b>Destroy</b> &minus; If the bean implements DisposableBean , it will call the destroy() method .</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are inner beans in Spring?</label>
+<div class="toggle-content">
+<p>A &lt;bean/&gt; element inside the &lt;property/&gt; or &lt;constructor-arg/&gt; elements defines a so-called inner bean. An inner bean definition does not require a defined id or name; the container ignores these values. It also ignores the scope flag.  Inner beans are always anonymous and they are always scoped as prototypes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can you inject Java Collection in Spring?</label>
+<div class="toggle-content">
+<p>Spring offers four types of collection configuration elements which are as follows &minus;</p>
+<ul class="list">
+<li><p><b>&lt;list&gt;</b> &minus; This helps in wiring i.e. injecting a list of values, allowing duplicates.</p></li>
+<li><p><b>&lt;set&gt;</b> &minus; This helps in wiring a set of values but without any duplicates.</p></li>
+<li><p><b>&lt;map&gt;</b> &minus; This can be used to inject a collection of name-value pairs where name and value can be of any type.</p></li>
+<li><p><b>&lt;props&gt;</b> &minus;	This can be used to inject a collection of name-value pairs where the name and value are both Strings.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is bean auto wiring?</label>
+<div class="toggle-content">
+<p>The Spring container is able to autowire relationships between collaborating beans. This means that it is possible to automatically let Spring resolve collaborators (other beans) for your bean by inspecting the contents of the BeanFactory without using &lt;constructor-arg&gt; and &lt;property&gt; elements.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different Modes of auto wiring?</label>
+<div class="toggle-content">
+<p>The autowiring functionality has five modes which can be used to instruct Spring container to use autowiring for dependency injection &minus;</p>
+<ul class="list">
+<li><p><b>no</b> &minus; This is default setting which means no autowiring and you should use explicit bean reference for wiring. You have nothing to do special for this wiring. This is what you already have seen in Dependency Injection chapter.</p></li>
+<li><p><b>byName</b> &minus; Autowiring by property name. Spring container looks at the properties of the beans on which autowire attribute is set to byName in the XML configuration file. It then tries to match and wire its properties with the beans defined by the same names in the configuration file.</p></li>
+<li><p><b>byType</b> &minus; Autowiring by property datatype. Spring container looks at the properties of the beans on which autowire attribute is set to byType in the XML configuration file. It then tries to match and wire a property if its type matches with exactly one of the beans name in configuration file. If more than one such beans exist, a fatal exception is thrown.</p></li>
+<li><p><b>constructor</b> &minus; Similar to byType, but type applies to constructor arguments. If there is not exactly one bean of the constructor argument type in the container, a fatal error is raised.</p></li>
+<li><p><b>autodetect</b> &minus; Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the limitations with autowiring?</label>
+<div class="toggle-content">
+<p>Limitations of autowiring are &minus;</p>
+<ul class="list">
+<li><p><b>Overriding possibility</b> &minus; You can still specify dependencies using &lt;constructor-arg&gt; and &lt;property&gt; settings which will always override autowiring.</p></li>
+<li><p><b>Primitive data types</b> &minus; You cannot autowire so-called simple properties such as primitives, Strings, and Classes.</p></li>
+<li><p><b>Confusing nature</b> &minus; Autowiring is less exact than explicit wiring, so if possible prefer using explicit wiring.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Can you inject null and empty string values in Spring?</label>
+<div class="toggle-content">
+<p>Yes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Annotation-based container configuration?</label>
+<div class="toggle-content">
+<p>An alternative to XML setups is provided by annotation-based configuration which relies on the bytecode metadata for wiring up components instead of angle-bracket declarations. Instead of using XML to describe a bean wiring, the developer moves the configuration into the component class itself by using annotations on the relevant class, method, or field declaration.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you turn on annotation wiring?</label>
+<div class="toggle-content">
+<p>Annotation wiring is not turned on in the Spring container by default. So, before we can use annotation-based wiring, we will need to enable it in our Spring configuration file by configuring &lt;context:annotation-config/&gt;. </p>
+</div>
+</section>
+<section class="toggle">
+<label> What does @Required annotation mean?</label>
+<div class="toggle-content">
+<p>This annotation simply indicates that the affected bean property must be populated at configuration time, through an explicit property value in a bean definition or through autowiring. The container throws BeanInitializationException if the affected bean property has not been populated.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What does @Autowired annotation mean?</label>
+<div class="toggle-content">
+<p>This annotation provides more fine-grained control over where and how autowiring should be accomplished. The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, constructor, a property or methods with arbitrary names and/or multiple arguments.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What does @Qualifier annotation mean?</label>
+<div class="toggle-content">
+<p>There may be a situation when you create more than one bean of the same type and want to wire only one of them with a property, in such case you can use @Qualifier annotation along with @Autowired to remove the confusion by specifying which exact bean will be wired. </p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the JSR-250 Annotations? Explain them.</label>
+<div class="toggle-content">
+<p>Spring has JSR-250 based annotations which include @PostConstruct, @PreDestroy and @Resource annotations.</p>
+<ul class="list">
+<li><p><b>@PostConstruct</b> &minus; This annotation can be used as an alternate of initialization callback.</p></li>
+<li><p><b>@PreDestroy</b> &minus; This annotation can be used as an alternate of destruction callback.</p></li>
+<li><p><b>@Resource </b> &minus; This annotation can be used on fields or setter methods. The @Resource annotation takes a 'name' attribute which will be interpreted as the bean name to be injected. You can say, it follows by-name autowiring semantics.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is Spring Java Based Configuration? Give some annotation example.</label>
+<div class="toggle-content">
+<p>Java based configuration option enables you to write most of your Spring configuration without XML but with the help of few Java-based annotations.</p>
+<p>For example: Annotation <b>@Configuration</b> indicates that the class can be used by the Spring IoC container as a source of bean definitions. The <b>@Bean</b> annotation tells Spring that a method annotated with @Bean will return an object that should be registered as a bean in the Spring application context. </p>
+</div>
+</section>
+<section class="toggle">
+<label> How is event handling done in Spring?</label>
+<div class="toggle-content">
+<p>Event handling in the <i>ApplicationContext</i> is provided through the <i>ApplicationEvent</i> class and <i>ApplicationListener</i> interface. So if a bean implements the <i>ApplicationListener</i>, then every time an <i>ApplicationEvent</i> gets published to the ApplicationContext, that bean is notified.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Describe some of the standard Spring events.</label>
+<div class="toggle-content">
+<p>Spring provides the following standard events &minus;</p>
+<ul class="list">
+<li><p><b>ContextRefreshedEvent</b> &minus; This event is published when the ApplicationContext is either initialized or refreshed. This can also be raised using the refresh() method on the ConfigurableApplicationContext interface. </p></li>
+<li><p><b>ContextStartedEvent</b> &minus; This event is published when the ApplicationContext is started using the start() method on the ConfigurableApplicationContext interface. You can poll your database or you can re/start any stopped application after receiving this event.</p></li>
+<li><p><b>ContextStoppedEvent</b> &minus; This event is published when the ApplicationContext is stopped using the stop() method on the ConfigurableApplicationContext interface. You can do required housekeep work after receiving this event.</p></li>
+<li><p><b>ContextClosedEvent</b> &minus; This event is published when the ApplicationContext is closed using the close() method on the ConfigurableApplicationContext interface. A closed context reaches its end of life; it cannot be refreshed or restarted.</p></li>
+<li><p><b>RequestHandledEvent</b> &minus; This is a web-specific event telling all beans that an HTTP request has been serviced.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is Aspect?</label>
+<div class="toggle-content">
+<p>A module which has a set of APIs providing cross-cutting requirements. For example, a logging module would be called AOP aspect for logging. An application can have any number of aspects depending on the requirement. In Spring AOP, aspects are implemented using regular classes (the schema-based approach) or regular classes annotated with the @Aspect annotation (@AspectJ style).</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between concern and cross-cutting concern in Spring AOP?</label>
+<div class="toggle-content">
+<p><b>Concern</b> &minus; Concern is behavior which we want to have in a module of an application. Concern may be defined as a functionality we want to implement. Issues in which we are interested define our concerns.</p>
+<p><b>Cross-cutting concern</b> &minus; It's a concern which is applicable throughout the application and it affects the entire application. e.g. logging , security and data transfer are the concerns which are needed in almost every module of an application, hence are cross-cutting concerns.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Join point?</label>
+<div class="toggle-content">
+<p>This represents a point in your application where you can plug-in AOP aspect. You can also say, it is the actual place in the application where an action will be taken using Spring AOP framework.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Advice?</label>
+<div class="toggle-content">
+<p>This is the actual action to be taken either before or after the method execution. This is actual piece of code that is invoked during program execution by Spring AOP framework.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Pointcut?</label>
+<div class="toggle-content">
+<p>This is a set of one or more joinpoints where an advice should be executed. You can specify pointcuts using expressions or patterns as we will see in our AOP examples.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Introduction?</label>
+<div class="toggle-content">
+<p>An introduction allows you to add new methods or attributes to existing classes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Target object?</label>
+<div class="toggle-content">
+<p>The object being advised by one or more aspects, this object will always be a proxy object. Also referred to as the advised object.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Weaving?</label>
+<div class="toggle-content">
+<p>Weaving is the process of linking aspects with other application types or objects to create an advised object.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different points where weaving can be applied?</label>
+<div class="toggle-content">
+<p>Weaving can be done at compile time, load time, or at runtime.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the types of advice?</label>
+<div class="toggle-content">
+<p>Spring aspects can work with five kinds of advice mentioned below &minus;</p>
+<ul class="list">
+<li><p><b>before</b> &minus; Run advice before the a method execution.</p></li>
+<li><p><b>after</b> &minus; Run advice after the a method execution regardless of its outcome.</p></li>
+<li><p><b>after-returning</b> &minus; Run advice after the a method execution only if method completes successfully.</p></li>
+<li><p><b>after-throwing</b> &minus; Run advice after the a method execution only if method exits by throwing an exception.</p></li>
+<li><p><b>around</b> &minus; Run advice before and after the advised method is invoked.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is XML Schema based aspect implementation?</label>
+<div class="toggle-content">
+<p>Aspects are implemented using regular classes along with XML based configuration.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is @AspectJ? based aspect implementation?</label>
+<div class="toggle-content">
+<p>@AspectJ refers to a style of declaring aspects as regular Java classes annotated with Java 5 annotations.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How JDBC can be used more efficiently in spring framework?</label>
+<div class="toggle-content">
+<p>JDBC can be used more efficiently with the help of a template class provided by spring framework called as JdbcTemplate.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How JdbcTemplate can be used?</label>
+<div class="toggle-content">
+<p>With use of Spring JDBC framework the burden of resource management and error handling is reduced a lot. So it leaves developers to write the statements and queries to get the data to and from the database. JdbcTemplate provides many convenience methods for doing things such as converting database data into primitives or objects, executing prepared and callable statements, and providing custom database error handling. </p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the types of the transaction management Spring supports?</label>
+<div class="toggle-content">
+<p>Spring supports two types of transaction management &minus;</p>
+<ul class="list">
+<li><p><b>Programmatic transaction management</b> &minus; This means that you have managed the transaction with the help of programming. That gives you extreme flexibility, but it is difficult to maintain.</p></li>
+<li><p><b>Declarative transaction management</b> &minus; This means you separate transaction management from the business code. You only use annotations or XML based configuration to manage the transactions.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Which of the above transaction management type is preferable?</label>
+<div class="toggle-content">
+<p>Declarative transaction management is preferable over programmatic transaction management though it is less flexible than programmatic transaction management, which allows you to control transactions through your code. </p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Spring MVC framework?</label>
+<div class="toggle-content">
+<p>The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a DispatcherServlet?</label>
+<div class="toggle-content">
+<p>The Spring Web MVC framework is designed around a DispatcherServlet that handles all the HTTP requests and responses. </p>
+</div>
+</section>
+<section class="toggle">
+<label> What is WebApplicationContext ?</label>
+<div class="toggle-content">
+<p>The <i>WebApplicationContext</i> is an extension of the plain <i>ApplicationContext</i> that has some extra features necessary for web applications. It differs from a normal <i>ApplicationContext</i> in that it is capable of resolving themes, and that it knows which servlet it is associated with.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the advantages of Spring MVC over Struts MVC ?</label>
+<div class="toggle-content">
+<p>Following are some of the advantages of Spring MVC over Struts MVC &minus;</p>
+<ul class="list">
+<li><p>Spring's MVC is very versatile and flexible based on interfaces but Struts forces Actions and Form object into concrete inheritance.</p></li>
+<li><p>Spring provides both interceptors and controllers, thus helps to factor out common behavior to the handling of many requests.</p></li>
+<li><p>Spring can be configured with different view technologies like Freemarker, JSP, Tiles, Velocity, XLST etc. and also you can create your own custom view mechanism by implementing Spring View interface.</p></li>
+<li><p>In Spring MVC Controllers can be configured using DI (IOC) that makes its testing and integration easy.</p></li>
+<li><p>Web tier of Spring MVC is easy to test than Struts web tier, because of the avoidance of forced concrete inheritance and explicit dependence of controllers on the dispatcher servlet.</p></li>
+<li><p>Struts force your Controllers to extend a Struts class but Spring doesn't, there are many convenience Controller implementations that you can choose to extend.</p></li>
+<li><p>In Struts, Actions are coupled to the view by defining ActionForwards within a ActionMapping or globally. SpringMVC has HandlerMapping interface to support this functionality.</p></li>
+<li><p>With Struts, validation is usually performed (implemented) in the validate method of an ActionForm. In SpringMVC, validators are business objects that are NOT dependent on the Servlet API which makes these validators to be reused in your business logic before persisting a domain object to a database.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is Controller in Spring MVC framework?</label>
+<div class="toggle-content">
+<p>Controllers provide access to the application behavior that you typically define through a service interface. Controllers interpret user input and transform it into a model that is represented to the user by the view. Spring implements a controller in a very abstract way, which enables you to create a wide variety of controllers.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the <i>@Controller</i> annotation.</label>
+<div class="toggle-content">
+<p>The <i>@Controller</i> annotation indicates that a particular class serves the role of a controller. Spring does not require you to extend any controller base class or reference the Servlet API.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain <i>@RequestMapping</i> annotation.</label>
+<div class="toggle-content">
+<p><i>@RequestMapping</i> annotation is used to map a URL to either an entire class or a particular handler method.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the ways to access Hibernate by using Spring?</label>
+<div class="toggle-content">
+<p>There are two ways to access hibernate using spring &minus;</p>
+<ul class="list">
+<li><p>Inversion of Control with a Hibernate Template and Callback.</p></li>
+<li><p>Extending HibernateDAOSupport and Applying an AOP Interceptor node.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are ORM's Spring supports ?</label>
+<div class="toggle-content">
+<p>Spring supports the following ORM's &minus;</p>
+<ul class="list">
+<li>Hibernate</li>
+<li>iBatis</li>
+<li>JPA (Java Persistence API)</li>
+<li>TopLink</li>
+<li>JDO (Java Data Objects)</li>
+<li>OJB</li>
+</ul>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">spring_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="spring_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="spring_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

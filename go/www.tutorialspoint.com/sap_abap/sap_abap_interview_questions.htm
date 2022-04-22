@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SAP ABAP Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SAP ABAP Interview Questions - Dear readers, these SAP ABAP Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your i"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sap_abap/sap_abap_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#036db0;
+}
+a.demo {
+    background:#036db0;
+}
+li.heading {
+    background:#036db0;
+}
+.course-box{background:#036db0}
+.home-intro-sub p{color:#036db0}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sap_abap/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sap_abap/images/abap-mini-logo.jpg" alt="SAP ABAP Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">SAP ABAP Tutorial</li>
+<li><a href="/sap_abap/index.htm">SAP ABAP - Home</a></li>
+<li><a href="/sap_abap/sap_abap_overview.htm">SAP ABAP - Overview</a></li>
+<li><a href="/sap_abap/sap_abap_environment.htm">SAP ABAP - Environment</a></li>
+<li><a href="/sap_abap/sap_abap_screen_navigation.htm">SAP ABAP - Screen Navigation</a></li>
+<li><a href="/sap_abap/sap_abap_basic_syntax.htm">SAP ABAP - Basic Syntax</a></li>
+<li><a href="/sap_abap/sap_abap_data_types.htm">SAP ABAP - Data Types</a></li>
+<li><a href="/sap_abap/sap_abap_variables.htm">SAP ABAP - Variables</a></li>
+<li><a href="/sap_abap/sap_abap_constants_literals.htm">SAP ABAP - Constants &amp; Literals</a></li>
+<li><a href="/sap_abap/sap_abap_operators.htm">SAP ABAP - Operators</a></li>
+<li><a href="/sap_abap/sap_abap_loop_control.htm">SAP ABAP - Loop Control</a></li>
+<li><a href="/sap_abap/sap_abap_decisions.htm">SAP ABAP - Decisions</a></li>
+<li><a href="/sap_abap/sap_abap_strings.htm">SAP ABAP - Strings</a></li>
+<li><a href="/sap_abap/sap_abap_date_time.htm">SAP ABAP - Date &amp; Time</a></li>
+<li><a href="/sap_abap/sap_abap_formatting_data.htm">SAP ABAP - Formatting Data</a></li>
+<li><a href="/sap_abap/sap_abap_exception_handling.htm">SAP ABAP - Exception Handling</a></li>
+<li><a href="/sap_abap/sap_abap_dictionary.htm">SAP ABAP - Dictionary</a></li>
+<li><a href="/sap_abap/sap_abap_domains.htm">SAP ABAP - Domains</a></li>
+<li><a href="/sap_abap/sap_abap_data_elements.htm">SAP ABAP - Data Elements</a></li>
+<li><a href="/sap_abap/sap_abap_tables.htm">SAP ABAP - Tables</a></li>
+<li><a href="/sap_abap/sap_abap_structures.htm">SAP ABAP - Structures</a></li>
+<li><a href="/sap_abap/sap_abap_views.htm">SAP ABAP - Views</a></li>
+<li><a href="/sap_abap/sap_abap_search_help.htm">SAP ABAP - Search Help</a></li>
+<li><a href="/sap_abap/sap_abap_lock_objects.htm">SAP ABAP - Lock Objects</a></li>
+<li><a href="/sap_abap/sap_abap_modularization.htm">SAP ABAP - Modularization</a></li>
+<li><a href="/sap_abap/sap_abap_subroutines.htm">SAP ABAP - Subroutines</a></li>
+<li><a href="/sap_abap/sap_abap_macros.htm">SAP ABAP - Macros</a></li>
+<li><a href="/sap_abap/sap_abap_function_modules.htm">SAP ABAP - Function Modules</a></li>
+<li><a href="/sap_abap/sap_abap_include_programs.htm">SAP ABAP - Include Programs</a></li>
+<li><a href="/sap_abap/sap_abap_open_sql_overview.htm">SAP ABAP - Open SQL Overview</a></li>
+<li><a href="/sap_abap/sap_abap_native_sql_overview.htm">SAP ABAP - Native SQL Overview</a></li>
+<li><a href="/sap_abap/sap_abap_internal_tables.htm">SAP ABAP - Internal Tables</a></li>
+<li><a href="/sap_abap/sap_abap_creating_internal_tables.htm">SAP ABAP - Creating Internal Tables</a></li>
+<li><a href="/sap_abap/sap_abap_populating_internal_tables.htm">ABAP - Populating Internal Tables</a></li>
+<li><a href="/sap_abap/sap_abap_copying_internal_tables.htm">SAP ABAP - Copying Internal Tables</a></li>
+<li><a href="/sap_abap/sap_abap_reading_internal_tables.htm">SAP ABAP - Reading Internal Tables</a></li>
+<li><a href="/sap_abap/sap_abap_deleting_internal_tables.htm">SAP ABAP - Deleting Internal Tables</a></li>
+<li><a href="/sap_abap/sap_abap_object_orientation.htm">SAP ABAP - Object Orientation</a></li>
+<li><a href="/sap_abap/sap_abap_objects.htm">SAP ABAP - Objects</a></li>
+<li><a href="/sap_abap/sap_abap_classes.htm">SAP ABAP - Classes</a></li>
+<li><a href="/sap_abap/sap_abap_inheritance.htm">SAP ABAP - Inheritance</a></li>
+<li><a href="/sap_abap/sap_abap_polymorphism.htm">SAP ABAP - Polymorphism</a></li>
+<li><a href="/sap_abap/sap_abap_encapsulation.htm">SAP ABAP - Encapsulation</a></li>
+<li><a href="/sap_abap/sap_abap_interfaces.htm">SAP ABAP - Interfaces</a></li>
+<li><a href="/sap_abap/sap_abap_object_events.htm">SAP ABAP - Object Events</a></li>
+<li><a href="/sap_abap/sap_abap_report_programming.htm">SAP ABAP - Report Programming</a></li>
+<li><a href="/sap_abap/sap_abap_dialog_programming.htm">SAP ABAP - Dialog Programming</a></li>
+<li><a href="/sap_abap/sap_abap_smart_forms.htm">SAP ABAP - Smart Forms</a></li>
+<li><a href="/sap_abap/sap_abap_sapscripts.htm">SAP ABAP - SAPscripts</a></li>
+<li><a href="/sap_abap/sap_abap_customer_exits.htm">SAP ABAP - Customer Exits</a></li>
+<li><a href="/sap_abap/sap_abap_user_exits.htm">SAP ABAP - User Exits</a></li>
+<li><a href="/sap_abap/sap_abap_business_add_ins.htm">SAP ABAP - Business Add-Ins</a></li>
+<li><a href="/sap_abap/sap_abap_web_dynpro.htm">SAP ABAP - Web Dynpro</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP ABAP Useful Resources</li>
+<li><a href="/sap_abap/sap_abap_questions_answers.htm">SAP ABAP - Questions Answers</a></li>
+<li><a href="/sap_abap/sap_abap_quick_guide.htm">SAP ABAP - Quick Guide</a></li>
+<li><a href="/sap_abap/sap_abap_useful_resources.htm">SAP ABAP - Useful Resources</a></li>
+<li><a href="/sap_abap/sap_abap_discussion.htm">SAP ABAP - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SAP ABAP Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="sap_abap_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_abap_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>SAP ABAP Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>SAP ABAP</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label> Explain SAP ABAP 3-tier architecture?</label>
+<div class="toggle-content"> 
+<p>The Presentation layer consists of any input device that can be used to control SAP system. This could be a web browser, a mobile device and so on. All the central processing takes place in Application server. The Application server is not just one system in itself, but it can be multiple instances of the processing system. The server communicates with the Database layer that is usually kept on a separate server, mainly for performance reasons and also for security. Communication happens between each layer of the system, from the Presentation layer to the Database and then back up the chain.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by work area and internal tables in ABAP? Why do we use it?</label>
+<div class="toggle-content"> 
+<p>They are temporary memory areas that are used to store the data at run-time. Internal tables and work areas represents the instances of database tables.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is use of transparent table in ABAP? How it is different from Pool tables?</label>
+<div class="toggle-content"> 
+<p>Transparent table has one to one relation with the table in the database however Pool table has many to one relationship with database tables.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the use of insert and append statement in SAP ABAP?</label>
+<div class="toggle-content"> 
+<p>Append statement is used to add a record at the end of internal table in work area.</p>
+<p>Insert statement is used to add a record at specified location.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How memory management happens for internal tables and work areas in ABAP?</label>
+<div class="toggle-content"> 
+<p>8KB memory is allocated to internal table and work areas and it increases dynamically.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use TYPES statement in ABAP programming?</label>
+<div class="toggle-content"> 
+<p>TYPES is used to pass user defined structure in an ABAP program.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of message command in a report? What are the different message types?</label>
+<div class="toggle-content"> 
+<p>MESSAGE command displays messages defined by a message ID specified in the REPORT statement at the beginning of the program. The message ID is a 2 character code that defines which set of 1,000 messages the program will access when the MESSAGE command is used.</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Message</th>
+<th style="text-align:center;">Type</th>
+<th style="text-align:center;">Consequences</th>
+</tr>
+<tr>
+<td style="text-align:center; vertical-align:middle;">E</td>
+<td style="text-align:center; vertical-align:middle;">Error</td>
+<td>The message appears and the application halts at its current point. If the program is running in background mode, the job is canceled and the message is recorded in the job log.</td>
+</tr>
+<tr>
+<td style="text-align:center; vertical-align:middle;">W</td>
+<td style="text-align:center; vertical-align:middle;">Warning</td>
+<td>The message appears and the user must press Enter for the application to continue. In background mode, the message is recorded in the job log.</td>
+</tr>
+<tr>
+<td style="text-align:center; vertical-align:middle;">I</td>
+<td style="text-align:center; vertical-align:middle;">Information</td>
+<td>A pop-up window opens with the message text and the user must press Enter to continue. In background mode, the message is recorded in the job log.</td>
+</tr>
+<tr>
+<td style="text-align:center; vertical-align:middle;">A</td>
+<td style="text-align:center; vertical-align:middle;">Abend</td>
+<td>This message class cancels the transaction that the user is currently using.</td>
+</tr>
+<tr>
+<td style="text-align:center; vertical-align:middle;">S</td>
+<td style="text-align:center; vertical-align:middle;">Success</td>
+<td>This provides an informational message at the bottom of the screen. The information displayed is positive in nature and it is just meant for user feedback. The message does not impede the program in any way.</td>
+</tr>
+<tr>
+<td style="text-align:center; vertical-align:middle;">X</td>
+<td style="text-align:center; vertical-align:middle;">Abort</td>
+<td>This message aborts the program and generates an ABAP short dump.</td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of lock objects?</label>
+<div class="toggle-content"> 
+<p>Lock Object is a feature offered by ABAP Dictionary that is used to synchronize access to the same data by more than one program. Data records are accessed with the help of specific programs. Lock objects are used in SAP to avoid the inconsistency when data is inserted into or changed in the database. Tables whose data records are to be locked must be defined in a Lock Object, along with their key fields.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is lock mechanism? How do we create lock objects in ABAP?</label>
+<div class="toggle-content"> 
+<p>Following are the two main functions accomplished with the lock mechanism &minus;</p>
+<p>A program can communicate with other programs about data records that it is just reading or changing.</p>
+<p>A program can prevent itself from reading data that has just been changed by another program.</p>
+<p>A lock request is first generated by the program. Then this request goes to the Enqueue server and the lock is created in the lock table. The Enqueue server sets the lock and the program is finally ready to access data.</p>
+<p>Go to transaction SE11 to create lock objects.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use logical blocks in ABAP program?</label>
+<div class="toggle-content"> 
+<p>In SAP ABAP environment, modularization involves the organization of programs into modular units, also known as logical blocks. It reduces redundancy and increases program readability even as you are creating it and subsequently during the maintenance cycle. Modularization also enables reusability of the same code again.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different types of ABAP reports in SAP?</label>
+<div class="toggle-content"> 
+<p>There are 7 ABAP report types in SAP and are available in reports attributes screen.</p>
+<ul class="list">
+<li>Executable program</li>
+<li>Interface pool</li>
+<li>Function groups</li>
+<li>Include</li>
+<li>Class pool</li>
+<li>Module pool</li>
+<li>Subroutine pool</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a subroutine?</label>
+<div class="toggle-content"> 
+<p>A subroutine is a reusable section of code. It is a modularization unit within the program where a function is encapsulated in the form of source code. You page out a part of a program to a subroutine to get a better overview of the main program, and to use the corresponding sequence of statements many times.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the different between template and a table?</label>
+<div class="toggle-content"> 
+<p>You can define table as dynamic and template as static.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the data classes in ABAP?</label>
+<div class="toggle-content"> 
+<p>Below data classes exists in ABAP programming as per data type &minus;</p>
+<ul class="list">
+<li><p>Master data: It is the data which is slowly changed.</p></li>
+<li><p>Transaction data: It is the data which is often changed.</p></li>
+<li><p>Organization data: It is a customizing data which is entered in the system when the system is configured and is then rarely changed.</p></li>
+<li><p>System data: It is the data which R/3 system needs for itself.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Which function modules can be used to transfer the data using BDC programming?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>BDC_OPEN_GROUP</li>
+<li>BDC_INSERT</li>
+<li>BDC_CLOSE_GROUP</li> 
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of ABAP data dictionary?</label>
+<div class="toggle-content"> 
+<p>ABAP data dictionary defines logical structures of the objects in application development and also tells mapping to the underlying relational database in tables/views.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the different between ABAP and OOABAP? Why do we use OOABAP?</label>
+<div class="toggle-content"> 
+<p>OOABAP involves object oritented programming concepts. ABAP is used to develop traditional programs in R/3, while OOABAP is used to develop smart forms, BADI’s, etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different ABAP editors? What is the used of different editors in ABAP?</label>
+<div class="toggle-content"> 
+<p><b>In SE38</b> &minus; This allows you to create programs and view online reports and basically to perform all the development of objects in this editor.</p> 
+<p><b>In SE80</b> &minus; It supports additional features such as creating packages, function group, module pool, classes, and programs.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is pretty printer?</label>
+<div class="toggle-content"> 
+<p>It is used to format ABAP code.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the difference between cluster tables and Pool table?</label>
+<div class="toggle-content"> 
+<p>The data of several cluster tables is stored together in a single table cluster in the database. A cluster table is thus known only in the ABAP Dictionary, not in the database.</p>
+<p>The data of several pooled tables are stored together as a table pool in the database.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is smart forms in SAP?</label>
+<div class="toggle-content"> 
+<p>SAP Smart Forms tool can be used to print and send documents. This tool is useful in developing forms, PDF files, e-mails and documents for the Internet. The tool provides an interface to build and maintain the layout and logic of a form. SAP also delivers a selection of forms for business processes such as those used in Customer Relationship Management (CRM), Sales and Distribution (SD), Financial Accounting (FI) and Human Resources (HR).</p>
+<p>The tool allows you to modify forms by using simple graphical tools instead of using any programming tool. It means that a user with no programming knowledge can configure these forms with data for a business process effortlessly.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is match code? How it is different from database index?</label>
+<div class="toggle-content"> 
+<p>Match code objects can be built on cluster tables, transparent tables and pooled tables however a Database Index contains fields only from one table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Change and Transport management system in SAP?</label>
+<div class="toggle-content"> 
+<p>The Change and Transport System (CTS) is a tool that helps you to organize development projects in ABAP Workbench and in Customizing, and then transport the changes between SAP Systems and clients in your system landscape.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is SAP memory and ABAP memory?</label>
+<div class="toggle-content"> 
+<p>SAP memory is a global memory whereas ABAP memory is local memory.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is Web Dynpro and why it is used?</label>
+<div class="toggle-content"> 
+<p>Web Dynpro (WD) for ABAP is the SAP standard user interface technology developed by SAP AG. It can be used in the development of web-based applications in the SAP ABAP environment that utilizes SAP development tools and concepts. It provides a front-end web user interface to connect directly to backend SAP R/3 systems to access data and functions for reporting.</p>
+<p>Web Dynpro for ABAP consists of a run-time environment and a graphical development environment with specific development tools that are integrated in the ABAP Workbench (transaction: SE80).</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the benefits of using Web Dynpro?</label>
+<div class="toggle-content"> 
+<p>The use of graphical tools significantly reduces the implementation effort.</p>
+<p>Reuse and better maintainability by using components.</p>
+<p>The layout and navigation is easily changed using the Web Dynpro tools.</p>
+<p>User interface accessibility is supported.</p>
+<p>Full integration in the ABAP development environment.</p>
+</div>
+</section>
+<section class="toggle">
+<label> In an ABAP program, to leave a program that you call?</label>
+<div class="toggle-content"> 
+<p>LEAVE PROGRAM</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are data dictionary objects?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>TABLES</li>
+<li>VIEWS</li>
+<li>DATA</li>
+<li>TYPES DOMAINS</li>
+<li>TYPE GROUPS</li>
+<li>SEARCH HELPS</li>
+<li>LOCK OBJECTS</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Where do you find data dictionary in SAP menu tree?</label>
+<div class="toggle-content"> 
+<p>With SAP GUI open, you will be able find Data Dictionary in the SAP menu tree. This is done via the Tools menu. Open the ABAP Workbench and click the 'Development' folder, where the ABAP Dictionary can be found and double clicked. Alternatively, use the transaction code SE11.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To create a transparent table, which data dictionary object is selected? </label>
+<div class="toggle-content"> 
+<p>Database table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To avoid writing duplicate write statement and to save time what can be done?</label>
+<div class="toggle-content"> 
+<p>You can use concept of chaining statements</p>
+</div>
+</section>
+<section class="toggle">
+<label> When you declare a variable in an ABAP program, what are the key points you should consider?</label>
+<div class="toggle-content"> 
+<p>They must begin with a letter.</p>
+<p>Can be a maximum size of 30 characters.</p>
+<p>Cannot include + , : or ( ) in the name.</p>
+<p>Cannot use a reserved word.</p>
+</div>
+</section>
+<section class="toggle">
+<label> You want to insert an integer field containing value 1 to a character field, how this can be done?</label>
+<div class="toggle-content"> 
+<p>Conversion rules are predefined logic that determine how the contents of the source field can be entered into a target field. If one attempts to insert an integer field containing the value of 1 to a character string. The built in conversion rules will determine exactly how this should be done without any syntax or runtime errors.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of data type C?</label>
+<div class="toggle-content"> 
+<p>Data type C variables are used for holding alphanumeric characters, with a minimum of 1 character and a maximum of 65,535 characters. By default, these are aligned to the left.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of CONDENSE statement in ABAP programming?</label>
+<div class="toggle-content"> 
+<p>CONDENSE statement is used to remove blank characters.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of breakpoints table in ABAP programming?</label>
+<div class="toggle-content"> 
+<p>This breakpoint table can be very useful when one is in a large program with many break points set. It allows one to review the breakpoint and allows for the removal of breakpoints which are no longer desired.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is ABAP Web Dynpro? Why it is used?</label>
+<div class="toggle-content"> 
+<p>Web Dynpro is standard SAP UI technology that allows you to develop web applications using graphical tools and development environment integrated with ABAP workbench. Using graphical tools reduce the implementation effort and you can better reuse and maintain components in ABAP workbench.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you access ABAP Web Dynpro workbench? What is object list and its component?</label>
+<div class="toggle-content"> 
+<p>To access Web Dynpro runtime environment and graphical tools in ABAP workbench, you can use Transaction code: SE80</p>
+<p>Object list contains &minus;</p>
+<ul class="list">
+<li>Dynpro Component</li>
+<li>Controller</li>
+<li>Interface</li>
+<li>View</li>
+<li>Web Dynpro application</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the benefits of using Web Dynpro?</label>
+<div class="toggle-content"> 
+<p>You can easily maintain and reuse components for development.</p>
+<p>Less implementation time as use of graphical tools.</p>
+<p>You can easily change layout and navigation using graphical tools.</p>
+<p>Easy structure changes.</p>
+<p>With use of data binding, you can use automatic data transport.</p>
+<p>Ease of integration in ABAP environment.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is MVC programming model in Web Dynpro?</label>
+<div class="toggle-content"> 
+<p>Web Dynpro applications are based on MVC model, whereas &minus;</p>
+<p><b>Model</b></p>
+<p>This allows the access to back end data in a Web Dynpro application.</p>
+<p><b>View</b></p>
+<p>This is used to ensure the representation of data in a web browser.</p>
+<p><b>Controller</b></p>
+<p>This is used to control communication between Model and view where it takes input from users and get the processes data from model and displays the data in browser.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a view in Web Dynpro component?</label>
+<div class="toggle-content"> 
+<p>Each Web Dynpro application contains at least one view and it is used to define layout of a user interface. Each view consists of multiple user element and a controller and context.</p>
+<p>The controller is used to process user request and processing of data and context contains data to which elements of view are bound.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of inbound and outbound plug in Dynpro component?</label>
+<div class="toggle-content"> 
+<p>The inbound and outbound plugs are part of view controller and inbound plug defines the starting point of view and outbound plug tells the subsequent view to be called.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use window in Web Dynpro application development?</label>
+<div class="toggle-content"> 
+<p>In Web Dynpro, window is used to use multiple views or view sets. A view can only be displayed when it is embed in a view and a window always contain one or more views which are connected by navigation links.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Why do we use events and actions in Web Dynpro?</label>
+<div class="toggle-content"> 
+<p>You can create events to enable communication between controllers. You can allow one controller to trigger events in different controller. All events that you create in component controller they are available in component.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the URL of Web Dynpro application? How it is generated?</label>
+<div class="toggle-content"> 
+<p>In a Web Dynpro application, url is automatically generate. You can find the URL of application in Properties tab. URL structure can be of two types &minus;</p>
+<p><b>SAP namespace</b></p>
+<p>&lt;schema&gt;://&lt;host&gt;.&lt;domain&gt;.&lt;extension&gt;:&lt;port&gt;/sap/bc/webdynpro/&lt;namespace&gt;/&lt;application name&gt;</p>
+<p><b>Custom namespace</b></p>
+<p>&lt;schema&gt;://&lt;host&gt;.&lt;domain&gt;.&lt;extension&gt;:&lt;port&gt;/abc/klm/xyz/&lt;namespace&gt;/webdynpro/&lt;application name&gt; </p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you manage different object versions in a Web Dynpro application?</label>
+<div class="toggle-content"> 
+<p>You can use version management to manage older version of an object, compare versions or you can also reset them. In version management, you can store different versions of ABAP development objects.</p>
+<p>In an ABAP workbench, you can compare different versions of &minus;</p>
+<ul class="list">
+<li>Views</li>
+<li>Windows</li>
+<li>Controllers</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Can we store a version of abject without releasing it?</label>
+<div class="toggle-content"> 
+<p>Yes</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of messages in Web Dynpro?</label>
+<div class="toggle-content"> 
+<p>In ABAP Workbench, you can also create and show messages that contain information for end users of Dynpro application. These messages are displayed on the screen. These are user interactive messages that displays important information about Web Dynpro application.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different scenarios that can be used to create interactive forms in Web Dynpro?</label>
+<div class="toggle-content"> 
+<ul class="list">
+<li>Interactive Scenario</li>
+<li>Print Scenario</li>
+<li>Offline Scenario</li>
+<li>Using digital signature</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is SAP list viewer in Web Dynpro application development?</label>
+<div class="toggle-content"> 
+<p>SAP List viewer is used to add ALV component and provides a flexible environment to display lists and tabular structure. A standard output consist of header, tool bar and an output table and user can make the settings to add column display, aggregations, sorting options using additional dialog boxes.</p>
+</div>
+</section> 
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">sap_abap_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sap_abap_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_abap_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

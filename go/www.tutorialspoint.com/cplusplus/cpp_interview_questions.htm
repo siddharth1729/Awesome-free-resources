@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>C++ Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="C++ Interview Questions - Dear readers, these C++ Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your interv"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/cplusplus/cpp_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#004481;
+}
+a.demo {
+    background:#004481;
+}
+li.heading {
+    background:#004481;
+}
+.course-box{background:#004481}
+.home-intro-sub p{color:#004481}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/cplusplus/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/cplusplus/images/cpp-mini-logo.jpg" alt="C++ Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">C++ Basics</li>
+<li><a href="/cplusplus/index.htm">C++ Home</a></li>
+<li><a href="/cplusplus/cpp_overview.htm">C++ Overview</a></li>
+<li><a href="/cplusplus/cpp_environment_setup.htm">C++ Environment Setup</a></li>
+<li><a href="/cplusplus/cpp_basic_syntax.htm">C++ Basic Syntax</a></li>
+<li><a href="/cplusplus/cpp_comments.htm">C++ Comments</a></li>
+<li><a href="/cplusplus/cpp_data_types.htm">C++ Data Types</a></li>
+<li><a href="/cplusplus/cpp_variable_types.htm">C++ Variable Types</a></li>
+<li><a href="/cplusplus/cpp_variable_scope.htm">C++ Variable Scope</a></li>
+<li><a href="/cplusplus/cpp_constants_literals.htm">C++ Constants/Literals</a></li>
+<li><a href="/cplusplus/cpp_modifier_types.htm">C++ Modifier Types</a></li>
+<li><a href="/cplusplus/cpp_storage_classes.htm">C++ Storage Classes</a></li>
+<li><a href="/cplusplus/cpp_operators.htm">C++ Operators</a></li>
+<li><a href="/cplusplus/cpp_loop_types.htm">C++ Loop Types</a></li>
+<li><a href="/cplusplus/cpp_decision_making.htm">C++ Decision Making</a></li>
+<li><a href="/cplusplus/cpp_functions.htm">C++ Functions</a></li>
+<li><a href="/cplusplus/cpp_numbers.htm">C++ Numbers</a></li>
+<li><a href="/cplusplus/cpp_arrays.htm">C++ Arrays</a></li>
+<li><a href="/cplusplus/cpp_strings.htm">C++ Strings</a></li>
+<li><a href="/cplusplus/cpp_pointers.htm">C++ Pointers</a></li>
+<li><a href="/cplusplus/cpp_references.htm">C++ References</a></li>
+<li><a href="/cplusplus/cpp_date_time.htm">C++ Date &amp; Time</a></li>
+<li><a href="/cplusplus/cpp_basic_input_output.htm">C++ Basic Input/Output</a></li>
+<li><a href="/cplusplus/cpp_data_structures.htm">C++ Data Structures</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">C++ Object Oriented</li>
+<li><a href="/cplusplus/cpp_classes_objects.htm">C++ Classes &amp; Objects</a></li>
+<li><a href="/cplusplus/cpp_inheritance.htm">C++ Inheritance</a></li>
+<li><a href="/cplusplus/cpp_overloading.htm">C++ Overloading</a></li>
+<li><a href="/cplusplus/cpp_polymorphism.htm">C++ Polymorphism</a></li>
+<li><a href="/cplusplus/cpp_data_abstraction.htm">C++ Abstraction</a></li>
+<li><a href="/cplusplus/cpp_data_encapsulation.htm">C++ Encapsulation</a></li>
+<li><a href="/cplusplus/cpp_interfaces.htm">C++ Interfaces</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">C++ Advanced</li>
+<li><a href="/cplusplus/cpp_files_streams.htm">C++ Files and Streams</a></li>
+<li><a href="/cplusplus/cpp_exceptions_handling.htm">C++ Exception Handling</a></li>
+<li><a href="/cplusplus/cpp_dynamic_memory.htm">C++ Dynamic Memory</a></li>
+<li><a href="/cplusplus/cpp_namespaces.htm">C++ Namespaces</a></li>
+<li><a href="/cplusplus/cpp_templates.htm">C++ Templates</a></li>
+<li><a href="/cplusplus/cpp_preprocessor.htm">C++ Preprocessor</a></li>
+<li><a href="/cplusplus/cpp_signal_handling.htm">C++ Signal Handling</a></li>
+<li><a href="/cplusplus/cpp_multithreading.htm">C++ Multithreading</a></li>
+<li><a href="/cplusplus/cpp_web_programming.htm">C++ Web Programming</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">C++ Useful Resources</li>
+<li><a href="/cplusplus/cpp_questions_answers.htm">C++ Questions and Answers</a></li>
+<li><a href="/cplusplus/cpp_quick_guide.htm">C++ Quick Guide</a></li>
+<li><a href="/cplusplus/cpp_object_oriented.htm">C++ Object Oriented</a></li>
+<li><a href="/cplusplus/cpp_stl_tutorial.htm">C++ STL Tutorial</a></li>
+<li><a href="/cplusplus/cpp_standard_library.htm">C++ Standard Library</a></li>
+<li><a href="/cplusplus/cpp_useful_resources.htm">C++ Useful Resources</a></li>
+<li><a href="/cplusplus/cpp_discussion.htm">C++ Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>C++ Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="cpp_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="cpp_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>C++ Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>C++</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer &minus;</p>
+<section class="toggle">
+<label> What is the full form of OOPS?</label>
+<div class="toggle-content">
+<p>Object Oriented Programming System.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a class?</label>
+<div class="toggle-content">
+<p>Class is a blue print which reflects the entities attributes and actions. Technically defining a class is designing an user defined data type.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is an object?</label>
+<div class="toggle-content">
+<p>An instance of the class is called as object.</p>
+</div>
+</section>
+<section class="toggle">
+<label> List the types of inheritance supported in C++.</label>
+<div class="toggle-content">
+<p>Single, Multilevel, Multiple, Hierarchical and Hybrid.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the role of protected access specifier?</label>
+<div class="toggle-content">
+<p>If a class member is protected then it is accessible in the inherited class. However, outside the both the private and protected members are not accessible.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is encapsulation?</label>
+<div class="toggle-content">
+<p>The process of binding the data and the functions acting on the data together in an entity (class) called as encapsulation.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is abstraction?</label>
+<div class="toggle-content">
+<p>Abstraction refers to hiding the internal implementation and exhibiting only the necessary details.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is inheritance?</label>
+<div class="toggle-content">
+<p>Inheritance is the process of acquiring the properties of the exiting class into the new class. The existing class is called as base/parent class and the inherited class is called as derived/child class.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the purpose of the keyword volatile.</label>
+<div class="toggle-content">
+<p>Declaring a variable volatile directs the compiler that the variable can be changed externally. Hence avoiding compiler optimization on the variable reference.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is an inline function?</label>
+<div class="toggle-content">
+<p>A function prefixed with the keyword inline before the function definition is called as inline function. The inline functions are faster in execution when compared to normal functions as the compiler treats inline functions as macros.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a storage class?</label>
+<div class="toggle-content">
+<p>Storage class specifies the life or scope of symbols such as variable or functions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Mention the storage classes names in C++.</label>
+<div class="toggle-content">
+<p>The following are storage classes supported in C++</p>
+<p>auto, static, extern, register and mutable</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the role of mutable storage class specifier?</label>
+<div class="toggle-content">
+<p>A constant class object’s member variable can be altered by declaring it using mutable storage class specifier. Applicable only for non-static and non-constant member variable of the class.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Distinguish between shallow copy and deep copy.</label>
+<div class="toggle-content">
+<p>Shallow copy does memory dumping bit-by-bit from one object to another. Deep copy is copy field by field from object to another. Deep copy is achieved using copy constructor and or overloading assignment operator.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a pure virtual function?</label>
+<div class="toggle-content">
+<p>A virtual function with no function body and assigned with a value zero is called as pure virtual function.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is an abstract class in C++?</label>
+<div class="toggle-content">
+<p>A class with at least one pure virtual function is called as abstract class. We cannot instantiate an abstract class.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a reference variable in C++?</label>
+<div class="toggle-content">
+<p>A reference variable is an alias name for the existing variable. Which mean both the variable name and reference variable point to the same memory location. Therefore updation on the original variable can be achieved using reference variable too.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is role of static keyword on class member variable?</label>
+<div class="toggle-content">
+<p>A static variable does exit though the objects for the respective class are not created. Static member variable share a common memory across all the objects created for the respective class. A static member variable can be referred using the class name itself.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the static member function.</label>
+<div class="toggle-content">
+<p>A static member function can be invoked using the class name as it exits before class objects comes into existence. It can access only static members of the class.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Name the data type which can be used to store wide characters in C++.</label>
+<div class="toggle-content">
+<p>wchar_t</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are/is the operator/operators used to access the class members?</label>
+<div class="toggle-content">
+<p>Dot (.) and Arrow ( -&gt; )</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can we initialize a class/structure member variable as soon as the same is defined?</label>
+<div class="toggle-content">
+<p>No, Defining a class/structure is just a type definition and will not allocated memory for the same.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the data type to store the Boolean value?</label>
+<div class="toggle-content">
+<p>bool, is the new primitive data type introduced in C++ language.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is function overloading?</label>
+<div class="toggle-content">
+<p>Defining several functions with the same name with unique list of parameters is called as function overloading.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is operator overloading?</label>
+<div class="toggle-content">
+<p>Defining a new job for the existing operator w.r.t the class objects is called as operator overloading.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Do we have a String primitive data type in C++?</label>
+<div class="toggle-content">
+<p>No, it’s a class from STL (Standard template library).</p>
+</div>
+</section>
+<section class="toggle">
+<label> Name the default standard streams in C++.</label>
+<div class="toggle-content">
+<p>cin, cout, cerr and clog.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which access specifier/s can help to achive data hiding in C++?</label>
+<div class="toggle-content">
+<p>Private &amp; Protected.</p>
+</div>
+</section>
+<section class="toggle">
+<label> When a class member is defined outside the class, which operator can be used to associate the function definition to a particular class?</label>
+<div class="toggle-content">
+<p>Scope resolution operator (::)</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a destructor? Can it be overloaded?</label>
+<div class="toggle-content">
+<p>A destructor is the member function of the class which is having the same name as the class name and prefixed with tilde (~) symbol. It gets executed automatically w.r.t the object as soon as the object loses its scope. It cannot be overloaded and the only form is without the parameters.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a constructor?</label>
+<div class="toggle-content">
+<p>A constructor is the member function of the class which is having the same as the class name and gets executed automatically as soon as the object for the respective class is created.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a default constructor? Can we provide one for our class?</label>
+<div class="toggle-content">
+<p>Every class does have a constructor provided by the compiler if the programmer doesn’t provides one and known as default constructor. A programmer provided constructor with no parameters is called as default constructor. In such case compiler doesn’t provides the constructor.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which operator can be used in C++ to allocate dynamic memory?</label>
+<div class="toggle-content">
+<p>‘new’ is the operator can be used for the same.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the purpose of ‘delete’ operator?</label>
+<div class="toggle-content">
+<p>‘delete’ operator is used to release the dynamic memory which was created using ‘new’ operator.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can I use malloc() function of C language to allocate dynamic memory in C++?</label>
+<div class="toggle-content">
+<p>Yes, as C is the subset of C++, we can all the functions of C in C++ too.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can I use ‘delete’ operator to release the memory which was allocated using malloc() function of C language?</label>
+<div class="toggle-content">
+<p>No, we need to use free() of C language for the same.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a friend function?</label>
+<div class="toggle-content">
+<p>A function which is not a member of the class but still can access all the member of the class is called so. To make it happen we need to declare within the required class following the keyword ‘friend’.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a copy constructor?</label>
+<div class="toggle-content">
+<p>A copy constructor is the constructor which take same class object reference as the parameter. It gets automatically invoked as soon as the object is initialized with another object of the same class at the time of its creation.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Does C++ supports exception handling? If so what are the keywords involved in achieving the same.</label>
+<div class="toggle-content">
+<p>C++ does supports exception handling. try, catch & throw are keyword used for the same.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Explain the pointer – this.</label>
+<div class="toggle-content">
+<p>This, is the pointer variable of the compiler which always holds the current active object’s address.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between the keywords struct and class in C++?</label>
+<div class="toggle-content">
+<p>By default the members of struct are public and by default the members of the class are private.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can we implement all the concepts of OOPS using the keyword struct?</label>
+<div class="toggle-content">
+<p>Yes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the block scope variable in C++?</label>
+<div class="toggle-content">
+<p>A variable whose scope is applicable only within a block is said so. Also a variable in C++ can be declared anywhere within the block.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the role of the file opening mode ios::trunk?</label>
+<div class="toggle-content">
+<p>If the file already exists, its content will be truncated before opening the file.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the scope resolution operator?</label>
+<div class="toggle-content">
+<p>The scope resolution operator is used to</p>
+<ul class="list">
+<li>Resolve the scope of global variables.</li>
+<li>To associate function definition to a class if the function is defined outside the class.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a namespace?</label>
+<div class="toggle-content">
+<p>A namespace is the logical division of the code which can be used to resolve the name conflict of the identifiers by placing them under different name space.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are command line arguments?</label>
+<div class="toggle-content">
+<p>The arguments/parameters which are sent to the main() function while executing from the command line/console are called so. All the arguments sent are the strings only.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a class template?</label>
+<div class="toggle-content">
+<p>A template class is a generic class. The keyword template can be used to define a class template.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can we catch all kind of exceptions in a single catch block?</label>
+<div class="toggle-content">
+<p>The catch block with ellipses as follows</p>
+<pre class="prettyprint notranslate">
+catch(…) 
+{
+}
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> What is keyword auto for?</label>
+<div class="toggle-content">
+<p>By default every local variable of the function is automatic (auto). In the below function both the variables ‘i’ and ‘j’ are automatic variables.</p>
+<pre class="prettyprint notranslate">
+void f() 
+{
+   int i;
+  
+   auto int j;
+}
+</pre>
+<p><b>NOTE</b> &minus; A global variable can’t be an automatic variable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a static variable?</label>
+<div class="toggle-content">
+<p>A static local variables retains its value between the function call and the default value is 0. The following function will print 1 2 3 if called thrice.</p>
+<pre class="prettyprint notranslate">
+void f() 
+{ 
+   static int i; 
+   
+   ++i; 
+   printf(“%d “,i); 
+}
+</pre>
+<p>If a global variable is static then its visibility is limited to the same source code.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the purpose of extern storage specifier.</label>
+<div class="toggle-content">
+<p>Used to resolve the scope of global symbol</p>
+<pre class="prettyprint notranslate">
+#include &lt;iostream&gt;
+
+using namespace std;	
+main() {
+   extern int i;
+      
+   cout&lt;&lt;i&lt;&lt;endl;
+}
+int i = 20;
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> What is the meaning of base address of the array?</label>
+<div class="toggle-content">
+<p>The starting address of the array is called as the base address of the array.</p>
+</div>
+</section>
+<section class="toggle">
+<label> When should we use the register storage specifier?</label>
+<div class="toggle-content">
+<p>If a variable is used most frequently then it should be declared using register storage specifier, then possibly the compiler gives CPU register for its storage to speed up the look up of the variable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can a program be compiled without main() function?</label>
+<div class="toggle-content">
+<p>Yes, it can be but cannot be executed, as the execution requires main() function definition.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Where an automatic variable is stored?</label>
+<div class="toggle-content">
+<p>Every local variable by default being an auto variable is stored in stack memory</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a container class?</label>
+<div class="toggle-content">
+<p>A class containing at least one member variable of another class type in it is called so.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a token?</label>
+<div class="toggle-content">
+<p>A C++ program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a preprocessor?</label>
+<div class="toggle-content">
+<p>Preprocessor is a directive to the compiler to perform certain things before the actual compilation process begins.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are command line arguments?</label>
+<div class="toggle-content">
+<p>The arguments which we pass to the main() function while executing the program are called as command line arguments. The parameters are always strings held in the second argument (below in args) of the function which is array of character pointers. First argument represents the count of arguments (below in count) and updated automatically by operating system.</p>
+<pre class="prettyprint notranslate">
+main( int count, char *args[]) {
+}
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different ways of passing parameters to the functions? Which to use when?</label>
+<div class="toggle-content">
+<ul class="list">
+<li><p><b>Call by value</b> &minus; We send only values to the function as parameters. We choose this if we do not want the actual parameters to be modified with formal parameters but just used.</p></li>
+<li><p><b>Call by address</b> &minus; We send address of the actual parameters instead of values. We choose this if we do want the actual parameters to be modified with formal parameters.</p></li>
+<li><p><b>Call by reference</b> &minus; The actual parameters are received with the C++ new reference variables as formal parameters. We choose this if we do want the actual parameters to be modified with formal parameters.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is reminder for 5.0 % 2?</label>
+<div class="toggle-content">
+<p>Error, It is invalid that either of the operands for the modulus operator (%) is a real number.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which compiler switch to be used for compiling the programs using math library with g++ compiler?</label>
+<div class="toggle-content">
+<p>Opiton –lm to be used as  > g++ –lm &lt;file.cpp&gt;</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can we resize the allocated memory which was allocated using ‘new’ operator?</label>
+<div class="toggle-content">
+<p>No, there is no such provision available.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Who designed C++ programming language?</label>
+<div class="toggle-content">
+<p>Bjarne Stroustrup.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which operator can be used to determine the size of a data type/class or variable/object?</label>
+<div class="toggle-content">
+<p>sizeof</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can we refer to the global variable if the local and the global variable names are same?</label>
+<div class="toggle-content">
+<p>We can apply scope resolution operator (::) to the for the scope of global variable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are valid operations on pointers?</label>
+<div class="toggle-content">
+<p>The only two permitted operations on pointers are </p>
+<ul class="list">
+<li><p>Comparision ii) Addition/Substraction (excluding void pointers)</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is recursion?</label>
+<div class="toggle-content">
+<p>Function calling itself is called as recursion.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the first string in the argument vector w.r.t command line arguments?</label>
+<div class="toggle-content">
+<p>Program name.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the maximum length of an identifier?</label>
+<div class="toggle-content">
+<p>Ideally it is 32 characters and also implementation dependent.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the default function call method?</label>
+<div class="toggle-content">
+<p>By default the functions are called by value.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are available mode of inheritance to inherit one class from another?</label>
+<div class="toggle-content">
+<p>Public, private &amp; protected</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between delete and delete[]?</label>
+<div class="toggle-content">
+<p>Delete[] is used to release the array allocated memory which was allocated using new[] and delete is used to release one chunk of memory which was allocated using new.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Does an abstract class in C++ need to hold all pure virtual functions?</label>
+<div class="toggle-content">
+<p>Not necessarily, a class having at least one pure virtual function is abstract class too.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Is it legal to assign a base class object to a derived class pointer?</label>
+<div class="toggle-content">
+<p>No, it will be error as the compiler fails to do conversion.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What happens if an exception is thrown outside a try block?</label>
+<div class="toggle-content">
+<p>The program shall quit abruptly.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Are the exceptions and error same?</label>
+<div class="toggle-content">
+<p>No, exceptions can be handled whereas program cannot resolve errors.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is function overriding?</label>
+<div class="toggle-content">
+<p>Defining the functions within the base and derived class with the same signature and name where the base class’s function is virtual.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which function is used to move the stream pointer for the purpose of reading data from stream?</label>
+<div class="toggle-content">
+<p>seekg()</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which function is used to move the stream pointer for the purpose of writing data from stream?</label>
+<div class="toggle-content">
+<p>seekp()</p>
+</div>
+</section>
+<section class="toggle">
+<label> Are class functions taken into consideration as part of the object size?</label>
+<div class="toggle-content">
+<p>No, only the class member variables determines the size of the respective class object.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can we create and empty class? If so what would be the size of such object.</label>
+<div class="toggle-content">
+<p>We can create an empty class and the object size will be 1.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is ‘std’?</label>
+<div class="toggle-content">
+<p>Default namespace defined by C++.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the full form of STL?</label>
+<div class="toggle-content">
+<p>Standard template library</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is ‘cout’?</label>
+<div class="toggle-content">
+<p>cout is the object of ostream class. The stream ‘cout’ is by default connected to console output device.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is ‘cin’?</label>
+<div class="toggle-content">
+<p>cin is the object of istream class. The stream ‘cin’ is by default connected to console input device.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of the keyword ‘using’?</label>
+<div class="toggle-content">
+<p>It is used to specify the namespace being used in.</p>
+</div>
+</section>
+<section class="toggle">
+<label> If a pointer declared for a class, which operator can be used to access its class members?</label>
+<div class="toggle-content">
+<p>Arrow (->) operator can be used for the same</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is difference between including the header file with-in angular braces &lt; &gt; and double quotes “ “</label>
+<div class="toggle-content">
+<p>If a header file is included with in &lt; &gt; then the compiler searches for the particular header file only with in the built in include path. If a header file is included with in “ “, then the compiler searches for the particular header file first in the current working directory, if not found then in the built in include path</p>
+</div>
+</section>
+<section class="toggle">
+<label> S++ or S = S+1, which can be recommended to increment the value by 1 and why?</label>
+<div class="toggle-content">
+<p>S++, as it is single machine instruction (INC) internally.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between actual and formal parameters?</label>
+<div class="toggle-content">
+<p>The parameters sent to the function at calling end are called as actual parameters while at the receiving of the function definition called as formal parameters.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between variable declaration and variable definition?</label>
+<div class="toggle-content">
+<p>Declaration associates type to the variable whereas definition gives the value to the variable.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which key word is used to perform unconditional branching?</label>
+<div class="toggle-content">
+<p>goto.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Is 068 a valid octal number?</label>
+<div class="toggle-content">
+<p>No, it contains invalid octal digits.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the purpose of #undef preprocessor?</label>
+<div class="toggle-content">
+<p>It will be used to undefine an existing macro definition.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can we nest multi line comments in a C++ code?</label>
+<div class="toggle-content">
+<p>No, we cannot.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a virtual destructor?</label>
+<div class="toggle-content">
+<p>A virtual destructor ensures that the objects resources are released in the reverse order of the object being constructed w.r.t inherited object.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the order of objects destroyed in the memory?</label>
+<div class="toggle-content">
+<p>The objects are destroyed in the reverse order of their creation.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a friend class?</label>
+<div class="toggle-content">
+<p>A class members can gain accessibility over other class member by placing the class declaration prefixed with the keyword ‘friend’ in the destination class.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">cpp_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="cpp_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="cpp_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

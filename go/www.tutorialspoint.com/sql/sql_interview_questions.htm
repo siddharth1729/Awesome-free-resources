@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SQL Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SQL Interview Questions - Dear readers, these SQL Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your interv"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sql/sql_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#57B847;
+}
+a.demo {
+    background:#57B847;
+}
+li.heading {
+    background:#57B847;
+}
+.course-box{background:#57B847}
+.home-intro-sub p{color:#57B847}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sql/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sql/images/sql-mini-logo.jpg" alt="SQL Services Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">SQL Tutorial</li>
+<li><a href="/sql/index.htm">SQL - Home</a></li>
+<li><a href="/sql/sql-overview.htm" >SQL - Overview</a></li>
+<li><a href="/sql/sql-rdbms-concepts.htm">SQL - RDBMS Concepts</a></li>
+<li><a href="/sql/sql-databases.htm" >SQL - Databases</a></li>
+<li><a href="/sql/sql-syntax.htm" >SQL - Syntax</a></li>
+<li><a href="/sql/sql-data-types.htm" >SQL - Data Types</a></li>
+<li><a href="/sql/sql-operators.htm" >SQL - Operators</a></li>
+<li><a href="/sql/sql-expressions.htm" >SQL - Expressions</a></li>
+<li><a href="/sql/sql-create-database.htm" >SQL - Create Database</a></li>
+<li><a href="/sql/sql-drop-database.htm" >SQL - Drop Database</a></li>
+<li><a href="/sql/sql-select-database.htm" >SQL - Select Database</a></li>
+<li><a href="/sql/sql-create-table.htm" >SQL - Create Table</a></li>
+<li><a href="/sql/sql-drop-table.htm" >SQL - Drop Table</a></li>
+<li><a href="/sql/sql-insert-query.htm" >SQL - Insert Query</a></li>
+<li><a href="/sql/sql-select-query.htm" >SQL - Select Query</a></li>
+<li><a href="/sql/sql-where-clause.htm" >SQL - Where Clause</a></li>
+<li><a href="/sql/sql-and-or-clauses.htm" >SQL - AND &amp; OR Clauses</a></li>
+<li><a href="/sql/sql-update-query.htm" >SQL - Update Query</a></li>
+<li><a href="/sql/sql-delete-query.htm" >SQL - Delete Query</a></li>
+<li><a href="/sql/sql-like-clause.htm" >SQL - Like Clause</a></li>
+<li><a href="/sql/sql-top-clause.htm" >SQL - Top Clause</a></li>
+<li><a href="/sql/sql-order-by.htm" >SQL - Order By</a></li>
+<li><a href="/sql/sql-group-by.htm" >SQL - Group By</a></li>
+<li><a href="/sql/sql-distinct-keyword.htm" >SQL - Distinct Keyword</a></li>
+<li><a href="/sql/sql-sorting-results.htm" >SQL - Sorting Results</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Advanced SQL</li>
+<li><a href="/sql/sql-constraints.htm" >SQL - Constraints</a></li>
+<li><a href="/sql/sql-using-joins.htm" >SQL - Using Joins</a></li>
+<li><a href="/sql/sql-unions-clause.htm" >SQL - Unions Clause</a></li>
+<li><a href="/sql/sql-null-values.htm" >SQL - NULL Values</a></li>
+<li><a href="/sql/sql-alias-syntax.htm" >SQL - Alias Syntax</a></li>
+<li><a href="/sql/sql-indexes.htm" >SQL - Indexes</a></li>
+<li><a href="/sql/sql-alter-command.htm" >SQL - Alter Command</a></li>
+<li><a href="/sql/sql-truncate-table.htm" >SQL - Truncate Table</a></li>
+<li><a href="/sql/sql-using-views.htm" >SQL - Using Views</a></li>
+<li><a href="/sql/sql-having-clause.htm" >SQL - Having Clause</a></li>
+<li><a href="/sql/sql-transactions.htm" >SQL - Transactions</a></li>
+<li><a href="/sql/sql-wildcards.htm" >SQL - Wildcards</a></li>
+<li><a href="/sql/sql-date-functions.htm" >SQL - Date Functions</a></li>
+<li><a href="/sql/sql-temporary-tables.htm" >SQL - Temporary Tables</a></li>
+<li><a href="/sql/sql-clone-tables.htm" >SQL - Clone Tables</a></li>
+<li><a href="/sql/sql-sub-queries.htm" >SQL - Sub Queries</a></li>
+<li><a href="/sql/sql-using-sequences.htm" >SQL - Using Sequences</a></li>
+<li><a href="/sql/sql-handling-duplicates.htm" >SQL - Handling Duplicates</a></li>
+<li><a href="/sql/sql-injection.htm" >SQL - Injection</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SQL Useful Resources</li>
+<li><a href="/sql/sql-database-tuning.htm" >SQL - Database Tuning</a></li>
+<li><a href="/sql/sql_questions_answers.htm" >SQL - Questions and Answers</a></li>
+<li><a href="/sql/sql-quick-guide.htm" >SQL - Quick Guide</a></li>
+<li><a href="/sql/sql-useful-functions.htm" >SQL - Useful Functions</a></li>
+<li><a href="/sql/sql-useful-resources.htm" >SQL - Useful Resources</a></li>
+<li><a href="/sql/sql-discussion.htm" >SQL - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SQL Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="sql_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sql_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>SQL Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>SQL</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label> What is the difference between SQL and MySQL or SQL Server?</label>
+<div class="toggle-content">
+<p>SQL or Structured Query Language is a language; language that communicates with a relational database thus providing ways of manipulating and creating databases. MySQL and Microsoft’s SQL Server both are relational database management systems that use SQL as their standard relational database language.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between SQL and PL/SQL?</label>
+<div class="toggle-content">
+<p>PL/SQL is a dialect of SQL that adds procedural features of programming languages in SQL.  It was developed by Oracle Corporation in the early 90's to enhance the capabilities of SQL.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are various DDL commands in SQL? Give brief description of their purposes.</label>
+<div class="toggle-content">
+<p>Following are various DDL or Data Definition Language commands in SQL &minus;</p>
+<ul class="list">
+<li><p><b>CREATE &minus;</b> it creates a new table, a view of a table, or other object in database.</p></li>
+<li><p><b>ALTER &minus;</b> it modifies an existing database object, such as a table.</p></li>
+<li><p><b>DROP &minus;</b> it deletes an entire table, a view of a table or other object in the database.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are various DML commands in SQL? Give brief description of their purposes.</label>
+<div class="toggle-content">
+<p>Following are various DML or Data Manipulation Language commands in SQL &minus;</p>
+<ul class="list">
+<li><p><b>SELECT &minus;</b> it retrieves certain records from one or more tables.</p></li>
+<li><p><b>INSERT &minus;</b> it creates a record.</p></li>
+<li><p><b>UPDATE &minus;</b> it modifies records.</p></li>
+<li><p><b>DELETE &minus;</b> it deletes records.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are various DCL commands in SQL? Give brief description of their purposes.</label>
+<div class="toggle-content">
+<p>Following are various DCL or Data Control Language commands in SQL &minus;</p>
+<ul class="list">
+<li><p><b>GRANT &minus;</b> it gives a privilege to user.</p></li>
+<li><p><b>REVOKE &minus;</b> it takes back privileges granted from user.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Can you sort a column using a column alias?</label>
+<div class="toggle-content">
+<p>Yes. A column alias could be used in the ORDER BY clause.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Is a NULL value same as zero or a blank space? If not then what is the difference?</label>
+<div class="toggle-content">
+<p>A NULL value is not same as zero or a blank space. A NULL value is a value which is ‘unavailable, unassigned, unknown or not applicable’. Whereas, zero is a number and blank space is a character.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>If a column value taking part in an arithmetic expression is NULL, then the result obtained would be NULLM.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> If a table contains duplicate rows, does a query result display the duplicate values by default? How can you eliminate duplicate rows from a query result?</label>
+<div class="toggle-content">
+<p>A query result displays all rows including the duplicate rows. To eliminate duplicate rows in the result, the DISTINCT keyword is used in the SELECT clause.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the purpose of the condition operators BETWEEN and IN?</label>
+<div class="toggle-content">
+<p>The BETWEEN operator displays rows based on a range of values. The IN condition operator checks for values contained in a specific set of values.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you search for a value in a database table when you don’t have the exact value to search for?</label>
+<div class="toggle-content">
+<p>In such cases, the LIKE condition operator is used to select rows that match a character pattern. This is also called ‘wildcard’ search.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the default ordering of data using the ORDER BY clause? How could it be changed?</label>
+<div class="toggle-content">
+<p>The default sorting order is ascending. It can be changed using the DESC keyword, after the column name in the ORDER BY clause.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the specific uses of SQL functions?</label>
+<div class="toggle-content">
+<p>SQL functions have the following uses &minus;</p>
+<ul class="list">
+<li><p>Performing calculations on data</p></li>
+<li><p>Modifying individual data items</p></li>
+<li><p>Manipulating the output</p></li>
+<li><p>Formatting dates and numbers</p></li>
+<li><p>Converting data types</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the case manipulation functions of SQL?</label>
+<div class="toggle-content">
+<p>LOWER, UPPER, INITCAP</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which function returns the remainder in a division operation?</label>
+<div class="toggle-content">
+<p>The MOD function returns the remainder in a division operation.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the purpose of the NVL function?</label>
+<div class="toggle-content">
+<p>The NVL function converts a NULL value to an actual value.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between the NVL and the NVL2 functions?</label>
+<div class="toggle-content">
+<p>The NVL(exp1, exp2) function converts the source expression (or value) exp1 to the target expression (or value) exp2, if exp1 contains NULL. The return value has the same data type as that of exp1.</p>
+<p>The NVL2(exp1, exp2, exp3) function checks the first expression exp1, if it is not null then, the second expression exp2 is returned. If the first expression exp1 is null, then the third expression exp3 is returned.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of the NULLIF function?</label>
+<div class="toggle-content">
+<p>The NULLIF function compares two expressions. If they are equal, the function returns null. If they are not equal, the first expression is returned.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Discuss the syntax and use of the COALESCE function?</label>
+<div class="toggle-content">
+<p>The COALESCE function has the expression COALESCE(exp1, exp2, …. expn)</p>
+<p>It returns the first non-null expression given in the parameter list.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which expressions or functions allow you to implement conditional processing in a SQL statement?</label>
+<div class="toggle-content">
+<p>There are two ways to implement conditional processing or IF-THEN-ELSE logic in a SQL statement.</p>
+<ul class="list">
+<li><p>Using CASE expression</p></li>
+<li><p>Using the DECODE function</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> You want to display a result query from joining two tables with 20 and 10 rows respectively. Erroneously you forget to write the WHERE clause. What would be the result?</label>
+<div class="toggle-content">
+<p>The result would be the Cartesian product of two tables with 20 x 10 = 200 rows.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between cross joins and natural joins?</label>
+<div class="toggle-content">
+<p>The cross join produces the cross product or Cartesian product of two tables. The natural join is based on all the columns having same name and data types in both the tables.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the purpose of the group functions in SQL? Give some examples of group functions.</label>
+<div class="toggle-content">
+<p>Group functions in SQL work on sets of rows and returns one result per group. Examples of group functions are AVG, COUNT, MAX, MIN, STDDEV, SUM, VARIANCE.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>By default the group functions consider only distinct values in the set.</p></label>
+<div class="toggle-content">
+<p>By default, group functions consider all values including the duplicate values.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>The DISTINCT keyword allows a function consider only non-duplicate values.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>All group functions ignore null values.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>COUNT(*) returns the number of columns in a table.</p></label>
+<div class="toggle-content">
+<p>False. COUNT(*) returns the number of rows in a table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What’s wrong in the following query?
+<pre class="prettyprint notranslate">
+SELECT subject_code, count(name)  
+FROM students;
+</pre>
+</label>
+<div class="toggle-content">
+<p>It doesn’t have a GROUP BY clause. The subject_code should be in the GROUP BY clause.</p>
+<pre class="prettyprint notranslate">
+   SELECT subject_code, count(name)
+   FROM students
+   GROUP BY subject_code;
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> What’s wrong in the following query?
+<pre class="prettyprint notranslate">
+   SELECT subject_code, AVG (marks)
+   FROM students
+   WHERE AVG(marks) &gt; 75
+   GROUP BY subject_code;
+</pre>
+</label>
+<div class="toggle-content">
+<p>The WHERE clause cannot be used to restrict groups. The HAVING clause should be used.</p>
+<pre class="prettyprint notranslate">
+   SELECT subject_code, AVG (marks)
+   FROM students
+   HAVING AVG(marks) &gt; 75
+   GROUP BY subject_code;
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>Group functions cannot be nested.</p></label>
+<div class="toggle-content">
+<p>False. Group functions can be nested to a depth of two.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by a subquery? When is it used?</label>
+<div class="toggle-content">
+<p>A subquery is a SELECT statement embedded in a clause of another SELECT statement. It is used when the inner query, or the subquery returns a value that is used by the outer query. It is very useful in selecting some rows in a table with a condition that depends on some data which is contained in the same table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>A single row subquery returns only one row from the outer SELECT statement</p></label>
+<div class="toggle-content">
+<p>False. A single row subquery returns only one row from the inner SELECT statement.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>A multiple row subquery returns more than one row from the inner SELECT statement.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>Multiple column subqueries return more than one column from the inner SELECT statement.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What’s wrong in the following query?
+<pre class="prettyprint notranslate">
+   SELECT student_code, name
+   FROM students
+   WHERE marks = 
+               (SELECT MAX(marks)
+                  FROM students
+                  GROUP BY subject_code);
+</pre>
+</label>
+<div class="toggle-content">
+<p>Here a single row operator = is used with a multiple row subquery.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the various multiple row comparison operators in SQL?</label>
+<div class="toggle-content">
+<p>IN, ANY, ALL.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the pupose of DML statements in SQL?</label>
+<div class="toggle-content">
+<p>The DML statements are used to add new rows to a table, update	or modify data in existing rows, or remove existing rows from a table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which statement is used to add a new row in a database table?</label>
+<div class="toggle-content">
+<p>The INSERT INTO statement.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>While inserting new rows in a table you must list values in the default order of the columns.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you insert null values in a column while inserting data?</label>
+<div class="toggle-content">
+<p>Null values can be inserted into a table by one of the following ways &minus;</p>
+<ul class="list">
+<li>Implicitly by omitting the column from the column list.</li>
+<li>Explicitly by specifying the NULL keyword in the VALUES clause.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>INSERT statement does not allow copying rows from one table to another.</p></label>
+<div class="toggle-content">
+<p>False. INSERT statement allows to add rows to a table copying rows from an existing table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you copy rows from one table to another?</label>
+<div class="toggle-content">
+<p>The INSERT statement can be used to add rows to a table by copying from another table. In this case, a subquery is used in the place of the VALUES clause.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What happens if you omit the WHERE clause in the UPDATE statement?</label>
+<div class="toggle-content">
+<p>All the rows in the table are modified.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can you modify the rows in a table based on values from another table? Explain.</label>
+<div class="toggle-content">
+<p>Yes. Use of subqueries in UPDATE statements allow you to update rows in a table based on values from another table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>The DELETE statement is used to delete a table from the database.</p></label>
+<div class="toggle-content">
+<p>False. The DELETE statement is used for removing existing rows from a table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What happens if you omit the WHERE clause in a delete statement?</label>
+<div class="toggle-content">
+<p>All the rows in the table are deleted.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can you remove rows from a table based on values from another table? Explain.</label>
+<div class="toggle-content">
+<p>Yes, subqueries can be used to remove rows from a table based on values from another table.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>Attempting to delete a record with a value attached to an integrity constraint, returns an error.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>You can use a subquery in an INSERT statement.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the purpose of the MERGE statement in SQL?</label>
+<div class="toggle-content">
+<p>The MERGE statement allows conditional update or insertion of data into a database table. It performs an UPDATE if the rows exists, or an INSERT if the row does not exist.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>A DDL statement or a DCL statement is automatically committed.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between VARCHAR2 AND CHAR datatypes?</label>
+<div class="toggle-content">
+<p>VARCHAR2 represents variable length character data, whereas CHAR represents fixed length character data.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>A DROP TABLE statement can be rolled back.</p></label>
+<div class="toggle-content">
+<p>False. A DROP TABLE statement cannot be rolled back.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which SQL statement is used to add, modify or drop columns in a database table?</label>
+<div class="toggle-content">
+<p>The ALTER TABLE statement.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is a view? Why should you use a view?</label>
+<div class="toggle-content">
+<p>A view is a logical snapshot based on a table or another view. It is used for &minus;</p>
+<ul class="list">
+<li>Restricting access to data;</li>
+<li>Making complex queries simple;</li>
+<li>Ensuring data independency;</li>
+<li>Providing different views of same data.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Say True or False. Give explanation if False.<p>A view doesn’t have data of its own.</p></label>
+<div class="toggle-content">
+<p>True.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">sql_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sql_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sql_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

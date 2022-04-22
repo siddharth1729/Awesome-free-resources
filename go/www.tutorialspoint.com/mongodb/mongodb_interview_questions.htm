@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>MongoDB Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="MongoDB Interview Questions - Dear readers, these MongoDB Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your in"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/mongodb/mongodb_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#459e36;
+}
+a.demo {
+    background:#459e36;
+}
+li.heading {
+    background:#459e36;
+}
+.course-box{background:#459e36}
+.home-intro-sub p{color:#459e36}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/mongodb/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/mongodb/images/mongodb-mini-logo.jpg" alt="MongoDB Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">MongoDB Tutorial</li>
+<li><a href="/mongodb/index.htm">MongoDB - Home</a></li>
+<li><a href="/mongodb/mongodb_overview.htm">MongoDB - Overview</a></li>
+<li><a href="/mongodb/mongodb_advantages.htm">MongoDB - Advantages</a></li>
+<li><a href="/mongodb/mongodb_environment.htm">MongoDB - Environment</a></li>
+<li><a href="/mongodb/mongodb_data_modeling.htm">MongoDB - Data Modeling</a></li>
+<li><a href="/mongodb/mongodb_create_database.htm">MongoDB - Create Database</a></li>
+<li><a href="/mongodb/mongodb_drop_database.htm">MongoDB - Drop Database</a></li>
+<li><a href="/mongodb/mongodb_create_collection.htm">MongoDB - Create Collection</a></li>
+<li><a href="/mongodb/mongodb_drop_collection.htm">MongoDB - Drop Collection</a></li>
+<li><a href="/mongodb/mongodb_datatype.htm">MongoDB - Data Types</a></li>
+<li><a href="/mongodb/mongodb_insert_document.htm">MongoDB - Insert Document</a></li>
+<li><a href="/mongodb/mongodb_query_document.htm">MongoDB - Query Document</a></li>
+<li><a href="/mongodb/mongodb_update_document.htm">MongoDB - Update Document</a></li>
+<li><a href="/mongodb/mongodb_delete_document.htm">MongoDB - Delete Document</a></li>
+<li><a href="/mongodb/mongodb_projection.htm">MongoDB - Projection</a></li>
+<li><a href="/mongodb/mongodb_limit_record.htm">MongoDB - Limiting Records</a></li>
+<li><a href="/mongodb/mongodb_sort_record.htm">MongoDB - Sorting Records</a></li>
+<li><a href="/mongodb/mongodb_indexing.htm">MongoDB - Indexing</a></li>
+<li><a href="/mongodb/mongodb_aggregation.htm">MongoDB - Aggregation</a></li>
+<li><a href="/mongodb/mongodb_replication.htm">MongoDB - Replication</a></li>
+<li><a href="/mongodb/mongodb_sharding.htm">MongoDB - Sharding</a></li>
+<li><a href="/mongodb/mongodb_create_backup.htm">MongoDB - Create Backup</a></li>
+<li><a href="/mongodb/mongodb_deployment.htm">MongoDB - Deployment</a></li>
+<li><a href="/mongodb/mongodb_java.htm">MongoDB - Java</a></li>
+<li><a href="/mongodb/mongodb_php.htm">MongoDB - PHP</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Advanced MongoDB</li>
+<li><a href="/mongodb/mongodb_relationships.htm">MongoDB - Relationships</a></li>
+<li><a href="/mongodb/mongodb_database_references.htm">MongoDB - Database References</a></li>
+<li><a href="/mongodb/mongodb_covered_queries.htm">MongoDB - Covered Queries</a></li>
+<li><a href="/mongodb/mongodb_analyzing_queries.htm">MongoDB - Analyzing Queries</a></li>
+<li><a href="/mongodb/mongodb_atomic_operations.htm">MongoDB - Atomic Operations</a></li>
+<li><a href="/mongodb/mongodb_advanced_indexing.htm">MongoDB - Advanced Indexing</a></li>
+<li><a href="/mongodb/mongodb_indexing_limitations.htm">MongoDB - Indexing Limitations</a></li>
+<li><a href="/mongodb/mongodb_objectid.htm">MongoDB - ObjectId</a></li>
+<li><a href="/mongodb/mongodb_map_reduce.htm">MongoDB - Map Reduce</a></li>
+<li><a href="/mongodb/mongodb_text_search.htm">MongoDB - Text Search</a></li>
+<li><a href="/mongodb/mongodb_regular_expression.htm">MongoDB - Regular Expression</a></li>
+<li><a href="/mongodb/working_with_rockmongo.htm">Working with Rockmongo</a></li>
+<li><a href="/mongodb/mongodb_gridfs.htm">MongoDB - GridFS</a></li>
+<li><a href="/mongodb/mongodb_capped_collections.htm">MongoDB - Capped Collections</a></li>
+<li><a href="/mongodb/mongodb_autoincrement_sequence.htm">Auto-Increment Sequence</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">MongoDB Useful Resources</li>
+<li><a href="/mongodb/mongodb_questions_answers.htm">MongoDB - Questions and Answers</a></li>
+<li><a href="/mongodb/mongodb_quick_guide.htm">MongoDB - Quick Guide</a></li>
+<li><a href="/mongodb/mongodb_useful_resources.htm">MongoDB - Useful Resources</a></li>
+<li><a href="/mongodb/mongodb_discussion.htm">MongoDB - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>MongoDB Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="mongodb_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="mongodb_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>MongoDB Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>MongoDB</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label>What are NoSQL databases? What are the different types of NoSQL databases?</label>
+<div class="toggle-content">
+<p>A NoSQL database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases (like SQL, Oracle, etc.).</p>
+<p>
+Types of NoSQL databases:
+<ul class="list">
+<li>Document Oriented</li> 
+<li>Key Value </li>
+<li>Graph </li>
+<li>Column Oriented</li>
+</ul>
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>What kind of NoSQL database MongoDB is?</label>
+<div class="toggle-content">
+<p>MongoDB is a document oriented database. It stores data in the form of BSON structure based documents. These documents are stored in a collection.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which are the most important features of MongoDB?</label>
+<div class="toggle-content">
+<p>
+<ul class="list">
+<li>Flexible data model in form of documents </li> 
+<li>Agile and highly scalable database </li>
+<li>Faster than traditional databases </li>
+<li>Expressive query language  </li>
+</ul>
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is a Namespace in MongoDB?</label>
+<div class="toggle-content">
+<p>A Namespace is the concatenation of the database name and collection name.
+For e.g. school.students with school as the database and students as the collection
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which all languages can be used with MongoDB?</label>
+<div class="toggle-content">
+<p>Currently, MonggoDB provides official driver support for C, C++, C#, Java, Node.js, Perl, PHP, Python, Ruby, Scala, Go and Erlang. MongoDB can easily be used with any of these languages. There are some other community supported drivers too but the above mentioned ones are officially provided by MongoDB.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Compare SQL databases and MongoDB at a high level.</label>
+<div class="toggle-content">
+<p>SQL databases store data in form of tables, rows, columns and records. This data is stored in a pre-defined data model which is not very much flexible for today's real-world highly growing applications. MongoDB in contrast uses a flexible structure which can be easily modified and extended. </p>
+</div>
+</section>
+<section class="toggle">
+<label>How is MongoDB better than other SQL databases?</label>
+<div class="toggle-content">
+<p>MongoDB allows a highly flexible and scalable document structure. For e.g. one data document in MongoDB can have five columns and the other one in the same collection can have ten columns. Also, MongoDB database are faster as compared to SQL databases due to efficient indexing and storage techniques.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Compare MongoDB and CouchDB at high level.</label>
+<div class="toggle-content">
+<p>Although both of these databases are document oriented, MongoDB is a better choice for applications which need dynamic queries and good performance on a very big database. On the other side, CouchDB is better used for applications with occasionally changing queries and pre-defined queries. </p>
+</div>
+</section>
+    <section class="toggle">
+<label>Does MongoDB support foreign key constraints?</label>
+<div class="toggle-content">
+<p>No. MongoDB does not support such relationships.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Does MongoDB support ACID transaction management and locking functionalities?</label>
+<div class="toggle-content">
+<p>No. MongoDB does not support default multi-document ACID transactions. However, MongoDB provides atomic operation on a single document.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How can you achieve primary key - foreign key relationships in MongoDB?</label>
+<div class="toggle-content">
+<p>By default MongoDB does not support such primary key - foreign key relationships. However, we can achieve this concept by embedding one document inside another. Foe e.g. an address document can be embedded inside customer document.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Does MongoDB need a lot of RAM?</label>
+<div class="toggle-content">
+<p>No. MongoDB can be run even on a small amount of RAM. MongoDB dynamically allocates and de-allocates RAM based on the requirements of other processes.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Does MongoDB pushes the writes to disk immediately or lazily?</label>
+<div class="toggle-content">
+<p>MongoDB pushes the data to disk lazily. It updates the immediately written to the journal but writing the data from journal to disk happens lazily.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Explain the structure of ObjectID in MongoDB.</label>
+<div class="toggle-content">
+<p>
+ObjectID is a 12-byte BSON type with:
+<ul class="list">
+<li>4 bytes value representing seconds </li>
+<li>3 byte machine identifier</li>
+<li>2 byte process id </li>
+<li>3 byte counter</li>
+</ul>
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>MongoDB uses BSON to represent document structures. True or False?</label>
+<div class="toggle-content">
+<p>True</p>
+</div>
+</section>
+<section class="toggle">
+<label>If you remove a document from database, does MongoDB remove it from disk?</label>
+<div class="toggle-content">
+<p>Yes. Removing a document from database removes it from disk too.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Mention the command to insert a document in a database called school and collection called persons.</label>
+<div class="toggle-content">
+<pre class="prettyprint">
+use school;
+db.persons.insert( { name: "kadhir", dept: "CSE" } )
+</pre> 
+</div>
+</section>
+<section class="toggle">
+<label>What are Indexes in MongoDB?</label>
+<div class="toggle-content">
+<p>Indexes support the efficient execution of queries in MongoDB. Without indexes, MongoDB must perform a collection scan, i.e. scan every document in a collection, to select those documents that match the query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the number of documents it must inspect.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How many indexes does MongoDB create by default for a new collection? </label>
+<div class="toggle-content">
+<p>By default, MongoDB created the _id collection for every collection. </p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you create an index on an array field in MongoDB? If yes, what happens in this case?</label>
+<div class="toggle-content">
+<p>Yes. An array field can be indexed in MongoDB. In this case, MongoDB would index each value of the array. </p>
+</div>
+</section>
+<section class="toggle">
+<label>What is a covered query in MongoDB?</label>
+<div class="toggle-content">
+<p>
+A covered query is the one in which:    
+<ul class="list">
+<li> fields used in the query are part of an index used in the query, and </li>
+<li> the fields returned in the results are in the same index </li>
+</ul>
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>Why is a covered query important?</label>
+<div class="toggle-content">
+<p>Since all the fields are covered in the index itself, MongoDB can match the query condition as well as return the result fields using the same index without looking inside the documents. Since indexes are stored in RAM or sequentially located on disk, such access is a lot faster.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Does MongoDB provide a facility to do text searches? How?</label>
+<div class="toggle-content">
+<p>Yes. MongoDB supports creating text indexes to support text search inside string content. This was a new feature which can introduced in version 2.6. </p>
+</div>
+</section>
+<section class="toggle">
+<label>What happens if an index does not fit into RAM?  </label>
+<div class="toggle-content">
+<p>If the indexes do not fit into RAM, MongoDB reads data from disk which is relatively very much slower than reading from RAM.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Mention the command to list all the indexes on a particular collection.</label>
+<div class="toggle-content">
+<pre class="prettyprint">
+db.collection.getIndexes()
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label>At what interval does MongoDB write updates to the disk?</label>
+<div class="toggle-content">
+<p>By default configuration, MongoDB writes updates to the disk every 60 seconds. However, this is configurable with the commitIntervalMs and syncPeriodSecs options.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How can you achieve transaction and locking in MongoDB?</label>
+<div class="toggle-content">
+<p>
+To achieve concepts of transaction and locking in MongoDB, we can use the nesting of documents, also called embedded documents. MongoDB supports atomic operations within a single document. 
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Aggregation in MongoDB?</label>
+<div class="toggle-content">
+<p>Aggregations operations process data records and return computed results. Aggregation operations group values from multiple documents together, and can perform a variety of operations on the grouped data to return a single result. MongoDB provides three ways to perform aggregation: the aggregation pipeline, the map-reduce function, and single purpose aggregation methods and commands.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Sharding in MongoDB? Explain.</label>
+<div class="toggle-content">
+<p>Sharding is a method for storing data across multiple machines. MongoDB uses sharding to support deployments with very large data sets and high throughput operations.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Replication in MongoDB? Explain.</label>
+<div class="toggle-content">
+<p>Replication is the process of synchronizing data across multiple servers. Replication provides redundancy and increases data availability. With multiple copies of data on different database servers, replication protects a database from the loss of a single server. Replication also allows you to recover from hardware failure and service interruptions.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are Primary and Secondary Replica sets?</label>
+<div class="toggle-content">
+<p>Primary and master nodes are the nodes that can accept writes. MongoDB's replication is 'single-master:' only one node can accept write operations at a time.</p>
+<p>Secondary and slave nodes are read-only nodes that replicate from the primary.</p>
+</div>
+</section>
+<section class="toggle">
+<label>By default, MongoDB writes and reads data from both primary and secondary replica sets. True or False.</label>
+<div class="toggle-content">
+<p>False. MongoDB writes data only to the primary replica set.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Why are MongoDB data files large in size?</label>
+<div class="toggle-content">
+<p>MongoDB preallocates data files to reserve space and avoid file system fragmentation when you setup the server. </p>
+</div>
+</section>
+<section class="toggle">
+<label>When should we embed one document within another in MongoDB?</label>
+<div class="toggle-content">
+<p>
+You should consider embedding documents for:
+<ul class="list">
+<li>'contains' relationships between entities</li>
+<li>One-to-many relationships </li>
+<li>Performance reasons</li>
+</ul> 
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>Why MongoDB is not preferred over a 32-bit system?</label>
+<div class="toggle-content">
+<p>
+When running a 32-bit build of MongoDB, the total storage size for the server, including data and indexes, is 2 gigabytes. For this reason, do not deploy MongoDB to production on 32-bit machines.
+</p>
+<p>
+If you're running a 64-bit build of MongoDB, there's virtually no limit to storage size.
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is a Storage Engine in MongoDB</label>
+<div class="toggle-content">
+<p>A storage engine is the part of a database that is responsible for managing how data is stored on disk. For example, one storage engine might offer better performance for read-heavy workloads, and another might support a higher-throughput for write operations.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which are the two storage engines used by MongoDB?</label>
+<div class="toggle-content">
+<p>MongoDB uses MMAPv1 and WiredTiger.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the role of a profiler in MongoDB? Where does the writes all the data?</label>
+<div class="toggle-content">
+<p>
+The database profiler collects fine grained data about MongoDB write operations, cursors, database commands on a running mongod instance. You can enable profiling on a per-database or per-instance basis.
+</p>
+<p>
+The database profiler writes all the data it collects to the system.profile collection, which is a capped collection.
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>How does Journaling work in MongoDB?</label>
+<div class="toggle-content">
+<p>When running with journaling, MongoDB stores and applies write operations in memory and in the on-disk journal before the changes are present in the data files on disk. Writes to the journal are atomic, ensuring the consistency of the on-disk journal files. With journaling enabled, MongoDB creates a journal subdirectory within the directory defined by dbPath, which is /data/db by default.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Mention the command to check whether you are on the master server or not.</label>
+<div class="toggle-content">
+<p>db.isMaster()</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you configure the cache size for MMAPv1? How?</label>
+<div class="toggle-content">
+<p>No. MMAPv1 does not allow configuring the cache size.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you configure the cache size for WiredTiger? How?</label>
+<div class="toggle-content">
+<p>For the WiredTiger storage engine, you can specify the maximum size of the cache that WiredTiger will use for all data. This can be done using storage.wiredTiger.engineConfig.cacheSizeGB option.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How does MongoDB provide concurrency?</label>
+<div class="toggle-content">
+<p>MongoDB uses reader-writer locks that allow concurrent readers shared access to a resource, such as a database or collection, but give exclusive access to a single write operation.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How can you isolate your cursors from intervening with the write operations?</label>
+<div class="toggle-content">
+<p>You can use the snapshot() method on a cursor to isolate the operation for a very specific case.
+snapshot() traverses the index on the _id field and guarantees that the query will return each document no more than once.
+</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can one MongoDB operation lock more than one databases? If yes, how?</label>
+<div class="toggle-content">
+<p>Yes. Operations like copyDatabase(), repairDatabase(), etc. can lock more than onne databases involved.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How can concurrency affect replica sets primary?</label>
+<div class="toggle-content">
+<p>In replication, when MongoDB writes to a collection on the primary, MongoDB also writes to the primary's oplog, which is a special collection in the local database. Therefore, MongoDB must lock both the collection's database and the local database.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is GridFS?</label>
+<div class="toggle-content">
+<p>GridFS is a specification for storing and retrieving files that exceed the BSON-document size limit of 16MB. Instead of storing a file in a single document, GridFS divides a file into parts, or chunks, and stores each of those chunks as a separate document.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you run multiple Javascript operations in a single mongod instance?</label>
+<div class="toggle-content">
+<p>Yes. The V8 JavaScript engine added in 2.4 allows multiple JavaScript operations to run at the same time.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which command can be used to provide various information on the query plans used by a MongoDB query?</label>
+<div class="toggle-content">
+<p>The explain() command can be used for this information. The possible modes are: 'queryPlanner', 'executionStats', and 'allPlansExecution'.</p>
+</div>
+</section>
+
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">mongodb_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="mongodb_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="mongodb_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

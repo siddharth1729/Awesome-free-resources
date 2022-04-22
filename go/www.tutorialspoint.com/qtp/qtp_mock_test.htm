@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>QTP Mock Test - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="QTP Mock Test - This section presents you various set of Mock Tests related to QTP Framework.  You can download these sample mock tests at your local machine and solve offline "/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/qtp/qtp_mock_test.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#03B488;
+}
+a.demo {
+    background:#03B488;
+}
+li.heading {
+    background:#03B488;
+}
+.course-box{background:#03B488}
+.home-intro-sub p{color:#03B488}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/qtp/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/qtp/images/qtp-mini-logo.jpg" alt="QTP Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">QTP Tutorial</li>
+<li><a href="/qtp/index.htm">QTP - Home</a></li>
+<li><a href="/qtp/qtp_overview.htm">QTP - Introduction</a></li>
+<li><a href="/qtp/qtp_test_automation_process.htm">QTP - Test Automation</a></li>
+<li><a href="/qtp/qtp_environment_setup.htm">QTP - Environment Setup</a></li>
+<li><a href="/qtp/qtp_record_and_play_back.htm">QTP - Record and Play Back</a></li>
+<li><a href="/qtp/qtp_object_repository.htm">QTP - Object Repository</a></li>
+<li><a href="/qtp/qtp_actions.htm">QTP - Actions</a></li>
+<li><a href="/qtp/qtp_datatables.htm">QTP - DataTables</a></li>
+<li><a href="/qtp/qtp_checkpoints.htm">QTP - Checkpoints</a></li>
+<li><a href="/qtp/qtp_synchronization.htm">QTP - Synchronization</a></li>
+<li><a href="/qtp/qtp_smart_identification.htm">QTP - Smart Identification</a></li>
+<li><a href="/qtp/qtp_debugging.htm">QTP - Debugging</a></li>
+<li><a href="/qtp/qtp_error_handling.htm">QTP - Error Handling</a></li>
+<li><a href="/qtp/qtp_recovery_scenarios.htm">QTP - Recovery Scenarios</a></li>
+<li><a href="/qtp/qtp_environment_variables.htm">QTP - Environment Variables</a></li>
+<li><a href="/qtp/qtp_library_files.htm">QTP - Library Files</a></li>
+<li><a href="/qtp/qtp_test_results.htm">QTP - Test Results</a></li>
+<li><a href="/qtp/qtp_gui_objects.htm">QTP - GUI Objects</a></li>
+<li><a href="/qtp/qtp_virtual_objects.htm">QTP - Virtual Objects</a></li>
+<li><a href="/qtp/qtp_accessing_databases.htm">QTP - Accessing Databases</a></li>
+<li><a href="/qtp/qtp_working_with_xml.htm">QTP - Working with XML</a></li>
+<li><a href="/qtp/qtp_descriptive_programming.htm">QTP - Descriptive Programming</a></li>
+<li><a href="/qtp/qtp_automation_object_model.htm">QTP - Automation Object Model</a></li>
+<li><a href="/qtp/qtp_frameworks.htm">QTP - Frameworks</a></li>
+<li><a href="/qtp/qtp_designing_framework.htm">QTP - Designing a Framework</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">QTP Useful Resources</li>
+<li><a href="/qtp/qtp_questions_answers.htm">QTP - Questions and Answers</a></li>
+<li><a href="/qtp/qtp_quick_guide.htm">QTP - Quick Guide</a></li>
+<li><a href="/qtp/qtp_useful_resources.htm">QTP - Useful Resources</a></li>
+<li><a href="/qtp/qtp_discussion.htm">QTP - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>QTP Mock Test</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="qtp_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="qtp_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>This section presents you various set of Mock Tests related to <b>QTP Framework</b>.  You can download these sample mock tests at your local machine and solve offline at your convenience. Every mock test is supplied with a mock test key to let you verify the final score and grade yourself.</p>
+<img src="/images/online_mock_tests.png" alt="Questions and Answers" />
+<a href="/qtp/qtp_mock_test.htm?min=1&max=50"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test I</button></a>
+<a href="/qtp/qtp_mock_test.htm?min=51&max=100"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test II</button></a>
+<a href="/qtp/qtp_mock_test.htm?min=101&max=150"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test III</button></a>
+<a href="/qtp/qtp_mock_test.htm?min=151&max=225"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test IV</button></a>
+<style>
+.B, .answer-sheet{
+   display:none !important;
+}
+.Q a{
+   pointer-events: none;
+   cursor: default;
+}
+</style>
+<h1>QTP Mock Test I </h1>
+<div class="QA">
+<div class="Q" id="Q1">
+<p><span>Q 1</span> - When you create a bitmap checkpoint, UFT captures only the visible part of the object as bitmap, it does not capture anything which is scrolled off the screen. </p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> True</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> False</a></p>
+</div>
+<div class="A" id='A1'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>QTP/UFT captures only the visible part of the object when using bitmap checkpoint</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('1')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q2">
+<p><span>Q 2</span> - An action cannot be splitted when : </p>
+<ol class="list">
+<li><p>An external action is selected.</p></li>
+<li><p>The first step of an action is selected</p></li>
+<li><p>A reusable action is selected </p></li>
+<li><p>Recording a test </p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 1 only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (2) and (3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) (2) and (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All the Above</a></p>
+</div>
+<div class="A" id='A2'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>An action cannot be splitted when an external or reusable action is selected or in a record session.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('2')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q3">
+<p><span>Q 3</span> - How do you Interrupt/Pause a running session ?</p>
+<ol class="list">
+<li><p>Automation > Pause.</p></li>
+<li><p>Run > Pause</p></li>
+<li><p>Tools > Pause </p></li>
+<li><p>Clicking on Pause button at toolbar </p></li>
+<li><p>Pressing Pause Keyboard button </p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (2) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (2) (4) and (5) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (2) and (4) only</a></p>
+</div>
+<div class="A" id='A3'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>A run session can be paused by pressing Pause keyboard button or Clicking the pause button or selecting Run > Pause menu option.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('3')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q4">
+<p><span>Q 4</span> - You can remove the call to an action from a test by selecting the action using</p>
+<ol class="list">
+<li><p>Resource pane</p></li>
+<li><p>Test Flow pane</p></li>
+<li><p>Keyword view</p></li>
+<li><p>Expert view </p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (2) and (4) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (3) and (4) only</a></p>
+</div>
+<div class="A" id='A4'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>An action call can be removed from the test either from Keyword view or Resource or Test flow pane.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('4')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q5">
+<p><span>Q 5</span> - Which of the tool(s) is/are available along with the installation of UFT?</p>
+<ol class="list">
+<li><p>Silent Test Runner</p></li>
+<li><p>Test Batch Runner</p></li>
+<li><p>Script Batch Runner</p></li>
+<li><p>Test Result Creation Tool</p></li>
+<li><p>HP Video Player</p></li>
+<li><p>Remote Agent</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (4) (5) and (6) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> -  (1) (4) and (5) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - (1) (2) and (6) only</a></p>
+</div>
+<div class="A" id='A5'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>The tools that are available along with the installation of UFT are Silent Test Runner, Test Batch Runner, Remote Agent, HP Micro Player, Test Result Deletion tool.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('5')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q6">
+<p><span>Q 6</span> - When you call a sub procedure, you can use the call statement as</p>
+<ol class="list">
+<li><p>call mySubProc(argument)</p></li>
+<li><p>Also,you can omit the call statement and just use &minus; mySubProc(argument)</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A6'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>When you don't use call statement, parenthesis can not be used while calling a sub.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('6')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q7">
+<p><span>Q 7</span> - Can you enhance your test by parameterizing the values used. Which of the following are valid parameter type and can be used in your test? </p>
+<ol class="list">
+<li><p>Test/Action parameters</p></li>
+<li><p>Data table parameters</p></li>
+<li><p>Environment variable parameter</p></li>
+<li><p>Recovery Parameters</p></li>
+<li><p>Resources parameters</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (2) and (4) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (3) and (4) only</a></p>
+</div>
+<div class="A" id='A7'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>There are four types of parameters in UFT – Test/Action parameter, Data table parameter, Environment variable parameter and Random number parameter.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('7')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q8">
+<p><span>Q 8</span> - How do you call a function created within your test? </p>
+<pre class = "prettyprint">
+Function Flight(x)
+ .. ... ...       
+End Function      
+</pre>
+<ol class="list">
+<li><p>Call Flight z</p></li>
+<li><p>Call Flight(z)</p></li>
+<li><p>n = Flight(z)</p></li>
+<li><p>n = Flight z</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (4) only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and (4) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4)</a></p>
+</div>
+<div class="A" id='A8'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>Parenthesis should be used while calling a function using a call statement or assigning to a variable.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('8')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q9">
+<p><span>Q 9</span> - What information is displayed at System Monitor Tab in test result ? </p>
+<ol class="list">
+<li><p>Application Name, Counter scale, Current Step</p></li>
+<li><p>Application Name, Product Name, System Information</p></li>
+<li><p>System Counter List, Maximum Counter Value</p></li>
+<li><p>System Information, Application Name and System Counter List</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (2) and (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (4) only</a></p>
+</div>
+<div class="A" id='A9'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>System Monitor tab displays information related to Application Name, Counter Scale, Current Step, System Counter List, Maximum Counter Value. It does not show information related to Product Name or System information.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('9')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q10">
+<p><span>Q 10</span> - While merging two object repositories using Merge Tool, if an object in the secondary repository has the same name, description properties and values as an object in the primary object repository which has some additional properties and values, how this conflict can be handled? </p>
+<ol class="list">
+<li><p>By keeping the object added from the primary object repository only.</p></li>
+<li><p>By keeping the object added from secondary repository only.</p></li>
+<li><p>By keeping the object added from both the repository.</p></li>
+<li><p>by ignoring both repository and adding a fresh new object.</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (2) and (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> -  (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (3) and (4) only</a></p>
+</div>
+<div class="A" id='A10'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>You can handle this conflict by either adding objects from primary object repository only or only from secondary object repository or both..</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('10')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q11">
+<p><span>Q 11</span> - How can you can hide Item column in keyword view? </p>
+<ol class="list">
+<li><p>Right click on column header and unselect item</p></li>
+<li><p>Right click select 'view options' and remove item from visible column list</p></li>
+<li><p>Select Item column at Tools > View Options</p></li>
+<li><p>you cannot hide Item column in keyword view</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) and (2) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (4) only</a></p>
+</div>
+<div class="A" id='A11'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>You can hide a column in keyword view by right clicking on column header and unselect the header name or select view Option and remove the header from visible column list.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('11')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q12">
+<p><span>Q 12</span> - Steps recorded using Analog recording can be editable in keyword view.</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A12'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>We cannot edit Analog recording steps</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('12')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q13">
+<p><span>Q 13</span> - Mark all the ways that can be used to share values between actions.</p>
+<ol class="list">
+<li><p>using Global Data Table</p></li>
+<li><p>using Environment Variables</p></li>
+<li><p>using sendparameter command</p></li>
+<li><p>using Dictionary Objects</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) and (2) only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - (1) (2) and (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A13'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>Global data table, environment variables and dictionary object can be used to share values among actions.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('13')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q14">
+<p><span>Q 14</span> - Which of these checkpoints does not require the test to be in recording mode?.</p>
+<ol class="list">
+<li><p>Standard checkpoint</p></li>
+<li><p>Database checkpoint</p></li>
+<li><p>XML checkpoint</p></li>
+<li><p>Page checkpoint</p></li>
+<li><p>Bitmap Checkpoint</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) and (2) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) (2) and (4) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A14'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>You can insert database and xml checkpoint without being in recording mode.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('14')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q15">
+<p><span>Q 15</span> - Which of the following statement can be used if you want a run session to wait until the a webedit field is enabled?.</p>
+<ol class="list">
+<li><p>Browser("Browser").Page("Page").WebEdit("Edit").WaitProperty("disabled",0)</p></li>
+<li><p>Browser("Browser").Page("Page").WebEdit("Edit").WaitProperty("disabled",1)</p></li>
+<li><p>Browser("Browser").Page("Page").WebEdit("Edit").WaitProperty("enabled",1)</p></li>
+<li><p>Browser("Browser").Page("Page").WebEdit("Edit").Enabled = True</p></li>
+<li><p>Browser("Browser").Page("Page").WebEdit("Edit").Enabled(5)</p></li>
+<li><p>Browser("Browser").Page("Page").WebEdit("Edit").Enabled = True</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) (3) and (5) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (2) (4) and (6) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (1) (2) (4) and (6) </a></p>
+</div>
+<div class="A" id='A15'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>You can either use enabled or disabled property to check whether webEdit field is enabled. if enabled value will be 1 else 0.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('15')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q16">
+<p><span>Q 16</span> - How can you open a process that is available for currently open document?</p>
+<ol class="list">
+<li><p>File > Process Guidance Management </p></li>
+<li><p>Automation > Process Guidance List</p></li>
+<li><p>Process Guidance Pane</p></li>
+<li><p>we cannot open a process.</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (2) and (4) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (1) and (4) only</a></p>
+</div>
+<div class="A" id='A16'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>A Process can be viewed in Process Guidance Pane and also can be opened by selecting Automation > Process Guidance list.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('16')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q17">
+<p><span>Q 17</span> - There is no need to specify HP ALM / QC in the list of browser to ignore at Record and Run settings dialog box..</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - False</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - True</a></p>
+</div>
+<div class="A" id='A17'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>By Default, UFT ignores all instances of HP ALM / Quality center.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('17')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q18">
+<p><span>Q 18</span> - What type of image format UFT supports for CaptureBitmap method?</p>
+<ol class="list">
+<li><p>bmp</p></li>
+<li><p>jpg</p></li>
+<li><p>png</p></li>
+<li><p>gif</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) and (2) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) (2) and (4) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A18'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>UFT supports only bmp and png types only using captureBitmap Method.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('18')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q19">
+<p><span>Q 19</span> - You can modify the concurrent license server.</p>
+<ol class="list">
+<li><p>using License Wizard</p></li>
+<li><p>by setting LSHOST user variable</p></li>
+<li><p>by setting LSFORCEHOST user variable</p></li>
+<li><p>at Help > About dialog box</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) and (2) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) (2) and (4) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A19'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>Concurrent license server details can be modified using License Wizard or by setting LSHOST or LSFORCEHOST user variable. It cannot be modified using Help > About Dialog box</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('19')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q20">
+
+<p><span>Q 20</span> - UFT license type that is specific to a computer on which it is installed is known as ________</p>
+<ol class="list">
+<li><p>Concurrent license</p></li>
+<li><p>Floating license</p></li>
+<li><p>Seat License</p></li>
+<li><p>Personal License</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A20'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>Seat license is specific to a computer on which it is installed.</p>
+</div>
+
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('20')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q21">
+<p><span>Q 21</span> - You can copy and paste OR drag-drop steps to move the steps to a different location in Keyword view.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A21'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>Copy paste and drag drop steps can be done to move steps to a different location in Keyword view.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('21')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q22">
+<p><span>Q 22</span> - Recovery Scenarios, Object Repository per Action and Shared Object Repository carry extensions </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - qrs, mtr and mtb respectively</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - qrs, mtr and tsr respectively</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - qrs, mtb and mts respectively</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - qrs, mst and mts respectively</a></p>
+</div>
+<div class="A" id='A22'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>File Extensions for a Recovery scenario file is ‘qrs’, for Per Action Object Repository – ‘mtr’,shared object repository -‘tsr’ Batch Test – ‘mtb’, Script file – ‘mts’ for action template – ‘mst’.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('22')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q23">
+<p><span>Q 23</span> - Which of the following statements is/are false ? </p>
+<ol class="list">
+<li><p>UFT is an object based testing tool.</p></li>
+<li><p>UFT is a Protocol based testing tool.</p></li>
+<li><p>UFT is a Functional and Regression testing tool.</p></li>
+<li><p>UFT is an open source testing tool.</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) and (3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (2) and (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A23'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>UFT is neither a Protocol based testing tool nor a open source testing tool.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('23')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q24">
+<p><span>Q 24</span> - Using 'Save Test with resources', UFT saves a copy of any external action used. </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - False</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - True</a></p>
+</div>
+<div class="A" id='A24'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>UFT always saves a copy of external action used when using 'Save Test with Resources'.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('24')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q25">
+<p><span>Q 25</span> - Which of the following could be possible objective(s) for test automation? Mark all that apply. </p>
+<ol class="list">
+<li><p>Increase speed of testing</p></li>
+<li><p>Reduce manual effort</p></li>
+<li><p>Ensure consistency</p></li>
+<li><p>Eliminate manual testing.</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A25'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>Automating a test, provides you an increased speed of your testing, it reduces manual effort and ensures consistency, It does not replace manual testing.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('25')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q26">
+<p><span>Q 26</span> - Which property/method can be used as custom checkpoints in UFT? </p>
+<ol class="list">
+<li><p>Wait</p></li>
+<li><p>Exist</p></li>
+<li><p>Sync</p></li>
+<li><p>GetROProperty</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) (2) and (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - (2) and (3) </a></p>
+</div>
+<div class="A" id='A26'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>Exist and Sync can be used as custom checkpoints.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('26')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q27">
+<p><span>Q 27</span> - What can be used to capture timings in your test? </p>
+<ol class="list">
+<li><p>StartTransaction and EndTransaction</p></li>
+<li><p>StartTime and EndTime</p></li>
+<li><p>Timer</p></li>
+<li><p>Sync</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) and (4) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (2) and (4) </a></p>
+</div>
+<div class="A" id='A27'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>StartTransaction and EndTransaction can be used to capture timings, instead of this you can also use Timer function.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('27')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q28">
+<p><span>Q 28</span> - Which of the following is a recovery operation available in UFT? </p>
+<ol class="list">
+<li><p>Click Button with label</p></li>
+<li><p>Click Link with Text</p></li>
+<li><p>Click Default Button/Press the Enter Key</p></li>
+<li><p>Click Cancel Button/Press the Enter Key</p></li>
+<li><p>Mouse Left/Right Click</p></li>
+<li><p>Press Key or Key Combination</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) (2) and (6) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (1) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (3) (4) and (5) Only</a></p>
+</div>
+<div class="A" id='A28'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>The valid recovery operations are Click Default Button/Press the Enter Key, Click Cancel Button/Press the Escape Key, Click Button with Label and
+Press Key or Key Combination.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('28')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q29">
+<p><span>Q 29</span> - While creating a database checkpoint, you can define your database query  ________ </p>
+<ol class="list">
+<li><p>Using Connectionstring</p></li>
+<li><p>Using Microsoft Query</p></li>
+<li><p>Using Microsoft Debugger</p></li>
+<li><p>By Manually defining a SQL Statement</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (2) and (4) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - (2) and (3)</a></p>
+</div>
+<div class="A" id='A29'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>A database query can be defined by using Microsoft Query or by Manually defining a SQL statement.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('29')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q30">
+<p><span>Q 30</span> - 'Exit For' can be used as an alternate way to exit from the loop of _______________. </p>
+<ol class="list">
+<li><p>Do...While</p></li>
+<li><p>For...Loop</p></li>
+<li><p>For...Next</p></li>
+<li><p>For Each...Next</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> -(3) and (4) only </a></p>
+</div>
+<div class="A" id='A30'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>Exit For can be used to exit from a For..Next and For Each Next loop.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('30')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q31">
+<p><span>Q 31</span> - Why do you use Add-in Manager? </p>
+<ol class="list">
+<li><p>to open UFT.</p></li>
+<li><p>to load objects and properties for testing your application</p></li>
+<li><p>to load support for testing your application.</p></li>
+<li><p>to create object repository for testing your application</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A31'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>You use the Add-in Manager to load support for testing your applications.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('31')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q32">
+<p><span>Q 32</span> - Which function can be used to convert data from one subtype to another? </p>
+<ol class="list">
+<li><p>Date</p></li>
+<li><p>Format</p></li>
+<li><p>CInt</p></li>
+<li><p>CStr</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (2) (3) and (4) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - (3) and (4) only</a></p>
+</div>
+<div class="A" id='A32'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>CInt converts to Integer and CStr converts to string.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('32')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q33">
+<p><span>Q 33</span> - You can use a checkpoint as in the statement below </p>
+<pre class="prettyprint">
+Browser("Browser").Page("Page").check CheckPoint("text:=sometext")
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A33'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>Descriptive programming can not be used with checkpoints.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('33')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q34">
+<p><span>Q 34</span> - The changes made in Call to Action, will be reflected in the original action (from where the script is called) where as in Copy Action , the changes made in the script ,will not effect the original script(Action) </p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A34'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>Seat license is specific to a computer on which it is installed.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('34')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q35">
+<p><span>Q 35</span> - How can you remove a stored movie from the test result? </p>
+<ol class="list">
+<li><p>Selecting File > Remove Movie from Results.</p></li>
+<li><p>Selecting Tools > Remove Movie from Results.</p></li>
+<li><p>Delete physical movie file from the result location.</p></li>
+<li><p>once recorded you can not remove the movie from test result.</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (2) and(4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A35'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>To remove recorded movie from the test result, you can either select ‘Remove Movie from Results’ in File menu or you can delete the physical movie file at result location.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('35')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q36">
+<p><span>Q 36</span> - Which QuickTest operation can not be performed on a virtual object? </p>
+<ol class="list">
+<li><p>cannot be used in expert view</p></li>
+<li><p>cannot insert a standard checkpoint</p></li>
+<li><p>cannot insert a image checkpoint</p></li>
+<li><p>cannot use object spy</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A36'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>You cannot insert any type of checkpoint on a virtual object, or use the Object Spy to view its properties.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('36')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q37">
+<p><span>Q 37</span> - How can you create a .zip file of your test?</p>
+<ol class="list">
+<li><p>File > Export Test to zip file</p></li>
+<li><p>File > Save as zip file</p></li>
+<li><p> File > Save Test with sources and select Archive test and resource files in a zip file check box</p></li>
+<li><p>CTRL+ALT+S</p></li>
+<li><p>you can not create a .zip file of the test.</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) (3) and (4) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A37'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>UFT has a feature to export youur test to a zip file. you can do this by selecting ‘File >> Export Test to zip file’ (CTRL+ALT+S) menu options, or while saving the test with resources(File>Save Test with Resources) and select Archive test and resource files in a zip file check box.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('37')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q38">
+<p><span>Q 38</span> - Which of these Add-ins QTP currently supports to work with Extensibility? </p>
+<ol class="list">
+<li><p>.Net</p></li>
+<li><p>Visual Basic</p></li>
+<li><p>Delphi</p></li>
+<li><p>Web</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - (1) (3) and (4) </a></p>
+</div>
+<div class="A" id='A38'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>Currently UFT supports Web, .Net, Java and Delphi Add-ins for Extensibility.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('38')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q39">
+<p><span>Q 39</span> - When you split an action in your test that uses a local repository, Quick Test makes a copy of the local object repository and if you add objects to one of the split actions, the new object are added only to the corresponding repository. </p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A39'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>Yes, When you split an action in your test that uses a local repository, Quick Test makes a copy of the local object repository and if you add objects to one of the split actions, the new object are added only to the corresponding repository.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('39')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q40">
+<p><span>Q 40</span> - Which is the best match for the regular expression for deer|dees </p>
+<ol class="list">
+<li><p>deer</p></li>
+<li><p>deedess</p></li>
+<li><p>deerees</p></li>
+<li><p>dees</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) and(4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A40'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>'|' instructs UFT to match one of a choice of expressions.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('40')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q41">
+<p><span>Q 41</span> - When you use 'Object' Property of an object. What does it imply? </p>
+<ol class="list">
+<li><p>you get a reference to the DOM object</p></li>
+<li><p>you can access the internal methods and properties of the object</p></li>
+<li><p>you can use an object that is not in Object Repository</p></li>
+<li><p>you can access the test object properties of an object from object repository</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) and (2) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A41'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>Object property accesses the internal methods and properties also references to the DOM object.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('41')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q42">
+<p><span>Q 42</span> - We can use regular expression for urls in the list of Browsers under Tools > Options > Web to ignore them during record and replay time.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A42'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>We can use regular expression for urls in the list of browsers to ignore.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('42')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q43">
+<p><span>Q 43</span> - What type of environment variables can be added from Environment view under Test Settings? </p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Built-in and User-defined</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Static and Dynamic</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Only Built-in no User-defined</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> -  Only Static no Dynamic </a></p>
+</div>
+<div class="A" id='A43'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>There are two types of environment variable – built-in and User-defined.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('43')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q44">
+<p><span>Q 44</span> - Instead of using File > Open Test to open an existing test, what other possible way(s) you can use to open an existing test? </p>
+<ol class="list">
+<li><p>Select Test from the recent file list in the File menu</p></li>
+<li><p>Select Test from the recent file list in the start page</p></li>
+<li><p>dragging a test from windows explorer</p></li>
+<li><p>Selecting Right click in test editor and select Open Test</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A44'>
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>ou can open a test by dragging it from windows explorer , also for a recent file used you can select the test from Recent file list.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('44')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q45">
+<p><span>Q 45</span> - If you drag-drop a function into your test, UFT removes that function from Available Keywords pane and inserts a call to the function in the test. </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> -  False</a></p>
+</div>
+<div class="A" id='A45'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>UFT does not remove the function from Available keywords pane if you drag-drop any function to the test.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('45')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q46">
+<p><span>Q 46</span> - How do you synchronize your scripts in QTP ? </p>
+<ol class="list">
+<li><p>Sync</p></li>
+<li><p>Exist</p></li>
+<li><p>WaitProperty</p></li>
+<li><p>Visible</p></li>
+</ol>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and(3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A46'>
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>You can synchronize script using Sync, Exist or using WaitProperty.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('46')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q47">
+<p><span>Q 47</span> - A comment in Expert view can begin with ... so that it can be seen at comments tab in To Do pane. </p>
+<ol class="list">
+<li><p>'To Do</p></li>
+<li><p>'to-do</p></li>
+<li><p>'todo</p></li>
+<li><p>only a single quote ( ' )</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - (3) Only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - (1) (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A47'>
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>You can view a comment in comments tab by adding To Do, todo or to-do after single quote.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('47')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q48">
+<p><span>Q 48</span> - Conditional statements cannot be inserted in Keyword view.</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A48'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>You can insert conditional statements in keyword as well as expert view.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('48')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q49">
+<p><span>Q 49</span> - Input or Output action parameter name are not case sensitive. </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A49'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>Input or output action parameter names are case sensitive.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('49')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q50">
+<p><span>Q 50</span> - Which is the best match for the regular expression for dee(r|d)ees </p>
+<ol class="list">
+<li><p>deer</p></li>
+<li><p>deedees</p></li>
+<li><p>deerees</p></li>
+<li><p>dees</p></li>
+</ol>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - (1) (2) and (3) only</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - (2) and (3) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - (1) and (4) Only</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All (1) (2) (3) and (4) </a></p>
+</div>
+<div class="A" id='A50'>
+<h3>Answer : B</h3>
+<h3>Explanation</h3>
+<p>‘|’ instructs QTP to match one of a choice of expression, ‘(‘ groups the expression.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('50')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+   <h1 class="answer-sheet">Answer Sheet</h1>
+   <table class="table table-bordered">
+   <tr>
+   <th style="width:50%;">Question Number</th>
+   <th style="width:50%;">Answer Key</th>
+   </tr>      <tr>
+      <td>1</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>2</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>3</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>4</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>5</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>6</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>7</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>8</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>9</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>10</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>11</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>12</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>13</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>14</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>15</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>16</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>17</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>18</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>19</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>20</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>21</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>22</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>23</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>24</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>25</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>26</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>27</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>28</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>29</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>30</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>31</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>32</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>33</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>34</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>35</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>36</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>37</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>38</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>39</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>40</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>41</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>42</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>43</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>44</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>45</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>46</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>47</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>48</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>49</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>50</td>
+      <td>B</td>
+      </tr></table><div class="download-btn">
+<a target="_blank" href="/qtp/pdf/qtp_mock_test_i.pdf"><i class="fa fa-download"></i> Download</a>
+</div>
+<script type="text/javascript" src="/theme/js/exams.js"></script>
+<div class="parent-file">qtp_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="qtp_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="qtp_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

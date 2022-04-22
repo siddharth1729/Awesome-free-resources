@@ -1,0 +1,1 @@
+<script>window.location ='https://www.tutorialspoint.com/videotutorials/index.php';</script>

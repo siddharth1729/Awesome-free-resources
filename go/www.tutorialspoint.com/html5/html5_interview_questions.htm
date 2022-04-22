@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>HTML5 - Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="HTML5 - Interview Questions - Dear readers, these HTML5 Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your inte"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/html5/html5_interview_questions.htm" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#e44d26;
+}
+a.demo {
+    background:#e44d26;
+}
+li.heading {
+    background:#e44d26;
+}
+.course-box{background:#e44d26}
+.home-intro-sub p{color:#e44d26}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/html5/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/html5/images/html5-mini-logo.jpg" alt="HTML5 Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">HTML5 Tutorial</li>
+<li><a href="/html5/index.htm" >HTML5 - Home</a></li>
+<li><a href="/html5/html5_overview.htm" >HTML5 - Overview</a></li>
+<li><a href="/html5/html5_syntax.htm" >HTML5 - Syntax</a></li>
+<li><a href="/html5/html5_attributes.htm" >HTML5 - Attributes</a></li>
+<li><a href="/html5/html5_events.htm" >HTML5 - Events</a></li>
+<li><a href="/html5/html5_web_forms2.htm" >HTML5 - Web Forms 2.0</a></li>
+<li><a href="/html5/html5_svg.htm" >HTML5 - SVG</a></li>
+<li><a href="/html5/html5_mathml.htm" >HTML5 - MathML</a></li>
+<li><a href="/html5/html5_web_storage.htm" >HTML5 - Web Storage</a></li>
+<li><a href="/html5/html5_web_sql.htm" >HTML5 - Web SQL Database</a></li>
+<li><a href="/html5/html5_server_sent_events.htm" >HTML5 - Server-Sent Events</a></li>
+<li><a href="/html5/html5_websocket.htm" >HTML5 - WebSocket</a></li>
+<li><a href="/html5/html5_canvas.htm" >HTML5 - Canvas</a></li>
+<li><a href="/html5/html5_audio_video.htm" >HTML5 - Audio &amp; Video</a></li>
+<li><a href="/html5/html5_geolocation.htm" >HTML5 - Geolocation</a></li>
+<li><a href="/html5/html5_microdata.htm" >HTML5 - Microdata</a></li>
+<li><a href="/html5/html5_drag_drop.htm" >HTML5 - Drag &amp; drop</a></li>
+<li><a href="/html5/html5_web_workers.htm" >HTML5 - Web Workers</a></li>
+<li><a href="/html5/html5_indexeddb.htm" >HTML5 - IndexedDB</a></li>
+<li><a href="/html5/html5_web_messaging.htm" >HTML5 - Web Messaging</a></li>
+<li><a href="/html5/html5_cors.htm" >HTML5 - Web CORS</a></li>
+<li><a href="/html5/html5_web_rtc.htm" >HTML5 - Web RTC</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">HTML5 Demo</li>
+<li><a href="/html5/web_storage.htm" >HTML5 - Web Storage</a></li>
+<li><a href="/html5/server_sent_events.htm" >HTML5 - Server Sent Events</a></li>
+<li><a href="/html5/canvas_demo.htm" >HTML5 - Canvas</a></li>
+<li><a href="/html5/audio_demo.htm" >HTML5 - Audio Players</a></li>
+<li><a href="/html5/video_demo.htm" >HTML5 - Video Players</a></li>
+<li><a href="/html5/geo_demo.htm" >HTML5 - Geo-Location</a></li>
+<li><a href="/html5/drag_demo.htm" >HTML5 - Drag and Drop</a></li>
+<li><a href="/html5/web_workers.htm" >HTML5 - Web Worker</a></li>
+<li><a href="/html5/html5_slide_desk.htm" >HTML5 - Web slide Desk</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">HTML5 Tools</li>
+<li><a href="/html5/svg_tool.htm" >HTML5 - SVG Generator </a></li>
+<li><a href="/html5/mathml.htm" >HTML5 - MathML </a></li>
+<li><a href="/html5/velocity.htm" >HTML5 - Velocity Draw </a></li>
+<li><a href="/html5/qr_code.htm" >HTML5 - QR Code </a></li>
+<li><a href="/html5/html5_validator.htm" >HTML5 - Validator.nu Validation</a></li>
+<li><a href="/html5/html5_modernizr.htm" >HTML5 - Modernizr</a></li>
+<li><a href="/html5/html5_validation.htm" >HTML5 - Validation</a></li>
+<li><a href="/html5/html5_online_editor.htm" >HTML5 - Online Editor</a></li>
+<li><a href="/html5/html5_color_code_builder.htm" >HTML5 - Color Code Builder</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">HTML5 Useful References</li>
+<li><a href="/html5/html5_quick_guide.htm" >HTML5 - Quick Guide</a></li>
+<li><a href="/html5/html5_color_names.htm" >HTML5 - Color Names</a></li>
+<li><a href="/html5/html5_fonts.htm" >HTML5 - Fonts Reference</a></li>
+<li><a href="/html5/html5_url_encoding.htm" >HTML5 - URL Encoding</a></li>
+<li><a href="/html5/html5_entities.htm" >HTML5 - Entities</a></li>
+<li><a href="/html5/html5_character_encodings.htm" >HTML5 - Char Encodings</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">HTML5 Tag Reference</li>
+<li><a href="/html5/html5_questions_answers.htm" >HTML5 - Question and Answers</a></li>
+<li><a href="/html5/html5_tags.htm" >HTML5 - Tags Reference</a></li>
+<li><a href="/html5/html5_deprecated_tags.htm" >HTML5 - Deprecated Tags</a></li>
+<li><a href="/html5/html5_new_tags.htm" >HTML5 - New Tags</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">HTML5 Resources</li>
+<li><a href="/html5/html5_useful_resources.htm" >HTML5 - Useful Resources</a></li>
+<li><a href="/html5/html5_discussion.htm" >HTML5 - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>HTML5 - Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="html5_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="html5_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>HTML5 Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>HTML5</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer:</p>
+<section class="toggle">
+<label>What is HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for structuring and presenting content on the World Wide Web.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Name some of the new features of HTML5.</label>
+<div class="toggle-content">
+<p>HTML5 introduces a number of new elements and attributes that helps in building a modern websites. Following are great features introduced in HTML5 &minus;</p>
+<ul class="list">
+<li><p><b>New Semantic Elements &minus;</b> These are like &lt;header&gt;, &lt;footer&gt;, and &lt;section&gt;.</p></li>
+<li><p><b>Forms 2.0 &minus;</b> Improvements to HTML web forms where new attributes have been introduced for &lt;input&gt; tag.</p></li>
+<li><p><b>Persistent Local Storage &minus;</b> To achieve without resorting to third-party plugins.</p></li>
+<li><p><b>WebSocket &minus;</b> A a next-generation bidirectional communication technology for web applications.</p></li>
+<li><p><b>Server-Sent Events &minus;</b> HTML5 introduces events which flow from web server to the web browsers and they are called Server-Sent Events (SSE).</p></li>
+<li><p><b>Canvas &minus;</b> This supports a two-dimensional drawing surface that you can program with JavaScript.</p></li>
+<li><p><b>Audio &amp; Video &minus;</b> You can embed audio or video on your web pages without resorting to third-party plugins.</p></li>
+<li><p><b>Geolocation &minus;</b> Now visitors can choose to share their physical location with your web application.</p></li>
+<li><p><b>Microdata &minus;</b> This lets you create your own vocabularies beyond HTML5 and extend your web pages with custom semantics.</p></li>
+<li><p><b>Drag and drop &minus;</b> Drag and drop the items from one location to another location on a the same webpage.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>Which browsers support HTML5?</label>
+<div class="toggle-content">
+<p>The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality.</p>
+<p>The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Is HTML5 backward compatible with old browsers?</label>
+<div class="toggle-content">
+<p>Yes! HTML5 is designed, as much as possible, to be backward compatible with existing web browsers. New features build on existing features and allow you to provide fallback content for older browsers.</p>
+<p>It is suggested to detect support for individual HTML5 features using a few lines of JavaScript.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Are HTML tags case sensitive?</label>
+<div class="toggle-content">
+<p>No!</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'section' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag represents a generic document or application section. It can be used together with h1-h6 to indicate the document structure.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'article' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag represents an independent piece of content of a document, such as a blog entry or newspaper article.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'aside' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag represents a piece of content that is only slightly related to the rest of the page.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'header' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag represents the header of a section.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'footer' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag represents a footer for a section and can contain information about the author, copyright information, et cetera.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'nav' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag represents a section of the document intended for navigation.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'dialog' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag can be used to mark up a conversation.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'figure' tag in HTML5?</label>
+<div class="toggle-content">
+<p>This tag can be used to associate a caption together with some embedded content, such as a graphic or video.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are custom attributes in HTML5?</label>
+<div class="toggle-content">
+<p>A custom data attribute starts with data- and would be named based on your requirement. Following is the simple example&minus;</p>
+<pre class="prettyprint notranslate">
+&lt;div class="example" data-subject="physics" data-level="complex"&gt;
+   ...
+&lt;/div&gt;
+</pre>
+<p>The above will be perfectly valid HTML5 with two custom attributes called data-subject and data-level. You would be able to get the values of these attributes using JavaScript APIs or CSS in similar way as you get for standard attributes.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Web Forms 2.0?</label>
+<div class="toggle-content">
+<p>Web Forms 2.0 is an extension to the forms features found in HTML4. Form elements and attributes in HTML5 provide a greater degree of semantic mark-up than HTML4 and remove a great deal of the need for tedious scripting and styling that was required in HTML4.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of datetime input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>It represents a date and time (year, month, day, hour, minute, second, fractions of a second) encoded according to ISO 8601 with the time zone set to UTC.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of datetime-local input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>It represents a date and time (year, month, day, hour, minute, second, fractions of a second) encoded according to ISO 8601 with no time zone information.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of date input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>It represents a date (year, month, day) encoded according to ISO 8601.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of month input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>It represents a date consisting of a year and a month encoded according to ISO 8601.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of week input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>It represents a date consisting of a year and a week number encoded according to ISO 8601.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of time input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>It represents a time (hour, minute, seconds, fractional seconds) encoded according to ISO 8601.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of number input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>This control accepts only numerical value. The step attribute specifies the precision, defaulting to 1.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of range input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>The range type is used for input fields that should contain a value from a range of numbers.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of email input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>This accepts only email value. This type is used for input fields that should contain an e-mail address. If you try to submit a simple text, it forces to enter only email address in email@example.com format.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of url input control in Web form 2.0?</label>
+<div class="toggle-content">
+<p>This accepts only URL value. This type is used for input fields that should contain a URL address. If you try to submit a simple text, it forces to enter only URL address either in http://www.example.com format or in http://example.com format.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'output' tag in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 introduced a new element &lt;output&gt; which is used to represent the result of different types of output, such as output written by a script.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'placeholder' attribute in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 introduced a new attribute called placeholder. This attribute on &lt;input&gt; and &lt;textarea&gt; elements provides a hint to the user of what can be entered in the field. The placeholder text must not contain carriage returns or line-feeds.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'autofocus' attribute in HTML5?</label>
+<div class="toggle-content">
+<p>This is a simple one-step pattern, easily programmed in JavaScript at the time of document load, automatically focus one particular form field.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'required' attribute in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 introduced a new attribute called required which would insist to have a value in an input control.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you use SVG tags directly in HTML5 without any plugin?</label>
+<div class="toggle-content">
+<p>Yes! HTML5 allows embeding SVG directly using &lt;svg&gt;...&lt;/svg&gt; tag.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you use MathML tags directly in HTML5 without any plugin?</label>
+<div class="toggle-content">
+<p>Yes! The HTML syntax of HTML5 allows for MathML elements to be used inside a document using &lt;math&gt;...&lt;/math&gt; tags.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are the drawbacks of cookies?</label>
+<div class="toggle-content">
+<p>Cookies have following drawbacks&minus;</p>
+<ul class="list">
+<li><p>Cookies are included with every HTTP request, thereby slowing down your web application by transmitting the same data.</p></li>
+<li><p>Cookies are included with every HTTP request, thereby sending data unencrypted over the internet.</p></li>
+<li><p>Cookies are limited to about 4 KB of data . Not enough to store required data.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What do you mean by session storage in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 introduces the sessionStorage attribute which would be used by the sites to add data to the session storage, and it will be accessible to any page from the same site opened in that window i.e. session and as soon as you close the window, session would be lost.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What do you mean by local storage in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 introduces the localStorage attribute which would be used to access a page's local storage area without no time limit and this local storage will be available whenever you would use that page.</p>
+</div>
+</section>
+<section class="toggle">
+<label>When a session storage data gets deleted?</label>
+<div class="toggle-content">
+<p>The Session Storage Data would be deleted by the browsers immediately after the session gets terminated.</p>
+</div>
+</section>
+<section class="toggle">
+<label>When a local storage data gets deleted?</label>
+<div class="toggle-content">
+<p>local storage data has no time limit. To clear a local storage setting you would need to call localStorage.remove('key'); where 'key' is the key of the value you want to remove. If you want to clear all settings, you need to call localStorage.clear() method.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Server Side Events in HTML5?</label>
+<div class="toggle-content">
+<p>Along with HTML5, WHATWG Web Applications 1.0 introduces events which flow from web server to the web browsers and they are called Server-Sent Events (SSE). Using SSE you can push DOM events continously from your web server to the visitor's browser.</p>
+<p>The event streaming approach opens a persistent connection to the server, sending data to the client when new information is available, eliminating the need for continuous polling.</p>
+<p>Server-sent events standardizes how we stream data from the server to the client.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How to utilize a server-sent event in HTML5?</label>
+<div class="toggle-content">
+<p>To use Server-Sent Events in a web application, you would need to add an &lt;eventsource&gt; element to the document.</p>
+<p>The src attribute of &lt;eventsource&gt; element should point to an URL which should provide a persistent HTTP connection that sends a data stream containing the events.</p>
+<p>The URL would point to a PHP, PERL or any Python script which would take care of sending event data consistently.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are the steps of server side scripts for SSE?</label>
+<div class="toggle-content">
+<p> server side script should send Content-type header specifying the type text/event-stream as follows&minus;</p>
+<pre class="prettyprint notranslate">
+print "Content-Type: text/event-stream\n\n";
+</pre>
+<p>After setting Content-Type, server side script would send an Event &minus; tag followed by event name. Following example would send Server-Time as event name terminated by a new line character.</p>
+<pre class="prettyprint notranslate">
+print "Event: server-time\n";
+</pre>
+<p>Final step is to send event data using Data &minus; tag which would be followed by integer of string value terminated by a new line character as follows&minus;</p>
+<pre class="prettyprint notranslate">
+$time = localtime();
+print "Data: $time\n";
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label>What are web sockets?</label>
+<div class="toggle-content">
+<p>Web Sockets is a next-generation bidirectional communication technology for web applications which operates over a single socket and is exposed via a JavaScript interface in HTML 5 compliant browsers.</p>
+<p>Once you get a Web Socket connection with the web server, you can send data from browser to server by calling a send() method, and receive data from server to browser by an onmessage event handler.</p>
+<p>Following is the API which creates a new WebSocket object.</p>
+var Socket = new WebSocket(url, [protocal] );
+<p>Here first argument, url, specifies the URL to which to connect. The second attribute, protocol is optional, and if present, specifies a sub-protocol that the server must support for the connection to be successful.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of Socket.readyState atribute of WebSocket?</label>
+<div class="toggle-content">
+<p>The readonly attribute readyState represents the state of the connection. It can have the following values:</p>
+<ul class="list">
+<li><p>A value of 0 indicates that the connection has not yet been established.</p></li>
+<li><p>A value of 1 indicates that the connection is established and communication is possible.</p></li>
+<li><p>A value of 2 indicates that the connection is going through the closing handshake.</p></li>
+<li><p>A value of 3 indicates that the connection has been closed or could not be opened.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of Socket.bufferedAmount atribute of WebSocket?</label>
+<div class="toggle-content">
+<p>The readonly attribute bufferedAmount represents the number of bytes of UTF-8 text that have been queued using send() method.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'canvas' tag in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 element &lt;canvas&gt; gives you an easy and powerful way to draw graphics using JavaScript. It can be used to draw graphs, make photo compositions or do simple (and not so simple) animations.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'audio' tag in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 supports &lt;audio&gt; tag which is used to embed sound content in an HTML or XHTML document. The current HTML5 draft specification does not specify which audio formats browsers should support in the audio tag. But most commonly used audio formats are ogg, mp3 and wav.</p>
+<p>You can use &lt;source&gt; tag to specify media along with media type and many other attributes. An audio element allows multiple source elements and browser will use the first recognized format.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of 'video' tag in HTML5?</label>
+<div class="toggle-content">
+<p>HTML5 supports &lt;video&gt; tag which is used to embed a video file in an HTML or XHTML document.The current HTML5 draft specification does not specify which video formats browsers should support in the video tag. But most commonly used video formats are&minus;</p>
+<ul class="list">
+<li><p><b>Ogg &minus;</b> Ogg files with Thedora video codec and Vorbis audio codec.</p></li>
+<li><p><b>mpeg4 &minus;</b> MPEG4 files with H.264 video codec and AAC audio codec.</p></li>
+</ul>
+<p>You can use &lt;source&gt; tag to specify media along with media type and many other attributes. An audio element allows multiple source elements and browser will use the first recognized format.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Geolocation API in HTML?</label>
+<div class="toggle-content">
+<p>HTML5 Geolocation API lets you share your location with your favorite web sites. A Javascript can capture your latitude and longitude and can be sent to backend web server and do fancy location-aware things like finding local businesses or showing your location on a map.</p>
+<p>Today most of the browsers and mobile devices support Geolocation API. The geolocation APIs work with a new property of the global navigator object ie. Geolocation object which can be created as follows:</p>
+var geolocation = navigator.geolocation;
+<p>The geolocation object is a service object that allows widgets to retrieve information about the geographic location of the device.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is purpose of getCurrentPosition() method of geolocation object of HTML5?</label>
+<div class="toggle-content">
+<p>This method retrieves the current geographic location of the user.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is purpose of watchPosition() method of geolocation object of HTML5?</label>
+<div class="toggle-content">
+<p>This method retrieves periodic updates about the current geographic location of the device.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is purpose of clearPosition() method of geolocation object of HTML5?</label>
+<div class="toggle-content">
+<p>This method cancels an ongoing watchPosition call.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are Web Workers?</label>
+<div class="toggle-content">
+<p>Web Workers do all the computationally expensive tasks without interrupting the user interface and typically run on separate threads.</p>
+<p>Web Workers allow for long-running scripts that are not interrupted by scripts that respond to clicks or other user interactions, and allows long tasks to be executed without yielding to keep the page responsive.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">html5_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="html5_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="html5_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

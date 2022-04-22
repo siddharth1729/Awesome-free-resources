@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SQL Mock Test - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SQL Mock Test - This section presents you various set of Mock Tests related to SQL Framework.  You can download these sample mock tests at your local machine and solve offline "/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sql/sql_mock_test.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#57B847;
+}
+a.demo {
+    background:#57B847;
+}
+li.heading {
+    background:#57B847;
+}
+.course-box{background:#57B847}
+.home-intro-sub p{color:#57B847}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sql/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sql/images/sql-mini-logo.jpg" alt="SQL Services Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">SQL Tutorial</li>
+<li><a href="/sql/index.htm">SQL - Home</a></li>
+<li><a href="/sql/sql-overview.htm" >SQL - Overview</a></li>
+<li><a href="/sql/sql-rdbms-concepts.htm">SQL - RDBMS Concepts</a></li>
+<li><a href="/sql/sql-databases.htm" >SQL - Databases</a></li>
+<li><a href="/sql/sql-syntax.htm" >SQL - Syntax</a></li>
+<li><a href="/sql/sql-data-types.htm" >SQL - Data Types</a></li>
+<li><a href="/sql/sql-operators.htm" >SQL - Operators</a></li>
+<li><a href="/sql/sql-expressions.htm" >SQL - Expressions</a></li>
+<li><a href="/sql/sql-create-database.htm" >SQL - Create Database</a></li>
+<li><a href="/sql/sql-drop-database.htm" >SQL - Drop Database</a></li>
+<li><a href="/sql/sql-select-database.htm" >SQL - Select Database</a></li>
+<li><a href="/sql/sql-create-table.htm" >SQL - Create Table</a></li>
+<li><a href="/sql/sql-drop-table.htm" >SQL - Drop Table</a></li>
+<li><a href="/sql/sql-insert-query.htm" >SQL - Insert Query</a></li>
+<li><a href="/sql/sql-select-query.htm" >SQL - Select Query</a></li>
+<li><a href="/sql/sql-where-clause.htm" >SQL - Where Clause</a></li>
+<li><a href="/sql/sql-and-or-clauses.htm" >SQL - AND &amp; OR Clauses</a></li>
+<li><a href="/sql/sql-update-query.htm" >SQL - Update Query</a></li>
+<li><a href="/sql/sql-delete-query.htm" >SQL - Delete Query</a></li>
+<li><a href="/sql/sql-like-clause.htm" >SQL - Like Clause</a></li>
+<li><a href="/sql/sql-top-clause.htm" >SQL - Top Clause</a></li>
+<li><a href="/sql/sql-order-by.htm" >SQL - Order By</a></li>
+<li><a href="/sql/sql-group-by.htm" >SQL - Group By</a></li>
+<li><a href="/sql/sql-distinct-keyword.htm" >SQL - Distinct Keyword</a></li>
+<li><a href="/sql/sql-sorting-results.htm" >SQL - Sorting Results</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Advanced SQL</li>
+<li><a href="/sql/sql-constraints.htm" >SQL - Constraints</a></li>
+<li><a href="/sql/sql-using-joins.htm" >SQL - Using Joins</a></li>
+<li><a href="/sql/sql-unions-clause.htm" >SQL - Unions Clause</a></li>
+<li><a href="/sql/sql-null-values.htm" >SQL - NULL Values</a></li>
+<li><a href="/sql/sql-alias-syntax.htm" >SQL - Alias Syntax</a></li>
+<li><a href="/sql/sql-indexes.htm" >SQL - Indexes</a></li>
+<li><a href="/sql/sql-alter-command.htm" >SQL - Alter Command</a></li>
+<li><a href="/sql/sql-truncate-table.htm" >SQL - Truncate Table</a></li>
+<li><a href="/sql/sql-using-views.htm" >SQL - Using Views</a></li>
+<li><a href="/sql/sql-having-clause.htm" >SQL - Having Clause</a></li>
+<li><a href="/sql/sql-transactions.htm" >SQL - Transactions</a></li>
+<li><a href="/sql/sql-wildcards.htm" >SQL - Wildcards</a></li>
+<li><a href="/sql/sql-date-functions.htm" >SQL - Date Functions</a></li>
+<li><a href="/sql/sql-temporary-tables.htm" >SQL - Temporary Tables</a></li>
+<li><a href="/sql/sql-clone-tables.htm" >SQL - Clone Tables</a></li>
+<li><a href="/sql/sql-sub-queries.htm" >SQL - Sub Queries</a></li>
+<li><a href="/sql/sql-using-sequences.htm" >SQL - Using Sequences</a></li>
+<li><a href="/sql/sql-handling-duplicates.htm" >SQL - Handling Duplicates</a></li>
+<li><a href="/sql/sql-injection.htm" >SQL - Injection</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SQL Useful Resources</li>
+<li><a href="/sql/sql-database-tuning.htm" >SQL - Database Tuning</a></li>
+<li><a href="/sql/sql_questions_answers.htm" >SQL - Questions and Answers</a></li>
+<li><a href="/sql/sql-quick-guide.htm" >SQL - Quick Guide</a></li>
+<li><a href="/sql/sql-useful-functions.htm" >SQL - Useful Functions</a></li>
+<li><a href="/sql/sql-useful-resources.htm" >SQL - Useful Resources</a></li>
+<li><a href="/sql/sql-discussion.htm" >SQL - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SQL Mock Test</h1>
+<div class="topgooglead">
+<hr />
+<script type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "image";
+google_ad_channel = "";
+//--></script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> 
+</script>
+</div>
+<div class="clearer"></div>
+<p>This section presents you various set of Mock Tests related to <b>SQL Framework</b>.  You can download these sample mock tests at your local machine and solve offline at your convenience. Every mock test is supplied with a mock test key to let you verify the final score and grade yourself.</p>
+<img src="/images/online_mock_tests.png" alt="Questions and Answers" />
+<a href="/sql/sql_mock_test.htm?min=1&max=25"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test I</button></a>
+<a href="/sql/sql_mock_test.htm?min=26&max=50"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test II</button></a>
+<a href="/sql/sql_mock_test.htm?min=51&max=75"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test III</button></a>
+<a href="/sql/sql_mock_test.htm?min=76&max=100"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test IV</button></a>
+<style>
+.B, .answer-sheet{
+   display:none !important;
+}
+.Q a{
+   pointer-events: none;
+   cursor: default;
+}
+</style>
+<h1>SQL Mock Test I </h1>
+<div class="QA">
+<div class="Q" id="Q1">
+<p><span>Q 1</span> - Which of the following is not true about SQL statements?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - SQL statements are not case sensitive.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - SQL statements can be written on one or more lines.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Keywords cannot be split across lines.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Clauses must be written on separate lines.</a></p>
+</div>
+<div class="A" id='A1'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('1')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q2">
+<p><span>Q 2</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display the full name of a student, with a column heading "Name"</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - select first_name, last_name as “Name” from students;
+</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select Name from students;</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - select first_name || last_name as “Name” from students;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name, last_name from students;</a></p>
+</div>
+<div class="A" id='A2'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('2')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q3">
+<p><span>Q 3</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display the distinct honours subjects in the STUDENTS table?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - select honours_subject from students;</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - select distinct honours_subject from students;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select all honours_subject from students;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select * from students;</a></p>
+</div>
+<div class="A" id='A3'>
+<h3>Answer : B</h3>
+</div>
+ <div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('3')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q4">
+<p><span>Q 4</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display all the students with honours_subject ‘Eng01’?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - select student_code, first_name, last_name from students where honours_subject = ‘Eng01’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select student_code, first_name, last_name from students where honours_subject is ‘Eng01’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select student_code, first_name, last_name where honours_subject = ‘Eng01’<p>&nbsp;&nbsp;&nbsp;&nbsp;from students;</p></a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select student_code, first_name, last_name from students;</a></p>
+</div>
+<div class="A" id='A4'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('4')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q5">
+<p><span>Q 5</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display all the students whose first name starts with the character ‘A’?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - select first_name from students where first_name like ‘A%’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name from students where first_name like ‘%A’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select first_name from students where first_name like ‘%A%’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name from students where first_name like ‘A’;</a></p>
+</div>
+<div class="A" id='A5'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('5')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q6">
+<p><span>Q 6</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display all the students where the second letter in the first name is ‘i’?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - select first_name from students where first_name like ‘_i%’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name from students where first_name like ‘%i_’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select first_name from students where first_name like ‘%i%’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name from students where first_name like ‘_i_’;</a></p>
+</div>
+<div class="A" id='A6'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('6')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q7">
+<p><span>Q 7</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display names of all the students whose email ids are not provided?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - select first_name, last name from students where email = 0;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name, last name from students where email = ‘ ‘;</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - select first_name, last name from students where email is null;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name, last name from students where email = ‘null’;</a></p>
+</div>
+<div class="A" id='A7'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('7')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q8">
+<p><span>Q 8</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display names of all the students whose honours subject is English and percentage of marks more than 80, or honours subject is Spanish and percentage of marks more than 80?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - select first_name, last name from students where (honours_subject = “English” or honours_subject = “Spanish” ) and percentage_of_marks &gt; 80;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name, last name from students where honours_subject = “English” or honours_subject = “Spanish” and percentage_of_marks &gt; 80;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select first_name, last name from students where (honours_subject = “English” or honours_subject = “Spanish” and percentage_of_marks &gt; 80);</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name, last name from students where (honours_subject = “English”) or honours_subject = “Spanish” and percentage_of_marks &gt; 80;</a></p>
+</div>
+<div class="A" id='A8'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('8')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q9">
+<p><span>Q 9</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display names of all the students whose honours subject is English, or honours subject is Spanish and percentage of marks more than 80?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - select first_name, last name from students where (honours_subject = “English” or honours_subject = “Spanish” ) and percentage_of_marks &gt; 80;</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - select first_name, last name from students where honours_subject = “English” or honours_subject = “Spanish” and percentage_of_marks &gt; 80;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select first_name, last name from students where honours_subject = “English” and honours_subject = “Spanish” or percentage_of_marks &gt; 80;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name, last name from students where (honours_subject = “English”) and honours_subject = “Spanish” and percentage_of_marks &gt; 80;</a></p>
+</div>
+<div class="A" id='A9'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('9')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q10">
+<p><span>Q 10</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display names of all students in descending order of percentage of marks?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - select first_name, last name, percentage_of_marks  from students order by percentage_of_marks;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name, last name, percentage_of_marks  order by percentage_of_marks  desc from students;</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - select first_name, last name, percentage_of_marks  from students order by percentage_of_marks desc;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name, last name, percentage_of_marks  from students order by percentage_of_marks descending;</a></p>
+</div>
+<div class="A" id='A10'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('10')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q11">
+<p><span>Q 11</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would display names and percentage of marks of all students sorted by honours subject, and then order by percentage of marks?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - select first_name, last name, honours_subject, percentage_of_marks  from students order by honours_subject, percentage_of_marks;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name, last name, honours_subject, percentage_of_marks  order by percentage_of_marks desc from students;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select first_name, last name, percentage_of_marks  from students order by percentage_of_marks desc;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name, last name, percentage_of_marks  from students order by percentage_of_marks, honours_subject;</a></p>
+</div>
+<div class="A" id='A11'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('11')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q12">
+<p><span>Q 12</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which of the following query would correctly display the students’ first name, last name, honours subject and date of birth, born between July 1<sup>st</sup> 1996, and 30<sup>th</sup> June 1999. </p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - select first_name, last name, honours_subject, date_of_birth  from students where date_of_birth between ’30-JUN-1999’ and ’01-JUL-1996’;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name, last name, honours_subject, date_of_birth  from students where date_of_birth in (’30-JUN-1999’ , ’01-JUL-1996’);</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select first_name, last name, honours_subject, date_of_birth  from students where date_of_birth like ’30-JUN-1999’ and ’01-JUL-1996’;</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - select first_name, last name, honours_subject, date_of_birth  from students where date_of_birth between ’01-JUL-1996’ and ’30-JUN-1999’;</a></p>
+</div>
+<div class="A" id='A12'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('12')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q13">
+<p><span>Q 13</span> - Which of the following is not true about single row functions?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - They operate on single rows only and return one result per row.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - They accept arguments that could be a column or any expression.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - They cannot be nested.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - They may modify the data type.</a></p>
+</div>
+<div class="A" id='A13'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('13')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q14">
+<p><span>Q 14</span> - Which of the following is not a character manipulation function?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - concat</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - substr</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - instr</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - coalesce </a></p>
+</div>
+<div class="A" id='A14'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('14')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q15">
+<p><span>Q 15</span> - What is returned by INSTR(‘TUTORIALS POINT’, ‘P’)?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - 11</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 10</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - POINT</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - TUTORIALS</a></p>
+</div>
+<div class="A" id='A15'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('15')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q16">
+<p><span>Q 16</span> - What is returned by SUBSTR(‘TUTORIALS POINT’, 1, 9)?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - TUTORIAL</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - POINT</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - TUTORIALS</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - UTORIALS </a></p>
+</div>
+<div class="A" id='A16'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('16')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q17">
+<p><span>Q 17</span> - What is returned by SUBSTR(‘TUTORIALS POINT’, -1, 1)?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - T</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - NULL</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 0</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - N</a></p>
+</div>
+<div class="A" id='A17'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('17')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q18">
+<p><span>Q 18</span> - What is returned by ROUND(789.8389, 2)?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - 789.84</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 789.83</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 78</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 789.00</a></p>
+</div>
+<div class="A" id='A18'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('18')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q19">
+<p><span>Q 19</span> - What is returned by TRUNC(789.8389, 2)?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 789.84</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - 789.83</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 78</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 789.00</a></p>
+</div>
+<div class="A" id='A19'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('19')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q20">
+<p><span>Q 20</span> - What is returned by MOD(1000,30)?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 33</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 30</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 3</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - 10</a></p>
+</div>
+<div class="A" id='A20'>
+<h3>Answer : D</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('20')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q21">
+<p><span>Q 21</span> - Consider the following schema &minus;</p>
+<pre class="prettyprint notranslate">
+STUDENTS(student_code, first_name, last_name, email, 
+         phone_no, date_of_birth, honours_subject, percentage_of_marks);
+</pre>
+<p>Which query will display the names and honours subjects of all students and if a student has not yet been given a honours subject yet, then it should display ‘No Honours Yet’.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - select first_name, last name, nvl(honours_subject, ‘No Honours Yet’) from students;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - select first_name, last name, nvl2(honours_subject, ‘No Honours Yet’) from students;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - select first_name, last name, honours_subject, from students;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - select first_name, last name, nullif(honours_subject, ‘No Honours Yet’) from students;</a></p>
+</div>
+<div class="A" id='A21'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('21')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q22">
+<p><span>Q 22</span> - You want to calculate the tax payable by the employees of an organization. If the employee gets a commission, then the tax would be calculated on commission plus salary, if the employee does not get any commission, then the tax would be calculated on salary only. Which function should you use for calculating tax?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - NVL</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - NVL2</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - NULLIF</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - COALESCE</a></p>
+</div>
+<div class="A" id='A22'>
+<h3>Answer : B</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('22')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q23">
+<p><span>Q 23</span> - For some particular assignment, you need to compare two values, if both are equal, the result would be null, and if the values are not equal then the first value should be returned. Which function should you use?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - NVL</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - NVL2</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - NULLIF</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - COALESCE</a></p>
+</div>
+<div class="A" id='A23'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('23')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q24">
+<p><span>Q 24</span> - Which of the following is not true about the COALESCE function?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - It takes multiple alternate values.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - It returns the first non-null expression in the parameter list.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - It returns the first value in the parameter list if it is null.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id='A24'>
+<h3>Answer : C</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('24')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q25">
+<p><span>Q 25</span> - Which of the following is true about Cartesian Products?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - A Cartesian product is formed when a join condition is omitted.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - A Cartesian product is formed when a join condition is valid.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Some rows in the first table are joined to all rows in the second table.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All rows in the first table are joined to some rows in the second table.</a></p>
+</div>
+<div class="A" id='A25'>
+<h3>Answer : A</h3>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('25')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>   <h1 class="answer-sheet">Answer Sheet</h1>
+   <table class="table table-bordered">
+   <tr>
+   <th style="width:50%;">Question Number</th>
+   <th style="width:50%;">Answer Key</th>
+   </tr>      <tr>
+      <td>1</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>2</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>3</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>4</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>5</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>6</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>7</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>8</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>9</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>10</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>11</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>12</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>13</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>14</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>15</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>16</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>17</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>18</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>19</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>20</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>21</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>22</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>23</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>24</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>25</td>
+      <td>A</td>
+      </tr></table><div class="download-btn">
+<a target="_blank" href="/sql/pdf/sql_mock_test_i.pdf"><i class="fa fa-download"></i> Download</a>
+</div>
+<script type="text/javascript" src="/theme/js/exams.js"></script>
+<div class="parent-file">sql_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sql_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sql_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

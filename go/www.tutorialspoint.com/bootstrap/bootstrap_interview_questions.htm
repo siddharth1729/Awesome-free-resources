@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Bootstrap - Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="Bootstrap - Interview Questions - Dear readers, these BOOTSTRAP Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your "/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/bootstrap/bootstrap_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#5b4282;
+}
+a.demo {
+    background:#5b4282;
+}
+li.heading {
+    background:#5b4282;
+}
+.course-box{background:#5b4282}
+.home-intro-sub p{color:#5b4282}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/bootstrap/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/bootstrap/images/bootstrap-mini-logo.jpg" alt="Bootstrap Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">Bootstrap Tutorial</li>
+<li><a href="/bootstrap/index.htm">Bootstrap - Home</a></li>
+<li><a href="/bootstrap/bootstrap_overview.htm">Bootstrap - Overview</a></li>
+<li><a href="/bootstrap/bootstrap_environment_setup.htm">Bootstrap - Environment Setup</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Bootstrap with CSS</li>
+<li><a href="/bootstrap/bootstrap_grid_system.htm">Bootstrap - Grid System</a></li>
+<li><a href="/bootstrap/bootstrap_css_overview.htm">Bootstrap - CSS Overview</a></li>
+<li><a href="/bootstrap/bootstrap_typography.htm">Bootstrap - Typography</a></li>
+<li><a href="/bootstrap/bootstrap_code.htm">Bootstrap - Code</a></li>
+<li><a href="/bootstrap/bootstrap_tables.htm">Bootstrap - Tables</a></li>
+<li><a href="/bootstrap/bootstrap_forms.htm">Bootstrap - Forms</a></li>
+<li><a href="/bootstrap/bootstrap_buttons.htm">Bootstrap - Buttons</a></li>
+<li><a href="/bootstrap/bootstrap_images.htm">Bootstrap - Images</a></li>
+<li><a href="/bootstrap/bootstrap_helper_classes.htm">Bootstrap - Helper Classes</a></li>
+<li><a href="/bootstrap/bootstrap_responsive_utilities.htm">Bootstrap - Responsive utilities</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Bootstrap Layout Components</li>
+<li><a href="/bootstrap/bootstrap_glyphicons.htm">Bootstrap - Glyphicons</a></li>
+<li><a href="/bootstrap/bootstrap_dropdowns.htm">Bootstrap - Dropdowns</a></li>
+<li><a href="/bootstrap/bootstrap_button_groups.htm">Bootstrap - Button Groups</a></li>
+<li><a href="/bootstrap/bootstrap_button_dropdowns.htm">Bootstrap - Button Dropdowns</a></li>
+<li><a href="/bootstrap/bootstrap_input_groups.htm">Bootstrap - Input Groups</a></li>
+<li><a href="/bootstrap/bootstrap_navigation_elements.htm">Bootstrap - Navigation Elements</a></li>
+<li><a href="/bootstrap/bootstrap_navbar.htm">Bootstrap - Navbar</a></li>
+<li><a href="/bootstrap/bootstrap_breadcrumb.htm">Bootstrap - Breadcrumb</a></li>
+<li><a href="/bootstrap/bootstrap_pagination.htm">Bootstrap - Pagination</a></li>
+<li><a href="/bootstrap/bootstrap_labels.htm">Bootstrap - Labels</a></li>
+<li><a href="/bootstrap/bootstrap_badges.htm">Bootstrap - Badges</a></li>
+<li><a href="/bootstrap/bootstrap_jumbotron.htm">Bootstrap - Jumbotron</a></li>
+<li><a href="/bootstrap/bootstrap_page_header.htm">Bootstrap - Page Header</a></li>
+<li><a href="/bootstrap/bootstrap_thumbnails.htm">Bootstrap - Thumbnails</a></li>
+<li><a href="/bootstrap/bootstrap_alerts.htm">Bootstrap - Alerts</a></li>
+<li><a href="/bootstrap/bootstrap_progress_bars.htm">Bootstrap - Progress Bars</a></li>
+<li><a href="/bootstrap/bootstrap_media_object.htm">Bootstrap - Media Object</a></li>
+<li><a href="/bootstrap/bootstrap_list_group.htm">Bootstrap - List Group</a></li>
+<li><a href="/bootstrap/bootstrap_panels.htm">Bootstrap - Panels</a></li>
+<li><a href="/bootstrap/bootstrap_wells.htm">Bootstrap - Wells</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Bootstrap Plugins</li>
+<li><a href="/bootstrap/bootstrap_plugins_overview.htm">Bootstrap - Plugins Overview</a></li>
+<li><a href="/bootstrap/bootstrap_transition_plugin.htm">Bootstrap - Transition Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_modal_plugin.htm">Bootstrap - Modal Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_dropdown_plugin.htm">Bootstrap - Dropdown Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_scrollspy_plugin.htm">Bootstrap - Scrollspy Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_tab_plugin.htm">Bootstrap - Tab Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_tooltip_plugin.htm">Bootstrap - Tooltip Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_popover_plugin.htm">Bootstrap - Popover Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_alert_plugin.htm">Bootstrap - Alert Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_button_plugin.htm">Bootstrap - Button Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_collapse_plugin.htm">Bootstrap - Collapse Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_carousel_plugin.htm">Bootstrap - Carousel Plugin</a></li>
+<li><a href="/bootstrap/bootstrap_affix_plugin.htm">Bootstrap - Affix Plugin</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Bootstrap Demos</li>
+<li><a href="/bootstrap/bootstrap_grid_demo.htm">Bootstrap - Grid Demo</a></li>
+<li><a href="/bootstrap/bootstrap_table_demo.htm">Bootstrap - Table Demo</a></li>
+<li><a href="/bootstrap/bootstrap_form_demo.htm">Bootstrap - Form Demo</a></li>
+<li><a href="/bootstrap/bootstrap_buttons_demo.htm">Bootstrap - Buttons Demo</a></li>
+<li><a href="/bootstrap/bootstrap_images_demo.htm">Bootstrap - Images Demo</a></li>
+<li><a href="/bootstrap/bootstrap_responsive_demo.htm">Bootstrap - Responsive Demo</a></li>
+<li><a href="/bootstrap/bootstrap_navigation_demo.htm">Bootstrap - Navigation Demo</a></li>
+<li><a href="/bootstrap/bootstrap_blog_demo.htm">Bootstrap - Blog Demo</a></li>
+<li><a href="/bootstrap/bootstrap_material_design_demo.htm">Bootstrap - Material Design Demo</a></li>
+<li><a href="/bootstrap/bootstrap_slider_demo.htm">Bootstrap - Slider Demo</a></li>
+<li><a href="/bootstrap/bootstrap_timeline_demo.htm">Bootstrap - Time line Demo</a></li>
+<li><a href="/bootstrap/bootstrap_alert_demo.htm">Bootstrap - Alert Demo</a></li>
+<li><a href="/bootstrap/bootstrap_admin_interface_demo.htm">Bootstrap - Admin Interface Demo</a></li>
+<li><a href="/bootstrap/bootstrap_ajax_demo.htm">Bootstrap - Ajax Demo</a></li>
+<li><a href="/bootstrap/bootstrap_tabbed_slider_demo.htm">Bootstrap - Tabbed slider Demo</a></li>
+<li><a href="/bootstrap/bootstrap_caption_demo.htm">Bootstrap - Caption Demo</a></li>
+<li><a href="/bootstrap/bootstrap_map_demo.htm">Bootstrap - Map Demo</a></li>
+<li><a href="/bootstrap/bootstrap_calender_demo.htm">Bootstrap - Calendar Demo</a></li>
+<li><a href="/bootstrap/bootstrap_social_icons_demo.htm">Bootstrap - Social Icons Demo</a></li>
+<li><a href="/bootstrap/bootstrap_icons_demo.htm">Bootstrap - Icons Demo</a></li>
+<li><a href="/bootstrap/bootstrap_featured_demo.htm">Bootstrap - featured Demo</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Bootstrap Useful Resources</li>
+<li><a href="/bootstrap/bootstrap_questions_answers.htm">Bootstrap - Questions and Answers</a></li>
+<li><a href="/bootstrap/bootstrap_quick_guide.htm">Bootstrap - Quick Guide</a></li>
+<li><a href="/bootstrap/bootstrap_useful_resources.htm">Bootstrap - Useful Resources</a></li>
+<li><a href="/bootstrap/bootstrap_discussion.htm">Bootstrap - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>Bootstrap - Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="index.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="index.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>BOOTSTRAP Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>BOOTSTRAP Language</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer &minus;</p>
+<section class="toggle">
+<label>What is Twitter Bootstrap?</label>
+<div class="toggle-content">
+<p>Bootstrap is a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. It uses HTML, CSS and Javascript.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Why use Bootstrap?</label>
+<div class="toggle-content">
+<p>Bootstrap can be used as &minus;</p>
+<ul class="list">
+<li><p><b>Mobile first approach</b> &minus; Since Bootstrap 3, the framework consists of Mobile first styles throughout the entire library instead of in separate files.</p></li>
+<li><p><b>Browser Support</b> &minus; It is supported by all popular browsers.</p>
+<img src="/bootstrap/images/browsers.jpg" alt="Popular Browser" />
+</li>
+<li><p><b>Easy to get started</b> &minus; With just the knowledge of HTML and CSS anyone can get started with Bootstrap. Also the Bootstrap official site has a good documentation.</p></li>
+<li><p><b>Responsive design</b> &minus; Bootstrap's responsive CSS adjusts to Desktops,Tablets and Mobiles.</p></li>
+<li><p>Provides a clean and uniform solution for building an interface for developers.</p></li>
+<li><p>It contains beautiful and functional built-in components which are easy to customize.</p></li>
+<li><p>It also provides web based customization.</p></li>
+<li><p>And best of all it is an open source.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What does Bootstrap package includes?</label>
+<div class="toggle-content">
+<p>Bootstrap package includes &minus;</p>
+<ul class="list">
+<li><p><b>Scaffolding</b> &minus; Bootstrap provides a basic structure with Grid System, link styles, background. This is is covered in detail in the section <b>Bootstrap Basic Structure</b></p></li>
+<li><p><b>CSS</b> &minus; Bootstrap comes with feature of global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system. This is covered in detail in the section <b>Bootstrap with CSS</b>.</p></li>
+<li><p><b>Components</b> &minus; Bootstrap contains over a dozen reusable components built to provide iconography, dropdowns, navigation, alerts, popovers, and much more. This is covered in detail in the section <b>Layout Components</b>.</p></li>
+<li><p><b>JavaScript Plugins</b> &minus; Bootstrap contains over a dozen custom jQuery plugins. You can easily include them all, or one by one. This is covered in details in the section <b>Bootstrap Plugins</b>.</p></li>
+<li><p><b>Customize</b> &minus; You can customize Bootstrap's components, LESS variables, and jQuery plugins to get your very own version.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What is Contextual classes of table in Bootstrap?</label>
+<div class="toggle-content">
+<p>The Contextual classes allow you to change the background color of your table rows or individual cells.</p>
+<table class="table table-bordered">
+<tr>
+<th style="width:5%">Sr.No.</th>
+<th style="text-align:center;">Class &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>.active</b></p>
+<p>Applies the hover color to a particular row or cell</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>.success</b></p>
+<p>Indicates a successful or positive action</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>.warning</b></p>
+<p>Indicates a warning that might need attention</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>.danger</b></p>
+<p>Indicates a dangerous or potentially negative action</p></td>
+</tr>
+</table>
+</div>
+</section>
+<section class="toggle">
+<label>What is Bootstrap Grid System?</label>
+<div class="toggle-content">
+<p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are Bootstrap media queries?</label>
+<div class="toggle-content">
+<p>Media Queries in Bootstrap allow you to move, show and hide content based on viewport size.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Show a basic grid structure in Bootstrap.</label>
+<div class="toggle-content">
+<p>Following is basic structure of Bootstrap grid &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;div class = "container"&gt;
+   &lt;div class = "row"&gt;
+      &lt;div class = "col-*-*"&gt;&lt;/div&gt;
+      &lt;div class = "col-*-*"&gt;&lt;/div&gt;      
+   &lt;/div&gt;
+   
+   &lt;div class = "row"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class = "container"&gt;....
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label>What are Offset columns?</label>
+<div class="toggle-content">
+<p>Offsets are a useful feature for more specialized layouts. They can be used to push columns over for more spacing, for example. The .col-xs = * classes don't support offsets, but they are easily replicated by using an empty cell.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How can you order columns in Bootstrap?</label>
+<div class="toggle-content">
+<p>You can easily change the order of built-in grid columns with .col-md-push-* and .col-md-pull-* modifier classes where * range from 1 to 11.</p> 
+</div>
+</section>
+<section class="toggle">
+<label>How do you make images responsive?</label>
+<div class="toggle-content">
+<p>Bootstrap 3 allows to make the images responsive by adding a class .img-responsive to the &lt;img&gt; tag. This class applies max-width: 100%; and height: auto; to the image so that it scales nicely to the parent element.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Explain the typography and links in Bootstrap.</label>
+<div class="toggle-content">
+<p>Bootstrap sets a basic global display (background), typography, and link styles &minus;</p>
+<ul class="list">
+<li><p><b>Basic Global display</b> &minus; Sets <i>background-color: #fff;</i> on the <i>&lt;body&gt;</i> element.</p></li>
+<li><p><b>Typography</b> &minus; Uses the <i>@font-family-base</i>, <i>@font-size-base</i>, and <i>@line-height-base</i> attributes as the typographic base</p></li>
+<li><p><b>Link styles</b> &minus; Sets the global link color via attribute <i>@link-color</i> and apply link underlines only on <i>:hover</i>.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What is Normalize in Bootstrap?</label>
+<div class="toggle-content">
+<p>Bootstrap uses Normalize to establish cross browser consistency.</p>
+<p>Normalize.css is a modern, HTML5-ready alternative to CSS resets. It is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Lead Body Copy</label>
+<div class="toggle-content">
+<p>To add some emphasis to a paragraph, add class = "lead". This will give you larger font size, lighter weight, and a taller line height</p>
+</div>
+</section>
+<section class="toggle">
+<label>Explain types of lists supported by Bootstrap.</label>
+<div class="toggle-content">
+<p>Bootstrap supports ordered lists, unordered lists, and definition lists.</p>
+<ul class="list">
+<li><p><b>Ordered lists</b> &minus; An ordered list is a list that falls in some sort of sequential order and is prefaced by numbers.</p></li>
+<li><p><b>Unordered lists</b> &minus; An unordered list is a list that doesn't have any particular order and is traditionally styled with bullets. If you do not want the bullets to appear then you can remove the styling by using the class <i>.list-unstyled</i>. You can also place all list items on a single line using the class <i>.list-inline</i>.</p></li>
+<li><p><b>Definition lists</b> &minus; In this type of list, each list item can consist of both the &lt;dt&gt; and the &lt;dd&gt; elements. &lt;dt&gt; stands for <i>definition term</i>, and like a dictionary, this is the term (or phrase) that is being defined. Subsequently, the &lt;dd&gt; is the definition of the &lt;dt&gt;.</p> You can make terms and descriptions in &lt;dl&gt; line up side-by-side using class <i>dl-horizontal</i>.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What are glyphicons?</label>
+<div class="toggle-content">
+<p>Glyphicons are icon fonts which you can use in your web projects. Glyphicons Halflings are not free and require licensing, however their creator has made them available for Bootstrap projects free of cost.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How do you use Glyphicons?</label>
+<div class="toggle-content">
+<p>To use the icons, simply use the following code just about anywhere in your code. Leave a space between the icon and text for proper padding.</p>
+<pre class="prettyprint notranslate">
+&lt;span class = "glyphicon glyphicon-search"&gt;&lt;/span&gt;
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label>What is a transition plugin?</label>
+<div class="toggle-content">
+<p>The transition plugin provides simple transition effects such as Sliding or fading in modals.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is a Modal Plugin?</label>
+<div class="toggle-content">
+<p>A modal is a child window that is layered over its parent window. Typically, the purpose is to display content from a separate source that can have some interaction without leaving the parent window. Child windows can provide information, interaction, or more.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How do you use the Dropdown plugin?</label>
+<div class="toggle-content">
+<p>You can toggle the dropdown plugin's hidden content &minus;</p>
+<ul class="list">
+<li><p><b>Via data attributes</b> &minus; Add <b>data-toggle = "dropdown"</b> to a link or button to toggle a dropdown as shown below &minus;</p></li>
+</ul>
+<pre class="prettyprint notranslate">
+&lt;div class = "dropdown"&gt;
+   &lt;a data-toggle = "dropdown" href = "#"&gt;Dropdown trigger&lt;/a&gt;
+   &lt;ul class = "dropdown-menu" role = "menu" aria-labelledby = "dLabel"&gt;
+    ...
+   &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+<ul class="list">
+<li><p>If you need to keep links intact (which is useful if the browser is not enabling JavaScript), use the <b>data-target</b> attribute instead of <b>href="#"</b> &minus;</p></li>
+</ul>
+<pre class="prettyprint notranslate">
+&lt;div class = "dropdown"&gt;
+   &lt;a id = "dLabel" role = "button" data-toggle = "dropdown" data-target = "#" href = "/page.html"&gt;
+      Dropdown 
+    
+      &lt;span class = "caret"&gt;&lt;/span&gt;
+   &lt;/a&gt;
+    
+   &lt;ul class = "dropdown-menu" role = "menu" aria-labelledby = "dLabel"&gt;
+      ...
+   &lt;/ul&gt;
+	
+&lt;/div&gt;
+</pre>
+<ul class="list">
+<li><p><b>Via JavaScript</b> &minus; To call the dropdown toggle via JavaScript, use the following method &minus;</p></li>
+</ul>
+<pre class="prettyprint notranslate">
+$('.dropdown-toggle').dropdown()
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label>What is Bootstrap caraousel?</label>
+<div class="toggle-content">
+<p>The Bootstrap carousel is a flexible, responsive way to add a slider to your site. In addition to being responsive, the content is flexible enough to allow images, iframes, videos, or just about any type of content that you might want.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is button group</label>
+<div class="toggle-content">
+<p>Button groups allow multiple buttons to be stacked together on a single line. This is useful when you want to place items like alignment buttons together.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which class is used for basic button group</label>
+<div class="toggle-content">
+<p>.btn-group class is used for a basic button group. Wrap a series of buttons with class .btn in .btn-group.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which class is used to draw a toolbar of buttons</label>
+<div class="toggle-content">
+<p>.btn-toolbar helps to combine sets of &lt;div class = "btn-group"&gt; into a &lt;div class = "btn-toolbar"&gt; for more complex components.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which classes can be applied to button group instead of resizing each button</label>
+<div class="toggle-content">
+<p>.btn-group-lg, .btn-group-sm, .btn-group-xs classes can be applied to button group instead of resizing each button.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which class make a set of buttons appear vertically stacked rather than horizontally</label>
+<div class="toggle-content">
+<p>.btn-group-vertical class make a set of buttons appear vertically stacked rather than horizontally.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are input groups</label>
+<div class="toggle-content">
+<p>Input groups are extended <a target="_blank" href="/bootstrap/bootstrap_forms.htm">Form Controls</a>. Using input groups you can easily prepend and append text or buttons to the text-based  inputs.</p>
+<p>By adding prepended and appended content to an input field, you can add common elements to the user's input. For example, you can add the dollar symbol, the @ for a Twitter username, or anything else that might be common for your application interface.</p>
+<p>To prepend or append elements to a <b>.form-control</b> &minus;</p>
+<ul class="list">
+<li><p>Wrap it in a &lt;div&gt; with class <b>.input-group</b></p></li>
+<li><p>As a next step, within that same &lt;div&gt; , place your extra content inside a &lt;span&gt; with class <b>.input-group-addon</b>.</p></li>
+<li><p>Now place this &lt;span&gt; either before or after the &lt;input&gt; element.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a tabbed navigation menu</label>
+<div class="toggle-content">
+<p>To create a tabbed navigation menu &minus;</p>
+<ul class="list">
+<li>Start with a basic unordered list with the base class of .nav.</li>
+<li>Add class .nav-tabs.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a pills navigation menu</label>
+<div class="toggle-content">
+<p>To create a pills navigation menu &minus;</p>
+<ul class="list">
+<li>Start with a basic unordered list with the base class of .nav.</li>
+<li>Add class .nav-pills.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a vertical pills navigation menu</label>
+<div class="toggle-content">
+<p>You can stack the pills vertically using the class .nav-stacked along with the classes: .nav, .nav-pills.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is bootstrap navbar</label>
+<div class="toggle-content">
+<p>The navbar is one of the prominent features of Bootstrap sites. Navbars are responsive 'meta' components that serve as navigation headers for your application or site. Navbars collapse in mobile views and become horizontal as the available viewport width increases. At its core, the navbar includes styling for site names and basic navigation.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How to create a navbar in bootstrap</label>
+<div class="toggle-content">
+<p>To create a default navbar &minus;</p>
+<ul class="list">
+<li><p>Add the classes .navbar, .navbar-default to the &lt;nav&gt; tag.</p></li>
+<li><p>Add role = "navigation" to the above element, to help with accessibility.</p></li>
+<li><p>Add a header class .navbar-header to the &lt;div&gt; element. Include an &lt;a&gt; element with class navbar-brand. This will give the text a slightly larger size.</p></li>
+<li><p>To add links to the navbar, simply add an unordered list with the classes of .nav, .navbar-nav.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What is bootstrap breadcrumb</label>
+<div class="toggle-content">
+<p>Breadcrumbs are a great way to show hierarchy-based information for a site. In the case of blogs, breadcrumbs can show the dates of publishing, categories, or tags. They indicate the current page's location within a navigational hierarchy.</p>
+<p>A breadcrumb in Bootstrap is simply an unordered list with a class of .breadcrumb. The separator is automatically added by CSS (bootstrap.min.css).</p>
+</div>
+</section>
+<section class="toggle">
+<label>Which class is used for basic pagination</label>
+<div class="toggle-content">
+<p>.pagination class is uesed to add the pagination on a page.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How will you customize links of pagination</label>
+<div class="toggle-content">
+<p>You can customize links by using .disabled for unclickable links and .active to indicate the current page.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are bootstrap labels</label>
+<div class="toggle-content">
+<p>Bootstrap labels are great for offering counts, tips, or other markup for pages. Use class .label to display labels.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are bootstrap badges</label>
+<div class="toggle-content">
+<p>Badges are similar to labels; the primary difference is that the corners are more rounded. Badges are mainly used to highlight new or unread items. To use badges just add &lt;span class = "badge"&gt; to links, Bootstrap navs, and more.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Bootstrap Jumbotron</label>
+<div class="toggle-content">
+<p>As the name suggest this component can optionally increase the size of headings and add a lot of margin for landing page content. To use the Jumbotron &minus;</p>
+<ul class="list">
+<li>Create a container &lt;div&gt; with the class of .jumbotron.</li>
+<li>In addition to a larger &lt;h1&gt;, the font-weight is reduced to 200px.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What is Bootstrap page header</label>
+<div class="toggle-content">
+<p>The page header is a nice little feature to add appropriate spacing around the headings on a page. This is particularly helpful on a web page where you may have several post titles and need a way to add distinction to each of them. To use a page header, wrap your heading in a &lt;div&gt; with a class of .page-header.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How to create thumbnails using Bootstrap</label>
+<div class="toggle-content">
+<p>To create thumbnails using Bootstrap &minus;</p>
+<ul class="list">
+<li>Add an &lt;a&gt; tag with the class of .thumbnail around an image.</li>
+<li>This adds four pixels of padding and a gray border.</li>
+<li>On hover, an animated glow outlines the image.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How to customize thumbnails using Bootstrap</label>
+<div class="toggle-content">
+<p>it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails. Follow the steps below &minus;</p>
+<ul class="list">
+<li><p>Change the &lt;a&gt; tag that has a class of .thumbnail to a &lt;div&gt;.</p></li>
+<li><p>Inside of that &lt;div&gt;, you can add anything you need. As this is a &lt;div&gt;, we can use the default span-based naming convention for sizing.</p></li>
+<li><p>If you want to group multiple images, place them in an unordered list, and each list item will be floated to the left.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>What are bootstrap alerts?</label>
+<div class="toggle-content">
+<p>Bootstrap Alerts provide a way to style messages to the user. They provide contextual feedback messages for typical user actions.</p>
+<p>You can add an optional close icon to alert.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a bootstrap alert?</label>
+<div class="toggle-content">
+<p>You can add a basic alert by creating a wrapper &lt;div&gt; and adding a class of .alert and one of the four contextual classes (e.g., .alert-success, .alert-info, .alert-warning, .alert-danger).</p> 
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a Bootstrap Dismissal Alert?</label>
+<div class="toggle-content">
+<p>To build a dismissal alert &minus;</p>
+<ul class="list">
+<li><p>Add a basic alert by creating a wrapper &lt;div&gt; and adding a class of .alert and one of the four contextual classes (e.g., .alert-success, .alert-info, .alert-warning, .alert-danger).</p></li>
+<li><p>Also add optional .alert-dismissable to the above &lt;div&gt; class.</p></li>
+<li><p>Add a close button.</p></li>
+<li><p>Use the &lt;button&gt; element with the data-dismiss = "alert" data attribute.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a progress bar using bootstrap?</label>
+<div class="toggle-content">
+<p>To create a basic progress bar &minus;</p>
+<ul class="list">
+<li><p>Add a &lt;div&gt; with a class of .progress.</p></li>
+<li><p>Next, inside the above &lt;div&gt;, add an empty &lt;div&gt; with a class of .progress-bar.</p></li>
+<li><p>Add a style attribute with the width expressed as a percentage. Say for example, style = "60%"; indicates that the progress bar was at 60%.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a alternate progress bar using bootstrap?</label>
+<div class="toggle-content">
+<p>To create a progress bar with different styles &minus;</p>
+<ul class="list">
+<li><p>Add a &lt;div&gt; with a class of .progress.</p></li>
+<li><p>Next, inside the above &lt;div&gt;, add an empty &lt;div&gt; with a class of .progress-bar and class progress-bar-* where * could be success, info, warning, danger.</p></li>
+<li><p>Add a style attribute with the width expressed as a percentage. Say for example, style = "60%"; indicates that the progress bar was at 60%.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a striped progress bar using bootstrap</label>
+<div class="toggle-content">
+<p>To create a striped progress bar &minus;</p>
+<ul class="list">
+<li><p>Add a &lt;div&gt; with a class of .progress and .progress-striped.</p></li>
+<li><p>Next, inside the above &lt;div&gt;, add an empty &lt;div&gt; with a class of .progress-bar and class progress-bar-* where * could be success, info, warning, danger.</p></li>
+<li><p>Add a style attribute with the width expressed as a percentage. Say for example, style = "60%"; indicates that the progress bar was at 60%.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a animated progress bar using bootstrap?</label>
+<div class="toggle-content">
+<p>To create an animated progress bar &minus;</p>
+<ul class="list">
+<li><p>Add a &lt;div&gt; with a class of .progress and .progress-striped. Also add class .active to .progress-striped.</p></li>
+<li><p>Next, inside the above &lt;div&gt;, add an empty &lt;div&gt; with a class of .progress-bar.</p></li>
+<li><p>Add a style attribute with the width expressed as a percentage. Say for example, style = "60%"; indicates that the progress bar was at 60%.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a stacked progress bar using bootstrap</label>
+<div class="toggle-content">
+<p>You can even stack multiple progress bars. Place the multiple progress bars into the same .progress to stack them.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are bootstrap media objects</label>
+<div class="toggle-content">
+<p>These are abstract object styles for building various types of components (like blog comments, Tweets, etc.) that feature a left-aligned or right-aligned image alongside the textual content. The goal of the media object is to make the code for developing these blocks of information drastically shorter.</p>
+<p>The goal of media objects (light markup, easy extendability) is achieved by applying classes to some of the simple markup.</p> 
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of .media class in bootstrap?</label>
+<div class="toggle-content">
+<p>This class allows to float a media object (images, video, and audio) to the left or right of a content block.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is the purpose of .media-list class in bootstrap</label>
+<div class="toggle-content">
+<p>If you are preparing a list where the items will be part of an unordered list, use a class. useful for comment threads or articles lists.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What are bootstrap panels</label>
+<div class="toggle-content">
+<p>Panel components are used when you want to put your DOM component in a box. To get a basic panel, just add class .panel to the &lt;div&gt; element. Also add class .panel-default to this element.</p>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a bootstrap panel with heading</label>
+<div class="toggle-content">
+<p>here are two ways to add panel heading &minus;</p>
+<ul class="list">
+<li><p>Use .panel-heading class to easily add a heading container to your panel.</p></li>
+<li><p>Use any &lt;h1&gt;-&lt;h6&gt; with a .panel-title class to add a pre-styled heading.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label>How will you create a bootstrap panel with footer</label>
+<div class="toggle-content">
+<p>You can add footers to panels, by wrapping buttons or secondary text in a &lt;div&gt; containing class .panel-footer.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What contextual classes are available to style the panels</label>
+<div class="toggle-content">
+<p>Use contextual state classes such as, panel-primary, panel-success, panel-info, panel-warning, panel-danger, to make a panel more meaningful to a particular context.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you put a table within bootstrap panel</label>
+<div class="toggle-content">
+<p>Yes! To get a non-bordered table within a panel, use the class .table within the panel. Suppose there is a &lt;div&gt; containing .panel-body, we add an extra border to the top of the table for separation. If there is no &lt;div&gt; containing .panel-body, then the component moves from panel header to table without interruption.</p>
+</div>
+</section>
+<section class="toggle">
+<label>Can you put a listgroup within bootstrap panel</label>
+<div class="toggle-content">
+<p>Yes! You can include list groups within any panel. Create a panel by adding class .panel to the &lt;div&gt; element. Also add class .panel-default to this element. Now within this panel include your list groups.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is bootstrap well</label>
+<div class="toggle-content">
+<p>A well is a container in &lt;div&gt; that causes the content to appear sunken or an inset effect on the page. To create a well, simply wrap the content that you would like to appear in the well with a &lt;div&gt; containing the class of .well.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is Scrollspy plugin</label>
+<div class="toggle-content">
+<p>The Scrollspy (auto updating nav) plugin allows you to target sections of the page based on the scroll position. In its basic implementation, as you scroll, you can add .active classes to the navbar based on the scroll position.</p>
+</div>
+</section>
+<section class="toggle">
+<label>What is affix plugin</label>
+<div class="toggle-content">
+<p>The affix plugin allows a &lt;div&gt; to become affixed to a location on the page. You can also toggle it's pinning on and off using this plugin. A common example of this are social icons. They will start in a location, but as the page hits a certain mark, the &lt;div&gt; will be locked in place and will stop scrolling with the rest of the page.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="index.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="index.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>SAP HANA Interview Questions - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="SAP HANA Interview Questions - Dear readers, these SAP HANA Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your i"/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/sap_hana/sap_hana_interview_questions.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#052a60;
+}
+a.demo {
+    background:#052a60;
+}
+li.heading {
+    background:#052a60;
+}
+.course-box{background:#052a60}
+.home-intro-sub p{color:#052a60}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/sap_hana/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/sap_hana/images/sap-hana-mini-logo.jpg" alt="SAP HANA Tutorial" />
+</div>
+<ul class="toc chapters">
+<li><a class="videolink" href="/sap_hana_online_training/index.asp" target="_blank"><img src="/sap_hana/images/sap-hana-video-tutorials.jpg" alt="SAP HANA Video Tutorials" /></a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Tutorial</li>
+<li><a href="/sap_hana/index.htm">SAP HANA - Home</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Introduction</li>
+<li><a href="/sap_hana/sap_hana_overview.htm">SAP HANA - Overview</a></li>
+<li><a href="/sap_hana/in_memory_computing_engine.htm">In-Memory Computing Engine</a></li>
+<li><a href="/sap_hana/sap_hana_studio.htm">SAP HANA - Studio</a></li>
+<li><a href="/sap_hana/studio_administration_view.htm">Studio Administration View</a></li>
+<li><a href="/sap_hana/sap_hana_system_monitor.htm">SAP HANA - System Monitor</a></li>
+<li><a href="/sap_hana/sap_hana_information_modeler.htm">SAP HANA - Information Modeler</a></li>
+<li><a href="/sap_hana/sap_hana_core_architecture.htm">SAP HANA - Core Architecture</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Modeling</li>
+<li><a href="/sap_hana/sap_hana_modeling.htm">SAP HANA - Modeling</a></li>
+<li><a href="/sap_hana/schema_in_data_warehouse.htm">SAP HANA - Data Warehouse</a></li>
+<li><a href="/sap_hana/sap_hana_tables.htm">SAP HANA - Tables</a></li>
+<li><a href="/sap_hana/sap_hana_packages.htm">SAP HANA - Packages</a></li>
+<li><a href="/sap_hana/sap_hana_attribute_view.htm">SAP HANA - Attribute View</a></li>
+<li><a href="/sap_hana/sap_hana_analytic_view.htm">SAP HANA - Analytic View</a></li>
+<li><a href="/sap_hana/sap_hana_calculation_view.htm">SAP HANA - Calculation View</a></li>
+<li><a href="/sap_hana/sap_hana_analytic_privileges.htm">SAP HANA - Analytic Privileges</a></li>
+<li><a href="/sap_hana/sap_hana_information_composer.htm">SAP HANA - Information Composer</a></li>
+<li><a href="/sap_hana/sap_hana_export_import.htm">SAP HANA - Export and Import</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Reporting</li>
+<li><a href="/sap_hana/sap_hana_reporting_view.htm">SAP HANA - Reporting View</a></li>
+<li><a href="/sap_hana/sap_hana_bi_connectivity.htm">Bi 4.0 Connectivity to HANA Views</a></li>
+<li><a href="/sap_hana/sap_hana_crystal_reports.htm">SAP HANA - Crystal Reports</a></li>
+<li><a href="/sap_hana/sap_hana_excel_integration.htm">SAP HANA - Excel Integration</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Security</li>
+<li><a href="/sap_hana/sap_hana_security_overview.htm">SAP HANA - Security Overview</a></li>
+<li><a href="/sap_hana/user_administration_role_management.htm">User Administration &amp; Management</a></li>
+<li><a href="/sap_hana/sap_hana_authentications.htm">SAP HANA - Authentications</a></li>
+<li><a href="/sap_hana/sap_hana_authorization_methods.htm">SAP HANA - Authorization methods</a></li>
+<li><a href="/sap_hana/sap_hana_license_management.htm">SAP HANA - License Management</a></li>
+<li><a href="/sap_hana/sap_hana_auditing.htm">SAP HANA - Auditing</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Data Replication</li>
+<li><a href="/sap_hana/data_replication_overview.htm"><span style="font-size:0.97em;">SAP HANA - Data Replication Overview</span></a></li>
+<li><a href="/sap_hana/etl_based_replication.htm">SAP HANA - ETL Based Replication</a></li>
+<li><a href="/sap_hana/log_based_replication.htm">SAP HANA - Log Based Replication</a></li>
+<li><a href="/sap_hana/sap_hana_dxc_method.htm">SAP HANA - DXC Method</a></li>
+<li><a href="/sap_hana/sap_hana_ctl_method.htm">SAP HANA - CTL Method</a></li>
+<li><a href="/sap_hana/sap_hana_mdx_provider.htm">SAP HANA - MDX Provider</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Monitoring</li>
+<li><a href="/sap_hana/sap_hana_monitoring_alerting.htm">SAP HANA - Monitoring and Alerting</a></li>
+<li><a href="/sap_hana/sap_hana_persistent_layer.htm">SAP HANA - Persistent Layer</a></li>
+<li><a href="/sap_hana/sap_hana_backup_recovery.htm">SAP HANA - Backup &amp; Recovery</a></li>
+<li><a href="/sap_hana/sap_hana_high_availability.htm">SAP HANA - High Availability</a></li>
+<li><a href="/sap_hana/sap_hana_log_configuration.htm">SAP HANA - Log Configuration</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA SQL</li>
+<li><a href="/sap_hana/sap_hana_sql_overview.htm">SAP HANA - SQL Overview</a></li>
+<li><a href="/sap_hana/sap_hana_data_types.htm">SAP HANA - Data Types</a></li>
+<li><a href="/sap_hana/sap_hana_sql_operators.htm">SAP HANA - SQL Operators</a></li>
+<li><a href="/sap_hana/sap_hana_sql_functions.htm">SAP HANA - SQL Functions</a></li>
+<li><a href="/sap_hana/sap_hana_sql_expressions.htm">SAP HANA - SQL Expressions</a></li>
+<li><a href="/sap_hana/sql_stored_procedures.htm">SAP HANA - SQL Stored Procedures</a></li>
+<li><a href="/sap_hana/sap_hana_sql_sequences.htm">SAP HANA - SQL Sequences</a></li>
+<li><a href="/sap_hana/sap_hana_sql_triggers.htm">SAP HANA - SQL Triggers</a></li>
+<li><a href="/sap_hana/sap_hana_sql_synonym.htm">SAP HANA - SQL Synonym</a></li>
+<li><a href="/sap_hana/sql_explain_plans.htm">SAP HANA - SQL Explain Plans</a></li>
+<li><a href="/sap_hana/sql_data_profiling.htm">SAP HANA - SQL Data Profiling</a></li>
+<li><a href="/sap_hana/sap_hana_sql_script.htm">SAP HANA - SQL Script</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SAP HANA Useful Resources</li>
+<li><a href="/sap_hana/sap_hana_questions_answers.htm">SAP HANA - Questions and Answers</a></li>
+<li><a href="/sap_hana/sap_hana_quick_guide.htm">SAP HANA - Quick Guide</a></li>
+<li><a href="/sap_hana/sap_hana_useful_resources.htm">SAP HANA - Useful Resources</a></li>
+<li><a href="/sap_hana/sap_hana_discussion.htm">SAP HANA - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SAP HANA Interview Questions</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="sap_hana_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_hana_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Dear readers, these <b>SAP HANA Interview Questions</b> have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of <b>SAP HANA</b>. As per my experience good interviewers hardly plan to ask any particular question during your interview, normally questions start with some basic concept of the subject and later they continue based on further discussion and what you answer &minus;</p>
+<section class="toggle">
+<label> Explain the column and Row store in HANA?</label>
+<div class="toggle-content">
+<p>HANA supports both type of data store in database. Row store is used when you need to use Select statement and no aggregations are performed.</p>
+<p>Column store is used to perform aggregations and HANA Modeling is supported only on Column based tables.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which companies are providing SAP HANA hardware appliances?</label>
+<div class="toggle-content">
+<p>There are total 11 vendors for SAP HANA hardware appliances. Most common are &minus;</p>
+<ul class="list">
+<li>Dell</li>
+<li>IBM</li>
+<li>HP</li>
+<li>Cisco</li>
+<li>Lenovo</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of SAP HANA studio?</label>
+<div class="toggle-content">
+<p>HANA studio is an eclipsed based tool and provides support for development and administration in HANA system. You can perform HANA Modeling on the top of tables in database, Data provisioning, HANA Administration and various other activities using HANA studio.</p>
+<p>SAP HANA Studio client is available for Windows XP, Windows Vista, and Windows 7 for 32 bit and 64 bit operating system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by SAP HANA In-Memory Computing Engine IMCE?</label>
+<div class="toggle-content">
+<p>In-Memory concept of SAP HANA means that all the data is stored in RAM memory. A conventional database transfer data from memory in 5 milliseconds however SAP HANA In-memory takes 5 nanoseconds to read data.</p>
+<p>SAP HANA uses multicore CPU architecture and stores data in row and column based storage in HANA database.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which operating system is supported by HANA system?</label>
+<div class="toggle-content">
+<p>Only operating system that is supported by HANA is Suse Linux Enterprise Server SP1/SP2 (SLES SP1/2).</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the functional difference between Row and Column based storage? Where do we use Row based storage and column based storage?</label>
+<div class="toggle-content">
+<p>Consider below table- FCTSales</p> 
+<table class="table table-bordered">
+<tr>
+<td>Country</td><td>Product</td><td>Units Sold</td>
+</tr>
+<tr>
+<td>England</td><td>iphone 6</td><td>107</td>
+</tr>
+<tr>
+<td>India</td><td>Samsung Note 6</td><td>250</td>
+</tr>
+<tr>
+<td>US</td><td>Lenovo A110</td><td>110</td>
+</tr>
+</table>
+<p><b>Row Based Storage</b> &minus;</p>
+<ul class="list">
+<li>England</li>
+<li>Iphone6</li>
+<li>107</li>
+<li>India</li>
+<li>Samsung Note 6</li>
+<li>250</li>
+<li>US</li>
+<li>Lenovo A110</li>
+<li>110</li>
+</ul>
+<p><b>Column Based Storage</b> &minus;</p>
+<ul class="list">
+<li>England</li>
+<li>India</li>
+<li>US</li>
+<li>Iphone6</li>
+<li>Samsung Note6</li>
+<li>Lenovo A110</li>
+<li>107</li>
+<li>250</li>
+<li>110</li>
+</ul>
+<p>Where to use Row based storage?</p>
+<p>Select * from FCTSales where Country=’US’</p>
+<p>Where to use Column based storage?</p>
+<p>Select SUM(Units_sold) from FCTSales where Product=’Lenovo A110’</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different components in SAP HANA Architecture? What is the use of Index server?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>Index Server</li>
+<li>Name Server</li>
+<li>Statistical Server</li>
+<li>Preprocessor Server</li>
+<li>XS Engine</li>
+<li>SAP Host Agent</li>
+<li>LM structure</li>
+<li>SAP Solution Manager Diagnostic Agent</li>
+</ul>
+<p>Index server contains engine to process data in HANA database. These data engines are responsible to handle all SQL/MDX statement in HANA system. Index server also contains Session and Transaction Manager which is responsible to manage all running and completed transactions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Persistence layer in SAP HANA system?</label>
+<div class="toggle-content">
+<p>Persistence layer provides inbuilt mechanism for disaster recovery in HANA system. It ensures that database is restored to most recent state in case of a system failure.</p>
+<p>Persistence layer also manages data, transaction and configuration logs and backup of these files. Backups of data and log files are performed at save points and is normally scheduled every 5-10 minutes.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different license keys type in HANA system? What is their validity?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>Temporary License key</li>
+<li>Permanent License Key</li>
+</ul>
+<p>Temporary License keys are automatically installed when you install the HANA database. These keys are valid only for 90 days and you should request permanent license keys from SAP market place before expiry of this 90 days period after installation.</p>
+<p>Permanent License keys are valid till the predefine expiration date. License keys specify amount of memory licensed to target HANA installation.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different types of permanent license keys in HANA system?</label>
+<div class="toggle-content">
+<p>There are two types of permanent License keys for HANA system &minus;</p>
+<p><b>Unenforced</b> &minus; If unenforced license key is installed and consumption of HANA system exceeds the license amount of memory, operation of SAP HANA is not affected in this case.</p>
+<p><b>Enforced</b> &minus; If Enforced license key is installed and consumption of HANA system exceeds the license amount of memory, HANA system gets locked. If this situation occurs, HANA system has to be restarted or a new license key should be requested and installed.</p>
+</div>
+</section>
+<section class="toggle">
+<label> While activating SAP HANA Modeling view, you get an error message &minus;
+<p>Repository: Encountered an error in repository runtime extension; Deploy Attribute View: SQL: transaction rolled back by an internal error: insufficient privilege: Not authorized</p></label>
+<div class="toggle-content">
+<p>Grant SELECT privileges on schemas of the used data foundation tables to user "_SYS_REPO"</p>
+<p>GRANT SELECT ON SCHEMA "&lt;SCHEMA_NAME&gt;" TO _SYS_REPO WITH GRANT OPTION</p>
+</div>
+</section>
+<section class="toggle">
+<label> In SAP HANA Studio, what is use of different folders when you add a HANA system to Studio?</label>
+<div class="toggle-content">
+<p><b>Backup</b> &minus;</p>
+<p>It is used to perform for backup and recovery in SAP HANA system. You can check backup configuration details, run manual backup, to check last successful back performed, etc. for data and log backup.</p>
+<p><b>Catalog</b> &minus;</p>
+<p>This contains RDBMS objects like schemas, tables, views, procedures, etc. You can open SQL editor and design database objects</p>
+<p><b>Content</b> &minus;</p>
+<p>This is used to maintain design time repository</p>
+<p>You can create new packages and design Information views in HANA system. Various views can be created under content tab to meet business requirement and to perform analytical reports on the top of the Modeling views.</p>
+<p><b>Provisioning</b> &minus;</p>
+<p>This is used for Smart data access to connect to other databases like HADOOP, TERADATA and SYBASE</p>
+<p><b>Security</b> &minus;</p>
+<p>This is used to define users and to assign roles. You can define various privileges on different users using Security tab. You can assign Database and Package privileges to different users to control the data access.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between Open Data Preview and Open Definition?</label>
+<div class="toggle-content">
+<p><b>Open Data Preview</b> &minus;</p>
+<p>This is used to see the data stored in an object- table or a modeling view. When you open data preview, you get three options &minus;</p>
+<ul class="list">
+<li>Raw Data</li>
+<li>Distinct Values</li>
+<li>Analysis</li>
+</ul>
+<p><b>Open Definition</b> &minus;</p>
+<p>This is used to see the structure of the table &minus; column name, column data type, keys, etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> If you want to see all active alerts, description and priority, where this can be checked?</label>
+<div class="toggle-content">
+<p>Go to Administration &rarr; alerts</p>
+<p>In Administration tab, you can check system overview, landscape, volumes, configuration, system information, etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is SAP HANA cockpit?</label>
+<div class="toggle-content">
+<p>SAP HANA cockpit is a SAP Fiori Launchpad site that allows you with a single point-of-access to a range of Web-based applications for the online administration of SAP HANA. You access the SAP HANA cockpit through a Web browser.</p>
+<p>To open SAP HANA Cockpit &rarr; Right click on HANA system in Studio &rarr; configuration and monitoring &rarr; open SAP HANA cockpit</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the difference between Catalog and Content tab?</label>
+<div class="toggle-content">
+<p><b>Catalog</b> &minus;</p>
+<p>This contains RDBMS objects like schemas, tables, views, procedures, etc. You can open SQL editor and design database objects.</p>
+<p><b>Content</b> &minus;</p>
+<p>This is used to maintain design time repository. You can create new packages and design Information views in HANA system. Various views can be created under content tab to meet business requirement and to perform analytical reports on the top of the Modeling views.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which Information view in SAP HANA is used to implement star schema queries? </label>
+<div class="toggle-content">
+<p>Analytic View</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is difference between Copy and derived from option while creating a new SAP HANA Attribute information view?</label>
+<div class="toggle-content">
+<p>Copy option allows you to copy an existing Information view and to make changes to it.</p>
+<p>Derived option allows to create a copy of an existing view and you can’t make any changes to it.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of Data Foundation, Star Join and Semantics?</label>
+<div class="toggle-content">
+<p>Data Foundation &minus; to add column base tables.</p>
+<p>Star Join &minus; to add other type of views.</p>
+<p>Semantic &minus; to define user parameters and to define measures and dimensions.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different user parameters that can be defined in Semantic layer?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>Measure and Attribute</li>
+<li>Hierarchies</li>
+<li>Parameters/Variables</li>
+<li>New Calculated Column</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is a new calculated column in a HANA Modeling view?</label>
+<div class="toggle-content">
+<p>New calculated column is defined as a column added on the fly in Analysis tab when a view is activated. This column doesn’t exist at database level or in Data Foundation or Star Join level.</p>
+</div>
+</section>
+<section class="toggle">
+<label> To improve the performance of Information view by validating joins and Cardinality, which option cab be used?</label>
+<div class="toggle-content">
+<p>You can select Switch to Performance Analysis Mode. This allows you to do Performance Analysis by validating correct join type and Cardinality.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the benefits of using Calculation view with Star join?</label>
+<div class="toggle-content">
+<p>It simplify the design process as allows you to select multiple measures from multiple fact tables.</p>
+<p>You can implement 3NF using Star Join.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is the use of parameters and variables in Semantic layer?</label>
+<div class="toggle-content">
+<p>Variables are used as an explicit SQL filter directive for view consumers to filter the view data, based on attribute column values specified in variable UI prompt of a BI Client. When you go to data preview, variables allow users to pass the value of attribute defined in the variable.</p>
+<p>You can select a single value, range or range in selection type.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the default nodes available in a Calculation view?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>Join</li>
+<li>Union</li>
+<li>Project</li>
+<li>Aggregation</li>
+<li>Rank.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What is the default node, if you select a Dimension Calculation view?</label>
+<div class="toggle-content">
+<p>Projection</p>
+</div>
+</section>
+<section class="toggle">
+<label> How do you check if an Information view is saved and activated?</label>
+<div class="toggle-content">
+<p>There is a diamond mark on view name if it is not active.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Can you pass Attribute views and analytic views in a Calculation view with Star join?</label>
+<div class="toggle-content">
+<p>No. In a Calculation view with Star Join, you can only use Dim Calculation views.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What is SAP HANA Analytic Privileges?</label>
+<div class="toggle-content">
+<p>Analytic Privileges are used to limit access on HANA Information views. You can assign different types of right to different users on different component of a View in Analytic Privileges.</p>
+</div>
+</section>
+<section class="toggle">
+<label> If you want that your Area Managers can only see data from their region and you want to assign this restriction for specific duration, how this can be achieved?</label>
+<div class="toggle-content">
+<p>Using Analytic Privileges, you can add Region attribute and values to Attribute Restrictions and Time duration is defined in Privilege validity.</p>
+<p>Analytic Privilege can be added to user profile in User and Roles under Security tab.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different methods of data replication in HANA?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>SAP LT Replication SLT</li>
+<li>SAP Data Services</li>
+<li>Direct Extract Connection DXC</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different modes in data provision in HANA Studio?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>Load</li>
+<li>Replicate</li>
+<li>Suspend</li>
+<li>Resume</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What do you understand by trusted RFC connection? Which transaction is used to create and configure trusted RFC?</label>
+<div class="toggle-content">
+<p>On your source SAP system A1 you want to setup a trusted RFC to target system B1. When it is done it would mean that when you are logged onto A1 and your user has enough Authorization in B1, you can use the RFC connection and logon to B1 without having to re-enter user and password.</p>
+<p>SM59 to create a trusted RFC</p>
+<p>Ltr to configure the connection</p>
+</div>
+</section>
+<section class="toggle">
+<label> How you can use Data provisioning in SAP HANA studio?</label>
+<div class="toggle-content">
+<p>Go to SAP HANA Modeler Perspective &rarr; Data Provisioning.</p>
+</div>
+</section>
+<section class="toggle">
+<label> While creating data store in Data Services for SAP ECC, what is the datastore type in drop down list?</label>
+<div class="toggle-content">
+<p>You have to select SAP Applications in data store type and SAP HANA in Database drop down list.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How you can perform trace, monitoring, error and performance monitoring of jobs in Data Services?</label>
+<div class="toggle-content">
+<p>Replication job can be performed in Data Services Management Console. You have to go to status tab and select the repository where job is created &rarr; Batch Job Status.</p>
+<p>There you can find different tabs- Trace, Monitor, Error and Performance Monitor.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can you enable auditing of batch jobs in Data Services?</label>
+<div class="toggle-content">
+<p>To enable auditing of batch job, this can be done in job execution parameters.</p>
+<p>Go to status tab and select the repository where job is created &rarr; Batch Job configuration &rarr; Add Schedule.</p>
+<p>Here you can find job execution parameters while adding a schedule for the job.</p>
+</div>
+</section>
+<section class="toggle">
+<label> While configuring a batch job in SAP Data Services repository, what does owner name means?</label>
+<div class="toggle-content">
+<p>Owner represents schema name where tables will be moved using batch job.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different authentication methods configured in SAP HANA system for user creation?</label>
+<div class="toggle-content">
+<p>Below is the list of authentication methods supported by SAP HANA &minus;</p>
+<ul class="list">
+<li>User name/Password</li>
+<li>Kerberos</li>
+<li>SAML 2.0</li>
+<li>SAP Logon tickets</li>
+<li>X.509</li>
+</ul>
+<img src="/sap_hana/images/authentications.jpg" alt="Authentication Configure" />
+</div>
+</section>
+<section class="toggle">
+<label> What is a restricted user in SAP HANA system?</label>
+<div class="toggle-content">
+<p>Restricted users are those users who access HANA system with some applications and they don’t have SQL privileges on HANA system. When these users are created they don’t have any access initially.</p>
+<p>If we compare restricted users with Standard users &minus;</p>
+<ul class="list">
+<li><p>Restricted users can’t create objects in HANA database or their own Schemas.</p></li>
+<li><p>They don’t have access to view any data in database as they don’t have generic Public role added to profile like standard users.</p></li>
+<li><p>They can connect to HANA database only using HTTP/HTTPS.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What system privilege is required for a user to enable him to create user and roles in HANA studio?</label>
+<div class="toggle-content">
+<p>Only database users with the system privilege ROLE ADMIN are allowed to create users and roles in HANA studio.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different privilege types that can be assigned to a user in HANA studio?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>System Privilege</li>
+<li>Object Privilege</li>
+<li>Analytic Privilege</li>
+<li>Package Privilege</li>
+<li>Application Privilege</li>
+<li>Privilege on roles</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Which of the system privilege is required to perform auditing related work?</label>
+<div class="toggle-content">
+<p>Audit Admin</p>
+</div>
+</section>
+<section class="toggle">
+<label> How you can configure Auditing and password policy in HANA studio?</label>
+<div class="toggle-content">
+<p>Go to Security option in HANA system &rarr; Auditing</p>
+<img src="/sap_hana/images/password_policy.jpg" alt="Password Policy" />
+<p>Under Global Settings&rarr;set Auditing status as enabled. You can also choose different Audit trail targets.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How you can connect SAP HANA to Microsoft Excel?</label>
+<div class="toggle-content">
+<p>MDX Provider is used to connect MS Excel to SAP HANA database system. It provides driver to connect HANA system to Excel and is further used for data modelling. You can use Microsoft Office Excel 2010/2013 for connectivity with HANA for both 32 bit and 64 bit Windows.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How you can limit the size of data backup files in HANA system?</label>
+<div class="toggle-content">
+<p>This can be done in File Based data backup settings. In Backup tab, go to Configuration &rarr; Limit Maximum file Size check box and enter the file size.</p>
+</div>
+</section>
+<section class="toggle">
+<label> What are different recovery mechanism can be performed in HANA system?</label>
+<div class="toggle-content">
+<p><b>Most Recent State</b> &minus; Used for recovering the database to the time as close as possible to the current time. For this recovery the data backup and log backup have to be available since last data backup and log area are required to perform the above type recovery.</p>
+<p><b>Point in Time</b> &minus; Used for recovering the database to the specific point in time.  For this recovery the data backup and log backup have to be available since last data backup and log area are required to perform the above type recovery.</p>
+<p><b>Specific Data Backup</b> &minus; Used for recovering the database to a specified data backup. Specific data backup is required for the above type of recovery option.</p>
+<p><b>Specific Log Position</b> &minus; This recovery type is an advanced option that can be used in exceptional cases where a previous recovery failed.</p>
+<p><b>Note</b> &minus; To run recovery wizard you should have administrator privileges on HANA system.</p>
+</div>
+</section>
+<section class="toggle">
+<label> Which all Business Objects tools can be directly connected to HANA Information views?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>SAP Lumira</li>
+<li>Analysis edition for OLAP</li>
+<li>SAP Crystal Reports</li>
+<li>Design Studio</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> What are the different modes in HANA studio that can be used for migration?</label>
+<div class="toggle-content">
+<ul class="list">
+<li>Change and Transport system</li>
+<li>Delivery Unit</li>
+<li>Developer Mode</li>
+<li>SAP support mode</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> Which of the export options allows you to export multiple packages locally or to other HANA system?</label>
+<div class="toggle-content">
+<p><b>Delivery Unit</b></p>
+<p>Delivery unit is a single Unit which can be mapped to multiple packages and can be exported as single entity so that all the packages assigned to Delivery Unit can be treated as single unit.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How does SAP HANA support import from a local file?</label>
+<div class="toggle-content">
+<p>Go to File &rarr; Import, You will see below option</p>
+<p>This is used to import data from a flat file like .xls or.csv file. Click on Next &rarr; Choose Target System &rarr; Define Import Properties.</p>
+<p>Select Source file by browsing local system. It also gives an option if you want to keep the header row. It also gives an option to create a new table under existing Schema or if you want to import data from a file to an existing table.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with the subject and make sure you are able to speak confidently on them. If you are fresher then interviewer does not expect you will answer very complex questions, rather you have to make your basics concepts very strong.</p>
+<p>Second it really doesn't matter much if you could not answer few questions but it matters that whatever you answered, you must have answered with confidence. So just feel confident during your interview. We at tutorialspoint wish you best luck to have a good interviewer and all the very best for your future endeavor. Cheers :-)</p>
+<div class="parent-file">sap_hana_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="sap_hana_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="sap_hana_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

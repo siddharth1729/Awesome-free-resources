@@ -1,0 +1,940 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>LaTex Equation Editor</title>
+<meta name="Description" content="LaTex Equation Editor  - Try LaTex equation editor online alongwith MathJax, AMS, MathML." />
+<meta name="Keywords" content="LaTex, Equation, Editor, Try, Equation, Editor, Online, MathJax, AMS, MathML." />
+<base href="https://www.tutorialspoint.com/" />
+<script src="codingground/scripts/jquery.min.js"></script>
+<script src="codingground/scripts/jquery.easyui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="themes/css/gray/easyui.css">
+<link rel="stylesheet" type="text/css" href="themes/css/icon.css">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+   tex2jax:{ inlineMath: [["$","$"],["\\(","\\)"]] },
+   TeX: { extensions: ["color.js"] }
+});
+</script>
+<style>
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font: 71%/1.5 Verdana, Sans-Serif;
+   background: #eee;
+}
+div#loading{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -50px;
+   margin-left: -50px;
+   width:50px;
+   height: 50px;
+   z-index:100;
+   background: url(/images/loading.gif) no-repeat;
+   background-color: transparent;
+   visibility:visible;
+}
+#ff{
+   visibility:hidden;
+}
+#center, #east{
+   text-align:center;
+   font-size:20px;
+}
+#container {
+   width: 100%;
+}
+.tabs li {
+   width: auto;
+}
+.keyboard {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.keyboard li {
+   float: left;
+   margin: 0 5px 5px 0;
+   width: 35px;
+   height: 35px;
+   line-height: 35px;
+   text-align: center;
+   background: #eee;
+   border: 1px solid #f9f9f9;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+}
+.keyboard .tab {
+   width: 65px;
+}
+.keyboard .colorstrip {
+   width: 77px;
+   height: 20px;
+   font-size: 14px;
+   line-height: 0px;
+}
+
+.keyboard .small{
+   font-size:10px !important;
+}
+.keyboard .medium{
+   font-size:13px !important;
+   width:112px;
+}
+.keyboard  .bigtab{
+   width: 175px;
+   font-size:17px;
+   height: 60px;
+   text-align: center;
+   vertical-align: middle;
+}
+.keyboard li:hover {
+   position: relative;
+   top: 1px;
+   left: 1px;
+   border-color: #e5e5e5;
+   cursor: pointer;
+}
+ul li{ font-size:20px; padding:10px; border: 1px solid #aaa; width:25px; height25px; texta-align:center; list-style: none; float:left;}
+#code{ 
+   position: absolute;
+   top: 32px;
+   right: 0px;
+   bottom:2px;
+   left: 0px;
+   margin-bottom:0px !important;
+}
+.main-title{
+   border-left: 1px solid #ccc;
+   height: 17px;
+   color: #000;
+   font-size: 100%;
+   float: left;
+   margin: 16px 5px 0px 5px;
+   padding: 6px 0px 0px 5px;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 4px;
+}
+#east a img:hover{
+   opacity:0.7;
+}
+#east a img{
+   padding-top:10px;
+   padding-left:10px;
+   width:80px !important;
+   height:60px !important;
+}
+</style>
+</head>
+<body class="easyui-layout" id="cc">
+<div id="loading"></div>
+<form id="ff">
+<iframe id="download" style="display:hidden"></iframe>
+<div data-options="region:'north'" style="height:65px; width:100%;overflow:hidden;background:url(/codingground/images/top_bg.png);">
+<a href='https://www.tutorialspoint.com/'>
+<img src="/green/images/logo.png" height="50px" style="padding:5px; float:left;"/>
+</a>
+<h1 class="main-title">Latex Equation Editor</h1>
+<div class="easyui-panel,border:false,doSize:false" style="margin:18px 0px 0px 0px; float:right;">
+<a id="help" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-help', plain:true" style="float:right">Help</a>
+<a id="tutorials" target="_blank" href="http://www.tutorialspoint.com/tutorialslibrary.htm" class="easyui-linkbutton" data-options="iconCls:'icon-library', plain:true" style="float:right; position:relative; top:-1px;">Tutorials</a>
+<a id="view" href="#" class="easyui-menubutton" data-options="menu:'#mm3',iconCls:'icon-view'" style="float:right">View</a>
+<a id="edit" href="#" class="easyui-menubutton" data-options="menu:'#mm2',iconCls:'icon-edit'" style="float:right">Edit</a>
+<a  href="online_dev_tools.htm" class="easyui-linkbutton l-btn l-btn-small l-btn-plain" data-options="plain:true, iconCls:'icon-tools'" style="float:right">Dev Tools</a>
+</div>
+<div id="mm2" style="width:200px;">
+<div id="undo" data-options="iconCls:'icon-undo'">Undo</div>
+<div id="redo" data-options="iconCls:'icon-redo'">Redo</div>
+<div class="menu-sep"></div>
+<div id="cut" data-options="iconCls:'icon-cut'">Cut</div>
+<div id="copy" data-options="iconCls:'icon-copy'">Copy</div>
+<div id="paste" data-options="iconCls:'icon-paste'">Paste</div>
+<div id="delete" data-options="iconCls:'icon-delete'">Delete</div>
+<div id="select" data-options="iconCls:'icon-select'">Select All</div>
+<div class="menu-sep"></div>
+<div id="find" data-options="iconCls:'icon-find'">Find</div>
+<div id="findreplace" data-options="iconCls:'icon-replace'">Find and Replace</div>
+</div>
+<div id="mm3" style="width:200px;">
+<div id="editor-theme" data-options="iconCls:'icon-editor-theme'"><span>Editor Theme</span>
+<div>
+<div onclick="setEditorTheme('chrome');">Chrome</div>
+<div onclick="setEditorTheme('crimson_editor');">Crimson Editor</div>
+<div onclick="setEditorTheme('dreamweaver');">Dreamweaver</div>
+<div onclick="setEditorTheme('eclipse');">Eclipse</div>
+<div onclick="setEditorTheme('github');">Github</div>
+<div onclick="setEditorTheme('kuroir');">Kuroir</div>
+<div onclick="setEditorTheme('solarized_light');">Solarized Light</div>
+<div onclick="setEditorTheme('solarized_dark');">Solarized Dark</div>
+<div onclick="setEditorTheme('xcode');">XCode</div>
+<div onclick="setEditorTheme('ambiance');">Ambiance</div>
+<div onclick="setEditorTheme('cobalt');">Cobalt</div>
+<div onclick="setEditorTheme('idle_fingers');">idle Fingers</div>
+<div onclick="setEditorTheme('kr_theme');">krTheme</div>
+<div onclick="setEditorTheme('mono_industrial');">Mono Industrial</div>
+<div onclick="setEditorTheme('monokai');">Monokai</div>
+<div onclick="setEditorTheme('terminal');">Terminal</div>
+<div onclick="setEditorTheme('textmate');">Textmate</div>
+<div onclick="setEditorTheme('tomorrow');">Tomorrow</div>
+<div onclick="setEditorTheme('twilight');">Twilight</div>
+<div onclick="setEditorTheme('vibrant_ink');">Vibrant Ink</div>
+</div>
+</div>
+<div id="font-size" data-options="iconCls:'icon-font-size'"><span>Font Size</span>
+<div>
+<div onclick="setEditorFontSize('8');">8px</div>
+<div onclick="setEditorFontSize('9');">9px</div>
+<div onclick="setEditorFontSize('10');">10px</div>
+<div onclick="setEditorFontSize('11');">11px</div>
+<div onclick="setEditorFontSize('12');">12px</div>
+<div onclick="setEditorFontSize('13');">13px</div>
+<div onclick="setEditorFontSize('14');">14px</div>
+<div onclick="setEditorFontSize('15');">15px</div>
+<div onclick="setEditorFontSize('16');">16px</div>
+<div onclick="setEditorFontSize('17');">17px</div>
+<div onclick="setEditorFontSize('18');">18px</div>
+<div onclick="setEditorFontSize('20');">20px</div>
+<div onclick="setEditorFontSize('22');">22px</div>
+<div onclick="setEditorFontSize('24');">24px</div>
+</div>
+</div>
+<div id="tab-size" data-options="iconCls:'icon-tab-size'"><span>Tab Size</span>
+<div>
+<div onclick="setEditorTabSize('1');">1</div>
+<div onclick="setEditorTabSize('2');">2</div>
+<div onclick="setEditorTabSize('3');">3</div>
+<div onclick="setEditorTabSize('4');">4</div>
+<div onclick="setEditorTabSize('5');">5</div>
+<div onclick="setEditorTabSize('6');">6</div>
+<div onclick="setEditorTabSize('7');">7</div>
+<div onclick="setEditorTabSize('8');">8</div>
+</div>
+</div>
+<div id="soft-wrap" data-options="iconCls:'icon-soft-wrap'"><span>Soft Wrap</span>
+<div>
+<div onclick="setEditorSoftWrap('true');">On</div>
+<div onclick="setEditorSoftWrap('false');">Off</div>
+<div onclick="setEditorSoftWrap('40');">40 Chars</div>
+<div onclick="setEditorSoftWrap('60');">60 Chars</div>
+<div onclick="setEditorSoftWrap('80');">80 Chars</div>
+<div onclick="setEditorSoftWrap('100');">100 Chars</div>
+<div onclick="setEditorSoftWrap('120');">120 Chars</div>
+<div onclick="setEditorSoftWrap('140');">140 Chars</div>
+</div>
+</div>
+<div class="menu-sep"></div>
+<div onclick="setEditorInvisible(true);"  data-options="iconCls:'icon-show-invisible'">Show Invisible</div>
+<div onclick="setEditorInvisible(false);" data-options="iconCls:'icon-hide-invisible'">Hide Invisible</div>
+<div class="menu-sep"></div>
+<div onclick="setEditorGutter(true);" data-options="iconCls:'icon-show-gutter'">Show Gutter</div>
+<div onclick="setEditorGutter(false);" data-options="iconCls:'icon-hide-gutter'">Hide Gutter</div>
+</div>
+</div><!--HEADER ENDS -->
+<div id="east" data-options="region:'east',iconCls:'icon-terminal', title:'Result', split:true, tools:'#result-tools',toolPosition:'right'" style="width:50%; border-left:5px solid #eee; padding:0px;overflow:hidden; background:#fff;">
+</div>
+<div id="result-tools">
+<a href="#" class="easyui-menubutton" data-options="menu:'#dwmenu', iconCls:'icon-download-file'" style="position:relative;top:-5px;width:120px;white-space:nowrap;">Download</a>
+</div>
+<div id="dwmenu" style="width:100px;">
+<div data-options="iconCls:'icon-png'"  onclick="download('png')">PNG</div>
+<div data-options="iconCls:'icon-gif'"  onclick="download('gif')">GIF</div>
+<div data-options="iconCls:'icon-jpg'"  onclick="download('jpg')">JPG</div>
+<div data-options="iconCls:'icon-pdf'"  onclick="download('pdf')">PDF</div>
+<div data-options="iconCls:'icon-svg'"  onclick="download('svg')">SVG</div>
+</div>
+<div id="south" data-options="region:'south'" style="height:250px;border-top:0px;"><!--FOOTER STARTS -->
+<div id="container" style="height:100%;">
+<div class="easyui-tabs" data-options="tabPosition:'top',fit:true">
+<div title="Basic" style="padding:10px">
+<ul class="keyboard">
+<li class="letter" style="font-size:10px;">Space</li>
+<li class="letter" style="font-size:10px;">Quad</li>
+<li class="letter" style="font-size:10px;">Enter</li>
+<li class="letter">$\cdot$</li>
+<li class="letter">$.$</li>
+<li class="letter">$*$</li>
+<li class="letter">$+$</li>
+<li class="letter">$-$</li>
+<li class="letter">$\div$</li>
+<li class="letter">$\times$</li>
+<li class="letter">$=$</li>
+<li class="letter">$\neq$</li>
+<li class="letter">$\dotsm$</li>
+<li class="letter">$\dotso$</li>
+<li class="letter">$\vdots$</li>
+<li class="letter">$\ddots$</li>
+<li class="letter">$,$</li>
+<li class="letter">$`$</li>
+<li class="letter">$!$</li>
+<li class="letter">$;$</li>
+<li class="letter">$?$</li>
+<li class="letter">$\colon$</li>
+<li class="letter">$\acute{x}$</li>
+<li class="letter">$\bar{x}$</li>
+<li class="letter">$\vec{x}$</li>
+<li class="letter">$\widetilde{xxx}$</li>
+<li class="letter">$\grave{x}$</li>
+<li class="letter">$\breve{x}$</li>
+<li class="letter">$\dot{x}$</li>
+<li class="letter">$\widehat{xxx}$</li>
+<li class="letter">$\ddot{x}$</li>
+<li class="letter">$\check{x}$</li>
+<li class="letter">$\ddot{x}$</li>
+<li class="letter">$\tilde{x}$</li>
+<li class="letter">$\hat{x}$</li>
+<li class="letter">$\dddot{x}$</li>
+<li class="letter">$\backslash$</li>
+<li class="letter">$/$</li>
+<li class="letter">$\smallsetminus$</li>
+<li class="letter">$\arrowvert$</li>
+<li class="letter">$|$</li>
+<li class="letter">$\lvert$</li>
+<li class="letter">$\rvert$</li>
+<li class="letter">$\bracevert$</li>
+<li class="letter">$\lVert$</li>
+<li class="letter">$\rVert$</li>
+<li class="letter">$\lgroup$</li>
+<li class="letter">$\rgroup$</li>
+<li class="letter">$[$</li>
+<li class="letter">$]$</li>
+<li class="letter">$\langle$</li>
+<li class="letter">$\rangle$</li>
+<li class="letter">$\lmoustache$</li>
+<li class="letter">$\rmoustache$</li>
+<li class="letter">$\lbrace$</li>
+<li class="letter">$\rbrace$</li>
+<li class="letter">$\lceil$</li>
+<li class="letter">$\rceil$</li>
+<li class="letter">$\lfloor$</li>
+<li class="letter">$\rfloor$</li>
+</ul>
+</div>
+<div title="Maths" style="padding:10px">
+<ul class="keyboard">
+<li class="tab">$\int$</li>
+<li class="tab">$\int_{a}^{b}$</li>
+<li class="tab">$\oint$</li>
+<li class="tab">$\oint_a^b$</li>
+<li class="tab">$\sum$</li>
+<li class="tab">$\sum_a^b$</li>
+<li class="tab">$\coprod$</li>
+<li class="tab">$\coprod_a^b$</li>
+<li class="tab">$\prod$</li>
+<li class="tab">$\prod_a^b$</li>
+<li class="tab">$\bigcap$</li>
+<li class="tab">$\bigcap_a^b$</li>
+<li class="tab">$\bigcup$</li>
+<li class="tab">$\bigcup_a^b$</li>
+<li class="tab">$\bigsqcup$</li>
+<li class="tab">$\bigsqcup_a^b$</li>
+<li class="tab">$\bigvee$</li>
+<li class="tab">$\bigvee_a^b$</li>
+<li class="tab">$\bigwedge$</li>
+<li class="tab">$\bigwedge_a^b$</li>
+<li class="tab">$\sqrt{ab}$</li>
+<li class="tab">$\sqrt[n]{ab}$</li>
+<li class="tab">$\log_{a}{b}$</li>
+<li class="tab">$\lg{ab}$</li>
+<li class="tab">$a^{b}$</li>
+<li class="tab">$a_{b}$</li>
+<li class="tab">$x_a^b$</li>
+<li class="tab">$\widetilde{ab}$</li>
+<li class="tab">$\widehat{ab}$</li>
+<li class="tab">$\overleftarrow{ab}$</li>
+<li class="tab">$\overrightarrow{ab}$</li>
+<li class="tab">$\overbrace{ab}$</li>
+<li class="tab">$\underbrace{ab}$</li>
+<li class="tab">$\underline{ab}$</li>
+<li class="tab">$\overline{ab}$</li>
+<li class="tab">$\frac{ab}{cd}$</li>
+<li class="tab">$\frac{\partial a}{\partial b}$</li>
+<li class="tab">$\frac{\text{d}x}{\text{d}y}$</li>
+<li class="tab">$\lim_{a \rightarrow b}$</li>
+</ul>
+</div>
+<div title="Formula" style="padding:10px">
+<ul class="keyboard">
+<li class="bigtab">$\displaystyle\sum\limits_{i=0}^n i^3$</li>
+<li class="bigtab">$\left(\begin{array}{c}a\\ b\end{array}\right)$</li>
+<li class="bigtab">$\left(\frac{a^2}{b^3}\right)$</li>
+<li class="bigtab">$\left.\frac{a^3}{3}\right|_0^1$</li>
+<li class="bigtab">$\begin{bmatrix}a & b \\c & d \end{bmatrix}$</li>
+<li class="bigtab">$\begin{cases}a & x = 0\\b & x > 0\end{cases}$</li>
+<li class="bigtab">$\sqrt{\frac{n}{n-1} S}$</li>
+<li class="bigtab">$\begin{pmatrix} \alpha& \beta^{*}\\ \gamma^{*}& \delta \end{pmatrix}$</li>
+<li class="bigtab">$A\:\xleftarrow{n+\mu-1}\:B$</li>
+<li class="bigtab">$B\:\xrightarrow[T]{n\pm i-1}\:C$</li>
+<li class="bigtab">$\frac{1}{k}\log_2 c(f)\;$</li>
+<li class="bigtab">$\iint\limits_A f(x,y)\;$</li>
+<li class="bigtab">$x^n + y^n = z^n$</li>
+<li class="bigtab">$E=mc^2$</li>
+<li class="bigtab">$e^{\pi i} - 1 = 0$</li>
+<li class="bigtab">$p(x) = 3x^6$</li>
+<li class="bigtab">$3x + y =  12$</li>
+<li class="bigtab">$\int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x$</li>
+<li class="bigtab">$\sqrt[n]{1+x+x^2+\ldots}$</li>
+<li class="bigtab">$\binom{x}{y} = \frac{x!}{y!(x-y)!}$</li>
+<li class="bigtab">$\frac{\frac{1}{x}+\frac{1}{y}}{y-z}$</li>
+<li class="bigtab">$f(x)=\frac{P(x)}{Q(x)}$</li>
+<li class="bigtab">$\frac{1+\frac{a}{b}}{1+\frac{1}{1+\frac{1}{a}}}$</li>
+<li class="bigtab">$\sum_{\substack{0\le i\le m\\ 0\lt j\lt n}} P(i,j)$</li>
+<li class="bigtab medium">$\lim_{x \to \infty} \exp(-x) = 0$</li>
+<li class="bigtab medium">$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$</li>
+</ul>
+</div>
+<div title="Arrows" style="padding:10px;">
+<ul class="keyboard">
+<li class="letter">$\uparrow$</li>
+<li class="letter">$\downarrow$</li>
+<li class="letter">$\updownarrow$</li>
+<li class="letter">$\Uparrow$</li>
+<li class="letter">$\Downarrow$</li>
+<li class="letter">$\Leftarrow$</li>
+<li class="letter">$\Rightarrow$</li>
+<li class="letter">$\Leftrightarrow$</li>
+<li class="letter">$\nLeftrightarrow$</li>
+<li class="letter">$\nLeftarrow$</li>
+<li class="letter">$\nRightarrow$</li>
+<li class="letter">$\Updownarrow$</li>
+<li class="letter">$\circlearrowleft$</li>
+<li class="letter">$\circlearrowright$</li>
+<li class="letter">$\Lleftarrow$</li>
+<li class="letter">$\Rrightarrow$</li>
+<li class="letter">$\nwarrow$</li>
+<li class="letter">$\swarrow$</li>
+<li class="letter">$\searrow$</li>
+<li class="letter">$\nearrow$</li>
+<li class="letter">$\longleftarrow$</li>
+<li class="letter">$\longrightarrow$</li>
+<li class="letter">$\rightarrow$</li>
+<li class="letter">$\leftarrow$</li>
+<li class="letter">$\mapsto$</li>
+<li class="letter">$\nrightarrow$</li>
+<li class="letter">$\nleftarrow$</li>
+<li class="letter">$\rightrightarrows$</li>
+<li class="letter">$\leftleftarrows$</li>
+<li class="letter">$\rightleftarrows$</li>
+<li class="letter">$\leftrightarrows$</li>
+<li class="letter">$\curvearrowleft$</li>
+<li class="letter">$\curvearrowright$</li>
+<li class="letter">$\Longleftarrow$</li>
+<li class="letter">$\Longrightarrow$</li>
+<li class="letter">$\longleftrightarrow$</li>
+<li class="letter">$\Longleftrightarrow$</li>
+<li class="letter">$\longmapsto$</li>
+<li class="letter">$\rightarrowtail$</li>
+<li class="letter">$\leftarrowtail$</li>
+<li class="letter">$\downdownarrows$</li>
+<li class="letter">$\upuparrows$</li>
+<li class="letter">$\rightharpoondown$</li>
+<li class="letter">$\downharpoonleft$</li>
+<li class="letter">$\rightharpoonup$</li>
+<li class="letter">$\downharpoonright$</li>
+<li class="letter">$\upharpoonleft$</li>
+<li class="letter">$\upharpoonright$</li>
+<li class="letter">$\leftharpoondown$</li>
+<li class="letter">$\leftharpoonup$</li>
+<li class="letter">$\hookleftarrow$</li>
+<li class="letter">$\hookrightarrow$</li>
+<li class="letter">$\rightleftharpoons$</li>
+<li class="letter">$\leftrightharpoons$</li>
+<li class="letter">$\looparrowleft$</li>
+<li class="letter">$\looparrowright$</li>
+<li class="letter">$\rightsquigarrow$</li>
+<li class="letter">$\Lsh$</li>
+<li class="letter">$\Rsh$</li>
+<li class="letter">$\multimap$</li>
+<li class="letter">$\twoheadleftarrow$</li>
+<li class="letter">$\twoheadrightarrow$</li>
+<li class="letter">$\leftrightarrow$</li>
+<li class="letter">$\nleftrightarrow$</li>
+<li class="letter">$\leftrightsquigarrow$</li>
+</ul>
+</div>
+<div title="Alphabets" style="padding:10px">
+<ul class="keyboard">
+<li class="letter">$\aleph$</li>
+<li class="letter">$\Gamma$</li>
+<li class="letter">$\alpha$</li>
+<li class="letter">$\xi$</li>
+<li class="letter">$\digamma$</li>
+<li class="letter">$\Delta$</li>
+<li class="letter">$\beta$</li>
+<li class="letter">$\pi$</li>
+<li class="letter">$\varepsilon$</li>
+<li class="letter">$\Lambda$</li>
+<li class="letter">$\gamma$</li>
+<li class="letter">$\rho$</li>
+<li class="letter">$\varkappa$</li>
+<li class="letter">$\Phi$</li>
+<li class="letter">$\delta$</li>
+<li class="letter">$\sigma$</li>
+<li class="letter">$\varphi$</li>
+<li class="letter">$\Pi$</li>
+<li class="letter">$\epsilon$</li>
+<li class="letter">$\tau$</li>
+<li class="letter">$\varpi$</li>
+<li class="letter">$\Psi$</li>
+<li class="letter">$\zeta$</li>
+<li class="letter">$\upsilon$</li>
+<li class="letter">$\varrho$</li>
+<li class="letter">$\Sigma$</li>
+<li class="letter">$\eta$</li>
+<li class="letter">$\phi$</li>
+<li class="letter">$\varsigma$</li>
+<li class="letter">$\Theta$</li>
+<li class="letter">$\theta$</li>
+<li class="letter">$\chi$</li>
+<li class="letter">$\vartheta$</li>
+<li class="letter">$\Upsilon$</li>
+<li class="letter">$\iota$</li>
+<li class="letter">$\psi$</li>
+<li class="letter">$\Xi$</li>
+<li class="letter">$\kappa$</li>
+<li class="letter">$\omega$</li>
+<li class="letter">$\Omega$</li>
+<li class="letter">$\lambda$</li>
+<li class="letter">$\mu$</li>
+<li class="letter">$\nu$</li>
+<li class="letter">$\complement$</li>
+<li class="letter">$\hslash$</li>
+<li class="letter">$\circledS$</li>
+<li class="letter">$\Im$</li>
+<li class="letter">$\beth$</li>
+<li class="letter">$\ell$</li>
+<li class="letter">$\mho$</li>
+<li class="letter">$\Bbbk$</li>
+<li class="letter">$\Re$</li>
+<li class="letter">$\daleth$</li>
+<li class="letter">$\eth$</li>
+<li class="letter">$\partial$</li>
+<li class="letter">$\Finv$</li>
+<li class="letter">$\gimel$</li>
+<li class="letter">$\hbar$</li>
+<li class="letter">$\wp$</li>
+<li class="letter lastitem">$\Game$</li>
+</ul>
+</div>
+<div title="Symbols" style="padding:10px">
+<ul class="keyboard">
+<li class="letter">$\#$</li>
+<li class="letter">$\clubsuit$</li>
+<li class="letter">$\lozenge$</li>
+<li class="letter">$\square$</li>
+<li class="letter">$\&$</li>
+<li class="letter">$\diagdown$</li>
+<li class="letter">$\measuredangle$</li>
+<li class="letter">$\surd$</li>
+<li class="letter">$\angle$</li>
+<li class="letter">$\diagup$</li>
+<li class="letter">$\nabla$</li>
+<li class="letter">$\top$</li>
+<li class="letter">$\backprime$</li>
+<li class="letter">$\diamondsuit$</li>
+<li class="letter">$\natural$</li>
+<li class="letter">$\triangle$</li>
+<li class="letter">$\bigstar$</li>
+<li class="letter">$\emptyset$</li>
+<li class="letter">$\neg$</li>
+<li class="letter">$\triangledown$</li>
+<li class="letter">$\blacklozenge$</li>
+<li class="letter">$\exists$</li>
+<li class="letter">$\nexists$</li>
+<li class="letter">$\varnothing$</li>
+<li class="letter">$\blacksquare$</li>
+<li class="letter">$\flat$</li>
+<li class="letter">$\prime$</li>
+<li class="letter">$\blacktriangle$</li>
+<li class="letter">$\forall$</li>
+<li class="letter">$\sharp$</li>
+<li class="letter">$\blacktriangledown$</li>
+<li class="letter">$\heartsuit$</li>
+<li class="letter">$\spadesuit$</li>
+<li class="letter">$\bot$</li>
+<li class="letter">$\infty$</li>
+<li class="letter">$\sphericalangle$</li>
+</ul>
+</div>
+<div title="Operators" style="padding:10px">
+<ul class="keyboard">
+<li class="letter">$\mp$</li>
+<li class="letter">$\doteqdot$</li>
+<li class="letter">$\gtrless$</li>
+<li class="letter">$\doublebarwedge$</li>
+<li class="letter">$\gtrdot$</li>
+<li class="letter">$\eqsim$</li>
+<li class="letter">$\gvertneqq$</li>
+<li class="letter">$\ngeqq$</li>
+<li class="letter">$\leqq$</li>
+<li class="letter">$\ngtr$</li>
+<li class="letter">$\sim$</li>
+<li class="letter">$\circ$</li>
+<li class="letter">$\intercal$</li>
+<li class="letter">$\amalg$</li>
+<li class="letter">$\circledast$</li>
+<li class="letter">$\leftthreetimes$</li>
+<li class="letter">$\star$</li>
+<li class="letter">$\ast$</li>
+<li class="letter">$\circledcirc$</li>
+<li class="letter">$\lessdot$</li>
+<li class="letter">$\barwedge$</li>
+<li class="letter">$\circleddash$</li>
+<li class="letter">$\ltimes$</li>
+<li class="letter">$\bigcirc$</li>
+<li class="letter">$\odot$</li>
+<li class="letter">$\uplus$</li>
+<li class="letter">$\curlyvee$</li>
+<li class="letter">$\ominus$</li>
+<li class="letter">$\vee$</li>
+<li class="letter">$\boxdot$</li>
+<li class="letter">$\curlywedge$</li>
+<li class="letter">$\oplus$</li>
+<li class="letter">$\veebar$</li>
+<li class="letter">$\boxminus$</li>
+<li class="letter">$\dagger$</li>
+<li class="letter">$\oslash$</li>
+<li class="letter">$\wedge$</li>
+<li class="letter">$\boxplus$</li>
+<li class="letter">$\ddagger$</li>
+<li class="letter">$\otimes$</li>
+<li class="letter">$\wr$</li>
+<li class="letter">$\boxtimes$</li>
+<li class="letter">$\diamond$</li>
+<li class="letter">$\pm$</li>
+<li class="letter">$\bullet$</li>
+<li class="letter">$\rightthreetimes$</li>
+<li class="letter">$\divideontimes$</li>
+<li class="letter">$\rtimes$</li>
+<li class="letter">$\dotplus$</li>
+<li class="letter">$\setminus$</li>
+<li class="letter">$\eqslantless$</li>
+<li class="letter">$\equiv$</li>
+<li class="letter">$\leqslant$</li>
+<li class="letter">$\nleq$</li>
+<li class="letter">$\simeq$</li>
+<li class="letter">$>$</li>
+<li class="letter">$\fallingdotseq$</li>
+<li class="letter">$\lessapprox$</li>
+<li class="letter">$\lesseqgtr$</li>
+<li class="letter">$\nleqslant$</li>
+<li class="letter">$\nleqq$</li>
+<li class="letter">$\succ$</li>
+<li class="letter">$\approx$</li>
+<li class="letter">$\geq$</li>
+<li class="letter">$\succapprox$</li>
+<li class="letter">$\approxeq$</li>
+<li class="letter">$\geqq$</li>
+<li class="letter">$\lesseqqgtr$</li>
+<li class="letter">$\nless$</li>
+<li class="letter">$\succcurlyeq$</li>
+<li class="letter">$\asymp$</li>
+<li class="letter">$\geqslant$</li>
+<li class="letter">$\lessgtr$</li>
+<li class="letter">$\nprec$</li>
+<li class="letter">$\succeq$</li>
+<li class="letter">$\backsim$</li>
+<li class="letter">$\gg$</li>
+<li class="letter">$\lesssim$</li>
+<li class="letter">$\npreceq$</li>
+<li class="letter">$\succnapprox$</li>
+<li class="letter">$\backsimeq$</li>
+<li class="letter">$\ggg$</li>
+<li class="letter">$\ll$</li>
+<li class="letter">$\nsim$</li>
+<li class="letter">$\succneqq$</li>
+<li class="letter">$\bumpeq$</li>
+<li class="letter">$\gnapprox$</li>
+<li class="letter">$\lll$</li>
+<li class="letter">$\nsucc$</li>
+<li class="letter">$\succnsim$</li>
+<li class="letter">$\Bumpeq$</li>
+<li class="letter">$\gneq$</li>
+<li class="letter">$\lnapprox$</li>
+<li class="letter">$\nsucceq$</li>
+<li class="letter">$\succsim$</li>
+<li class="letter">$\circeq$</li>
+<li class="letter">$\gneqq$</li>
+<li class="letter">$\lneq$</li>
+<li class="letter">$\prec$</li>
+<li class="letter">$\thickapprox$</li>
+<li class="letter">$\cong$</li>
+<li class="letter">$\gnsim$</li>
+<li class="letter">$\lneqq$</li>
+<li class="letter">$\precapprox$</li>
+<li class="letter">$\thicksim$</li>
+<li class="letter">$\curlyeqprec$</li>
+<li class="letter">$\gtrapprox$</li>
+<li class="letter">$\lnsim$</li>
+<li class="letter">$\preccurlyeq$</li>
+
+<li class="letter">$\curlyeqsucc$</li>
+<li class="letter">$\gtreqless$</li>
+<li class="letter">$\lvertneqq$</li>
+<li class="letter">$\preceq$</li>
+<li class="letter">$\doteq$</li>
+<li class="letter">$\gtreqqless$</li>
+<li class="letter">$\ncong$</li>
+<li class="letter">$\precnapprox$</li>
+<li class="letter">$\precneqq$</li>
+<li class="letter">$\eqcirc$</li>
+<li class="letter">$\gtrsim$</li>
+<li class="letter">$\ngeq$</li>
+<li class="letter">$\precnsim$</li>
+<li class="letter">$\precsim$</li>
+<li class="letter">$\eqslantgtr$</li>
+<li class="letter">$\leq$</li>
+<li class="letter">$\ngeqslant$</li>
+<li class="letter">$\risingdotseq$</li>
+<li class="letter">$\backepsilon$</li>
+<li class="letter">$\smallsmile$</li>
+<li class="letter">$\therefore$</li>
+<li class="letter">$\because$</li>
+<li class="letter">$\smile$</li>
+<li class="letter">$\between$</li>
+<li class="letter">$\varpropto$</li>
+<li class="letter">$\bowtie$</li>
+<li class="letter">$\dashv$</li>
+<li class="letter">$\frown$</li>
+<li class="letter">$\smallfrown$</li>
+<li class="letter">$\nvdash$</li>
+<li class="letter">$\in$</li>
+<li class="letter">$\nVdash$</li>
+
+
+<li class="letter">$\mid$</li>
+<li class="letter">$\nvDash$</li>
+
+
+<li class="letter">$\models$</li>
+<li class="letter">$\nVDash$</li>
+
+
+<li class="letter">$\ni$</li>
+<li class="letter">$\parallel$</li>
+
+<li class="letter">$\vdash$</li>
+<li class="letter">$\nmid$</li>
+<li class="letter">$\perp$</li>
+
+<li class="letter">$\Vdash$</li>
+<li class="letter">$\notin$</li>
+<li class="letter">$\pitchfork$</li>
+
+<li class="letter">$\vDash$</li>
+
+<li class="letter">$\propto$</li>
+
+<li class="letter">$\Vvdash$</li>
+
+<li class="letter">$\nshortmid$</li>
+<li class="letter">$\shortmid$</li>
+<li class="letter">$\nparallel$</li>
+<li class="letter">$\nshortparallel$</li>
+<li class="letter">$\shortparallel$</li>
+
+<li class="letter">$\triangleleft$</li>
+<li class="letter">$\vartriangle$</li>
+<li class="letter">$\triangleright$</li>
+<li class="letter">$\ntrianglerighteq$</li>
+<li class="letter">$\vartriangleright$</li>
+<li class="letter">$\vartriangleleft$</li>
+<li class="letter">$\ntriangleright$</li>
+<li class="letter">$\blacktriangleright$</li>
+<li class="letter">$\ntrianglelefteq$</li>
+<li class="letter">$\trianglerighteq$</li>
+<li class="letter">$\blacktriangleleft$</li>
+<li class="letter">$\ntriangleleft$</li>
+<li class="letter">$\trianglelefteq$</li>
+<li class="letter">$\bigtriangledown$</li>
+<li class="letter">$\bigtriangleup$</li>
+<li class="letter">$\triangleq$</li>
+
+<li class="letter">$\sqcap$</li>
+<li class="letter">$\sqcup$</li>
+<li class="letter">$\sqsupset$</li>
+<li class="letter">$\sqsubset$</li>
+<li class="letter">$\sqsupseteq$</li>
+<li class="letter">$\sqsubseteq$</li>
+
+<li class="letter">$\Cap$</li>
+<li class="letter">$\Cup$</li>
+<li class="letter">$\Subset$</li>
+<li class="letter">$\Supset$</li>
+<li class="letter">$\cup$</li>
+<li class="letter">$\cap$</li>
+<li class="letter">$\subset$</li>
+<li class="letter">$\supset$</li>
+<li class="letter">$\subseteq$</li>
+<li class="letter">$\subseteqq$</li>
+<li class="letter">$\varsubsetneq$</li>
+<li class="letter">$\subsetneqq$</li>
+<li class="letter">$\varsubsetneqq$</li>
+<li class="letter">$\nsubseteqq$</li>
+<li class="letter">$\subsetneq$</li>
+<li class="letter">$\nsubseteq$</li>
+<li class="letter">$\supseteq$</li>
+<li class="letter">$\supseteqq$</li>
+<li class="letter">$\supsetneq$</li>
+<li class="letter">$\varsupsetneq$</li>
+<li class="letter">$\nsupseteq$</li>
+<li class="letter">$\supsetneqq$</li>
+<li class="letter">$\varsupsetneqq$</li>
+<li class="letter">$\nsupseteqq$</li>
+<li class="letter">$\bigodot$</li>
+<li class="letter">$\bigotimes$</li>
+<li class="letter">$\bigoplus$</li>
+<li class="letter">$\biguplus$</li>
+</ul>
+</div>
+<div title="Functions" style="padding:10px">
+<ul class="keyboard">
+<li class="letter small">$\sin$</li>
+<li class="letter small">$\cos$</li>
+<li class="letter small">$\tan$</li>
+<li class="letter small">$\csc$</li>
+<li class="letter small">$\sec$</li>
+<li class="letter small">$\cot$</li>
+<li class="letter small">$\sinh$</li>
+<li class="letter small">$\cosh$</li>
+<li class="letter small">$\tanh$</li>
+<li class="letter small">$\coth$</li>
+<li class="letter small">$\hom$</li>
+<li class="letter small">$\arcsin$</li>
+<li class="letter small">$\arccos$</li>
+<li class="letter small">$\det$</li>
+<li class="letter small">$\arctan$</li>
+<li class="letter small">$\textrm{arccsc}$</li>
+<li class="letter small">$\textrm{arcsec}$</li>
+<li class="letter small">$\textrm{arccot}$</li>
+<li class="letter small">$\sin^{-1}$</li>
+<li class="letter small">$\cos^{-1}$</li>
+<li class="letter small">$\tan^{-1}$</li>
+<li class="letter small">$\sinh^{-1}$</li>
+<li class="letter small">$\cosh^{-1}$</li>
+<li class="letter small">$\tanh^{-1}$</li>
+<li class="letter small">$\exp$</li>
+<li class="letter small">$\lg$</li>
+<li class="letter small">$\ln$</li>
+<li class="letter small">$\log$</li>
+<li class="letter small">$\log_{e}$</li>
+<li class="letter small">$\log_{10}$</li>
+<li class="letter small">$\lim$</li>
+<li class="letter small">$\liminf$</li>
+<li class="letter small">$\limsup$</li>
+<li class="letter small">$\max$</li>
+<li class="letter small">$\min$</li>
+<li class="letter small">$\infty$</li>
+<li class="letter small">$\inf$</li>
+<li class="letter small">$\arg$</li>
+<li class="letter small">$\det$</li>
+<li class="letter small">$\dim$</li>
+<li class="letter small">$\gcd$</li>
+<li class="letter small">$\hom$</li>
+<li class="letter small">$\ker$</li>
+<li class="letter small">$\Pr$</li>
+<li class="letter small">$\sup$</li>
+<li class="letter small">$\deg$</li>
+<li class="letter small">$\injlim$</li>
+<li class="letter small">$\varinjlim$</li>
+<li class="letter small">$\varprojlim$</li>
+<li class="letter small">$\varliminf$</li>
+<li class="letter small">$\projlim$</li>
+<li class="letter small">$\varlimsup$</li>
+</ul>
+</div>
+<div title="Fonts" style="padding:10px">
+<ul class="keyboard">
+<li class="tab medium">$\tiny Tiny$</li>
+<li class="tab medium">$\scriptsize Script$</li>
+<li class="tab medium">$\small Small$</li>
+<li class="tab medium">$\normalsize Normal$</li>
+<li class="tab medium">$\large large$</li>
+<li class="tab medium">$\Large Large$</li>
+<li class="tab medium">$\LARGE LARGE$</li>
+<li class="tab medium">$\huge huge$</li>
+<li class="tab medium">$\Huge Huge$</li>
+<li class="tab medium">$\mathbf{Bold}$</li>
+<li class="tab medium">$\mathit{Italic}$</li>
+<li class="tab medium">$\mathrm{Roman}$</li>
+<li class="tab medium">$\mathcal{Mathcal}$</li>
+<li class="tab medium">$\mathscr{Script}$</li>
+<li class="tab medium">$\mathfrak{Fraktur}$</li>
+<li class="tab medium">$\mathbb{Blackboard}$</li>
+<li class="tab medium">$\mathsf{Sans Serif}$</li>
+<li class="tab medium">$\mathtt{Typewriter}$</li>
+</ul>
+</div>
+<div title="Colors" style="padding:10px">
+<ul class="keyboard">
+<li class="colorstrip">${\color[RGB]{0,255,255} Aqua}$</li>
+<li class="colorstrip">${\color[RGB]{0,0,0} Black}$</li>
+<li class="colorstrip">${\color[RGB]{0,0,255} Blue}$</li>
+<li class="colorstrip">${\color[RGB]{255,0,0} Red}$</li>
+<li class="colorstrip">${\color[RGB]{0,255,0} Lime}$</li>
+<li class="colorstrip">${\color[RGB]{255,255,0} Yellow}$</li>
+<li class="colorstrip">${\color[RGB]{255,0,255} Magenta}$</li>
+<li class="colorstrip">${\color[RGB]{192,192,192} Silver}$</li>
+<li class="colorstrip">${\color[RGB]{128,128,128} Gray}$</li>
+<li class="colorstrip">${\color[RGB]{128,0,0} Maroon}$</li>
+<li class="colorstrip">${\color[RGB]{128,128,0} Olive}$</li>
+<li class="colorstrip">${\color[RGB]{0,128,0} Green}$</li>
+<li class="colorstrip">${\color[RGB]{128,0,128} Purple}$</li>
+<li class="colorstrip">${\color[RGB]{0,128,128} Teal}$</li>
+<li class="colorstrip">${\color[RGB]{0,0,128} Navy}$</li>
+<li class="colorstrip">${\color[RGB]{250,128,114} Salmon}$</li>
+<li class="colorstrip">${\color[RGB]{255,127,80} Coral}$</li>
+<li class="colorstrip">${\color[RGB]{255,69,0} Orange red}$</li>
+<li class="colorstrip">${\color[RGB]{255,165,0} Orange}$</li>
+<li class="colorstrip">${\color[RGB]{255,215,0} Gold}$</li>
+<li class="colorstrip">${\color[RGB]{0,128,0} Green}$</li>
+<li class="colorstrip">${\color[RGB]{100,149,237} Corn}$</li>
+<li class="colorstrip">${\color[RGB]{75,0,130} Indigo}$</li>
+<li class="colorstrip">${\color[RGB]{216,191,216} Thistle}$</li>
+<li class="colorstrip">${\color[RGB]{160,82,45} Sienna}$</li>
+<li class="colorstrip">${\color[RGB]{210,105,30} Chocolate}$</li>
+<li class="colorstrip">${\color[RGB]{210,180,140} Tan}$</li>
+<li class="colorstrip">${\color[RGB]{112,128,144} Slate Gray}$</li>
+<li class="colorstrip">${\color[RGB]{105,105,105} Dim Gray}$</li>
+<li class="colorstrip">${\color[RGB]{199,21,133} Violet}$</li>
+<li class="colorstrip">${\color[RGB]{30,144,255} Dodg Blue}$</li>
+<li class="colorstrip">${\color[RGB]{46,139,87} Sea Green}$</li>
+<li class="colorstrip">${\color[RGB]{184,134,11} Dark Gold}$</li>
+<li class="colorstrip">${\color[RGB]{165,42,42} Brown}$</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--FOOTER ENDS -->
+<div data-options="region:'center'" style="padding:0px;" id="left"><!-- LEFT STARTS -->
+<div data-options="fit:true, border:false,tools:'#tab-tools',toolPosition:'left'" id="codebox" class="easyui-tabs">
+<div title="LaTex Code" style="padding:0px;"> 
+<pre id="code" style="width:100%; height:98%;">
+</pre>
+</div>
+</div>
+</div>
+<div id="tab-tools" style="border-top:0px; border-right:0px;">
+<a href="javascript:void(0)" id="clear"  class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-execute-project'" style="white-space:nowrap;"><b>Clear</b></a>
+<a href="javascript:void(0)" id="separator" class="easyui-linkbutton" data-options="plain:true" style="white-space:nowrap;"><b>|</b></a>
+</div><!--CODE AREA STARTS -->
+</form>
+<script src="/codingground/ace/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="/themes/js/latex-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://www.google-analytics.com/urchin.js">
+</script>
+<script type="text/javascript">
+_uacct = "UA-232293-6";
+urchinTracker();
+$('.pg-icon').click(function(){
+   $('.wrapLoader').show();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Perl Online Quiz - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="Perl Online Quiz - Following quiz provides Multiple Choice Questions (MCQs) related to Perl. You will have to read all the given answers and click over the correct answer. If you "/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/perl/perl_online_quiz.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.4">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#43C2C8;
+}
+a.demo {
+    background:#43C2C8;
+}
+li.heading {
+    background:#43C2C8;
+}
+.course-box{background:#43C2C8}
+.home-intro-sub p{color:#43C2C8}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/perl/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/perl/images/perl-mini-logo.jpg" alt="Perl Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">Perl Basics</li>
+<li><a href="/perl/index.htm">Perl - Home</a></li>
+<li><a href="/perl/perl_introduction.htm">Perl - Introduction</a></li>
+<li><a href="/perl/perl_environment.htm">Perl - Environment</a></li>
+<li><a href="/perl/perl_syntax.htm">Perl - Syntax Overview</a></li>
+<li><a href="/perl/perl_data_types.htm">Perl - Data Types</a></li>
+<li><a href="/perl/perl_variables.htm">Perl - Variables</a></li>
+<li><a href="/perl/perl_scalars.htm">Perl - Scalars</a></li>
+<li><a href="/perl/perl_arrays.htm">Perl - Arrays</a></li>
+<li><a href="/perl/perl_hashes.htm">Perl - Hashes</a></li>
+<li><a href="/perl/perl_conditions.htm">Perl - IF...ELSE</a></li>
+<li><a href="/perl/perl_loops.htm">Perl - Loops</a></li>
+<li><a href="/perl/perl_operators.htm">Perl - Operators</a></li>
+<li><a href="/perl/perl_date_time.htm">Perl - Date &amp; Time</a></li>
+<li><a href="/perl/perl_subroutines.htm">Perl - Subroutines</a></li>
+<li><a href="/perl/perl_references.htm">Perl - References</a></li>
+<li><a href="/perl/perl_formats.htm">Perl - Formats</a></li>
+<li><a href="/perl/perl_files.htm">Perl - File I/O</a></li>
+<li><a href="/perl/perl_directories.htm">Perl - Directories</a></li>
+<li><a href="/perl/perl_error_handling.htm">Perl - Error Handling</a></li>
+<li><a href="/perl/perl_special_variables.htm">Perl - Special Variables</a></li>
+<li><a href="/perl/perl_coding_standard.htm">Perl - Coding Standard</a></li>
+<li><a href="/perl/perl_regular_expressions.htm">Perl - Regular Expressions</a></li>
+<li><a href="/perl/perl_sending_email.htm">Perl - Sending Email</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Perl Advanced</li>
+<li><a href="/perl/perl_socket_programming.htm">Perl - Socket Programming</a></li>
+<li><a href="/perl/perl_object_oriented.htm">Perl - Object Oriented</a></li>
+<li><a href="/perl/perl_database_access.htm">Perl - Database Access</a></li>
+<li><a href="/perl/perl_cgi_programming.htm">Perl - CGI Programming</a></li>
+<li><a href="/perl/perl_packages_modules.htm">Perl - Packages &amp; Modules</a></li>
+<li><a href="/perl/perl_process_management.htm">Perl - Process Management</a></li>
+<li><a href="/perl/perl_embedded_documentation.htm">Perl - Embedded Documentation</a></li>
+<li><a href="/perl/perl_function_references.htm">Perl - Functions References</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Perl Useful Resources</li>
+<li><a href="/perl/perl_questions_answers.htm">Perl - Questions and Answers</a></li>
+<li><a href="/perl/perl_quick_guide.htm">Perl - Quick Guide</a></li>
+<li><a href="/perl/perl_useful_resources.htm">Perl - Useful Resources</a></li>
+<li><a href="/perl/perl_discussion.htm">Perl - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>Perl Online Quiz</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="perl_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="perl_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Following quiz provides Multiple Choice Questions (MCQs) related to <b>Perl</b>. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using <b>Show Answer</b> button. You can use <b>Next Quiz</b> button to check new set of questions in the quiz.</p>
+<img src="/images/questions_and_answers.png" alt="Questions and Answers" />
+
+<div class="QA">
+<div class="Q" id="Q8">
+<p><span>Q 1</span> - Which of the following correctly describes Hashes data types in Perl?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - These are simple variables. They are preceded by a dollar sign ($).</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - These are ordered lists of scalars that you access with a numeric index which starts with 0.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - These are unordered sets of key/value pairs that you access using the keys as subscripts.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id="A8">
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>Hashes are unordered sets of key/value pairs that you access using the keys as subscripts. They are preceded by a percent sign (%).</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('8')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q14">
+<p><span>Q 2</span> - In which of the following variable context, an expression is being evaluated to see whether it's true or false?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Scalar</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - List</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Boolean</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Void.</a></p>
+</div>
+<div class="A" id="A14">
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>Boolean &minus; Boolean context is simply any place where an expression is being evaluated to see whether it's true or false.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('14')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q21">
+<p><span>Q 3</span> - Which of the following method pushes the values of the list onto the end of the array?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - push @ARRAY, LIST</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - pop @ARRAY</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - shift @ARRAY</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - unshift @ARRAY, LIST</a></p>
+</div>
+<div class="A" id="A21">
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>push @ARRAY, LIST &minus; Pushes the values of the list onto the end of the array.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('21')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q34">
+<p><span>Q 4</span> - How will you get the size of a Hash?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Using scalar context</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - using sizeof operator</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Both of the above.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id="A34">
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>You can get the size &minus; that is, the number of elements from a hash by using the scalar context on either keys or values.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('34')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q47">
+<p><span>Q 5</span> - Which of the following operator divides left hand operand by right hand operand and returns remainder?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - *</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - /</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - %</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - **</a></p>
+</div>
+<div class="A" id="A47">
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>% &minus; Modulus &minus; Divides left hand operand by right hand operand and returns remainder.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('47')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q53">
+<p><span>Q 6</span> - Which of the following operator checks if the value of left operand is less than the value of right operand, if yes then condition becomes true?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - &lt;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - &gt;=</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - &lt;=</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - &lt;=&gt;</a></p>
+</div>
+<div class="A" id="A53">
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>&gt; &minus; Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('53')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q69">
+<p><span>Q 7</span> - Which of the following operator increases integer value by one?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - .</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - x</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - ..</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - ++</a></p>
+</div>
+<div class="A" id="A69">
+<h3>Answer : D</h3>
+<h3>Explanation</h3>
+<p>++ &minus; Auto Increment operator increases integer value by one.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('69')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q72">
+<p><span>Q 8</span> - Which of the following function returns the current local time on the machine that runs the script?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - localtime</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - gmtime</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - time</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - strftime</a></p>
+</div>
+<div class="A" id="A72">
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>localtime &minus; returns the current local time on the machine that runs the script.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('72')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q86">
+<p><span>Q 9</span> - Which of the following is true about Perl references?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - A Perl reference is a scalar data type that holds the location of another value which could be scalar, arrays, or hashes.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Because of its scalar nature, a reference can be used anywhere, a scalar can be used.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - Both of the above.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id="A86">
+<h3>Answer : C</h3>
+<h3>Explanation</h3>
+<p>Both of the above options are correct.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('86')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q93">
+<p><span>Q 10</span> - Which of the following function renames existing file?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - rename</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - tell</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - seek</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id="A93">
+<h3>Answer : A</h3>
+<h3>Explanation</h3>
+<p>Function rename takes two arguments and it just rename existing file.</p>
+</div> 
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('93')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<script type="text/javascript" src="/theme/js/exams.js"></script>
+<div class="parent-file">perl_questions_answers.htm</div>
+<button type="button" class="btn btn-default btn-test btn-round"><a href="/perl/perl_online_quiz.htm"> New Quiz </a></button>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="perl_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="perl_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

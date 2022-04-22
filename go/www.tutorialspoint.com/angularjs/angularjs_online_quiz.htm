@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>AngularJS Online Quiz - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="AngularJS Online Quiz - Following quiz provides Multiple Choice Questions (MCQs) related to AngularJS Framework. You will have to read all the given answers and click over the correct "/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="https://www.tutorialspoint.com/angularjs/angularjs_online_quiz.htm" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="/themes/css/style-min-v1.css?v=2.0.3">
+<script src="/themes/js/script-min-v1.js?v=2.0.0"></script>
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#dd1c17;
+}
+a.demo {
+    background:#dd1c17;
+}
+li.heading {
+    background:#dd1c17;
+}
+.course-box{background:#dd1c17}
+.home-intro-sub p{color:#dd1c17}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="/angularjs/images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="/angularjs/images/angularjs-mini-logo.jpg" alt="AngularJS Tutorial" />
+</div>
+<ul class="toc chapters">
+<li><a class="videolink" href="/angularjs_online_training/index.asp" target="_blank"><img src="/angularjs/images/angularjs-video-tutorials.jpg" alt="AngularJS Video Tutorials" /></a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">AngularJS Tutorial</li>
+<li><a href="/angularjs/index.htm">AngularJS - Home</a></li>
+<li><a href="/angularjs/angularjs_overview.htm">AngularJS - Overview</a></li>
+<li><a href="/angularjs/angularjs_environment.htm">AngularJS - Environment Setup</a></li>
+<li><a href="/angularjs/angularjs_mvc_architecture.htm">AngularJS - MVC Architecture</a></li>
+<li><a href="/angularjs/angularjs_first_application.htm">AngularJS - First Application</a></li>
+<li><a href="/angularjs/angularjs_directives.htm">AngularJS - Directives</a></li>
+<li><a href="/angularjs/angularjs_expressions.htm">AngularJS - Expressions</a></li>
+<li><a href="/angularjs/angularjs_controllers.htm">AngularJS - Controllers</a></li>
+<li><a href="/angularjs/angularjs_filters.htm">AngularJS - Filters</a></li>
+<li><a href="/angularjs/angularjs_tables.htm">AngularJS - Tables</a></li>
+<li><a href="/angularjs/angularjs_html_dom.htm">AngularJS - HTML DOM</a></li>
+<li><a href="/angularjs/angularjs_modules.htm">AngularJS - Modules</a></li>
+<li><a href="/angularjs/angularjs_forms.htm">AngularJS - Forms</a></li>
+<li><a href="/angularjs/angularjs_includes.htm">AngularJS - Includes</a></li>
+<li><a href="/angularjs/angularjs_ajax.htm">AngularJS - AJAX</a></li>
+<li><a href="/angularjs/angularjs_views.htm">AngularJS - Views</a></li>
+<li><a href="/angularjs/angularjs_scopes.htm">AngularJS - Scopes</a></li>
+<li><a href="/angularjs/angularjs_services.htm">AngularJS - Services</a></li>
+<li><a href="/angularjs/angularjs_dependency_injection.htm">AngularJS - Dependency Injection</a></li>
+<li><a href="/angularjs/angularjs_custom_directives.htm">AngularJS - Custom Directives</a></li>
+<li><a href="/angularjs/angularjs_internationalization.htm">AngularJS - Internationalization</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">AngularJS Applications</li>
+<li><a href="/angularjs/angularjs_todo_application.htm">AngularJS - ToDo Application</a></li>
+<li><a href="/angularjs/angularjs_notepad_application.htm">AngularJS - Notepad Application</a></li>
+<li><a href="/angularjs/angularjs_bootstrap_application.htm">AngularJS - Bootstrap Application</a></li>
+<li><a href="/angularjs/angularjs_login_application.htm">AngularJS - Login Application</a></li>
+<li><a href="/angularjs/angularjs_upload_file.htm">AngularJS - Upload File</a></li>
+<li><a href="/angularjs/angularjs_in_line_application.htm">AngularJS - In-line Application</a></li>
+<li><a href="/angularjs/angularjs_nav_menu.htm">AngularJS - Nav Menu</a></li>
+<li><a href="/angularjs/angularjs_switch_menu.htm">AngularJS - Switch Menu</a></li>
+<li><a href="/angularjs/angularjs_order_form.htm">AngularJS - Order Form</a></li>
+<li><a href="/angularjs/angularjs_search_tab.htm">AngularJS - Search Tab</a></li>
+<li><a href="/angularjs/angularjs_drag_application.htm">AngularJS - Drag Application</a></li>
+<li><a href="/angularjs/angularjs_cart_application.htm">AngularJS - Cart Application</a></li>
+<li><a href="/angularjs/angularjs_translate_application.htm">AngularJS - Translate Application</a></li>
+<li><a href="/angularjs/angularjs_chart_application.htm">AngularJS - Chart Application</a></li>
+<li><a href="/angularjs/angularjs_maps_application.htm">AngularJS - Maps Application</a></li>
+<li><a href="/angularjs/angularjs_share_application.htm">AngularJS - Share Application</a></li>
+<li><a href="/angularjs/angularjs_weather_application.htm">AngularJS - Weather Application</a></li>
+<li><a href="/angularjs/angularjs_timer_application.htm">AngularJS - Timer Application</a></li>
+<li><a href="/angularjs/angularjs_leaflet_application.htm">AngularJS - Leaflet Application</a></li>
+<li><a href="/angularjs/angularjs_lastfm_application.htm">AngularJS - Lastfm Application</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">AngularJS Useful Resources</li>
+<li><a href="/angularjs/angularjs_questions_answers.htm">AngularJS - Questions and Answers</a></li>
+<li><a href="/angularjs/angularjs_quick_guide.htm">AngularJS - Quick Guide</a></li>
+<li><a href="/angularjs/angularjs_useful_resources.htm">AngularJS - Useful Resources</a></li>
+<li><a href="/angularjs/angularjs_discussion.htm">AngularJS - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad" >
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>AngularJS Online Quiz</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center !important;"></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="angularjs_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="angularjs_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>Following quiz provides Multiple Choice Questions (MCQs) related to <b>AngularJS Framework</b>. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using <b>Show Answer</b> button. You can use <b>Next Quiz</b> button to check new set of questions in the quiz.</p>
+<img src="/images/questions_and_answers.png" alt="Questions and Answers" />
+<div class="QA">
+<div class="Q" id="Q11">
+<p><span>Q 2</span> - What is deep linking in AngularJS?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Deep linking allows you to encode the state of application in the URL so that it can be bookmarked.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Deep linking is a SEO based technique.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Deep linking refers to linking various views to a central page.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id='A11'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>Deep linking allows you to encode the state of application in the URL so that it can be bookmarked. The application can then be restored from the URL to the same state.</p>
+</div>
+<div class="E" id='E11'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('11')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q26">
+<p><span>Q 3</span> - AngularJS expressions are written using.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - double braces like {{ expression}}</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - single braces like {expression}</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - small bracket like (expression)</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - capital bracket like [expression]</a></p>
+</div>
+<div class="A" id='A26'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>AngularJS expressions are written inside double braces like {{ expression}}.</p>
+</div>
+<div class="E" id='E26'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('26')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q31">
+<p><span>Q 4</span> - Which of the following is true about currency filter?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Currency filter formats text in a currency format.</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Currency filter is a function which takes text as input.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Both of the above.</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id='A31'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>Currency filter formats text in a currency format. It is simply added to AngularJS expression to filter out the result.</p>
+</div>
+<div class="E" id='E31'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('31')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q46">
+<p><span>Q 5</span> - AngularJS needs data in JSON format to populate its model.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - true</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - false</a></p>
+</div>
+<div class="A" id='A46'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>AngularJS needs data in JSON format to populate its model.</p>
+</div>
+<div class="E" id='E46'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('46')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q58">
+<p><span>Q 6</span> - Which components can be injected as a dependency in AngularJS?</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - Application Module</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - constant</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - value</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - factory</a></p>
+</div>
+<div class="A" id='A58'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>Application Module can not be injected as dependency.</p>
+</div>
+<div class="E" id='E58'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('58')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q63">
+<p><span>Q 7</span> - Custom directives are used in AngularJS to extend the functionality of HTML.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - true</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - false</a></p>
+</div>
+<div class="A" id='A63'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>Custom directives are used in AngularJS to extend the functionality of HTML.</p>
+</div>
+<div class="E" id='E63'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('63')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q80">
+<p><span>Q 8</span> - AngularJS uses one way data binding.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - false</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - true</a></p>
+</div>
+<div class="A" id='A80'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>No! AngularJS uses two way data binding.</p>
+</div>
+<div class="E" id='E80'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('80')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q83">
+<p><span>Q 9</span> - ng-init directive can be used to put values to the variables to be used in the application.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - true</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - false</a></p>
+</div>
+<div class="A" id='A83'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>ng-init directive can be used to put values to the variables to be used in the application.</p>
+</div>
+<div class="E" id='E83'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('83')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q98">
+<p><span>Q 10</span> - Internationalization is a way to show locale specific information on a website.</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - false</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - true</a></p>
+</div>
+<div class="A" id='A98'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>Internationalization is a way to show locale specific information on a website.</p>
+</div>
+<div class="E" id='E98'>
+<textarea id="Message" name="message" class="form-control what"></textarea>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('98')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><script type="text/javascript" src="/theme/js/exams.js"></script>
+<div class="parent-file">angularjs_questions_answers.htm</div>
+<button type="button" class="btn btn-default btn-test btn-round"><a href="/angularjs/angularjs_online_quiz.htm"> New Quiz </a></button>
+<div class="mui-container-fluid button-borders show" id="bottom_navigation">
+<div class="pre-btn">
+<a href="angularjs_questions_answers.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="angularjs_questions_answers.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="adp_bottom_ads"></div>
+<script>
+var adPos = document.getElementById('adp_bottom_ads');
+var mobile_ad_id = "a8a632a6-046e-4f5c-b25f-8bc82ac89fb2";
+var desktop_ad_id = "e7ddd6f7-1ab0-494a-bade-887daa4373a0";
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+adpushup.triggerAd(ad_id);
+});
+</script>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" id="ad300" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:16px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom"></div>
+
+<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="/index.htm" class="logo"><img class="img-responsive" src="/images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2020. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+</html>
+

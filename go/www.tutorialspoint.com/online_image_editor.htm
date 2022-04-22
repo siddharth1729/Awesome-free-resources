@@ -1,0 +1,890 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="Description" content=" - Free Online Editing, Crop, Rotate, Resize, Beautiful Photo Frames, Fancy Effects, Text Impose, Add Shapes like Circle, Square, Rectangle, Triangle, Line, Eliipse, Balance Saturation, Free Hand Drawing, Censor Photo, Gamma Setup, Blurr Photo, Colorize Images, Exposure for your PNG and JPEG images, Photos" />
+<meta name="Keywords" content="Online, Image, Photo, Picture, Editor, Editing, Free, Edit, Crop, Rotate, Resize, Frame, Fancy Effects, Text Impose, Circle, Square, Rectangle, Triangle, Line, Eliipse, Add Shapes, Balance Saturation, Free Hand Drawing, Censor Photo, Gamma Setup, Blurr Photo, Colorize, Images, Exposure, PNG, JPEG, images, Photos"/>
+<base href="https://www.tutorialspoint.com/" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/themes/css/gray/easyui.css" />
+<link rel="stylesheet" type="text/css" href="/themes/css/icon.css" />
+<link rel="stylesheet" type="text/css" href="/image_editor/css/image-editor.css" />
+<script src="/theme/js/jquery.js"></script>
+<script type="text/javascript" src="/themes/js/jquery.min.js"></script>
+<script src="/themes/easyui/jquery.easyui.min.js"></script>
+<script src="/themes/js/fabric-min.js"></script>
+<script src="/themes/js/jquery.Jcrop-min.js"></script>
+<script src="/themes/js/caman.full.min.js"></script>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans+Condensed:300:latin', 'Poiret+One::latin', 'Lobster::latin', 'Shadows+Into+Light::latin', 'Playball::latin', 'Satisfy::latin', 'Great+Vibes::latin', 'Tangerine::latin', 'Luckiest+Guy::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<script>
+var functiontype = "";
+var imagefile = "image-0.png";
+var initimage = "image-0.png";
+var sessionid  = "f30930b40eb45e3e83ca7ffac968187c";
+var prefix  = "/var/www/html/uplaods/image_editor";
+var base_url  = "https://tools.tutorialspoint.com/image_editor";
+var assets_url  = "https://tools.tutorialspoint.com/uploads/image_editor";
+var opt_count  = 0;
+var max_count  = 0;
+</script>
+<style>
+.wrapLoader { width:100%; margin:0; height:100%; position:absolute; background-color:#000; opacity:.6; z-index:1000; display:none; }
+</style>
+</head>
+<body class="easyui-layout" id="cc">
+<!-- loader div -->
+<div class="wrapLoader">
+   <div class="imgLoader">
+      <img  src="/image_editor/images/loading.gif" alt="tutorialspoint loader" width="80" height="80" />
+   </div>
+</div>
+<!-- end of loader div -->
+
+<!--HEADER STARTS -->
+<div data-options="region:'north'" style="height:65px; width:100%;overflow:hidden;">
+      <a href="https://www.tutorialspoint.com" title="Tutorials Point">
+         <img src="/green/images/logo.png" alt="Tutorialspoint" title="Tutorialspoint - Online Image Editor" style="height:50px; padding:5px; float:left;"/>
+      </a>
+      <h1 class="whtboard" id="hdrTitle"></h1>
+      <div style="margin:18px 0px 0px 0px; float:right;">
+         <a id="help-m" href="javascript:void(0)" class="easyui-linkbutton l-btn l-btn-small l-btn-plain" data-options="iconCls:'icon-help', plain:true" style="float:right;font-size:12px;"><span class="l-btn-left l-btn-icon-left">Help</span></a>
+         <a target="_blank" href="https://www.tutorialspoint.com/tutorialslibrary.htm" class="easyui-linkbutton l-btn l-btn-small l-btn-plain" data-options="iconCls:'icon-library', plain:true" style="float:right; font-size:12px; position:relative; top:-1px;"><span class="l-btn-left l-btn-icon-left">Tutorials</span></a>
+         <a target="_blank" href="https://www.tutorialspoint.com/codingground.htm" class="easyui-linkbutton l-btn l-btn-small l-btn-plain" data-options="iconCls:'', plain:true" style="float:right;font-size:12px; position:relative; top:-1px;" ><span class="l-btn-left"><i class="fa-code"></i> Coding Ground</span></a>
+         <a id="operations" href="#" class="easyui-menubutton l-btn" data-options="menu:'#mm6', plain:true,iconCls:'icon-project'" style="float:right;font-size:12px;"><span class="l-btn-text" style="margin:0 3px 0 0px!important;">Operations</span></a>
+      </div>
+      <div id="mm6" style="width:200px;">
+         <div  data-options="plain:true, iconCls:'fa-crop'"><a href="https://www.tutorialspoint.com/crop_image_online.htm">Crop Image Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-arrows-alt'"><a href="https://www.tutorialspoint.com/resize_photo_online.htm">Resize Photo Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-rotate-left'"><a href="https://www.tutorialspoint.com/rotate_photo_online.htm">Rotate Photo Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-text-height'"><a href="https://www.tutorialspoint.com/add_text_photo_online.htm">Add Text to Photo Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-tint'"><a href="https://www.tutorialspoint.com/adjust_photo_color_online.htm">Adjust Photo Color Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'icon-exposure'"><a href="https://www.tutorialspoint.com/adjust_photo_exposure_online.htm">Adjust Photo Exposure Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-compass'"><a href="https://www.tutorialspoint.com/adjust_photo_gamma_online.htm">Adjust Photo Gamma Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-google-wallet'"><a href="https://www.tutorialspoint.com/blur_photo_online.htm">Blur Photo Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-eye'"><a href="https://www.tutorialspoint.com/sharpen_photo_online.htm">Sharpen Photo Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-file-image-o'"><a href="https://www.tutorialspoint.com/online_photo_effects.htm">Online Photo Effects</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'icon-shapes'"><a href="https://www.tutorialspoint.com/add_shape_photo_online.htm">Add Shapes to Photo Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'fa-paint-brush'"><a href="https://www.tutorialspoint.com/free_hand_drawing_online.htm">Free Hand Drawing Online</a></div>
+         <div class="menu-sep"></div>
+          <div data-options="plain:true, iconCls:'icon-censor'"><a href="https://www.tutorialspoint.com/censor_photo_online.htm">Censor Photo Online</a></div>
+         <div class="menu-sep"></div>
+         <div data-options="plain:true, iconCls:'icon-frame'"><a href="https://www.tutorialspoint.com/photo_frame_online.htm">Photo Frames Online</a></div>
+      </div>
+</div>
+<!--HEADER ENDS -->
+
+<!--OPTIONS STARTS -->
+<div id="east" data-options="region:'east', title:'Help',iconCls:'icon-help', split:false, collapsed:true" style="width:250px;">
+   <div class="wr-left">
+      <div class="wr-lft-cont column">  
+      
+         <!-- HTML of Help -->
+         <div class="subProperties" id="help-options">       
+            <div class="sub-tools">
+             <div class="easyui-accordion" style="width:242px;" > 
+               <div title="Crop" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-crop-percentage'>How to use Crop by Percentage</a></div>
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-crop-manually'>How to use Crop Manually</a></div>
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-corp-slider'>How to use Crop by Slider</a></div>                 
+               </div>               
+               <div title="Resize" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-resize-percentage'>How to use Resize by Percentage</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-scale'>How to use scale, Aspect Ratio-Width-Height</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-resize-slider'>How to use Resize by Slider</a></div>                  
+               </div>
+               <div title="Rotate" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-flip-horizontal'>How to use Flip - Horizontal, Vertical</a></div>   
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-rotate-by-steps'>How to use Rotate by Steps</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-rotate-by-slider'>How to use Rotate by Slider</a></div> 
+               </div>
+              <div title="Text" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-text-addtext'>How to Add Text</a></div>
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-text-fontfamily'>How to Add Font Family to Text</a></div>  
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-text-bold'>How to Add Bold to Text</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-text-edit'>How to Edit Text</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-text-textbgcolor'>How to Add Bakground Color, Font-size, Color</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-text-bordercolor'>How to Add Border to Text</a></div>
+               </div>  
+               <div title="Color" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-color'>How to use Color</a></div>        
+               </div>
+               <div title="Exposure" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-exposure'>How to use Exposures</a></div>        
+               </div>   
+               <div title="Blur" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-blur'>How to use Blur</a></div>        
+               </div> 
+               <div title="Gamma" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-gamma'>How to use Gamma</a></div>        
+               </div> 
+               <div title="Sharpness" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-sharpness'>How to use Sharpness</a></div>        
+               </div> 
+               <div title="Image Effects" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-imageeffects'>How to use Image Effects</a></div>        
+               </div> 
+               <div title="Shape" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-shapes-addshapes'>How to use Shapes</a></div>
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-shape-background-border'>How to use Shape Background Fill</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-shapes-addremove'>How to use Shape Border</a></div>                 
+               </div> 
+               <div title="Drawing" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-brush'>How to use Brush Width</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-brush'>How to use Brush Color</a></div>
+                  <div class="help-acc" ><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-brush'>How to use Undo/Clear</a></div>  
+               </div>
+               <div title="Censor" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-censor-percentage'>How to use Censor by Percentage</a></div>
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-censor-slider'>How to use Censor by Slide</a></div>
+               </div>
+               <div title="Frames" data-options="iconCls:''" style="overflow:auto;padding:0px;">
+                  <div class="help-acc"><a class="ancHelp" href="javascript:void(0)" data-img='how-to-use-frames'>How to use Frames</a></div>
+               </div>
+             </div>
+            </div>
+         </div>
+         <!-- End of HTML of Help -->
+         
+         <!-- HTML of Resize -->
+         <div class="subProperties" id="resize-options">       
+            <div class="modal-content sub-tools">           
+               <div class="c-two">
+                  <p>Resize By Percentage</p>
+                   <select id="resizePct">
+                      <option value='100'>Select by Percentage (%)</option>
+                      <option value='25'>25%</option>
+                      <option value='50'>50%</option>
+                      <option value='75'>75%</option>
+                      <option value='100'>100%</option>
+                      <option value='150'>150%</option>
+                      <option value='175'>175%</option>
+                      <option value='200'>200%</option>
+                   </select>
+               </div>
+               <div class="clear"></div>
+               <div class="hrline"></div>            
+               <div class="clear"></div>
+                  <p>Scale</p>
+                  <div class="crp-txt">Asp.Ratio:
+                     <select id="resizeAspectRatio">
+                      <option value='-1'>No Aspect Ratio</option>
+                      <option value='1'>square</option>
+                      <option value='1.7'>16 x 9</option>
+                      <option value='1.3'>4 x 3</option>
+                     </select>
+                  </div>
+                  <div class="crp-txt">Width: <input type="text" value="0" placeholder="Enter Width" id='resizeWidth'/> </div>
+                  <div class="crp-txt">Height:<input type="text" value="0" placeholder="Enter Height" id='resizeHeight'/> </div>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <div class="c-two">
+                     <p>Resize by Slide (Width)</p>
+                        <div class="slider slider-horizontal">
+                           <input class="easyui-slider" data-options="showTip:true,min:1,max:4000" id="rangeSlide" />
+                        </div>
+                  </div>
+                <div class="clear"></div><br/>
+                <div class="hrline"></div>
+                <div class="btncenter">
+                  <input id="resizeApply" type="button" value="Apply" title="Apply"/>
+                  <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                </div>
+            </div>
+         </div>
+         <!-- end HTML of Resize -->
+         
+         <!-- HTML of Crop -->
+         <div class="subProperties" id="crop-options">
+            <div class="modal-content sub-tools">
+                  <div class="c-two">  
+                     <p>Crop By Percentage</p>
+                      <select id="cropPct">
+                         <option value=''>Select Percentage (%)</option>
+                         <option value='25'>25%</option>
+                         <option value='50'>50%</option>
+                         <option value='75'>75%</option>
+                         <option value='100'>100%</option>				
+                      </select><div class="clear"></div>
+                   </div>
+                  <div class="hrline"></div>
+                  <div class="clear"></div>
+                  <p>Crop Manually</p>
+                  <div class="crp-txt">Asp.Ratio:
+                   <select id="cropAspectRatio">
+                      <option value='0'>No Aspect Ratio</option>
+                      <option value='1'>square</option>
+                      <option value='1.7'>16 x 9</option>
+                      <option value='1.3'>4 x 3</option>
+                   </select>
+                  </div>
+                  <div class="crp-txt">Width: <input type="text" value="0" placeholder="Enter Width" id='cropWidth'/> </div>
+                  <div class="crp-txt">Height:<input type="text" value="0" placeholder="Enter Height" id='cropHeight'/> </div>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <p>Crop by Slide (%)</p>
+                  <div class="slider slider-horizontal">
+                     <input class="easyui-slider" data-options="showTip:true,min:0,max:100" value="0" id="cropSlide" />
+                  </div>
+                  <div class="clear"></div><br/>
+                  <div class="hrline"></div> 
+                  <div class="btncenter">
+                    <input type="button" value="Apply" id="cropApply" title="Apply"/>
+                    <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                  </div>
+            </div>
+            <div class="hrline"></div>
+            <div class="coordinates">
+               <p>Image Coordinates</p>
+               <label>X1 <input type="text" size="4" id="x1" name="x1" readonly /></label>
+               <label>Y1 <input type="text" size="4" id="y1" name="y1" readonly /></label>
+               <label>X2 <input type="text" size="4" id="x2" name="x2" readonly /></label>
+               <label>Y2 <input type="text" size="4" id="y2" name="y2" readonly /></label>
+               <label>W&nbsp; <input type="text" size="4" id="w" name="w" readonly /></label>
+               <label>H&nbsp;&nbsp; <input type="text" size="4" id="h" name="h" readonly /></label>
+            </div>
+         </div>
+         <!-- Enf of HTML Crop -->
+         
+         <!-- HTML of Rotate -->
+         <div id="rotate-options" class='subProperties'>                 
+           <div class="sub-tools">
+            <iframe id="download" style="display:none;visibility:hidden;"></iframe>
+                <div class="c-two">
+                   <p>Flip</p>
+                   <div id="flipHor" class="c-two-def"><a href="javascript:void(0)"><img src="/image_editor/images/flip-horizontal.png" alt="flip-horizontal" style="vertical-align:middle;"/>&nbsp;Horizontal</a></div>
+                   <div id="flipVer" class="c-two-def"><a href="javascript:void(0)"><img src="/image_editor/images/flip-vertical.png" alt="flip-vertical" style="vertical-align:middle;"/>&nbsp;Vertical</a></div>
+                </div>  
+                <div class="hrrline"></div><br/>             
+                   <p>Rotate by Steps</p>
+                   <div class="c-two">
+                     <div class="clsDegree c-two-three" data-degree="45"><a href="javascript:void(0)"><i class="fa-chevron-right"></i> 45&#176;</a></div>
+                     <div class="clsDegree c-two-three" data-degree="90" ><a href="javascript:void(0)" ><i class="fa-chevron-right"></i> 90&#176;</a></div>
+                     <div class="clsDegree c-two-three" data-degree="180"><a href="javascript:void(0)"><i class="fa-chevron-right"></i> 180&#176;</a></div>						  
+                     <div class="clsDegree c-two-three" data-degree="270"><a href="javascript:void(0)"><i class="fa-chevron-right"></i> 270&#176;</a></div>						  
+                   </div>  
+                  <div class="clear"></div>
+                  <div class="hrrline"></div><br/>
+                  <p>Rotate by Slide (Angle)</p>
+                  <div class="slider slider-horizontal">					 
+                     <input class="easyui-slider" data-options="showTip:true,min:0,max:360" value="0" id="rotateSlide" />
+                  </div>
+                <div class="clear"></div> <br/>
+                <div class="hrline"></div>
+                <div class="btncenter" style="margin:20px 0px 10px 0px!important;">
+                  <input id="rotateApply" type="button" value="Apply" title="Apply"/>
+                  <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                </div>
+            </div> 
+         </div>
+         <!-- End of HTML Rotate -->  
+         
+         <!-- HTML of Text -->
+          <div id="text-options" class='subProperties'>
+            <div class="sub-tools">
+               <div class="text-tool sub-tools-cat">
+                  <input type="button" value="Add New Text" id="btnNewText" title="New Text"/>
+                  <input type="submit" value="Remove" id="btnRemoveText" class='clsCance' title="Remove Text"/>
+                  <div style="clear:both;"></div> 
+                  <div class="c-two">
+                    <select id="txtStyle">
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Arial">Arial</option>                        
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="sans-serif">Sans-serif</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Open Sans Condensed">Open Sans Condensed</option>                     
+                        <option value="Poiret One">Poiret One</option>
+                        <option value="Lobster">Lobster</option>                        
+                        <option value="Shadows Into Light">Shadows Into Light</option>
+                        <option value="Pacifico">Pacifico</option>
+                        <option value="Sigmar One">Sigmar One</option>
+                        <option value="Courgette">Courgette</option>                   
+                        <option value="Lobster Two">Lobster Two</option>
+                        <option value="Pinyon Script">Pinyon Script</option>
+                        <option value="Playball">Playball</option>                     
+                        <option value="Satisfy">Satisfy</option>
+                        <option value="Great Vibes">Great Vibes</option>                        
+                        <option value="Tangerine">Tangerine</option>
+                        <option value="Luckiest Guy">Luckiest Guy</option>
+                    </select>
+                   </div><div class="clear"></div>              
+                   <div class="c-two">
+                     <div id="alignleft" class="c-two-three divAlign" data-opt="left"><a href="javascript:void(0);" ><i class="fa-align-left c-border" ></i></a></div>
+                     <div id="aligncenter" class="c-two-three divAlign" data-opt="center"><a href="javascript:void(0);" ><i class="fa-align-center c-border"></i></a></div>
+                     <div id="alignright" class="c-two-three divAlign" data-opt="right"><a href="javascript:void(0);" >
+                     <i class="fa-align-right c-border"></i></a></div>
+                     <div id="stylebold" class="c-two-three divStyleBold" data-opt="bold"><a href="javascript:void(0);" ><i class="fa-bold c-border"></i></a></div>
+                     <div id="styleitalic" class="c-two-three divStyleItalic" data-opt="italic"><a href="javascript:void(0);" ><i class="fa-italic c-border"></i></a></div>
+                   </div><div class="clear"></div>    
+                   
+                   <div class="hrline"></div>
+                     <textarea placeholder="Enter Text Here" cols="4" rows="3" id="txtText">Sample Text</textarea>
+                     <div class="hrline"></div>               
+                     <div class="c-two">
+                        <div class="c-two-three"> <a>Size:</a> <input type="text" id="txtTextSize" value="20" /> </div>
+                        <div class="c-two-three" style="width:36%; padding-left:5px!important;"> <a>Color:</a><div class="clear"></div><input type="color" id="txtClrVal" class="form-control" value="#000000"> <input type="text" id="txtHexavalue" value="#000000" />
+                        </div>
+                        <div class="c-two-three" style="width:36%;"> <a>Background:</a><div class="clear"></div> <input type="color" id="txtBGClrVal" class="form-control" value="#000000"> <input type="text" id="txtBGHexavalue" value="#000000" /> </div><div class="clear"></div>
+                     </div>
+                     <div class="hrline"></div>
+                     <div class="c-two"> 
+                        <div class="c-two-two" style="width:99%!important;"> 
+                           <a>Border:</a><div class="clear"></div> 
+                           <input type="text" id="txtOutline" value="0" style="width:35%; float:left;"/>  
+                           <input type="color" id="txtOutlineClrVal" class="form-control" value="#000000" style="width:23px; float:left; margin:-2px 0px 0px 6px; height:22px;"> 
+                           <input type="text" id="txtOutlineHexavalue" value="#000000" style="width:37%;float:left;padding:5px 5px; margin:-3px 0px 0px 4px;"/>
+                        </div>
+                     </div>
+                     </div><div class="clear"></div>
+                     <div class="hrline"></div>          
+                     <div class="btncenter">
+                        <input type="button" value="Apply" id="textApply" title="Apply"/>
+                        <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                     </div>
+               </div>   
+          </div>               
+          <!-- End of HTML Text -->
+          
+          <!-- HTML of Color -->
+          <div id="color-options" class='subProperties'>
+           <div class="sub-tools">
+               <div class="text-tool sub-tools-cat" id="colorOpt">
+                  <p>Saturation <i class="fa-reply plusreset clrReset"></i><b id="saturVal">0</b></p>
+                  <div class="slider slider-horizontal">
+                    <i class="fa-minus plusign clrMinus"></i> 
+                        <input type="range" min="-100" max="100" value="0" step="1" id="saturSlide" />
+                    <i class="fa-plus minusign clrPlus"></i>                       
+                  </div><div class="clear"></div> 
+
+                  <p>Hue <i class="fa-reply plusreset clrReset"></i><b id="hueVal">0</b></p>
+                  <div class="slider slider-horizontal">
+                     <i class="fa-minus plusign clrMinus"></i> 
+                        <input type="range" min="-180" max="180" value="0" step="1" id="hueSlide" />    
+                     <i class="fa-plus minusign clrPlus"></i>      
+                  </div><div class="clear"></div> 
+
+                  <p>Vibrance <i class="fa-reply plusreset clrReset"></i><b id="vibrVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign clrMinus"></i> 
+                        <input type="range" min="-100" max="100" value="0" step="1" id="vibrSlide" />
+                     <i class="fa-plus minusign clrPlus"></i> 
+                  </div><div class="clear"></div> 
+
+                  <p>Temperature <i class="fa-reply plusreset clrReset"></i><b id="tempVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign clrMinus"></i> 
+                        <input type="range" min="-25" max="25" value="0" step="1" id="tempSlide"  />
+                     <i class="fa-plus minusign clrPlus"></i> 
+                  </div><div class="clear"></div>    
+
+                  <p>Red <i class="fa-reply plusreset clrReset"></i><b id="redVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign clrMinus"></i> 
+                        <input type="range" min="-25" max="25" value="0" step="1" id="redSlide" />
+                     <i class="fa-plus minusign clrPlus"></i>
+                  </div><div class="clear"></div>     
+
+                  <p>Blue <i class="fa-reply plusreset clrReset"></i><b id="blueVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign clrMinus"></i>
+                        <input type="range" min="-25" max="25" value="0" step="1" id="blueSlide" />
+                     <i class="fa-plus minusign clrPlus"></i>
+                  </div><div class="clear"></div>     
+
+                  <p>Green <i class="fa-reply plusreset clrReset"></i><b id="greenVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign clrMinus"></i>
+                        <input type="range" min="-25" max="25" value="0" step="1" id="greenSlide" />
+                     <i class="fa-plus minusign clrPlus"></i>
+                  </div><div class="clear"></div>
+                  <div class="hrline"></div>               
+                  <div class="btncenter">
+                     <input type="button" value="Apply" id="colorApply" class='btnApplyClass' title="Apply"/>
+                     <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                  </div>
+               </div>   
+           </div>               
+          </div>
+          <!-- End of HTML Color -->
+          
+          <!-- HTML of Exposure --> 
+          <div id="exposure-options" class='subProperties'>
+            <div class="sub-tools">
+               <div class="text-tool sub-tools-cat">
+                 <p>Exposure <i class="fa-reply plusreset exprReset"></i><b id="exprVal"> 0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign exprMinus"></i>
+                        <input type="range" min="-25" max="25" value="0" step="1" id="exprSlide"  />
+                     <i class="fa-plus plusign exprPlus"></i>
+                  </div><div class="clear"></div>
+
+                  <p>Brightness <i class="fa-reply plusreset exprReset"></i><b id="brtVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign exprMinus"></i>
+                        <input type="range" min="-25" max="25" value="0" step="1" id="brtSlide"  />
+                     <i class="fa-plus plusign exprPlus"></i>
+                  </div><div class="clear"></div>
+
+                  <p>Contrast <i class="fa-reply plusreset exprReset"></i><b id="contrVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign exprMinus"></i>
+                        <input type="range" min="-25" max="25" value="0" step="1" id="contrSlide"  />
+                     <i class="fa-plus plusign exprPlus"></i>
+                  </div><div class="clear"></div>
+
+                  <p>Noise <i class="fa-reply plusreset exprReset"></i><b id="noiseVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign exprMinus"></i>
+                        <input type="range" min="0" max="25" value="0" step="1" id="noiseSlide" /> 
+                     <i class="fa-plus plusign exprPlus"></i>
+                  </div><div style="clear:both;"></div> 
+                  
+                  <p>Sepia <i class="fa-reply plusreset exprReset"></i> <b id="sepiaVal">0</b></p>
+                  <div class="slider slider-horizontal" style="width:95%;">
+                     <i class="fa-minus plusign exprMinus"></i>
+                        <input type="range" min="0" max="25" value="0" step="1" id="sepiaSlide" />   
+                     <i class="fa-plus plusign exprPlus" ></i>
+                  </div><div class="clear"></div><br/>
+                  <div class="hrline"></div>               
+                  <div class="btncenter">
+                     <input type="button" value="Apply" id="exposureApply" class='btnApplyClass' title="Apply"/>
+                     <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                  </div>
+              </div>   
+           </div>               
+          </div>
+          <!-- End of HTML Exposure -->
+          
+          <!-- HTML of Blur -->
+          <div id="blur-options" class='subProperties'>
+            <div class="sub-tools">
+                 <div class="text-tool sub-tools-cat">
+                     <p>Blur <i class="fa-reply plusreset blurReset"></i><b id="blurVal">0</b></p>
+                     <div class="slider slider-horizontal" style="width:95%;">
+                        <i class="fa-minus plusign blurMinus"></i>
+                        <input type="range" min="0" max="20" value="0" step="1" id="blurSlide"  />
+                        <i class="fa-plus plusign blurPlus"></i>
+                     </div><div class="clear"></div><br/>
+                     <div class="hrline"></div>
+                      <div class="btncenter">
+                        <input type="button" value="Apply" id="blurApply" class='btnApplyClass'/>
+                        <input type="submit" value="Cancel" class='btnCancel'/>
+                      </div>
+                </div>   
+            </div>               
+          </div>
+          <!-- End of HTML Blur -->
+          
+          <!-- HTML of Gamma -->
+          <div id="gamma-options" class='subProperties'>
+            <div class="sub-tools">
+               <div class="text-tool sub-tools-cat">
+                 <p>Gamma <i class="fa-reply plusreset gammaReset"></i><b id="gammaVal">1</b></p>
+                     <div class="slider slider-horizontal" style="width:95%;">
+                        <i class="fa-minus plusign gammaMinus"></i>
+                           <input type="range" min="1" max="10" value="1" step="0.1" id="gammaSlide"  />
+                        <i class="fa-plus plusign gammaPlus"></i>
+                     </div><div class="clear"></div>
+                  <div class="hrline"></div>
+                  <div class="btncenter">
+                     <input type="button" value="Apply" id="gammaApply" class='btnApplyClass'/>
+                     <input type="submit" value="Cancel" class='btnCancel'/>
+                  </div>
+               </div>   
+            </div>               
+          </div>
+          <!-- End of HTML Gamma -->
+          
+          <!-- HTML of Sharpness -->
+          <div id="sharp-options" class='subProperties'>
+            <div class="sub-tools">
+                  <div class="text-tool sub-tools-cat">
+                     <p>Sharp <i class="fa-reply plusreset sharpReset"></i><b id="sharpVal">0</b></p>
+                        <div class="slider slider-horizontal" style="width:95%;">
+                           <i class="fa-minus plusign sharpMinus"></i>
+                              <input type="range" min="0" max="100" value="0" step="1" id="sharpSlide"  />
+                           <i class="fa-plus plusign sharpPlus"></i>
+                        </div><div class="clear"></div>  
+                        <div class="hrline"></div>
+                        <div class="btncenter">
+                          <input type="button" value="Apply" id="sharpApply" class='btnApplyClass' title="Apply"/>
+                          <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                        </div>
+                  </div>   
+             </div>               
+          </div>
+          <!-- End of HTML Sharpness -->
+          
+          <!-- HTML of Image Effects -->
+          <div id="imgeffect-options" class='subProperties'>
+            <div class="sub-tools">
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Oil Paint" data-effect='OILPAINT'>
+                     <img src="/image_editor/images/img-oilpaint.jpg" alt="oilpaint"/><div>Oil Paint</div></a>
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Stylish" data-effect="STYLISH">
+                     <img src="/image_editor/images/img-raise.png" alt="image raise"><div>Stylish</div></a>
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Sepia" data-effect="SEPIA">
+                     <img src="/image_editor/images/img-sepiatone.png" alt="sepiatone"><div>Sepia</div></a>
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Black and White" data-effect='BNW'>
+                     <img src="/image_editor/images/img-bw.png" alt="black and white"/><div>B &amp; W</div></a>
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Greyscale" data-effect='GREYSCALE'>
+                     <img src="/image_editor/images/img-grayscale.png" alt="grayscale"/><div>Greyscale</div></a>
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Sketch" data-effect='SKETCH'>
+                     <img src="/image_editor/images/img-sketch.png" alt="sketch"/><div>Sketch</div></a>
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Negative" data-effect='NEGATIVE'>
+                     <img src="/image_editor/images/img-negate.png" alt="negate"/><div>Negative</div></a>   
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="Polaroid" data-effect='POLAROID'>
+                     <img src="/image_editor/images/img-polaroid.jpg" alt="polaroid"/><div>Polaroid</div></a> 
+                  <a href="javascript:void(0)" class="img-effect imgfct-img imgfct-img" title="Emboss" data-effect='EMBOSS'> 
+                     <img src="/image_editor/images/img-emboss.png" alt="emboss"/><div>Emboss</div></a>
+                  <a href="javascript:void(0)" class="img-effect imgfct-img" title="image effect" data-effect='WAVE'>
+                     <img src="/image_editor/images/img-wave.png" alt="wave image"/><div>Wave</div></a>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <div class="btncenter">
+                    <input type="button" value="Apply" id="effectApply" class='btnApplyClass' title="Apply" />
+                    <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                  </div>
+             </div>               
+          </div>
+          <!-- End of HTML Image Effects --> 
+          
+          <!-- HTML of Shape Effects -->
+          <div id="shapes-options" class='subProperties'>
+            <div class="sub-tools">
+                  <a href="javascript:void(0)" class="shp-effect" id="shapeRect" title="Rectangle" data-style='rectangle'>
+                      <img src="/image_editor/images/rectangle-sm.png" alt="rectangle shape" title="Rectangle"/></a> 
+                  <a href="javascript:void(0)" class="shp-effect" id="shapeSquare" title="Square" data-style='square'>
+                      <img src="/image_editor/images/square-sm.png" alt="square shape" title="Square"/></a>
+                  <a href="javascript:void(0)" class="shp-effect" id="shapeCircle" title="Circle" data-style='circle'>
+                      <img src="/image_editor/images/circle-sm.png" alt="circle shape" title="Circle"/></a>
+                  <a href="javascript:void(0)" class="shp-effect" id="shapeTriangle" title="Triangle" data-style='triangle'>
+                       <img src="/image_editor/images/triangle-sm.png" alt="triangle shape" title="Triangle"/></a>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <div style="margin:10px 0px; padding:5px 0px 5px 0px; text-align:center;">
+                     <a href='javascript:void(0)' class="clrDynamicCanvas eraser">
+                     <img src="image_editor/images/clear.png" alt="clear" style="vertical-align:middle;"/> Clear</a>
+                     <a href="javascript:void(0)" class="eraser" id="btnRemoveShape"><i class="fa-remove"></i> Remove</a>
+                   </div>
+                   <div class="hrline"></div>
+                     <div class="c-two">                     
+                        <div class="c-two-three" style="width:96%; padding-left:5px!important;"> <a>Fill Color:</a><div class="clear"></div><input type="color" id="txtFillClrVal" class="form-control shcpick" value="#000000"> <input type="text" id="txtFillClrHexa" value="#000000" />
+                        </div>                    
+                        <div class="clear"></div>
+                     </div>
+                     <div class="hrline"></div>
+                      <div class="c-two"> 
+                        <div class="c-two-two" style="width:97%!important;"> 
+                           <a>Border:</a><div class="clear"></div> 
+                           <input type="text" id="txtShapeOutline" value="2" style="width:34%; float:left;"/>  
+                           <input type="color" id="txtShapeOutlineClrVal" class="form-control" value="#000000" style="width:23px; float:left; margin:5px 0px 0px 6px; height:22px;"> 
+                           <input type="text" id="txtShapeOutlineHexavalue" value="#000000" style="width:34%;float:left;padding:5px 5px; margin:4px 0px 0px 4px;"/>
+                        </div>
+                      </div>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <div class="btncenter">
+                    <input type="button" value="Apply" id="shapeApply" class='btnApplyClass' title="Apply" />
+                    <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                  </div>
+             </div>               
+          </div>
+          <!-- End of HTML Shape Effects --> 
+          
+          <!-- HTML of Drawing Effects -->
+          <div id="draw-options" class='subProperties'>
+            <div class="sub-tools">            
+               <div class="c-two">
+                  <p>Brush Width</p>
+                  <div class="slider slider-horizontal">                     
+                     <input class="easyui-slider" data-options="showTip:true,min:1,max:100" id="lineSlide" />
+                  </div> 
+                </div><br/><div class="hrline"></div>
+                <div class="c-two">                                       
+                  <div class="c-two-three" style="width:95%; padding-left:5px!important;">
+                     <p style="margin:0px 0px 0px 0px;">Brush Color:</p>
+                     <input type="color" id="txtPencilClrVal" class="form-control shcpick" value="#000000"> 
+                     <input type="text" id="txtPencilClrHexa" value="#000000" /><br/>   
+                  </div>                    
+                </div>   
+                <div class="clear"></div><div class="hrline"></div>
+                <div style="margin:10px 0px; padding:10px 0px 0px 0px; text-align:center;">
+                   <a href='javascript:void(0)' class="eraser" id="ancDrawUndo">Undo Draw</a>
+                   <a href='javascript:void(0)' class="clrDynamicCanvas eraser">
+                     <img src="image_editor/images/clear.png" alt="clear" style="vertical-align:middle;"/> Clear</a>      
+                </div>
+                <div class="clear"></div>
+                <div class="hrline"></div>
+                <div class="btncenter">
+                 <input type="button" value="Apply" id="drawApply" class='btnApplyClass' title="Apply" />
+                 <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                </div>
+               </div>            
+          </div>               
+       <!-- End of HTML Drawing Effects -->   
+
+       <!-- HTML of Censor -->
+         <div class="subProperties" id="censor-options">
+            <div class="modal-content sub-tools">
+                  <div class="c-two">  
+                     <p>Censor by Percentage</p>
+                      <select id="censorPct">
+                         <option value=''>Select Percentage (%)</option>
+                         <option value='25'>25%</option>
+                         <option value='50'>50%</option>
+                         <option value='75'>75%</option>
+                         <option value='100'>100%</option>				
+                      </select>
+                      <div class="clear"></div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <p>Censor by Slide (%)</p>
+                  <div class="slider slider-horizontal">
+                     <input class="easyui-slider" data-options="showTip:true,min:0,max:100" value="0" id="censorSlide" />
+                  </div>
+                  <div class="clear"></div>
+                  <div style="margin:10px 0px 10px 55px; display:none;">
+                     <div class="crp-txt">Width: <input type="text" value="0" placeholder="Enter Width" id='censorWidth' readonly /> </div>
+                     <div class="crp-txt">Height:<input type="text" value="0" placeholder="Enter Height" id='censorHeight' readonly /> </div> 
+                     <div class="clear"></div>
+                     <div class="crp-txt"><label>X <input type="text" size="4" id="xCensor" name="x1" readonly /></label></div>
+                     <div class="crp-txt">
+                     <label>Y <input type="text" size="4" id="yCensor" name="y1" readonly /></label>
+                     </div>
+                  </div><br/>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <div class="btncenter">
+                   <input type="button" value="Apply" id="censorApply" title="Apply"/>
+                   <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                  </div>
+            </div>
+         </div>
+         <!-- Enf of HTML Censor -->
+       
+       <!-- HTML of Frames -->
+         <div class="subProperties" id="frame-options">
+            <div class="modal-content sub-tools">
+                  <div class="c-two">  
+                     <a href="javascript:void(0)" class="frame-effect" title="Antique Wood" data-frame='antique_wood'><img src="assets/image_editor/frames/antique_wood/top_left.jpg" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Antique Roman" data-frame='antique_roman'><img src="assets/image_editor/frames/antique_roman/top_left.jpg" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Aqua Beveled" data-frame='aqua_beveled'><img src="assets/image_editor/frames/aqua_beveled/top_left.gif" alt="top left"/></a> 
+                     <a href="javascript:void(0)" class="frame-effect" title="Arabic Border" data-frame='arabic_border'><img src="assets/image_editor/frames/arabic_border/top_left.jpg" alt="top left"/></a> 
+                     <a href="javascript:void(0)" class="frame-effect" title="Brown Fancing" data-frame='brown_gold'><img src="assets/image_editor/frames/brown_gold/top_left.jpg" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Brown and Creme" data-frame='brown_creme'><img src="assets/image_editor/frames/brown_creme/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Gold Antique" data-frame='gold_antique'><img src="assets/image_editor/frames/gold_antique/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Gold Beveled" data-frame='gold_beveled'><img src="assets/image_editor/frames/gold_beveled/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Gold Burlap" data-frame='gold_burlap'><img src="assets/image_editor/frames/gold_burlap/top_left.gif" alt="top left"/></a> 
+                     <a href="javascript:void(0)" class="frame-effect" title="Gold Classic" data-frame='gold_classic'><img src="assets/image_editor/frames/gold_classic/top_left.gif" alt="top left"/></a>
+
+                     <a href="javascript:void(0)" class="frame-effect" title="Golden Orbs" data-frame='golden_orbs'><img src="assets/image_editor/frames/golden_orbs/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Gray Matte" data-frame='gray_matte'><img src="assets/image_editor/frames/gray_matte/top_left.gif" alt="top left" /></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Ice Blue" data-frame='ice_blue'><img src="assets/image_editor/frames/ice_blue/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Orange Beveled" data-frame='orange_beveled'><img src="assets/image_editor/frames/orange_beveled/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Purple Beveled" data-frame='purple_beveled'><img src="assets/image_editor/frames/purple_beveled/top_left.gif" alt="top left"/></a> 
+                     <a href="javascript:void(0)" class="frame-effect" title="Rainbow" data-frame='rainbow'><img src="assets/image_editor/frames/rainbow/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Rope" data-frame='rope'><img src="assets/image_editor/frames/rope/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Silver Antique" data-frame='silver_antique'><img src="assets/image_editor/frames/silver_antique/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Silver Beveled" data-frame='silver_beveled'><img src="assets/image_editor/frames/silver_beveled/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Silver Classic" data-frame='silver_classic'><img src="assets/image_editor/frames/silver_classic/top_left.gif" alt="top left"/></a> 
+                     <a href="javascript:void(0)" class="frame-effect" title="Silver Gold" data-frame='silver_gold'><img src="assets/image_editor/frames/silver_gold/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Silver Traditonal" data-frame='silver_traditional'><img src="assets/image_editor/frames/silver_traditional/top_left.gif" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Red Flowers" data-frame='red_flowers'><img src="assets/image_editor/frames/red_flowers/top_left.jpg" alt="top left"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Autumn Leaf" data-frame='autumn_leaf'><img src="assets/image_editor/frames/autumn_leaf/autumn_leaf.gif" alt="autumn leaf"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Basketball" data-frame='basketball'><img src="assets/image_editor/frames/basketball/basketball.gif" alt="basket ball"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Globe" data-frame='globe'><img src="assets/image_editor/frames/globe/globe.gif" alt="globe"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Golf Ball" data-frame='golf_ball'><img src="assets/image_editor/frames/golf_ball/golf_ball.gif" alt="golf ball"/></a> 
+                     <a href="javascript:void(0)" class="frame-effect" title="Green Apple" data-frame='green_apple'><img src="assets/image_editor/frames/green_apple/green_apple.gif" alt="green apple"/></a> 
+                     <a href="javascript:void(0)" class="frame-effect" title="Holly" data-frame='holly'><img src="assets/image_editor/frames/holly/holly.gif" alt="holly"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Pumpkin" data-frame='pumpkin'><img src="assets/image_editor/frames/pumpkin/pumpkin.gif" alt="pumpkin"/></a>
+                     <a href="javascript:void(0)" class="frame-effect" title="Red Heart" data-frame='red_heart'><img src="assets/image_editor/frames/red_heart/red_heart.gif" alt="red hear"/></a>     
+                     <a href="javascript:void(0)" class="frame-effect" title="Soccer Ball" data-frame='soccer_ball'><img src="assets/image_editor/frames/soccer_ball/soccer_ball.gif" alt="soccer ball"/></a>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="hrline"></div>
+                  <div class="btncenter">
+                   <input type="button" value="Apply" id="frameApply" title="Apply"/>
+                   <input type="submit" value="Cancel" class='btnCancel' title="Cancel"/>
+                  </div>
+             </div>
+            </div>
+         
+         <div class="simple-ad wtbrd-socl-links">
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://www.facebook.com/sharer.php?u=' + 'https://www.tutorialspoint.com/online_image_editor.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/facebookIcon.jpg" alt="img">
+         </a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://twitter.com/share?url=' + 'https://www.tutorialspoint.com/online_image_editor.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/twitterIcon.jpg" alt="img"></a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://www.linkedin.com/cws/share?url=' + 'https://www.tutorialspoint.com/online_image_editor.htm&amp;title='+ document.title,'sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/linkedinIcon.jpg" alt="img"></a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://plus.google.com/share?url=https://www.tutorialspoint.com/online_image_editor.htm','sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/googlePlusIcon.jpg" alt="img">
+         </a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://www.stumbleupon.com/submit?url=https://www.tutorialspoint.com/online_image_editor.htm&amp;title='+ document.title,'sharer','toolbar=0,status=0,width=626,height=456,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/StumbleUponIcon.jpg" alt="img">
+         </a>
+         <a href="javascript:void(0)" onclick="var sTop = window.screen.height/2-(218); var sLeft = window.screen.width/2-(313);window.open('https://reddit.com/submit?url=https://www.tutorialspoint.com/online_image_editor.htm&amp;title='+ document.title,'sharer','toolbar=0,status=0,width=626,height=656,top='+sTop+',left='+sLeft);return false;">
+         <img src="/images/reddit.jpg" alt="img">
+         </a>
+      </div>  
+         </div>
+         <!-- Enf of HTML Censor -->
+      <div class="clear"></div>          
+   </div> 
+</div>
+<!--OPTIONS ENDS -->
+
+<!--MENU STARTS -->
+<div data-options="region:'west', title:'Menu',iconCls:'icon-project', split:false,collapsed:false" style="width:250px;">
+   <div class="wr-left">
+      <div class="wr-lft-cont column">
+         <div class="sub-default clickDisable" id="lftMainmenu">
+          <a href="javascript:void(0);" id="crop-m" title="Crop" ><div class="sub-default-lft" style=""><i class="fa-crop"></i></div></a>
+          <a href="javascript:void(0);" id="resize-m" title="Resize"><div class="sub-default-lft" style="border-right:none; "><i class="fa-arrows-alt"></i></div></a>
+          <a href="javascript:void(0);" id="rotate-m" title="Rotate"><div class="sub-default-lft" style="border-right:none; "><i class="fa-rotate-left"></i></div></a>
+          <a href="javascript:void(0);" id="text-m" title="Text"><div class="sub-default-lft" style=""><i class="fa-text-height"></i></div></a>               
+         <a href="javascript:void(0);" id="color-m" title="Color"><div class="sub-default-lft" style=""><i class="fa-tint"></i></div></a>
+          <a href="javascript:void(0);" id="exposure-m" title="Exposure"><div class="sub-default-lft" style=""><img src="https://www.tutorialspoint.com/image_editor/images/exposure.jpg" alt="exposure" style="height:16px;"/></div></a>                     
+          <a href="javascript:void(0);" id="blur-m" title="Blur"><div class="sub-default-lft" style=""><i class="fa-google-wallet"></i></div></a>
+          <a href="javascript:void(0);" id="gamma-m" title="Gamma"><div class="sub-default-lft" style=""><i class="fa-compass"></i></div></a>
+          <a href="javascript:void(0);" id="sharp-m" title="Sharpness"><div class="sub-default-lft" style=""><i class="fa-eye"></i></div></a>                  
+          <a href="javascript:void(0);" id="imgeffects-m" title="Image Effects"><div class="sub-default-lft" style=""><i class="fa-file-image-o"></i></div></a> 
+          <a href="javascript:void(0);" id="shapes-m" title="Shapes">
+            <div class="sub-default-lft" style=""><img src="https://www.tutorialspoint.com/image_editor/images/shape-sm.png" alt="shape-sm"/></div>
+          </a> 
+          <a href="javascript:void(0);" id="draw-m" title="Drawing"><div class="sub-default-lft" style=""><i class="fa-paint-brush"></i></div></a>
+          <div class="clear"></div>
+          <a href="javascript:void(0);" id="censor-m" title="Censor"><div class="sub-default-lft" style=""><img src="https://www.tutorialspoint.com/image_editor/images/censor.png" alt="censor"/></div></a>
+          <a href="javascript:void(0);" id="frame-m" title="Frame"><div class="sub-default-lft" style=""><img src="https://www.tutorialspoint.com/image_editor/images/frame.png" alt="frame"/></div></a>
+        </div>
+      </div>
+   </div>   
+   <div class="c-two fileinfo">           
+      <div class="c-two-two"> <b>X ::</b> <input type='text' id="x_axis" value='' class="yaxis"/> </div>
+      <div class="c-two-two"> <b>Y ::</b> <input type='text' id="y_axis" value='' class="yaxis"/> </div>
+      <div class="clear"></div>
+      <div class="c-two-three" style="width:12%;">
+         <input type="color" id="hexaColorPicker" class="form-control cpick" value="#000000" /> 
+      </div>
+      <div class="c-two-three" style="width:53%;"><input type="text" id="txtColor" class="xaxis in-active" /> </div>
+      <div class="c-two-three" style="width:27%;"><input type='text' id="hexaColor" value='' class="xaxis in-active" /> </div>
+      <div class="clear"></div>           
+   </div> 
+   <div class="clear"></div>
+   <div class="histinfo"><img src="/images/histogram.png?1584364556" id="histogram" alt="histogram"/></div>
+</div>
+<!--MENU ENDS -->
+
+<!--BOTTOM ENDS -->
+<div id="south" data-options="region:'south'" style="heigh:5px"> </div>
+<!--BOTTOM STARTS -->
+
+<!--STAGE STARTS -->
+<div id="center" data-options="region:'center'" style="height:100%">
+   <div style="border-right:1px solid #bcbcbc; border-left:0px solid #bcbcbc; border-top:0px solid #bcbcbc; height:24px; width:99.6%; left: 0px;" class="tabs-tool topnav">
+      <a href="javascript:void(0)" id="upLoad" class="" data-options="plain:true," >New <i class="fa-caret-down"></i></a>
+      <a href="javascript:void(0)" id="ancDwn" class="in-active" data-options="plain:true," ><i class="fa-download"></i> &nbsp;Download <i class="fa-caret-down"></i></a>
+      <a href="javascript:void(0)" id="ancUndo" class="in-active" data-options="plain:true" ><i class="fa-reply"></i> &nbsp;Undo </a>
+      <a href="javascript:void(0)" id="ancRedo" class="in-active" data-options="plain:true" ><i class="fa-share"></i> &nbsp;Redo</a>
+      <a href="javascript:void(0)" id="ancReset" class="in-active" data-options="plain:true" ><i class="fa-th-large"></i> &nbsp;Reset</a>
+      <a class="imgsize">Image Size: <b>0 KB</b></a>
+      <div class="topnavrght">
+         <div><a href="javascript:void(0);" title="zoom out" id="ancZOut"><i class="fa-minus"></i>&nbsp;</a></div>
+         <div style="width:150px!important;"><div class="colsliderspace ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-state-disabled ui-slider-disabled" id="zoomSlide" style="margin:15px 0px 0px 3px!important;"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="padding:4px; left: 42.8571428571429%;border-radius:50px;"></span></div></div>
+         <div><a href="javascript:void(0);" title="zoom in" id="ancZIn"><i class="fa-plus"></i></a></div>
+      </div>
+   </div>
+   
+   <div id="stage">
+      <div id="canvas-box">
+         <canvas id="csource"></canvas>
+      </div>
+	   <div class="imgClass" >
+         <img src="/image_editor/images/default.png" id="isource" alt="isources"/>
+	   </div>
+	   <div id="canvasTextBox"></div>
+    </div>
+   
+   <div id="newUploadmenu">
+      <ul class="topnav">
+         <li style="background:#fff;">  
+            <a href="javascript:void(0)" id="ancUpload" class="" data-options="plain:true,"> 
+               Upload from Computer <i class="fa-upload" style="padding:0 10px 0 10px;"></i> 
+            </a>
+            <form method="post" enctype="multipart/form-data" id="imgForm" style="display:none;">       
+               <input type="file" id="fileImg" name="fileImg" title="Upload Photo from Computer" value='' >		 
+            </form> 
+		   </li>
+         <li> <input type="text" placeholder="Enter URL to Upload" class="topnav-inputext" id="txtNewUrl"/>
+               <a href="javascript:void(0)" id="ancUrlUpload" class="" data-options="plain:true" > <span>&nbsp;GET&nbsp;</span> </a>
+         </li>
+         <li style="background:#CACACA; margin:0px;">
+            <a href="javascript:void(0)" id="execute" class="" data-options="plain:true" > 
+               <img src="/image_editor/images/backgr01.png" alt="/image_editor/images/backgr01_big.png" class="sampleImg drpdwnimg"/>
+               <img src="/image_editor/images/backgr02.png" alt="/image_editor/images/backgr02_big.png" class="sampleImg drpdwnimg"/>
+               <img src="/image_editor/images/backgr03.png" alt="/image_editor/images/backgr03_big.png" class="sampleImg drpdwnimg"/>
+               <img src="/image_editor/images/backgr04.png" alt="/image_editor/images/backgr04_big.png" class="sampleImg drpdwnimg"/>
+               <img src="/image_editor/images/backgr05.png" alt="/image_editor/images/backgr05_big.png" class="sampleImg drpdwnimg"/>
+             </a>
+         </li>
+      </ul>
+   </div>
+   <div id="imgDownloadDiv">
+      <ul class="topnav" style="margin:28px 0px 0px 62px; width:180px;">
+         <li class="nav-left-dwnld"  >
+            <a href="javascript:void(0)" class="ancDownload" data-img-type='jpg' data-options="plain:true,">
+               <i class="fa-file-image-o img-icon-dwnld"></i> <br/>JPG 
+            </a> 
+         </li>
+         <li class="nav-left-dwnld ancDownload" data-img-type='png'>
+            <a href="javascript:void(0)" data-options="plain:true," >
+               <i class="fa-file-image-o img-icon-dwnld"></i> <br/>PNG 
+            </a> 
+         </li>
+         <li class="nav-left-dwnld ancDownload" data-img-type='gif'>
+            <a href="javascript:void(0)"  data-options="plain:true,">
+               <i class="fa-file-image-o img-icon-dwnld"></i> <br/>GIF 
+             </a> 
+         </li>
+      </ul>
+    </div>     
+</div>
+<!--STAGE ENDS -->
+<div id="helpWindow" class="easyui-window" title="Help Guide for Online Image Editor" data-options="iconCls:'icon-help'" style="width:955px;height:500px;">
+   <img src="/image_editor/images/help/how-to-use-crop-percentage.jpg" alt="how to use" style="display:none;"/>
+</div>
+<script src="/image_editor/js/image_editor.min.js"></script>
+<script src="https://www.google-analytics.com/urchin.js">
+</script>
+<script type="text/javascript">
+_uacct = "UA-232293-6";
+urchinTracker();
+</script>
+</body>
+</html>
+
